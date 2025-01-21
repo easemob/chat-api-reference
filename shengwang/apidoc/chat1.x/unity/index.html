@@ -1,0 +1,799 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Chat SDK for Unity and Windows: Chat SDK for Unity and Windows</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Chat SDK for Unity and Windows<span id="projectnumber">&#160;v1.3.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Chat SDK for Unity and Windows </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p ><a class="anchor" id="md_D__workspace_project_doc_temp_unity_api_reference_shengwang_mainpage"></a> 即时通讯 IM 是一个高度可靠的全球通信平台，用户可以进行一对一单聊、群组聊天或聊天室聊天。用户可以通过发送文本消息、分享图片、音频、视频、文件、表情符号和位置进行沟通。</p>
+<ul>
+<li><code>SDKClient</code> 类是聊天 SDK 的入口，提供登录和登出即时通讯 IM 的方法，并管理 SDK 与聊天服务器之间的连接。</li>
+<li><code>ChatManager</code> 类提供发送和接收消息、管理会话（包括加载和删除会话）以及下载附件的方法。</li>
+<li><code>Message</code> 类定义消息的属性。</li>
+<li><code>Conversation</code> 类提供管理会话的方法。</li>
+<li><code>ContactManager</code> 类提供管理聊天联系人（如添加、获取、修改和删除联系人）的方法。</li>
+<li><code>GroupManager</code> 类提供群组管理的方法，如群组创建和解散以及成员管理。</li>
+<li><code>RoomManager</code> 类提供聊天室管理的方法，如加入和离开聊天室、获取聊天室列表，以及管理成员权限。</li>
+<li><code>PresenceManager</code> 类提供管理用户在线状态订阅的方法。</li>
+<li><code>ChatThreadManager</code> 类提供了管理子区的方法，包括创建、解散子区以及成员管理。</li>
+<li><code>UserInfoManager</code> 类提供了管理用户属性的方法，包括获取和更新用户属性。</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md0"></a>
+连接与初始化</h2>
+<p ><b>SDKClient</b> 类提供登录和登出即时通讯 IM 的方法和事件，并管理 SDK 与聊天服务器之间的连接。</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">InitWithOptions   </td><td class="markdownTableBodyLeft">初始化 SDK。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">LoginWithToken   </td><td class="markdownTableBodyLeft">使用用户 ID 和令牌登录聊天服务器。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">RenewToken   </td><td class="markdownTableBodyLeft">更新令牌。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Logout   </td><td class="markdownTableBodyLeft">退出聊天服务器。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">CurrentUsername   </td><td class="markdownTableBodyLeft">获取当前登录用户的用户 ID。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">IsConnected   </td><td class="markdownTableBodyLeft">检查 SDK 是否已连接到聊天服务器。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">IsLoggedIn   </td><td class="markdownTableBodyLeft">检查用户是否已登录聊天应用。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">GetLoggedInDevicesFromServer   </td><td class="markdownTableBodyLeft">获取指定帐户登录的在线设备列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetLoggedInDevicesFromServerWithToken   </td><td class="markdownTableBodyLeft">获取指定帐户（令牌）登录的在线设备列表。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">KickDevice   </td><td class="markdownTableBodyLeft">从指定帐户在设备上登出。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">KickDeviceWithToken   </td><td class="markdownTableBodyLeft">从指定帐户（令牌）在设备上登出。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">kickAllDevices   </td><td class="markdownTableBodyLeft">从指定帐户在所有设备上登出。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">KickAllDevicesWithToken   </td><td class="markdownTableBodyLeft">从指定帐户（令牌）在所有设备上登出。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">AddConnectionDelegate   </td><td class="markdownTableBodyLeft">添加连接状态监听器。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GroupManager   </td><td class="markdownTableBodyLeft">获取 <code>GroupManager</code> 类。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">RoomManager   </td><td class="markdownTableBodyLeft">获取 <code>ChatRoomManager</code> 类。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">ChatManager   </td><td class="markdownTableBodyLeft">获取 <code>ChatManager</code> 类。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">UserInfoManager   </td><td class="markdownTableBodyLeft">获取 <code>UserInfoManager</code> 类。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">ContactManager   </td><td class="markdownTableBodyLeft">获取 <code>ContactManager</code> 类。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">PresenceManager   </td><td class="markdownTableBodyLeft">获取 <code>PresenceManager</code> 类。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">ThreadManager   </td><td class="markdownTableBodyLeft">获取 <code>ChatThreadManager</code> 类。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">事件    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnConnected   </td><td class="markdownTableBodyLeft">当 SDK 成功连接到聊天服务器时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnDisconnected   </td><td class="markdownTableBodyLeft">当 SDK 从聊天服务器断开连接时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnLoggedOtherDevice   </td><td class="markdownTableBodyLeft">当当前用户帐户登录到另一台设备时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnRemovedFromServer   </td><td class="markdownTableBodyLeft">当当前用户帐户被服务器移除时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnForbidByServer   </td><td class="markdownTableBodyLeft">当当前用户帐户被禁用时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnChangedIMPwd   </td><td class="markdownTableBodyLeft">当当前用户帐户因登录密码更改被强制退出时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnLoginTooManyDevice   </td><td class="markdownTableBodyLeft">当用户达到当前帐户可登录的设备数量上限时被强制退出当前帐户时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnKickedByOtherDevice   </td><td class="markdownTableBodyLeft">当当前帐户因登录到另一台设备而被强制从设备下线时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnAuthFailed   </td><td class="markdownTableBodyLeft">当当前帐户因身份验证失败被强制退出时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnTokenExpired   </td><td class="markdownTableBodyLeft">当令牌已过期时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnTokenWillExpire   </td><td class="markdownTableBodyLeft">当令牌即将过期时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnAppActiveNumberReachLimitation   </td><td class="markdownTableBodyLeft">当活动应用数量达到上限时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md1"></a>
+发送消息</h2>
+<ul>
+<li><code>ChatManager</code> 类提供发送和接收消息、管理会话（包括加载和删除会话）以及下载附件的方法和事件。</li>
+<li><code>CallBack</code> 类提供消息状态事件，包括消息发送或下载成功和失败以及上传或下载进度。</li>
+<li><code>IChatManagerDelegate</code> 类用于监听收消息，已读回执等事件。</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">SendMessage   </td><td class="markdownTableBodyLeft">发送消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">SendConversationReadAck   </td><td class="markdownTableBodyLeft">发送会话已读回执。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">SendMessageReadAck   </td><td class="markdownTableBodyLeft">发送消息已读回执。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">SendReadAckForGroupMessage   </td><td class="markdownTableBodyLeft">发送群消息已读回执。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetConversation   </td><td class="markdownTableBodyLeft">通过会话 ID 获取会话对象。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">MarkAllConversationsAsRead   </td><td class="markdownTableBodyLeft">将所有会话标记为已读。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">UpdateMessage   </td><td class="markdownTableBodyLeft">更新本地消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">DownloadAttachment   </td><td class="markdownTableBodyLeft">下载消息附件。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">DownloadThumbnail   </td><td class="markdownTableBodyLeft">下载消息缩略图。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">ImportMessages   </td><td class="markdownTableBodyLeft">导入消息到本地数据库。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">LoadAllConversations   </td><td class="markdownTableBodyLeft">获取所有本地会话。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">DeleteConversation   </td><td class="markdownTableBodyLeft">从本地数据库中删除会话及其本地消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">DeleteConversationFromServer   </td><td class="markdownTableBodyLeft">从服务器删除指定会话及其历史消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchGroupReadAcks   </td><td class="markdownTableBodyLeft">使用分页从服务器获取群消息的已读回执。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">SearchMsgFromDB   </td><td class="markdownTableBodyLeft">检索一定数量的本地消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">SearchMsgFromDB   </td><td class="markdownTableBodyLeft">根据消息范围查询本地消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">FetchHistoryMessagesFromServer   </td><td class="markdownTableBodyLeft">从服务器获取会话的历史消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchHistoryMessagesFromServerBy   </td><td class="markdownTableBodyLeft">根据 FetchServerMessagesOption 从服务器获取会话的历史消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">RemoveMessagesBeforeTimestamp   </td><td class="markdownTableBodyLeft">删除指定 Unix 时间戳之前的本地历史消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">ReportMessage   </td><td class="markdownTableBodyLeft">举报不适当的消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">FetchSupportLanguages   </td><td class="markdownTableBodyLeft">获取翻译服务支持的所有语言。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">TranslateMessage   </td><td class="markdownTableBodyLeft">翻译文本消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">AddReaction   </td><td class="markdownTableBodyLeft">添加 Reaction。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">RemoveReaction   </td><td class="markdownTableBodyLeft">删除 Reaction。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetReactionList   </td><td class="markdownTableBodyLeft">获取 Reaction 列表。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">GetReactionDetail   </td><td class="markdownTableBodyLeft">获取 Reaction 详情。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetConversationsFromServerWithPage   </td><td class="markdownTableBodyLeft">从服务器获取一些会话。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">GetConversationsFromServerWithCursor   </td><td class="markdownTableBodyLeft">从服务器获取一些会话。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetConversationsFromServerWithCursor   </td><td class="markdownTableBodyLeft">根据会话标记从服务器获取会话。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">RemoveMessagesFromServer   </td><td class="markdownTableBodyLeft">删除会话中的消息（从本地存储和服务器）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">FetchCombineMessageDetail   </td><td class="markdownTableBodyLeft">获取合并消息详情。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">ModifyMessage   </td><td class="markdownTableBodyLeft">修改已发送的消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">DeleteAllMessagesAndConversations   </td><td class="markdownTableBodyLeft">清除所有会话及其中的所有消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">MarkConversations   </td><td class="markdownTableBodyLeft">标记或取消标记会话。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">PinMessage   </td><td class="markdownTableBodyLeft">置顶或取消置顶消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">GetPinnedMessagesFromServer   </td><td class="markdownTableBodyLeft">从服务器获取会话中置顶消息的列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">RecallMessage   </td><td class="markdownTableBodyLeft">撤回消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">AddChatManagerDelegate   </td><td class="markdownTableBodyLeft">添加消息监听器。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">RemoveChatManagerDelegate   </td><td class="markdownTableBodyLeft">移除会话监听器。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnMessagesReceived   </td><td class="markdownTableBodyLeft">收到消息时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnCmdMessagesReceived   </td><td class="markdownTableBodyLeft">收到命令消息时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnMessagesRead   </td><td class="markdownTableBodyLeft">收到消息已读回执时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnGroupMessageRead   </td><td class="markdownTableBodyLeft">收到群消息已读回执时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnReadAckForGroupMessageUpdated   </td><td class="markdownTableBodyLeft">收到群消息已读状态更新时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnMessagesDelivered   </td><td class="markdownTableBodyLeft">收到消息送达回执时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnMessagesRecalled   </td><td class="markdownTableBodyLeft">收到消息撤回时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">MessageReactionDidChange   </td><td class="markdownTableBodyLeft">消息的 Reaction 发生变化时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnConversationsUpdate   </td><td class="markdownTableBodyLeft">会话更新时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnConversationRead   </td><td class="markdownTableBodyLeft">收到会话已读回执时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnMessageContentChanged   </td><td class="markdownTableBodyLeft">已发送消息被修改时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnMessagePinChanged   </td><td class="markdownTableBodyLeft">消息被置顶或取消置顶时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md2"></a>
+消息与会话</h2>
+<ul>
+<li><code>Message</code> 类定义消息的属性。</li>
+<li><code>Conversation</code> 类提供管理会话的方法。</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Conversation.conversationId   </td><td class="markdownTableBodyLeft">会话 ID，取决于会话类型。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Conversation.UnReadCount   </td><td class="markdownTableBodyLeft">获取会话中的未读消息数量。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Conversation.MarkAllMessageAsRead   </td><td class="markdownTableBodyLeft">将所有未读消息标记为已读。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Conversation.MessagesCount   </td><td class="markdownTableBodyLeft">获取本地数据库中会话的所有未读消息数量。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Conversation.IsThread   </td><td class="markdownTableBodyLeft">检查当前会话是否为线程会话。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Conversation.LoadMessages   </td><td class="markdownTableBodyLeft">从本地数据库加载消息，从特定消息 ID 开始。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Conversation.LoadMessage   </td><td class="markdownTableBodyLeft">获取指定消息 ID 的消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Conversation.MarkMessageAsRead   </td><td class="markdownTableBodyLeft">将消息标记为已读。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Conversation.DeleteMessage   </td><td class="markdownTableBodyLeft">删除本地数据库中的消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Conversation.LastMessage   </td><td class="markdownTableBodyLeft">获取会话中的最新消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Conversation.LastReceivedMessage   </td><td class="markdownTableBodyLeft">获取会话中最新接收的消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Conversation.DeleteAllMessages   </td><td class="markdownTableBodyLeft">从内存和本地数据库中删除会话中的所有消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Conversation.Ext   </td><td class="markdownTableBodyLeft">设置或获取会话的扩展字段。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Conversation.InsertMessage   </td><td class="markdownTableBodyLeft">将消息插入到本地数据库中的会话。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Conversation.AppendMessage   </td><td class="markdownTableBodyLeft">将消息插入到本地数据库中的会话末尾。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Conversation.UpdateMessage   </td><td class="markdownTableBodyLeft">更新本地数据库中的消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Conversation.IsPinned   </td><td class="markdownTableBodyLeft">检查会话是否被置顶。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Conversation.PinnedTime   </td><td class="markdownTableBodyLeft">获取会话被置顶的时间戳，单位为毫秒。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Conversation.DeleteMessages   </td><td class="markdownTableBodyLeft">删除本地数据库中某个时间段内发送或接收的消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Conversation.LoadMessagesWithScope   </td><td class="markdownTableBodyLeft">加载指定范围内符合条件的消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Conversation.PinnedMessages   </td><td class="markdownTableBodyLeft">获取本地会话中置顶消息的列表。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Conversation.Marks   </td><td class="markdownTableBodyLeft">获取会话的标记。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.Status   </td><td class="markdownTableBodyLeft">获取消息的发送或接收状态。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.Body   </td><td class="markdownTableBodyLeft">获取消息体。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.ServerTime   </td><td class="markdownTableBodyLeft">获取服务器接收消息的 Unix 时间戳。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.LocalTime   </td><td class="markdownTableBodyLeft">获取消息的本地时间戳。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.IsThread   </td><td class="markdownTableBodyLeft">设置或获取消息是否为线程消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.Broadcast   </td><td class="markdownTableBodyLeft">是否为应用内所有聊天室的全局广播消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.ChatThread   </td><td class="markdownTableBodyLeft">获取消息Thread的概览。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.CreateSendMessage   </td><td class="markdownTableBodyLeft">创建一个发送消息实例。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.CreateReceiveMessage   </td><td class="markdownTableBodyLeft">创建一个接收消息实例。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.CreateTextSendMessage   </td><td class="markdownTableBodyLeft">创建一个发送文本消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.CreateVoiceSendMessage   </td><td class="markdownTableBodyLeft">创建一个发送语音消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.CreateImageSendMessage   </td><td class="markdownTableBodyLeft">创建一个发送图片消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.CreateVideoSendMessage   </td><td class="markdownTableBodyLeft">创建一个发送视频消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.CreateLocationSendMessage   </td><td class="markdownTableBodyLeft">创建一个发送位置消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.CreateFileSendMessage   </td><td class="markdownTableBodyLeft">创建一个发送文件消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.CreateCombineSendMessage   </td><td class="markdownTableBodyLeft">创建一个发送合并消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.From   </td><td class="markdownTableBodyLeft">获取或设置消息发送者的用户 ID。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.To   </td><td class="markdownTableBodyLeft">设置或获取消息接收者的用户 ID。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.MsgId   </td><td class="markdownTableBodyLeft">获取或设置消息 ID。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.SetAttribute   </td><td class="markdownTableBodyLeft">设置消息的扩展属性。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.GetAttributeValue   </td><td class="markdownTableBodyLeft">获取消息的扩展属性。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.HasReadAck   </td><td class="markdownTableBodyLeft">获取消息是否已读。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.HasDeliverAck   </td><td class="markdownTableBodyLeft">获取消息是否成功送达。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.IsRead   </td><td class="markdownTableBodyLeft">检查消息是否已读。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.ConversationId   </td><td class="markdownTableBodyLeft">获取会话 ID。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.ReactionList   </td><td class="markdownTableBodyLeft">获取消息的 Reaction 列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.MessageOnlineState   </td><td class="markdownTableBodyLeft">检查消息是否送达在线用户。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.ReceiverList   </td><td class="markdownTableBodyLeft">获取接收消息的群组或聊天室成员的 ID 列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.DeliverOnlineOnly   </td><td class="markdownTableBodyLeft">检查消息是否仅在接收者在线时送达。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Message.IsContentReplaced   </td><td class="markdownTableBodyLeft">检查消息内容是否被替换。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Message.PinnedInfo   </td><td class="markdownTableBodyLeft">获取消息的置顶信息。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Success   </td><td class="markdownTableBodyLeft">方法成功时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Error   </td><td class="markdownTableBodyLeft">发生错误时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Progress   </td><td class="markdownTableBodyLeft">进度更新时触发。   </td></tr>
+</table>
+<h1><a class="anchor" id="autotoc_md3"></a>
+联系人</h1>
+<ul>
+<li><code>ContactManager</code> 类提供管理聊天联系人（如添加、获取、修改和删除联系人）的方法。</li>
+<li><code>IContactManagerDelegate</code> 类提供联系人事件监听。</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">AddContact   </td><td class="markdownTableBodyLeft">添加新联系人。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">DeleteContact   </td><td class="markdownTableBodyLeft">删除联系人。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetAllContactsFromServer   </td><td class="markdownTableBodyLeft">从服务器获取所有联系人。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">AddUserToBlockList   </td><td class="markdownTableBodyLeft">将用户添加到黑名单。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">RemoveUserFromBlockList   </td><td class="markdownTableBodyLeft">从黑名单中移除联系人。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">GetBlockListFromServer   </td><td class="markdownTableBodyLeft">从服务器获取黑名单。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">DeclineInvitation   </td><td class="markdownTableBodyLeft">拒绝好友邀请。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">GetAllContactsFromDB   </td><td class="markdownTableBodyLeft">从本地数据库获取联系人列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetSelfIdsOnOtherPlatform   </td><td class="markdownTableBodyLeft">获取当前用户在其他设备上的唯一自我 ID 列表。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">SetContactRemark   </td><td class="markdownTableBodyLeft">为用户 ID 设置备注。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">FetchContactFromLocal   </td><td class="markdownTableBodyLeft">从本地数据库获取联系人信息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchAllContactsFromLocal   </td><td class="markdownTableBodyLeft">从本地数据库获取所有联系人信息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">FetchAllContactsFromServer   </td><td class="markdownTableBodyLeft">从服务器获取所有联系人信息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchAllContactsFromServerByPage   </td><td class="markdownTableBodyLeft">分页从服务器获取所有联系人信息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">AddContactManagerDelegate   </td><td class="markdownTableBodyLeft">注册新的联系人监听器。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnContactAdded   </td><td class="markdownTableBodyLeft">当用户被其他用户添加为联系人时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnContactDeleted   </td><td class="markdownTableBodyLeft">当用户被其他用户从联系人列表中删除时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnContactInvited   </td><td class="markdownTableBodyLeft">当用户收到好友请求时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnFriendRequestAccepted   </td><td class="markdownTableBodyLeft">当好友请求被批准时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnFriendRequestDeclined   </td><td class="markdownTableBodyLeft">当好友请求被拒绝时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md4"></a>
+群组</h2>
+<ul>
+<li><code>GroupManager</code> 类提供群组管理的方法，如群组创建和解散以及成员管理。</li>
+<li><code>IGroupManagerDelegate</code>类提供群组管理事件监听。</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">CreateGroup   </td><td class="markdownTableBodyLeft">创建群组实例。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">DestroyGroup   </td><td class="markdownTableBodyLeft">销毁群组实例。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">LeaveGroup   </td><td class="markdownTableBodyLeft">退出群组。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">JoinPublicGroup   </td><td class="markdownTableBodyLeft">加入公开群组。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">AddGroupMembers   </td><td class="markdownTableBodyLeft">添加用户到群组。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">DeleteGroupMembers   </td><td class="markdownTableBodyLeft">从群组中移除成员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetGroupSpecificationFromServer   </td><td class="markdownTableBodyLeft">从服务器获取群组信息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchJoinedGroupsFromServer   </td><td class="markdownTableBodyLeft">分页从服务器获取当前用户的所有群组。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">FetchPublicGroupsFromServer   </td><td class="markdownTableBodyLeft">分页从服务器获取公开群组。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">ChangeGroupName   </td><td class="markdownTableBodyLeft">更改群组名称。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">ChangeGroupDescription   </td><td class="markdownTableBodyLeft">更改群组描述。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">AcceptGroupInvitation   </td><td class="markdownTableBodyLeft">接受群组邀请。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">DeclineGroupInvitation   </td><td class="markdownTableBodyLeft">拒绝群组邀请。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">AcceptGroupJoinApplication   </td><td class="markdownTableBodyLeft">批准群组请求。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">DeclineGroupJoinApplication   </td><td class="markdownTableBodyLeft">拒绝群组请求。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">ApplyJoinToGroup   </td><td class="markdownTableBodyLeft">请求加入群组。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">BlockGroup   </td><td class="markdownTableBodyLeft">屏蔽群组消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">UnBlockGroup   </td><td class="markdownTableBodyLeft">取消屏蔽群组消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">BlockGroupMembers   </td><td class="markdownTableBodyLeft">将用户添加到群组黑名单。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">UnBlockGroupMembers   </td><td class="markdownTableBodyLeft">从群组黑名单中移除用户。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetGroupBlockListFromServer   </td><td class="markdownTableBodyLeft">分页从服务器获取群组黑名单。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">GetGroupMemberListFromServer   </td><td class="markdownTableBodyLeft">分页获取群组成员列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">ChangeGroupOwner   </td><td class="markdownTableBodyLeft">转让群组所有权。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">AddGroupAdmin   </td><td class="markdownTableBodyLeft">添加群组管理员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">RemoveGroupAdmin   </td><td class="markdownTableBodyLeft">移除群组管理员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">MuteGroupMembers   </td><td class="markdownTableBodyLeft">禁言群组成员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">UnMuteGroupMembers   </td><td class="markdownTableBodyLeft">取消禁言群组成员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">GetGroupMuteListFromServer   </td><td class="markdownTableBodyLeft">从服务器获取群组禁言列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">AddGroupAllowList   </td><td class="markdownTableBodyLeft">添加成员到群组白名单。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">RemoveGroupAllowList   </td><td class="markdownTableBodyLeft">从群组白名单中移除成员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetGroupAllowListFromServer   </td><td class="markdownTableBodyLeft">从服务器获取群组白名单。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">UpdateGroupAnnouncement   </td><td class="markdownTableBodyLeft">更新群组公告。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetGroupAnnouncementFromServer   </td><td class="markdownTableBodyLeft">从服务器获取群组公告。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">UploadGroupSharedFile   </td><td class="markdownTableBodyLeft">上传群组共享文件。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetGroupFileListFromServer   </td><td class="markdownTableBodyLeft">从服务器获取群组共享文件列表。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">DeleteGroupSharedFile   </td><td class="markdownTableBodyLeft">删除群组共享文件。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">CheckIfInGroupAllowList   </td><td class="markdownTableBodyLeft">获取当前用户是否在群组白名单中。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchMemberAttributes   </td><td class="markdownTableBodyLeft">获取群组成员的自定义属性。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">SetMemberAttributes   </td><td class="markdownTableBodyLeft">设置群组成员的自定义属性。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">DownloadGroupSharedFile   </td><td class="markdownTableBodyLeft">下载群组共享文件。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">FetchMyGroupsCount   </td><td class="markdownTableBodyLeft">获取当前用户加入的群组数量。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">AddGroupManagerDelegate   </td><td class="markdownTableBodyLeft">注册群组变更监听器。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnInvitationReceivedFromGroup   </td><td class="markdownTableBodyLeft">当用户收到群组邀请时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnRequestToJoinReceivedFromGroup   </td><td class="markdownTableBodyLeft">当群主或管理员收到用户的群组请求时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnRequestToJoinAcceptedFromGroup   </td><td class="markdownTableBodyLeft">当群组请求被接受时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnRequestToJoinDeclinedFromGroup   </td><td class="markdownTableBodyLeft">当群组请求被拒绝时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnInvitationAcceptedFromGroup   </td><td class="markdownTableBodyLeft">当群组邀请被接受时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnInvitationDeclinedFromGroup   </td><td class="markdownTableBodyLeft">当群组邀请被拒绝时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnUserRemovedFromGroup   </td><td class="markdownTableBodyLeft">当当前用户被群组管理员移除时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnDestroyedFromGroup   </td><td class="markdownTableBodyLeft">当群组被销毁时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnAutoAcceptInvitationFromGroup   </td><td class="markdownTableBodyLeft">当群组邀请被自动接受时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnMuteListAddedFromGroup   </td><td class="markdownTableBodyLeft">当一个或多个群组成员被禁言时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnMuteListRemovedFromGroup   </td><td class="markdownTableBodyLeft">当一个或多个群组成员被取消禁言时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnAddAllowListMembersFromGroup   </td><td class="markdownTableBodyLeft">当一个或多个群组成员被添加到白名单时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnRemoveAllowListMembersFromGroup   </td><td class="markdownTableBodyLeft">当一个或多个成员从白名单中移除时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnAllMemberMuteChangedFromGroup   </td><td class="markdownTableBodyLeft">当所有群组成员被禁言或取消禁言时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnAdminAddedFromGroup   </td><td class="markdownTableBodyLeft">当成员被设置为管理员时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnAdminRemovedFromGroup   </td><td class="markdownTableBodyLeft">当成员的管理员权限被移除时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnOwnerChangedFromGroup   </td><td class="markdownTableBodyLeft">当群组所有权被转让时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnMemberJoinedFromGroup   </td><td class="markdownTableBodyLeft">当成员加入群组时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnMemberExitedFromGroup   </td><td class="markdownTableBodyLeft">当成员主动离开群组时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnAnnouncementChangedFromGroup   </td><td class="markdownTableBodyLeft">当群组公告被更新时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnSharedFileAddedFromGroup   </td><td class="markdownTableBodyLeft">当群组中添加共享文件时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnSharedFileDeletedFromGroup   </td><td class="markdownTableBodyLeft">当群组中删除共享文件时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnUpdateMemberAttributesFromGroup   </td><td class="markdownTableBodyLeft">当群组成员的自定义属性被更改时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md5"></a>
+聊天室</h2>
+<ul>
+<li><code>RoomManager</code> 类提供聊天室管理的方法，如加入和离开聊天室、获取聊天室列表，以及管理成员权限。</li>
+<li><code>IRoomManagerDelegate</code> 类提供聊天室事件监听。</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">CreateRoom   </td><td class="markdownTableBodyLeft">创建聊天室。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">DestroyRoom   </td><td class="markdownTableBodyLeft">销毁聊天室。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">JoinRoom   </td><td class="markdownTableBodyLeft">加入聊天室。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">LeaveRoom   </td><td class="markdownTableBodyLeft">退出聊天室。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">FetchPublicRoomsFromServer   </td><td class="markdownTableBodyLeft">分页从服务器获取聊天室数据。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchRoomInfoFromServer   </td><td class="markdownTableBodyLeft">从服务器获取聊天室详情。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">ChangeRoomName   </td><td class="markdownTableBodyLeft">更改聊天室名称。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">ChangeRoomDescription   </td><td class="markdownTableBodyLeft">修改聊天室描述。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">FetchRoomMembers   </td><td class="markdownTableBodyLeft">获取聊天室成员列表。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">MuteRoomMembers   </td><td class="markdownTableBodyLeft">禁言聊天室成员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">UnMuteRoomMembers   </td><td class="markdownTableBodyLeft">取消禁言聊天室成员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">AddRoomAdmin   </td><td class="markdownTableBodyLeft">添加聊天室管理员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">RemoveRoomAdmin   </td><td class="markdownTableBodyLeft">移除聊天室管理员的权限。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchRoomMuteList   </td><td class="markdownTableBodyLeft">从服务器获取禁言聊天室成员列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">DeleteRoomMembers   </td><td class="markdownTableBodyLeft">移除聊天室成员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">BlockRoomMembers   </td><td class="markdownTableBodyLeft">将成员添加到聊天室黑名单。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">UnBlockRoomMembers   </td><td class="markdownTableBodyLeft">将成员从聊天室黑名单中移除。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchRoomBlockList   </td><td class="markdownTableBodyLeft">分页获取聊天室黑名单。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">AddAllowListMembers   </td><td class="markdownTableBodyLeft">将成员添加到聊天室白名单。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">RemoveAllowListMembers   </td><td class="markdownTableBodyLeft">从聊天室白名单中移除成员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">MuteAllRoomMembers   </td><td class="markdownTableBodyLeft">禁言所有成员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">UnMuteAllRoomMembers   </td><td class="markdownTableBodyLeft">取消禁言所有成员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">UpdateRoomAnnouncement   </td><td class="markdownTableBodyLeft">更新聊天室公告。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchRoomAnnouncement   </td><td class="markdownTableBodyLeft">从服务器获取聊天室公告。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">AddAttributes   </td><td class="markdownTableBodyLeft">添加自定义聊天室属性。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchAttributes   </td><td class="markdownTableBodyLeft">根据属性键列表获取自定义聊天室属性列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">RemoveAttributes   </td><td class="markdownTableBodyLeft">根据属性键列表移除自定义聊天室属性。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchAllowListFromServer   </td><td class="markdownTableBodyLeft">检查当前成员是否在聊天室黑名单中。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetChatRoom   </td><td class="markdownTableBodyLeft">从内存中获取聊天室详情。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">AddRoomManagerDelegate   </td><td class="markdownTableBodyLeft">添加聊天室事件监听器。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnDestroyedFromRoom   </td><td class="markdownTableBodyLeft">当聊天室被销毁时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnMemberJoinedFromRoom   </td><td class="markdownTableBodyLeft">当有成员加入聊天室时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnMemberExitedFromRoom   </td><td class="markdownTableBodyLeft">当有成员退出聊天室时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnRemovedFromRoom   </td><td class="markdownTableBodyLeft">当有成员被移出聊天室时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnMuteListAddedFromRoom   </td><td class="markdownTableBodyLeft">当聊天室成员被添加到禁言列表时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnMuteListRemovedFromRoom   </td><td class="markdownTableBodyLeft">当聊天室成员从禁言列表中移除时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnAdminAddedFromRoom   </td><td class="markdownTableBodyLeft">当聊天室成员被设为管理员时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnAdminRemovedFromRoom   </td><td class="markdownTableBodyLeft">当聊天室成员从管理员列表中移除时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnOwnerChangedFromRoom   </td><td class="markdownTableBodyLeft">当聊天室所有者变更时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnAnnouncementChangedFromRoom   </td><td class="markdownTableBodyLeft">当聊天室公告变更时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnChatroomAttributesChanged   </td><td class="markdownTableBodyLeft">当自定义聊天室属性更新时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnChatroomAttributesRemoved   </td><td class="markdownTableBodyLeft">当自定义聊天室属性被移除时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnSpecificationChangedFromRoom   </td><td class="markdownTableBodyLeft">当聊天室规格变更时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnAddAllowListMembersFromChatroom   </td><td class="markdownTableBodyLeft">当聊天室成员被添加到白名单时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnRemoveAllowListMembersFromChatroom   </td><td class="markdownTableBodyLeft">当聊天室成员从白名单中移除时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnRemoveFromRoomByOffline   </td><td class="markdownTableBodyLeft">当成员因离线被移出聊天室时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md6"></a>
+用户在线状态订阅</h2>
+<ul>
+<li><code>PresenceManager</code> 类提供管理用户在线状态订阅的方法。</li>
+<li><code>IPresenceManagerDelegate</code> 类提供订阅用户状态变更监听。</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">PublishPresence   </td><td class="markdownTableBodyLeft">发布自定义在线状态。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">SubscribePresences   </td><td class="markdownTableBodyLeft">订阅用户的在线状态。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">UnsubscribePresences   </td><td class="markdownTableBodyLeft">取消订阅用户的在线状态。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchSubscribedMembers   </td><td class="markdownTableBodyLeft">分页获取已订阅在线状态的用户列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">FetchPresenceStatus   </td><td class="markdownTableBodyLeft">获取用户当前的在线状态。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">AddPresenceManagerDelegate   </td><td class="markdownTableBodyLeft">添加监听器。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnPresenceUpdated   </td><td class="markdownTableBodyLeft">当订阅的用户在线状态更新时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md7"></a>
+子区</h2>
+<ul>
+<li><code>ChatThreadManager</code> 类提供了管理子区的方法，包括创建、解散子区以及成员管理。</li>
+<li><code>IChatThreadManagerDelegate</code> 类提供子区事件监听。</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">CreateThread   </td><td class="markdownTableBodyLeft">创建消息线程。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">JoinThread   </td><td class="markdownTableBodyLeft">加入消息线程。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">DestroyThread   </td><td class="markdownTableBodyLeft">销毁消息线程。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">LeaveThread   </td><td class="markdownTableBodyLeft">离开消息线程。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetThreadDetail   </td><td class="markdownTableBodyLeft">从服务器获取消息线程的详细信息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">ChangeThreadName   </td><td class="markdownTableBodyLeft">更改消息线程的名称。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">RemoveThreadMember   </td><td class="markdownTableBodyLeft">从消息线程中移除成员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchThreadMembers   </td><td class="markdownTableBodyLeft">分页获取消息线程中的成员列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">FetchMineJoinedThreadList   </td><td class="markdownTableBodyLeft">分页获取当前用户已加入的消息线程列表。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchThreadListOfGroup   </td><td class="markdownTableBodyLeft">分页获取指定群组中的消息线程列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">GetLastMessageAccordingThreads   </td><td class="markdownTableBodyLeft">从服务器获取指定消息线程中的最后一条回复。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">AddThreadManagerDelegate   </td><td class="markdownTableBodyLeft">添加消息线程事件监听器，监听消息线程的变化，如消息线程的创建和销毁。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnChatThreadCreate   </td><td class="markdownTableBodyLeft">当消息线程被创建时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnChatThreadUpdate   </td><td class="markdownTableBodyLeft">当消息线程被更新时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">OnChatThreadDestroy   </td><td class="markdownTableBodyLeft">当消息线程被销毁时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">OnUserKickOutOfChatThread   </td><td class="markdownTableBodyLeft">当当前用户被消息线程所属群组的群主或管理员移出消息线程时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md8"></a>
+用户属性</h2>
+<ul>
+<li><code>UserInfoManager</code> 类提供了管理用户属性的方法，包括获取和更新用户属性。</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">UpdateOwnInfo   </td><td class="markdownTableBodyLeft">修改当前用户的信息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">FetchUserInfoByUserId   </td><td class="markdownTableBodyLeft">通过用户 ID 获取用户信息。   </td></tr>
+</table>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShengwangChatSDK: AgoraChat.framework/Headers/AgoraChatUserInfo.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ShengwangChatSDK<span id="projectnumber">&#160;1.3.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4df93b2374f7ad7fdd08b057a718ef8e.html">AgoraChat.framework</a></li><li class="navelem"><a class="el" href="dir_d59efb3d46564b237fdd447feffd569d.html">Headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">AgoraChatUserInfo.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//  AgoraChatUserInfo.h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  libHyphenateSDK.a</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//  Created by lixiaoming on 2021/3/17.</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//  Copyright © 2021 easemob.com. All rights reserved.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">typedef</span> NS_ENUM(NSInteger, AgoraChatUserInfoType) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    AgoraChatUserInfoTypeNickName = 0, </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    AgoraChatUserInfoTypeAvatarURL,    </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    AgoraChatUserInfoTypePhone,        </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    AgoraChatUserInfoTypeMail,         </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    AgoraChatUserInfoTypeGender,       </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    AgoraChatUserInfoTypeSign,         </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    AgoraChatUserInfoTypeBirth,        </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    AgoraChatUserInfoTypeExt = 100,    </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="interface_agora_chat_user_info.html">   29</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_agora_chat_user_info.html">AgoraChatUserInfo</a> : NSObject&lt;NSCopying&gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="interface_agora_chat_user_info.html#a6f88211ffd0cbd76d3f93889e483fde3">   34</a></span><span class="keyword">@property</span> (nonatomic,copy) NSString * _Nullable <a class="code hl_property" href="interface_agora_chat_user_info.html#a6f88211ffd0cbd76d3f93889e483fde3">userId</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="interface_agora_chat_user_info.html#a272ccbb2512df96f662fda05e4631b63">   39</a></span><span class="keyword">@property</span> (nonatomic,copy) NSString * _Nullable <a class="code hl_property" href="interface_agora_chat_user_info.html#a272ccbb2512df96f662fda05e4631b63">nickname</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="interface_agora_chat_user_info.html#a0eb7cb54e704ade2029a27d87e57943b">   44</a></span><span class="keyword">@property</span> (nonatomic,copy) NSString * _Nullable <a class="code hl_property" href="interface_agora_chat_user_info.html#a0eb7cb54e704ade2029a27d87e57943b">avatarUrl</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="interface_agora_chat_user_info.html#a8f0def0067ff21a7985cf30d0fbd88c7">   49</a></span><span class="keyword">@property</span> (nonatomic,copy) NSString * _Nullable <a class="code hl_property" href="interface_agora_chat_user_info.html#a8f0def0067ff21a7985cf30d0fbd88c7">mail</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="interface_agora_chat_user_info.html#ab491c6b694f5610056c873fbdbd3f865">   54</a></span><span class="keyword">@property</span> (nonatomic,copy) NSString * _Nullable <a class="code hl_property" href="interface_agora_chat_user_info.html#ab491c6b694f5610056c873fbdbd3f865">phone</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="interface_agora_chat_user_info.html#a77f1b3b4c945758ad59a400223ece24d">   59</a></span><span class="keyword">@property</span> (nonatomic) NSInteger <a class="code hl_property" href="interface_agora_chat_user_info.html#a77f1b3b4c945758ad59a400223ece24d">gender</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="interface_agora_chat_user_info.html#ae24455d5c7c2b39d49ec8356faba2a0f">   64</a></span><span class="keyword">@property</span> (nonatomic,copy) NSString* _Nullable <a class="code hl_property" href="interface_agora_chat_user_info.html#ae24455d5c7c2b39d49ec8356faba2a0f">sign</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="interface_agora_chat_user_info.html#a3a6ba1221a403debb71521327f9e0fa0">   69</a></span><span class="keyword">@property</span> (nonatomic,copy) NSString* _Nullable <a class="code hl_property" href="interface_agora_chat_user_info.html#a3a6ba1221a403debb71521327f9e0fa0">birth</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="interface_agora_chat_user_info.html#ab3cd8b48c57c65beb6360563ef13518e">   74</a></span><span class="keyword">@property</span> (nonatomic,copy) NSString * _Nullable <a class="code hl_property" href="interface_agora_chat_user_info.html#ab3cd8b48c57c65beb6360563ef13518e">ext</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">@end</span></div>
+<div class="ttc" id="ainterface_agora_chat_user_info_html"><div class="ttname"><a href="interface_agora_chat_user_info.html">AgoraChatUserInfo</a></div><div class="ttdef"><b>Definition:</b> AgoraChatUserInfo.h:29</div></div>
+<div class="ttc" id="ainterface_agora_chat_user_info_html_a0eb7cb54e704ade2029a27d87e57943b"><div class="ttname"><a href="interface_agora_chat_user_info.html#a0eb7cb54e704ade2029a27d87e57943b">AgoraChatUserInfo::avatarUrl</a></div><div class="ttdeci">NSString *_Nullable avatarUrl</div><div class="ttdef"><b>Definition:</b> AgoraChatUserInfo.h:44</div></div>
+<div class="ttc" id="ainterface_agora_chat_user_info_html_a272ccbb2512df96f662fda05e4631b63"><div class="ttname"><a href="interface_agora_chat_user_info.html#a272ccbb2512df96f662fda05e4631b63">AgoraChatUserInfo::nickname</a></div><div class="ttdeci">NSString *_Nullable nickname</div><div class="ttdef"><b>Definition:</b> AgoraChatUserInfo.h:39</div></div>
+<div class="ttc" id="ainterface_agora_chat_user_info_html_a3a6ba1221a403debb71521327f9e0fa0"><div class="ttname"><a href="interface_agora_chat_user_info.html#a3a6ba1221a403debb71521327f9e0fa0">AgoraChatUserInfo::birth</a></div><div class="ttdeci">NSString *_Nullable birth</div><div class="ttdef"><b>Definition:</b> AgoraChatUserInfo.h:69</div></div>
+<div class="ttc" id="ainterface_agora_chat_user_info_html_a6f88211ffd0cbd76d3f93889e483fde3"><div class="ttname"><a href="interface_agora_chat_user_info.html#a6f88211ffd0cbd76d3f93889e483fde3">AgoraChatUserInfo::userId</a></div><div class="ttdeci">NSString *_Nullable userId</div><div class="ttdef"><b>Definition:</b> AgoraChatUserInfo.h:34</div></div>
+<div class="ttc" id="ainterface_agora_chat_user_info_html_a77f1b3b4c945758ad59a400223ece24d"><div class="ttname"><a href="interface_agora_chat_user_info.html#a77f1b3b4c945758ad59a400223ece24d">AgoraChatUserInfo::gender</a></div><div class="ttdeci">NSInteger gender</div><div class="ttdef"><b>Definition:</b> AgoraChatUserInfo.h:59</div></div>
+<div class="ttc" id="ainterface_agora_chat_user_info_html_a8f0def0067ff21a7985cf30d0fbd88c7"><div class="ttname"><a href="interface_agora_chat_user_info.html#a8f0def0067ff21a7985cf30d0fbd88c7">AgoraChatUserInfo::mail</a></div><div class="ttdeci">NSString *_Nullable mail</div><div class="ttdef"><b>Definition:</b> AgoraChatUserInfo.h:49</div></div>
+<div class="ttc" id="ainterface_agora_chat_user_info_html_ab3cd8b48c57c65beb6360563ef13518e"><div class="ttname"><a href="interface_agora_chat_user_info.html#ab3cd8b48c57c65beb6360563ef13518e">AgoraChatUserInfo::ext</a></div><div class="ttdeci">NSString *_Nullable ext</div><div class="ttdef"><b>Definition:</b> AgoraChatUserInfo.h:74</div></div>
+<div class="ttc" id="ainterface_agora_chat_user_info_html_ab491c6b694f5610056c873fbdbd3f865"><div class="ttname"><a href="interface_agora_chat_user_info.html#ab491c6b694f5610056c873fbdbd3f865">AgoraChatUserInfo::phone</a></div><div class="ttdeci">NSString *_Nullable phone</div><div class="ttdef"><b>Definition:</b> AgoraChatUserInfo.h:54</div></div>
+<div class="ttc" id="ainterface_agora_chat_user_info_html_ae24455d5c7c2b39d49ec8356faba2a0f"><div class="ttname"><a href="interface_agora_chat_user_info.html#ae24455d5c7c2b39d49ec8356faba2a0f">AgoraChatUserInfo::sign</a></div><div class="ttdeci">NSString *_Nullable sign</div><div class="ttdef"><b>Definition:</b> AgoraChatUserInfo.h:64</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

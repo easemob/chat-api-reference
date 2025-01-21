@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShengwangChatSDK: &lt;IAgoraChatStatisticsManager&gt;协议 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ShengwangChatSDK<span id="projectnumber">&#160;1.3.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">构造函数</a> &#124;
+<a href="protocol_i_agora_chat_statistics_manager-p-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">&lt;IAgoraChatStatisticsManager&gt;协议 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#import &lt;<a class="el" href="_i_agora_chat_statistics_manager_8h_source.html">IAgoraChatStatisticsManager.h</a>&gt;</code></p>
+<div class="dynheader">
+类 &lt;IAgoraChatStatisticsManager&gt; 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="protocol_i_agora_chat_statistics_manager-p.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+构造函数</h2></td></tr>
+<tr class="memitem:a1b76d1b2490ae190ed7715e9fd1e97c0"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_agora_chat_message_statistics.html">AgoraChatMessageStatistics</a> *_Nullable)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_agora_chat_statistics_manager-p.html#a1b76d1b2490ae190ed7715e9fd1e97c0">getMessageStatisticsById:</a></td></tr>
+<tr class="separator:a1b76d1b2490ae190ed7715e9fd1e97c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc3e770da69c7341e02bfc61a80b9f6"><td class="memItemLeft" align="right" valign="top">(NSInteger)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_agora_chat_statistics_manager-p.html#abbc3e770da69c7341e02bfc61a80b9f6">getMessageCountWithStart:end:direction:type:</a></td></tr>
+<tr class="separator:abbc3e770da69c7341e02bfc61a80b9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b945da55ca207c9f37b3422f31e6673"><td class="memItemLeft" align="right" valign="top">(NSInteger)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_i_agora_chat_statistics_manager-p.html#a3b945da55ca207c9f37b3422f31e6673">getMessageStatisticsSizeWithStart:end:direction:type:</a></td></tr>
+<tr class="separator:a3b945da55ca207c9f37b3422f31e6673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >The protocol that defines statistical operations of message traffic.</p>
+<p >This protocol contains methods that are used to calculate the number of local messages of certain types sent and/or received in a specified period, as well as their traffic.</p>
+<p >This traffic statistics function is disabled by default. To use this function, you need to enable it by setting <code><a class="el" href="interface_agora_chat_options.html#a26ff8acc043c0bdd84a4ae52807bf9a0">AgoraChatOptions#enableStatistics</a></code> prior to the SDK initialization. The SDK can collect statistics of messages that are sent and received after this function is enabled.</p>
+<p >The SDK only calculates the traffic of messages that are sent and received within the last 30 days after the traffic statistics function is enabled.</p>
+<p >The message traffic is calculated as follows:</p><ul>
+<li>For a text, command, location or custom message, the message traffic is the traffic of the message body.</li>
+<li>For an image or video message, the message traffic is the traffic sum of the message body, the image or video file, and the thumbnail.</li>
+<li>For a file or voice message, the message traffic is the traffic sum of the message body and the attachment.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd><ol type="1">
+<li>For messages with attachments, the traffic will be calculated only if the download is successful. If an attachment is downloaded multiple times, its download traffic will be accumulated.</li>
+<li>For roaming messages pulled from the server, if they already exist in the local database, the SDK ignores them during traffic calculation.</li>
+</ol>
+</dd></dl>
+<p>The SDK only measures the traffic of local messages, but not the actual message traffic. Generally, the calculated traffic volume is smaller than the actual traffic because of the following:</p><ul>
+<li>The traffic of the common protocol data generated during message sending is not considered;</li>
+<li>For the received messages, the server aggregates them and adds common fields. During traffic statistics, the SDK only calculates the traffic of individual messages, but ignoring the traffic of common fields. </li>
+</ul>
+</div><h2 class="groupheader">函数文档</h2>
+<a id="abbc3e770da69c7341e02bfc61a80b9f6" name="abbc3e770da69c7341e02bfc61a80b9f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc3e770da69c7341e02bfc61a80b9f6">&#9670;&nbsp;</a></span>getMessageCountWithStart:end:direction:type:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSInteger) getMessageCountWithStart: </td>
+          <td></td>
+          <td class="paramtype">(NSInteger)&#160;</td>
+          <td class="paramname"><em>startTimestamp</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">end:</td>
+          <td></td>
+          <td class="paramtype">(NSInteger)&#160;</td>
+          <td class="paramname"><em>endTimestamp</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">direction:</td>
+          <td></td>
+          <td class="paramtype">(AgoraChatMessageStatisticsDirection)&#160;</td>
+          <td class="paramname"><em>direction</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">type:</td>
+          <td></td>
+          <td class="paramtype">(AgoraChatMessageStatisticsType)&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Gets the count of messages of certain types that are sent and/or received in a specified period.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startTimestamp</td><td>The starting timestamp for statistics. The unit is millisecond. </td></tr>
+    <tr><td class="paramname">endTimestamp</td><td>The ending timestamp for statistics. The unit is millisecond. </td></tr>
+    <tr><td class="paramname">direction</td><td>The message direction. </td></tr>
+    <tr><td class="paramname">type</td><td>The message type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The count of messages that meet the statistical conditions. <code>0</code> is returned in the case of a call failure. </dd></dl>
+
+</div>
+</div>
+<a id="a1b76d1b2490ae190ed7715e9fd1e97c0" name="a1b76d1b2490ae190ed7715e9fd1e97c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b76d1b2490ae190ed7715e9fd1e97c0">&#9670;&nbsp;</a></span>getMessageStatisticsById:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_agora_chat_message_statistics.html">AgoraChatMessageStatistics</a> *_Nullable) getMessageStatisticsById: </td>
+          <td></td>
+          <td class="paramtype">(NSString *_Nonnull)&#160;</td>
+          <td class="paramname"><em>messageId</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Gets the message traffic statistics by message ID.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messageId</td><td>The message ID. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The message traffic statistics. </dd></dl>
+
+</div>
+</div>
+<a id="a3b945da55ca207c9f37b3422f31e6673" name="a3b945da55ca207c9f37b3422f31e6673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b945da55ca207c9f37b3422f31e6673">&#9670;&nbsp;</a></span>getMessageStatisticsSizeWithStart:end:direction:type:</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSInteger) getMessageStatisticsSizeWithStart: </td>
+          <td></td>
+          <td class="paramtype">(NSInteger)&#160;</td>
+          <td class="paramname"><em>startTimestamp</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">end:</td>
+          <td></td>
+          <td class="paramtype">(NSInteger)&#160;</td>
+          <td class="paramname"><em>endTimestamp</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">direction:</td>
+          <td></td>
+          <td class="paramtype">(AgoraChatMessageStatisticsDirection)&#160;</td>
+          <td class="paramname"><em>direction</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">type:</td>
+          <td></td>
+          <td class="paramtype">(AgoraChatMessageStatisticsType)&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">required</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Gets the total traffic amount of messages that meet the statistical conditions.</p>
+<p >The traffic is measured in bytes.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startTimestamp</td><td>The starting timestamp for statistics. The unit is millisecond. </td></tr>
+    <tr><td class="paramname">endTimestamp</td><td>The ending timestamp for statistics. The unit is millisecond. </td></tr>
+    <tr><td class="paramname">direction</td><td>The message direction. </td></tr>
+    <tr><td class="paramname">type</td><td>The message type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>The total traffic amount of messages that meet the statistical conditions. <code>0</code> is returned in the case of a call failure. </dd></dl>
+
+</div>
+</div>
+<hr/>该协议的文档由以下文件生成:<ul>
+<li>AgoraChat.framework/Headers/<a class="el" href="_i_agora_chat_statistics_manager_8h_source.html">IAgoraChatStatisticsManager.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

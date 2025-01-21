@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShengwangChatSDK: AgoraChat.framework/Headers/AgoraChatGroupManagerDelegate.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ShengwangChatSDK<span id="projectnumber">&#160;1.3.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4df93b2374f7ad7fdd08b057a718ef8e.html">AgoraChat.framework</a></li><li class="navelem"><a class="el" href="dir_d59efb3d46564b237fdd447feffd569d.html">Headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">AgoraChatGroupManagerDelegate.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="protocol_agora_chat_group_manager_delegate-p.html#a168bfa052e7ca445f3a491cd9f416bb8">   15</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, AgoraChatGroupLeaveReason) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    AgoraChatGroupLeaveReasonBeRemoved = 0,    </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    AgoraChatGroupLeaveReasonUserLeave,        </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    AgoraChatGroupLeaveReasonDestroyed,        </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">@class</span> <a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">@class</span> <a class="code hl_interface" href="interface_agora_chat_group_shared_file.html">AgoraChatGroupSharedFile</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="protocol_agora_chat_group_manager_delegate-p.html">   28</a></span><span class="keyword">@protocol </span><a class="code hl_protocol" href="protocol_agora_chat_group_manager_delegate-p.html">AgoraChatGroupManagerDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">@optional</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>- (void)groupInvitationDidReceive:(NSString *_Nonnull)aGroupId</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                        groupName:(NSString *_Nonnull)aGroupName</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                          inviter:(NSString *_Nonnull)aInviter</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                          message:(NSString *_Nullable)aMessage;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>- (void)groupInvitationDidAccept:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                         invitee:(NSString *_Nonnull)aInvitee;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>- (void)groupInvitationDidDecline:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                          invitee:(NSString *_Nonnull)aInvitee</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                           reason:(NSString *_Nullable)aReason;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>- (void)didJoinGroup:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>             inviter:(NSString *_Nonnull)aInviter</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>             message:(NSString *_Nullable)aMessage;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>- (void)didLeaveGroup:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>               reason:(AgoraChatGroupLeaveReason)aReason;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>- (void)joinGroupRequestDidReceive:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                              user:(NSString *_Nonnull)aUsername</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                            reason:(NSString *_Nullable)aReason;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>- (void)joinGroupRequestDidDecline:(NSString *_Nonnull)aGroupId</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                            reason:(NSString *_Nullable)aReason</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                         applicant:(NSString* _Nonnull )aApplicant;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>- (void)joinGroupRequestDidDecline:(NSString *_Nonnull)aGroupId</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                            reason:(NSString *_Nullable)aReason</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                          decliner:(NSString *_Nullable)aDecliner</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                         applicant:(NSString* _Nonnull )aApplicant;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>- (void)joinGroupRequestDidApprove:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>- (void)groupListDidUpdate:(NSArray&lt;<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *&gt; *_Nonnull)aGroupList;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>- (void)groupMuteListDidUpdate:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>             addedMutedMembers:(NSArray&lt;NSString *&gt; *_Nonnull)aMutedMembers</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                    muteExpire:(NSInteger)aMuteExpire;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>- (void)groupMuteListDidUpdate:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>           removedMutedMembers:(NSArray&lt;NSString *&gt; *_Nonnull)aMutedMembers;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>- (void)groupWhiteListDidUpdate:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>          addedWhiteListMembers:(NSArray&lt;NSString *&gt; *_Nonnull)aMembers;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>- (void)groupWhiteListDidUpdate:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        removedWhiteListMembers:(NSArray&lt;NSString *&gt; *_Nonnull)aMembers;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>- (void)groupAllMemberMuteChanged:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                 isAllMemberMuted:(BOOL)aMuted;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>- (void)groupAdminListDidUpdate:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                     addedAdmin:(NSString *_Nonnull)aAdmin;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>- (void)groupAdminListDidUpdate:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                   removedAdmin:(NSString *_Nonnull)aAdmin;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>- (void)groupOwnerDidUpdate:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                   newOwner:(NSString *_Nonnull)aNewOwner</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>                   oldOwner:(NSString *_Nonnull)aOldOwner;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>- (void)userDidJoinGroup:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                    user:(NSString *_Nonnull)aUsername;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>- (void)userDidLeaveGroup:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>                     user:(NSString *_Nonnull)aUsername;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>- (void)groupAnnouncementDidUpdate:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                      announcement:(NSString *_Nullable)aAnnouncement;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>- (void)groupFileListDidUpdate:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>               addedSharedFile:(<a class="code hl_interface" href="interface_agora_chat_group_shared_file.html">AgoraChatGroupSharedFile</a> *_Nonnull)aSharedFile;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>- (void)groupFileListDidUpdate:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *_Nonnull)aGroup</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>             removedSharedFile:(NSString *_Nonnull)aFileId;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> - (void)groupStateChanged:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *)aGroup</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                isDisabled:(BOOL)aDisabled;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>- (void)groupSpecificationDidUpdate:(<a class="code hl_interface" href="interface_agora_chat_group.html">AgoraChatGroup</a> *)aGroup;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>- (void)onAttributesChangedOfGroupMember:(NSString *_Nonnull)groupId userId:(NSString *_Nonnull)userId attributes:(NSDictionary &lt;NSString*,NSString*&gt;*_Nullable)attributes operatorId:(NSString *_Nonnull)operatorId;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="preprocessor">#pragma mark - Deprecated methods</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>- (void)joinGroupRequestDidDecline:(NSString *_Nonnull)aGroupId</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                            reason:(NSString *_Nullable)aReason EM_DEPRECATED_IOS(3_1_0, 4_2_0, &quot;Use -joinGroupRequestDidDecline:reason:applicant: instead&quot;);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="keyword">@end</span></div>
+<div class="ttc" id="ainterface_agora_chat_group_html"><div class="ttname"><a href="interface_agora_chat_group.html">AgoraChatGroup</a></div><div class="ttdef"><b>Definition:</b> AgoraChatGroup.h:31</div></div>
+<div class="ttc" id="ainterface_agora_chat_group_shared_file_html"><div class="ttname"><a href="interface_agora_chat_group_shared_file.html">AgoraChatGroupSharedFile</a></div><div class="ttdef"><b>Definition:</b> AgoraChatGroupSharedFile.h:15</div></div>
+<div class="ttc" id="aprotocol_agora_chat_group_manager_delegate-p_html"><div class="ttname"><a href="protocol_agora_chat_group_manager_delegate-p.html">AgoraChatGroupManagerDelegate-p</a></div><div class="ttdef"><b>Definition:</b> AgoraChatGroupManagerDelegate.h:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

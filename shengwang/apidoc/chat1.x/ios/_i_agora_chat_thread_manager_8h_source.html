@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShengwangChatSDK: AgoraChat.framework/Headers/IAgoraChatThreadManager.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ShengwangChatSDK<span id="projectnumber">&#160;1.3.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4df93b2374f7ad7fdd08b057a718ef8e.html">AgoraChat.framework</a></li><li class="navelem"><a class="el" href="dir_d59efb3d46564b237fdd447feffd569d.html">Headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">IAgoraChatThreadManager.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//  IAgoraChatThreadManager.h</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  AgoraChat</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//  Created by 朱继超 on 2022/3/1.</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//  Copyright © 2022 easemob.com. All rights reserved.</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#import &quot;AgoraChatThreadManagerDelegate.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#import &quot;AgoraChatThread.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#import &quot;AgoraChatCursorResult.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">@class</span> <a class="code hl_interface" href="interface_agora_chat_message.html">AgoraChatMessage</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>NS_ASSUME_NONNULL_BEGIN</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="protocol_i_agora_chat_thread_manager-p.html">   15</a></span><span class="keyword">@protocol </span><a class="code hl_protocol" href="protocol_i_agora_chat_thread_manager-p.html">IAgoraChatThreadManager</a> &lt;NSObject&gt;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">@required</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#pragma mark - Delegate</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>- (void)addDelegate:(<span class="keywordtype">id</span>&lt;<a class="code hl_protocol" href="protocol_agora_chat_thread_manager_delegate-p.html">AgoraChatThreadManagerDelegate</a>&gt;)aDelegate</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      delegateQueue:(_Nullable dispatch_queue_t)aQueue;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>- (void)removeDelegate:(<span class="keywordtype">id</span>&lt;<a class="code hl_protocol" href="protocol_agora_chat_thread_manager_delegate-p.html">AgoraChatThreadManagerDelegate</a>&gt;)aDelegate;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#pragma mark - Get Thread</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>- (void)getChatThreadFromSever:(NSString *)threadId completion:(<span class="keywordtype">void</span> (^)(<a class="code hl_interface" href="interface_agora_chat_thread.html">AgoraChatThread</a> *_Nullable  thread, <a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> * _Nullable aError))aCompletionBlock;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>- (void)getJoinedChatThreadsFromServerWithCursor:(NSString *)aCursor</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                                 pageSize:(NSInteger)aPageSize</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                               completion:(<span class="keywordtype">void</span> (^)(<a class="code hl_interface" href="interface_agora_chat_cursor_result.html">AgoraChatCursorResult</a>&lt;<a class="code hl_interface" href="interface_agora_chat_thread.html">AgoraChatThread</a>*&gt;* _Nullable result, <a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> * _Nullable aError))aCompletionBlock;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>- (void)getChatThreadsFromServerWithParentId:(NSString *)parentId cursor:(NSString *)aCursor pageSize:(NSInteger)aPageSize completion:(<span class="keywordtype">void</span> (^)(<a class="code hl_interface" href="interface_agora_chat_cursor_result.html">AgoraChatCursorResult</a>&lt;<a class="code hl_interface" href="interface_agora_chat_thread.html">AgoraChatThread</a>*&gt; * _Nullable result, <a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> * _Nullable aError))aCompletionBlock;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>- (void)getJoinedChatThreadsFromServerWithParentId:(NSString *)parentId cursor:(NSString *)aCursor pageSize:(NSInteger)aPageSize completion:(<span class="keywordtype">void</span> (^)(<a class="code hl_interface" href="interface_agora_chat_cursor_result.html">AgoraChatCursorResult</a>&lt;<a class="code hl_interface" href="interface_agora_chat_thread.html">AgoraChatThread</a>*&gt; * _Nullable result, <a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> * _Nullable aError))aCompletionBlock;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>- (void)getChatThreadMemberListFromServerWithId:(NSString *)threadId cursor:(NSString *)aCursor pageSize:(NSInteger)pageSize completion:(<span class="keywordtype">void</span> (^)(<a class="code hl_interface" href="interface_agora_chat_cursor_result.html">AgoraChatCursorResult</a>&lt;NSString*&gt; * _Nullable aResult, <a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> * _Nullable aError))aCompletionBlock;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>- (void)getLastMessageFromSeverWithChatThreads:(NSArray &lt;NSString *&gt;*)threadIds completion:(<span class="keywordtype">void</span> (^)(NSDictionary&lt;NSString*,<a class="code hl_interface" href="interface_agora_chat_message.html">AgoraChatMessage</a>*&gt;* _Nullable messageMap, <a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> * _Nullable aError))aCompletionBlock;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>- (void)removeMemberFromChatThread:(NSString *)aUser</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>             threadId:(NSString *)athreadId</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>           completion:(<span class="keywordtype">void</span> (^)(<a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> * _Nullable aError))aCompletionBlock;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>- (void)updateChatThreadName:(NSString *)name</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                  threadId:(NSString *)athreadId</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                 completion:(<span class="keywordtype">void</span> (^)(<a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> * _Nullable aError))aCompletionBlock;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>- (void)createChatThread:(NSString *)threadName messageId:(NSString *)messageId parentId:(NSString *)parentId completion:(<span class="keywordtype">void</span> (^)(<a class="code hl_interface" href="interface_agora_chat_thread.html">AgoraChatThread</a> *_Nullable  thread,<a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> * _Nullable aError))aCompletionBlock;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>- (void)joinChatThread:(NSString *)threadId completion:(<span class="keywordtype">void</span> (^)(<a class="code hl_interface" href="interface_agora_chat_thread.html">AgoraChatThread</a> *_Nullable  thread,<a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> * _Nullable aError))aCompletionBlock;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>- (void)leaveChatThread:(NSString *)athreadId completion:(<span class="keywordtype">void</span> (^)(<a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> * _Nullable aError))aCompletionBlock;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>- (void)destroyChatThread:(NSString *)athreadId completion:(<span class="keywordtype">void</span> (^)(<a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> * _Nullable aError))aCompletionBlock;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keyword">@end</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="protocol_i_agora_chat_thread_manager-p.html#af6c0965d7618c8990334976a4deebbd2">  146</a></span>NS_ASSUME_NONNULL_END</div>
+<div class="ttc" id="ainterface_agora_chat_cursor_result_html"><div class="ttname"><a href="interface_agora_chat_cursor_result.html">AgoraChatCursorResult</a></div><div class="ttdef"><b>Definition:</b> AgoraChatCursorResult.h:16</div></div>
+<div class="ttc" id="ainterface_agora_chat_error_html"><div class="ttname"><a href="interface_agora_chat_error.html">AgoraChatError</a></div><div class="ttdef"><b>Definition:</b> AgoraChatError.h:18</div></div>
+<div class="ttc" id="ainterface_agora_chat_message_html"><div class="ttname"><a href="interface_agora_chat_message.html">AgoraChatMessage</a></div><div class="ttdef"><b>Definition:</b> AgoraChatMessage.h:87</div></div>
+<div class="ttc" id="ainterface_agora_chat_thread_html"><div class="ttname"><a href="interface_agora_chat_thread.html">AgoraChatThread</a></div><div class="ttdef"><b>Definition:</b> AgoraChatThread.h:19</div></div>
+<div class="ttc" id="aprotocol_agora_chat_thread_manager_delegate-p_html"><div class="ttname"><a href="protocol_agora_chat_thread_manager_delegate-p.html">AgoraChatThreadManagerDelegate-p</a></div><div class="ttdef"><b>Definition:</b> AgoraChatThreadManagerDelegate.h:18</div></div>
+<div class="ttc" id="aprotocol_i_agora_chat_thread_manager-p_html"><div class="ttname"><a href="protocol_i_agora_chat_thread_manager-p.html">IAgoraChatThreadManager-p</a></div><div class="ttdef"><b>Definition:</b> IAgoraChatThreadManager.h:15</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShengwangChatSDK: AgoraChat.framework/Headers/AgoraChatroom.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ShengwangChatSDK<span id="projectnumber">&#160;1.3.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4df93b2374f7ad7fdd08b057a718ef8e.html">AgoraChat.framework</a></li><li class="navelem"><a class="el" href="dir_d59efb3d46564b237fdd447feffd569d.html">Headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">AgoraChatroom.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#import &quot;AgoraChatCommonDefs.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">typedef</span> NS_ENUM(NSInteger, AgoraChatroomPermissionType) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    AgoraChatroomPermissionTypeNone   = -1,    </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    AgoraChatroomPermissionTypeMember = 0,     </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    AgoraChatroomPermissionTypeAdmin,          </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    AgoraChatroomPermissionTypeOwner,          </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html">   29</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_agora_chatroom.html">AgoraChatroom</a> : NSObject</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#a27fd1d0e400bb0cbfba74fa32b60ef06">   35</a></span><span class="keyword">@property</span> (nonatomic, copy, readonly) NSString * _Nullable <a class="code hl_property" href="interface_agora_chatroom.html#a27fd1d0e400bb0cbfba74fa32b60ef06">chatroomId</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#abbbc6639e6cf689cb124d7e68bab1e38">   41</a></span><span class="keyword">@property</span> (nonatomic, copy, readonly) NSString * _Nullable <a class="code hl_property" href="interface_agora_chatroom.html#abbbc6639e6cf689cb124d7e68bab1e38">subject</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#a3ea3ce69fa0ceeb4ca0faac12bf3513a">   47</a></span><span class="keyword">@property</span> (nonatomic, copy, readonly) NSString * _Nullable <a class="code hl_property" href="interface_agora_chatroom.html#a3ea3ce69fa0ceeb4ca0faac12bf3513a">description</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#ac5cf6df4b21c60ba4c724c656cd23fa4">   53</a></span><span class="keyword">@property</span> (nonatomic, copy, readonly) NSString * _Nullable <a class="code hl_property" href="interface_agora_chatroom.html#ac5cf6df4b21c60ba4c724c656cd23fa4">owner</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#aeba619e7a3f7ed7bcbdbaa005677cafc">   59</a></span><span class="keyword">@property</span> (nonatomic, copy, readonly) NSString * _Nullable <a class="code hl_property" href="interface_agora_chatroom.html#aeba619e7a3f7ed7bcbdbaa005677cafc">announcement</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#ad25e767fec83d412be9ba5036648b9af">   66</a></span><span class="keyword">@property</span> (nonatomic, copy, readonly) NSArray&lt;NSString *&gt; * _Nullable <a class="code hl_property" href="interface_agora_chatroom.html#ad25e767fec83d412be9ba5036648b9af">adminList</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#ac98bb6ec968f3090c0b074bb3233a3cd">   72</a></span><span class="keyword">@property</span> (nonatomic, copy, readonly) NSArray&lt;NSString *&gt; * _Nullable <a class="code hl_property" href="interface_agora_chatroom.html#ac98bb6ec968f3090c0b074bb3233a3cd">memberList</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#a431f3f75f2c42e9a82bb31706e474774">   80</a></span><span class="keyword">@property</span> (nonatomic, strong, readonly) NSArray&lt;NSString *&gt; * _Nullable <a class="code hl_property" href="interface_agora_chatroom.html#a431f3f75f2c42e9a82bb31706e474774">blacklist</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#a529ace92c2acf17c487348ee279ab19b">   88</a></span><span class="keyword">@property</span> (nonatomic, strong, readonly) NSDictionary&lt;NSString *, NSNumber*&gt; * _Nullable <a class="code hl_property" href="interface_agora_chatroom.html#a529ace92c2acf17c487348ee279ab19b">muteMembers</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#a63a6112e98a46c8a74319c79202325bc">   96</a></span><span class="keyword">@property</span> (nonatomic, strong, readonly) NSArray&lt;NSString *&gt; * _Nullable <a class="code hl_property" href="interface_agora_chatroom.html#a63a6112e98a46c8a74319c79202325bc">whitelist</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#a01ee0115d48b5ad6b0ab423235e08e23">  102</a></span><span class="keyword">@property</span> (nonatomic, readonly) AgoraChatroomPermissionType <a class="code hl_property" href="interface_agora_chatroom.html#a01ee0115d48b5ad6b0ab423235e08e23">permissionType</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#a5cacbe5c1f021553557d9e6260049d8a">  108</a></span><span class="keyword">@property</span> (nonatomic, readonly) NSInteger <a class="code hl_property" href="interface_agora_chatroom.html#a5cacbe5c1f021553557d9e6260049d8a">maxOccupantsCount</a>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#a821dcc4bece56cb2af3aea9144ad3025">  117</a></span><span class="keyword">@property</span> (nonatomic, readonly) NSInteger <a class="code hl_property" href="interface_agora_chatroom.html#a821dcc4bece56cb2af3aea9144ad3025">occupantsCount</a>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#a4768769d53c4a1f29e7217fe2fb0659a">  124</a></span><span class="keyword">@property</span> (nonatomic, readonly) BOOL <a class="code hl_property" href="interface_agora_chatroom.html#a4768769d53c4a1f29e7217fe2fb0659a">isMuteAllMembers</a>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#a43696e9963fe95df3c1790016f7015cb">  131</a></span><span class="keyword">@property</span> (nonatomic,readonly) NSInteger <a class="code hl_property" href="interface_agora_chatroom.html#a43696e9963fe95df3c1790016f7015cb">createTimestamp</a>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#a54c6fd87dc7561afb34623a0f3131a1d">  141</a></span><span class="keyword">@property</span> (nonatomic,readonly) BOOL <a class="code hl_property" href="interface_agora_chatroom.html#a54c6fd87dc7561afb34623a0f3131a1d">isInWhitelist</a>;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#a1b417bd981fd0038a9978f6c6e7a6a05">  153</a></span><span class="keyword">@property</span> (nonatomic,readonly) NSInteger <a class="code hl_property" href="interface_agora_chatroom.html#a8c6de824ad06847bfa2d74f451716a7d">muteExpireTimestamp</a>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>+ (instancetype _Nullable)chatroomWithId:(NSString * _Nonnull )aChatroomId;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="interface_agora_chatroom.html#ab67cba6e2983ab36078f0079e6a9722c">  171</a></span><span class="keyword">@property</span> (nonatomic, strong, readonly) NSArray&lt;NSString *&gt; * _Nullable muteList <a class="code hl_function" href="interface_agora_chatroom.html#ab67cba6e2983ab36078f0079e6a9722c">__deprecated_msg</a>(<span class="stringliteral">&quot;Use muteMembers instead&quot;</span>);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keyword">@end</span></div>
+<div class="ttc" id="ainterface_agora_chatroom_html"><div class="ttname"><a href="interface_agora_chatroom.html">AgoraChatroom</a></div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:30</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_a01ee0115d48b5ad6b0ab423235e08e23"><div class="ttname"><a href="interface_agora_chatroom.html#a01ee0115d48b5ad6b0ab423235e08e23">AgoraChatroom::permissionType</a></div><div class="ttdeci">AgoraChatroomPermissionType permissionType</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:102</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_a27fd1d0e400bb0cbfba74fa32b60ef06"><div class="ttname"><a href="interface_agora_chatroom.html#a27fd1d0e400bb0cbfba74fa32b60ef06">AgoraChatroom::chatroomId</a></div><div class="ttdeci">NSString *_Nullable chatroomId</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:35</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_a3ea3ce69fa0ceeb4ca0faac12bf3513a"><div class="ttname"><a href="interface_agora_chatroom.html#a3ea3ce69fa0ceeb4ca0faac12bf3513a">AgoraChatroom::description</a></div><div class="ttdeci">NSString *_Nullable description</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:47</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_a431f3f75f2c42e9a82bb31706e474774"><div class="ttname"><a href="interface_agora_chatroom.html#a431f3f75f2c42e9a82bb31706e474774">AgoraChatroom::blacklist</a></div><div class="ttdeci">NSArray&lt; NSString * &gt; *_Nullable blacklist</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:80</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_a43696e9963fe95df3c1790016f7015cb"><div class="ttname"><a href="interface_agora_chatroom.html#a43696e9963fe95df3c1790016f7015cb">AgoraChatroom::createTimestamp</a></div><div class="ttdeci">NSInteger createTimestamp</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:131</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_a4768769d53c4a1f29e7217fe2fb0659a"><div class="ttname"><a href="interface_agora_chatroom.html#a4768769d53c4a1f29e7217fe2fb0659a">AgoraChatroom::isMuteAllMembers</a></div><div class="ttdeci">BOOL isMuteAllMembers</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:124</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_a529ace92c2acf17c487348ee279ab19b"><div class="ttname"><a href="interface_agora_chatroom.html#a529ace92c2acf17c487348ee279ab19b">AgoraChatroom::muteMembers</a></div><div class="ttdeci">NSDictionary&lt; NSString *, NSNumber * &gt; *_Nullable muteMembers</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:88</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_a54c6fd87dc7561afb34623a0f3131a1d"><div class="ttname"><a href="interface_agora_chatroom.html#a54c6fd87dc7561afb34623a0f3131a1d">AgoraChatroom::isInWhitelist</a></div><div class="ttdeci">BOOL isInWhitelist</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:141</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_a5cacbe5c1f021553557d9e6260049d8a"><div class="ttname"><a href="interface_agora_chatroom.html#a5cacbe5c1f021553557d9e6260049d8a">AgoraChatroom::maxOccupantsCount</a></div><div class="ttdeci">NSInteger maxOccupantsCount</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:108</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_a63a6112e98a46c8a74319c79202325bc"><div class="ttname"><a href="interface_agora_chatroom.html#a63a6112e98a46c8a74319c79202325bc">AgoraChatroom::whitelist</a></div><div class="ttdeci">NSArray&lt; NSString * &gt; *_Nullable whitelist</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:96</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_a821dcc4bece56cb2af3aea9144ad3025"><div class="ttname"><a href="interface_agora_chatroom.html#a821dcc4bece56cb2af3aea9144ad3025">AgoraChatroom::occupantsCount</a></div><div class="ttdeci">NSInteger occupantsCount</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:117</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_a8c6de824ad06847bfa2d74f451716a7d"><div class="ttname"><a href="interface_agora_chatroom.html#a8c6de824ad06847bfa2d74f451716a7d">AgoraChatroom::muteExpireTimestamp</a></div><div class="ttdeci">NSInteger muteExpireTimestamp</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:153</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_ab67cba6e2983ab36078f0079e6a9722c"><div class="ttname"><a href="interface_agora_chatroom.html#ab67cba6e2983ab36078f0079e6a9722c">-[AgoraChatroom __deprecated_msg]</a></div><div class="ttdeci">NSArray&lt; NSString * &gt; *_Nullable muteList __deprecated_msg(&quot;Use muteMembers instead&quot;)</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_abbbc6639e6cf689cb124d7e68bab1e38"><div class="ttname"><a href="interface_agora_chatroom.html#abbbc6639e6cf689cb124d7e68bab1e38">AgoraChatroom::subject</a></div><div class="ttdeci">NSString *_Nullable subject</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:41</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_ac5cf6df4b21c60ba4c724c656cd23fa4"><div class="ttname"><a href="interface_agora_chatroom.html#ac5cf6df4b21c60ba4c724c656cd23fa4">AgoraChatroom::owner</a></div><div class="ttdeci">NSString *_Nullable owner</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:53</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_ac98bb6ec968f3090c0b074bb3233a3cd"><div class="ttname"><a href="interface_agora_chatroom.html#ac98bb6ec968f3090c0b074bb3233a3cd">AgoraChatroom::memberList</a></div><div class="ttdeci">NSArray&lt; NSString * &gt; *_Nullable memberList</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:72</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_ad25e767fec83d412be9ba5036648b9af"><div class="ttname"><a href="interface_agora_chatroom.html#ad25e767fec83d412be9ba5036648b9af">AgoraChatroom::adminList</a></div><div class="ttdeci">NSArray&lt; NSString * &gt; *_Nullable adminList</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:66</div></div>
+<div class="ttc" id="ainterface_agora_chatroom_html_aeba619e7a3f7ed7bcbdbaa005677cafc"><div class="ttname"><a href="interface_agora_chatroom.html#aeba619e7a3f7ed7bcbdbaa005677cafc">AgoraChatroom::announcement</a></div><div class="ttdeci">NSString *_Nullable announcement</div><div class="ttdef"><b>Definition:</b> AgoraChatroom.h:59</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

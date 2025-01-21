@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['textmessagebody_0',['TextMessageBody',['../classio_1_1agora_1_1chat_1_1_text_message_body.html',1,'io.agora.chat.TextMessageBody'],['../classio_1_1agora_1_1chat_1_1_text_message_body.html#aca249d7a9b835345ba1b82b76fba9fa4',1,'io.agora.chat.TextMessageBody.TextMessageBody()']]],
+  ['third_5fserver_5ffailed_1',['THIRD_SERVER_FAILED',['../classio_1_1agora_1_1_error.html#a3c0fda2a45c91f06fe6cb8523f3c4fe4',1,'io::agora::Error']]],
+  ['thread_5falready_5fexist_2',['THREAD_ALREADY_EXIST',['../classio_1_1agora_1_1_error.html#a305141f7314ae0e88bb4c3b3c5ad4d62',1,'io::agora::Error']]],
+  ['thread_5fcreate_3',['THREAD_CREATE',['../interfaceio_1_1agora_1_1_multi_device_listener.html#a4e51310bb5e792dfd5955d275b17ddcd',1,'io::agora::MultiDeviceListener']]],
+  ['thread_5fcreate_5fmessage_5fillegal_4',['THREAD_CREATE_MESSAGE_ILLEGAL',['../classio_1_1agora_1_1_error.html#a059f9e609e37bc553e29705f689a8363',1,'io::agora::Error']]],
+  ['thread_5fdestroy_5',['THREAD_DESTROY',['../interfaceio_1_1agora_1_1_multi_device_listener.html#af97505bef95316a18646fb509d54ffba',1,'io::agora::MultiDeviceListener']]],
+  ['thread_5fjoin_6',['THREAD_JOIN',['../interfaceio_1_1agora_1_1_multi_device_listener.html#adb3a7c30821234ba2d8fa28e7ae6b52f',1,'io::agora::MultiDeviceListener']]],
+  ['thread_5fkick_7',['THREAD_KICK',['../interfaceio_1_1agora_1_1_multi_device_listener.html#ad1e46b585f3d6c459bc16ae16225ce20',1,'io::agora::MultiDeviceListener']]],
+  ['thread_5fleave_8',['THREAD_LEAVE',['../interfaceio_1_1agora_1_1_multi_device_listener.html#a9176a37d1f008066c99d6d980f583fe4',1,'io::agora::MultiDeviceListener']]],
+  ['thread_5fnot_5fexist_9',['THREAD_NOT_EXIST',['../classio_1_1agora_1_1_error.html#aebad807ebb83d0433402ff2168e9c13e',1,'io::agora::Error']]],
+  ['thread_5fupdate_10',['THREAD_UPDATE',['../interfaceio_1_1agora_1_1_multi_device_listener.html#a4c6b8962ebe3f9e6aa90f73746bee40b',1,'io::agora::MultiDeviceListener']]],
+  ['thumbnaildownloadstatus_11',['thumbnailDownloadStatus',['../classio_1_1agora_1_1chat_1_1_image_message_body.html#a8fb7d34d2709c61e7248a076b1d1d3c1',1,'io.agora.chat.ImageMessageBody.thumbnailDownloadStatus()'],['../classio_1_1agora_1_1chat_1_1_video_message_body.html#a7309333879a344db55b63543724f9a37',1,'io.agora.chat.VideoMessageBody.thumbnailDownloadStatus()']]],
+  ['thumbnaillocalpath_12',['thumbnailLocalPath',['../classio_1_1agora_1_1chat_1_1_image_message_body.html#a26bc1ce0669d03daf28dbad93b565e68',1,'io::agora::chat::ImageMessageBody']]],
+  ['thumbnaillocaluri_13',['thumbnailLocalUri',['../classio_1_1agora_1_1chat_1_1_image_message_body.html#a008c6d000a07ec8d019506590e132f32',1,'io::agora::chat::ImageMessageBody']]],
+  ['token_5fexpired_14',['TOKEN_EXPIRED',['../classio_1_1agora_1_1_error.html#ad1beb56700571f9efb9e223b35265798',1,'io::agora::Error']]],
+  ['token_5fwill_5fexpire_15',['TOKEN_WILL_EXPIRE',['../classio_1_1agora_1_1_error.html#a2020774cc49960ad1f58937c3b64686e',1,'io::agora::Error']]],
+  ['tostring_16',['toString',['../classio_1_1agora_1_1chat_1_1_chat_thread.html#aeb1c9aecbc147c4b45b4880a15e6efa7',1,'io.agora.chat.ChatThread.toString()'],['../classio_1_1agora_1_1chat_1_1_cmd_message_body.html#abbc1cf82b9bd1b1659c5a7a4dd660c85',1,'io.agora.chat.CmdMessageBody.toString()'],['../classio_1_1agora_1_1chat_1_1_group.html#af197dae812e5f8f424e28c7d380c9395',1,'io.agora.chat.Group.toString()']]],
+  ['translate_5fmessage_5ffail_17',['TRANSLATE_MESSAGE_FAIL',['../classio_1_1agora_1_1_error.html#a1f9fc925becd11af12e21e8c7e3e49e5',1,'io::agora::Error']]],
+  ['translate_5fparam_5finvalid_18',['TRANSLATE_PARAM_INVALID',['../classio_1_1agora_1_1_error.html#a483fb50d7befa9237fb2638fd16928e5',1,'io::agora::Error']]],
+  ['translate_5fservice_5fnot_5fenable_19',['TRANSLATE_SERVICE_NOT_ENABLE',['../classio_1_1agora_1_1_error.html#a0dcd3d6966ce24c8cbc2a5f129121b7a',1,'io::agora::Error']]],
+  ['translate_5fusage_5flimit_20',['TRANSLATE_USAGE_LIMIT',['../classio_1_1agora_1_1_error.html#a4f9c142139f93f0f635aefb8b6d8bce0',1,'io::agora::Error']]],
+  ['translatemessage_21',['translateMessage',['../classio_1_1agora_1_1chat_1_1_chat_manager.html#a978494fa3f1d98e828b286e72c2e1ceb',1,'io::agora::chat::ChatManager']]],
+  ['txt_22',['TXT',['../enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html#ac671c3217dba3622a7c6696c815cbd00',1,'io.agora.chat.ChatMessage.Type.TXT()'],['../enumio_1_1agora_1_1chat_1_1_chat_statistics_manager_1_1_search_message_type.html#a5f40e7e1dcb32286b49f806595e91ec6',1,'io.agora.chat.ChatStatisticsManager.SearchMessageType.TXT()']]],
+  ['type_23',['Type',['../enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html',1,'io::agora::chat::ChatMessage']]]
+];

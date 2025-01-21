@@ -1,0 +1,889 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>即时通讯 IM API 参考: io.agora.ChatRoomChangeListener接口 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">即时通讯 IM API 参考<span id="projectnumber">&#160;v1.3.2</span>
+   </div>
+   <div id="projectbrief">Agora Java IM SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>io</b></li><li class="navelem"><b>agora</b></li><li class="navelem"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html">ChatRoomChangeListener</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="interfaceio_1_1agora_1_1_chat_room_change_listener-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">io.agora.ChatRoomChangeListener接口 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a677bae5512c8345875f4071c0fac84ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a677bae5512c8345875f4071c0fac84ed">onChatRoomDestroyed</a> (final String roomId, final String roomName)</td></tr>
+<tr class="separator:a677bae5512c8345875f4071c0fac84ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95cd627a08d3478cd534ae1bf6419161"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a95cd627a08d3478cd534ae1bf6419161">onMemberJoined</a> (final String roomId, final String participant)</td></tr>
+<tr class="separator:a95cd627a08d3478cd534ae1bf6419161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f76714e6219f9dd0f1b28433096a72e"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a0f76714e6219f9dd0f1b28433096a72e">onMemberJoined</a> (final String roomId, final String participant, String ext)</td></tr>
+<tr class="separator:a0f76714e6219f9dd0f1b28433096a72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd9a3831272fc832f809e2f9bc731ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a2bd9a3831272fc832f809e2f9bc731ff">onMemberExited</a> (final String roomId, final String roomName, final String participant)</td></tr>
+<tr class="separator:a2bd9a3831272fc832f809e2f9bc731ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacea280263633edae58bae815594d321"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#aacea280263633edae58bae815594d321">onRemovedFromChatRoom</a> (final int reason, final String roomId, final String roomName, final String participant)</td></tr>
+<tr class="separator:aacea280263633edae58bae815594d321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043a432ef8b5d6cbd19c78b901461a3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a043a432ef8b5d6cbd19c78b901461a3a">onMuteListAdded</a> (final String chatRoomId, final List&lt; String &gt; mutes, final long expireTime)</td></tr>
+<tr class="separator:a043a432ef8b5d6cbd19c78b901461a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef1d85f5b103ef856ab3e91eacdc772"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a0ef1d85f5b103ef856ab3e91eacdc772">onMuteListAdded</a> (final String chatRoomId, Map&lt; String, Long &gt; muteInfo)</td></tr>
+<tr class="separator:a0ef1d85f5b103ef856ab3e91eacdc772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d730e23d161e9728470fee0d38c023"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a19d730e23d161e9728470fee0d38c023">onMuteListRemoved</a> (final String chatRoomId, final List&lt; String &gt; mutes)</td></tr>
+<tr class="separator:a19d730e23d161e9728470fee0d38c023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1242c8dbde0a4b68f0cef79efbe8ff15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a1242c8dbde0a4b68f0cef79efbe8ff15">onWhiteListAdded</a> (final String chatRoomId, final List&lt; String &gt; whitelist)</td></tr>
+<tr class="separator:a1242c8dbde0a4b68f0cef79efbe8ff15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd0a69c48edb3c1123e0aed76eca6d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a9bd0a69c48edb3c1123e0aed76eca6d4">onWhiteListRemoved</a> (final String chatRoomId, final List&lt; String &gt; whitelist)</td></tr>
+<tr class="separator:a9bd0a69c48edb3c1123e0aed76eca6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad814d16f9d2ceb389f5cea87642ab3d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#ad814d16f9d2ceb389f5cea87642ab3d8">onAllMemberMuteStateChanged</a> (final String chatRoomId, final boolean isMuted)</td></tr>
+<tr class="separator:ad814d16f9d2ceb389f5cea87642ab3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f640f18b0c3cbcfe700a852d32d3364"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a3f640f18b0c3cbcfe700a852d32d3364">onAdminAdded</a> (final String chatRoomId, final String admin)</td></tr>
+<tr class="separator:a3f640f18b0c3cbcfe700a852d32d3364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24538423e24911db227626dfa5aea89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#ab24538423e24911db227626dfa5aea89">onAdminRemoved</a> (final String chatRoomId, final String admin)</td></tr>
+<tr class="separator:ab24538423e24911db227626dfa5aea89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51879de82341471a514a9620bbcdc535"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a51879de82341471a514a9620bbcdc535">onOwnerChanged</a> (final String chatRoomId, final String newOwner, final String oldOwner)</td></tr>
+<tr class="separator:a51879de82341471a514a9620bbcdc535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5140fb11413d2877dd9708bccce7659c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a5140fb11413d2877dd9708bccce7659c">onAnnouncementChanged</a> (String chatRoomId, String announcement)</td></tr>
+<tr class="separator:a5140fb11413d2877dd9708bccce7659c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84058d19b19b86daf3ed1bd3c1bebae8"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a84058d19b19b86daf3ed1bd3c1bebae8">onSpecificationChanged</a> (<a class="el" href="classio_1_1agora_1_1chat_1_1_chat_room.html">ChatRoom</a> chatRoom)</td></tr>
+<tr class="separator:a84058d19b19b86daf3ed1bd3c1bebae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a088459b6483b85cce7810dd7c9f7d8"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a9a088459b6483b85cce7810dd7c9f7d8">onAttributesUpdate</a> (String chatRoomId, Map&lt; String, String &gt; attributeMap, String from)</td></tr>
+<tr class="separator:a9a088459b6483b85cce7810dd7c9f7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add57a473eb83115d6ea1c840771d2c82"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#add57a473eb83115d6ea1c840771d2c82">onAttributesRemoved</a> (String chatRoomId, List&lt; String &gt; keyList, String from)</td></tr>
+<tr class="separator:add57a473eb83115d6ea1c840771d2c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ab33aa3e17830603437abd43f81378de5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#ab33aa3e17830603437abd43f81378de5">BE_KICKED</a> = 0</td></tr>
+<tr class="separator:ab33aa3e17830603437abd43f81378de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008f80b599b824246cb0415a126a251f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_chat_room_change_listener.html#a008f80b599b824246cb0415a126a251f">BE_KICKED_FOR_OFFLINE</a> = 2</td></tr>
+<tr class="separator:a008f80b599b824246cb0415a126a251f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >聊天室事件监听接口。</p>
+<p >可通过 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_room_manager.html">io.agora.chat.ChatRoomManager</a> 添加或移除聊天室事件监听器。</p>
+<p >添加聊天室事件监听器： </p><div class="fragment"><div class="line">ChatRoomManager manager = ChatClient.getInstance().chatroomManager();</div>
+<div class="line">manager.addChatRoomChangeListener(mChatRoomChangeListener);</div>
+</div><!-- fragment --><p >移除聊天室事件监听器： </p><div class="fragment"><div class="line">ChatRoomManager manager = ChatClient.getInstance().chatroomManager();</div>
+<div class="line">manager.removeChatRoomListener(mChatRoomChangeListener);</div>
+</div><!-- fragment --> </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a3f640f18b0c3cbcfe700a852d32d3364" name="a3f640f18b0c3cbcfe700a852d32d3364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f640f18b0c3cbcfe700a852d32d3364">&#9670;&nbsp;</a></span>onAdminAdded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.ChatRoomChangeListener.onAdminAdded </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>chatRoomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>admin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >有成员被设置为管理员。</p>
+<p >被添加的管理员会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatRoomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">admin</td><td>被设置为管理员的成员。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab24538423e24911db227626dfa5aea89" name="ab24538423e24911db227626dfa5aea89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab24538423e24911db227626dfa5aea89">&#9670;&nbsp;</a></span>onAdminRemoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.ChatRoomChangeListener.onAdminRemoved </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>chatRoomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>admin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >有成员被移出管理员列表。</p>
+<p >被移出的管理员会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatRoomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">admin</td><td>被移出管理员列表的成员。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad814d16f9d2ceb389f5cea87642ab3d8" name="ad814d16f9d2ceb389f5cea87642ab3d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad814d16f9d2ceb389f5cea87642ab3d8">&#9670;&nbsp;</a></span>onAllMemberMuteStateChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.ChatRoomChangeListener.onAllMemberMuteStateChanged </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>chatRoomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final boolean&#160;</td>
+          <td class="paramname"><em>isMuted</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >全员禁言状态有变更。</p>
+<p >聊天室所有成员会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatRoomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">isMuted</td><td>是否开启了全员禁言。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5140fb11413d2877dd9708bccce7659c" name="a5140fb11413d2877dd9708bccce7659c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5140fb11413d2877dd9708bccce7659c">&#9670;&nbsp;</a></span>onAnnouncementChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.ChatRoomChangeListener.onAnnouncementChanged </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>chatRoomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>announcement</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >聊天室公告有变更。</p>
+<p >聊天室的所有成员会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatRoomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">announcement</td><td>更新的公告内容。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="add57a473eb83115d6ea1c840771d2c82" name="add57a473eb83115d6ea1c840771d2c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add57a473eb83115d6ea1c840771d2c82">&#9670;&nbsp;</a></span>onAttributesRemoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">default void io.agora.ChatRoomChangeListener.onAttributesRemoved </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>chatRoomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>keyList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>from</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >聊天室自定义属性被移除。</p>
+<p >聊天室所有成员会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatRoomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">keyList</td><td>聊天室自定义属性 key 列表。 </td></tr>
+    <tr><td class="paramname">from</td><td>操作者用户 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9a088459b6483b85cce7810dd7c9f7d8" name="a9a088459b6483b85cce7810dd7c9f7d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a088459b6483b85cce7810dd7c9f7d8">&#9670;&nbsp;</a></span>onAttributesUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">default void io.agora.ChatRoomChangeListener.onAttributesUpdate </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>chatRoomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Map&lt; String, String &gt;&#160;</td>
+          <td class="paramname"><em>attributeMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>from</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >聊天室自定义属性（key-value）有更新。</p>
+<p >聊天室所有成员会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatRoomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">attributeMap</td><td>聊天室自定义属性。 </td></tr>
+    <tr><td class="paramname">from</td><td>操作者的用户 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a677bae5512c8345875f4071c0fac84ed" name="a677bae5512c8345875f4071c0fac84ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677bae5512c8345875f4071c0fac84ed">&#9670;&nbsp;</a></span>onChatRoomDestroyed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.ChatRoomChangeListener.onChatRoomDestroyed </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>roomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>roomName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >聊天室被解散。</p>
+<p >聊天室的所有成员会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">roomName</td><td>聊天室名称。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2bd9a3831272fc832f809e2f9bc731ff" name="a2bd9a3831272fc832f809e2f9bc731ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bd9a3831272fc832f809e2f9bc731ff">&#9670;&nbsp;</a></span>onMemberExited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.ChatRoomChangeListener.onMemberExited </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>roomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>roomName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>participant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >有成员主动退出聊天室。</p>
+<p >聊天室的所有成员（除退出的成员）会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">roomName</td><td>聊天室名称。 </td></tr>
+    <tr><td class="paramname">participant</td><td>退出的成员。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a95cd627a08d3478cd534ae1bf6419161" name="a95cd627a08d3478cd534ae1bf6419161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95cd627a08d3478cd534ae1bf6419161">&#9670;&nbsp;</a></span>onMemberJoined() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">default void io.agora.ChatRoomChangeListener.onMemberJoined </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>roomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>participant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >有新成员加入聊天室。</p>
+<p >聊天室的所有成员（除新成员外）会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">participant</td><td>新成员。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">弃用:</a></b></dt><dd>已废弃。请用 <a class="el" href="">onMemberJoined(java.lang.String, java.lang.String, java.lang.String)</a> 代替。</dd></dl>
+
+</div>
+</div>
+<a id="a0f76714e6219f9dd0f1b28433096a72e" name="a0f76714e6219f9dd0f1b28433096a72e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f76714e6219f9dd0f1b28433096a72e">&#9670;&nbsp;</a></span>onMemberJoined() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">default void io.agora.ChatRoomChangeListener.onMemberJoined </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>roomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>participant</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>ext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >有新成员加入聊天室。</p>
+<p >聊天室的所有成员（除新成员外）会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">participant</td><td>新成员。 </td></tr>
+    <tr><td class="paramname">ext</td><td>扩展信息。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a043a432ef8b5d6cbd19c78b901461a3a" name="a043a432ef8b5d6cbd19c78b901461a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a043a432ef8b5d6cbd19c78b901461a3a">&#9670;&nbsp;</a></span>onMuteListAdded() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.ChatRoomChangeListener.onMuteListAdded </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>chatRoomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>mutes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final long&#160;</td>
+          <td class="paramname"><em>expireTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >有成员被禁言。</p>
+<p >被添加的成员收到该事件。禁言期间成员不能发送发消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatRoomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">mutes</td><td>被禁言的成员。 </td></tr>
+    <tr><td class="paramname">expireTime</td><td>禁言失效的 Unix 时间戳，单位为毫秒。预留参数。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">弃用:</a></b></dt><dd>已废弃，请使用 <a class="el" href="">onMuteListAdded(String, Map)</a> 代替。</dd></dl>
+
+</div>
+</div>
+<a id="a0ef1d85f5b103ef856ab3e91eacdc772" name="a0ef1d85f5b103ef856ab3e91eacdc772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef1d85f5b103ef856ab3e91eacdc772">&#9670;&nbsp;</a></span>onMuteListAdded() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">default void io.agora.ChatRoomChangeListener.onMuteListAdded </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>chatRoomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Map&lt; String, Long &gt;&#160;</td>
+          <td class="paramname"><em>muteInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >有成员被禁言。</p>
+<p >被添加的成员收到该事件。禁言期间成员不能发送发消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatRoomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">muteInfo</td><td>被禁言详情，map结构 key: 被禁言的成员ID value:禁言失效的 Unix 时间戳，单位为毫秒 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a19d730e23d161e9728470fee0d38c023" name="a19d730e23d161e9728470fee0d38c023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d730e23d161e9728470fee0d38c023">&#9670;&nbsp;</a></span>onMuteListRemoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.ChatRoomChangeListener.onMuteListRemoved </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>chatRoomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>mutes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >有成员从禁言列表中移除。</p>
+<p >被解除禁言的成员会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatRoomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">mutes</td><td>从禁言列表中移除的成员名单。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a51879de82341471a514a9620bbcdc535" name="a51879de82341471a514a9620bbcdc535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51879de82341471a514a9620bbcdc535">&#9670;&nbsp;</a></span>onOwnerChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.ChatRoomChangeListener.onOwnerChanged </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>chatRoomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>newOwner</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>oldOwner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >聊天室所有者变更。</p>
+<p >聊天室所有成员会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatRoomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">newOwner</td><td>新的聊天室所有者。 </td></tr>
+    <tr><td class="paramname">oldOwner</td><td>原聊天室所有者。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aacea280263633edae58bae815594d321" name="aacea280263633edae58bae815594d321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacea280263633edae58bae815594d321">&#9670;&nbsp;</a></span>onRemovedFromChatRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.ChatRoomChangeListener.onRemovedFromChatRoom </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>reason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>roomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>roomName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>participant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >有成员被移出聊天室。</p>
+<p >被移出的成员收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reason</td><td>成员被移出聊天室的原因：<ul>
+<li>xxx BE_KICKED：该用户被聊天室管理员移除；</li>
+<li>xxx BE_KICKED_FOR_OFFLINE：该用户由于当前设备断网被服务器移出聊天室。</li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">roomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">roomName</td><td>聊天室名称。 </td></tr>
+    <tr><td class="paramname">participant</td><td>被移除人员。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a84058d19b19b86daf3ed1bd3c1bebae8" name="a84058d19b19b86daf3ed1bd3c1bebae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84058d19b19b86daf3ed1bd3c1bebae8">&#9670;&nbsp;</a></span>onSpecificationChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">default void io.agora.ChatRoomChangeListener.onSpecificationChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_room.html">ChatRoom</a>&#160;</td>
+          <td class="paramname"><em>chatRoom</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >聊天室信息有更新。</p>
+<p >聊天室的所有成员会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatRoom</td><td>聊天室对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1242c8dbde0a4b68f0cef79efbe8ff15" name="a1242c8dbde0a4b68f0cef79efbe8ff15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1242c8dbde0a4b68f0cef79efbe8ff15">&#9670;&nbsp;</a></span>onWhiteListAdded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.ChatRoomChangeListener.onWhiteListAdded </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>chatRoomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>whitelist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >有成员加入白名单。</p>
+<p >被添加的成员收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatRoomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">whitelist</td><td>白名单中增加的成员名单。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9bd0a69c48edb3c1123e0aed76eca6d4" name="a9bd0a69c48edb3c1123e0aed76eca6d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bd0a69c48edb3c1123e0aed76eca6d4">&#9670;&nbsp;</a></span>onWhiteListRemoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.ChatRoomChangeListener.onWhiteListRemoved </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>chatRoomId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>whitelist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >有成员被移出白名单。</p>
+<p >被移出白名单的成员会收到该事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatRoomId</td><td>聊天室 ID。 </td></tr>
+    <tr><td class="paramname">whitelist</td><td>移出白名单的成员。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ab33aa3e17830603437abd43f81378de5" name="ab33aa3e17830603437abd43f81378de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33aa3e17830603437abd43f81378de5">&#9670;&nbsp;</a></span>BE_KICKED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.ChatRoomChangeListener.BE_KICKED = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户被移出聊天室。 </p>
+
+</div>
+</div>
+<a id="a008f80b599b824246cb0415a126a251f" name="a008f80b599b824246cb0415a126a251f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a008f80b599b824246cb0415a126a251f">&#9670;&nbsp;</a></span>BE_KICKED_FOR_OFFLINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.ChatRoomChangeListener.BE_KICKED_FOR_OFFLINE = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户因为离线超过一定时间（默认2分钟）被移出聊天室。 </p>
+
+</div>
+</div>
+<hr/>该接口的文档由以下文件生成:<ul>
+<li>io/agora/ChatRoomChangeListener.java</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

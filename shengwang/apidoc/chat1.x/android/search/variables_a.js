@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['maxusers_0',['maxUsers',['../classio_1_1agora_1_1chat_1_1_group_options.html#a6dc9a1d9d6566a71d9948da419c3fae8',1,'io::agora::chat::GroupOptions']]],
+  ['meizupush_1',['MEIZUPUSH',['../enumio_1_1agora_1_1push_1_1_push_type.html#a6d8075f730bbd9823a42f46381c39da7',1,'io::agora::push::PushType']]],
+  ['member_2',['member',['../enumio_1_1agora_1_1chat_1_1_chat_room_1_1_chat_room_permission_type.html#af3d92a14ec0aecd8d2927f5cb96edaae',1,'io.agora.chat.ChatRoom.ChatRoomPermissionType.member()'],['../enumio_1_1agora_1_1chat_1_1_group_1_1_group_permission_type.html#a54cd24df8ceb12f3ccdc506b74b0a081',1,'io.agora.chat.Group.GroupPermissionType.member()']]],
+  ['mention_5fonly_3',['MENTION_ONLY',['../enumio_1_1agora_1_1chat_1_1_push_manager_1_1_push_remind_type.html#afdeb5d844377c5ae0a363bcf4e490e09',1,'io::agora::chat::PushManager::PushRemindType']]],
+  ['message_5fcurrent_5flimiting_4',['MESSAGE_CURRENT_LIMITING',['../classio_1_1agora_1_1_error.html#aefbfaecb9b10a77fe66478cf2d205d91',1,'io::agora::Error']]],
+  ['message_5fedit_5ffailed_5',['MESSAGE_EDIT_FAILED',['../classio_1_1agora_1_1_error.html#a0336001a7f30e2f94ff6eeec6ee11d05',1,'io::agora::Error']]],
+  ['message_5fencryption_5ferror_6',['MESSAGE_ENCRYPTION_ERROR',['../classio_1_1agora_1_1_error.html#ad869ee1aa260ce0ca693e295433dd638',1,'io::agora::Error']]],
+  ['message_5fexpired_7',['MESSAGE_EXPIRED',['../classio_1_1agora_1_1_error.html#a464132cd07e0d39fc0a4f8a437a3718a',1,'io::agora::Error']]],
+  ['message_5fexternal_5flogic_5fblocked_8',['MESSAGE_EXTERNAL_LOGIC_BLOCKED',['../classio_1_1agora_1_1_error.html#ae4efa9351b24cc80a9bbe24258c3ab30',1,'io::agora::Error']]],
+  ['message_5fillegal_5fwhitelist_9',['MESSAGE_ILLEGAL_WHITELIST',['../classio_1_1agora_1_1_error.html#ae92e50e9a85e032d842d590702df58ae',1,'io::agora::Error']]],
+  ['message_5finclude_5fillegal_5fcontent_10',['MESSAGE_INCLUDE_ILLEGAL_CONTENT',['../classio_1_1agora_1_1_error.html#aff99af213b851995f183c7b084449d27',1,'io::agora::Error']]],
+  ['message_5finvalid_11',['MESSAGE_INVALID',['../classio_1_1agora_1_1_error.html#a6285eb07a70a86021bba3d3d8ce39e8b',1,'io::agora::Error']]],
+  ['message_5frecall_5ftime_5flimit_12',['MESSAGE_RECALL_TIME_LIMIT',['../classio_1_1agora_1_1_error.html#abb63250f4eea0cc012ebcf2995483040',1,'io::agora::Error']]],
+  ['message_5fsend_5ftraffic_5flimit_13',['MESSAGE_SEND_TRAFFIC_LIMIT',['../classio_1_1agora_1_1_error.html#a980f164d1eef49a05f9eb32a1d98e479',1,'io::agora::Error']]],
+  ['message_5fsize_5flimit_14',['MESSAGE_SIZE_LIMIT',['../classio_1_1agora_1_1_error.html#a21192298a7b2b31fd6d593fd29a1fc2b',1,'io::agora::Error']]],
+  ['mipush_15',['MIPUSH',['../enumio_1_1agora_1_1push_1_1_push_type.html#a4b8861312216ee5871b569417f3f3672',1,'io::agora::push::PushType']]],
+  ['moderation_5ffailed_16',['MODERATION_FAILED',['../classio_1_1agora_1_1_error.html#a31bb2f2fcc78af47fb5488eeaac106a2',1,'io::agora::Error']]]
+];

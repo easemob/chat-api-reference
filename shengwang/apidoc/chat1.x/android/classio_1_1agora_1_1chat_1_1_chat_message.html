@@ -1,0 +1,3239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>即时通讯 IM API 参考: io.agora.chat.ChatMessage类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">即时通讯 IM API 参考<span id="projectnumber">&#160;v1.3.2</span>
+   </div>
+   <div id="projectbrief">Agora Java IM SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>io</b></li><li class="navelem"><b>agora</b></li><li class="navelem"><b>chat</b></li><li class="navelem"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classio_1_1agora_1_1chat_1_1_chat_message-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">io.agora.chat.ChatMessage类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>继承自 io.agora.chat.EMBase&lt; T &gt;, Parcelable , 以及 Cloneable .</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_chat_type.html">ChatType</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_direct.html">Direct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_status.html">Status</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html">Type</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a49c32a6896f282581fc8686b3c9949fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_status.html">Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a49c32a6896f282581fc8686b3c9949fe">status</a> ()</td></tr>
+<tr class="separator:a49c32a6896f282581fc8686b3c9949fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeacc4698eb71bde2974a213f534098b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#aeacc4698eb71bde2974a213f534098b6">setStatus</a> (<a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_status.html">Status</a> <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a49c32a6896f282581fc8686b3c9949fe">status</a>)</td></tr>
+<tr class="separator:aeacc4698eb71bde2974a213f534098b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9105167f4960a1fc8cb893e45b00c6a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a9105167f4960a1fc8cb893e45b00c6a8">getType</a> ()</td></tr>
+<tr class="separator:a9105167f4960a1fc8cb893e45b00c6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7b32f391f899c47fca5732d0c3f748"><td class="memItemLeft" align="right" valign="top">synchronized <a class="el" href="classio_1_1agora_1_1chat_1_1_message_body.html">MessageBody</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#abc7b32f391f899c47fca5732d0c3f748">getBody</a> ()</td></tr>
+<tr class="separator:abc7b32f391f899c47fca5732d0c3f748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ee30cee0662df3bf73d7117c9fd3d8"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#ae0ee30cee0662df3bf73d7117c9fd3d8">getMsgTime</a> ()</td></tr>
+<tr class="separator:ae0ee30cee0662df3bf73d7117c9fd3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6374e827c3876214d7eeaccd7b4df43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#aa6374e827c3876214d7eeaccd7b4df43">setMsgTime</a> (long msgTime)</td></tr>
+<tr class="separator:aa6374e827c3876214d7eeaccd7b4df43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3209a5983a9d62e926384fc76ce35996"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a3209a5983a9d62e926384fc76ce35996">localTime</a> ()</td></tr>
+<tr class="separator:a3209a5983a9d62e926384fc76ce35996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee5d91fe579c22527140f0a2902d3e2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#aee5d91fe579c22527140f0a2902d3e2b">setLocalTime</a> (long serverTime)</td></tr>
+<tr class="separator:aee5d91fe579c22527140f0a2902d3e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503868ac4a1926803c9b1d8e5d732be2"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a503868ac4a1926803c9b1d8e5d732be2">isNeedGroupAck</a> ()</td></tr>
+<tr class="separator:a503868ac4a1926803c9b1d8e5d732be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd51d03641d50f2e7d86cb1d2883ed1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a8cd51d03641d50f2e7d86cb1d2883ed1">setIsNeedGroupAck</a> (boolean need)</td></tr>
+<tr class="separator:a8cd51d03641d50f2e7d86cb1d2883ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace4f0b54e59b5468df44acad3dabf4bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#ace4f0b54e59b5468df44acad3dabf4bf">groupAckCount</a> ()</td></tr>
+<tr class="separator:ace4f0b54e59b5468df44acad3dabf4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b481d8189c1d33432055e7342299eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a58b481d8189c1d33432055e7342299eb">setGroupAckCount</a> (int count)</td></tr>
+<tr class="separator:a58b481d8189c1d33432055e7342299eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e8890a19a7359f16acdbb6915391ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a39e8890a19a7359f16acdbb6915391ad">setIsChatThreadMessage</a> (boolean <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a13c1eb8298f017773bee214f4b11caa3">isChatThreadMessage</a>)</td></tr>
+<tr class="separator:a39e8890a19a7359f16acdbb6915391ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c1eb8298f017773bee214f4b11caa3"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a13c1eb8298f017773bee214f4b11caa3">isChatThreadMessage</a> ()</td></tr>
+<tr class="separator:a13c1eb8298f017773bee214f4b11caa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb58ce0d8f4657e5cc633a6fb6b50b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_thread.html">ChatThread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a6cb58ce0d8f4657e5cc633a6fb6b50b1">getChatThread</a> ()</td></tr>
+<tr class="separator:a6cb58ce0d8f4657e5cc633a6fb6b50b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1437392f2f2c6a7f73db6816f74f248a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a1437392f2f2c6a7f73db6816f74f248a">setBody</a> (<a class="el" href="classio_1_1agora_1_1chat_1_1_message_body.html">MessageBody</a> body)</td></tr>
+<tr class="separator:a1437392f2f2c6a7f73db6816f74f248a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44684a7bc756db68aedcd460ed487add"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a44684a7bc756db68aedcd460ed487add">addBody</a> (<a class="el" href="classio_1_1agora_1_1chat_1_1_message_body.html">MessageBody</a> body)</td></tr>
+<tr class="separator:a44684a7bc756db68aedcd460ed487add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64d88479148ebd2409ac940c7489d8b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#af64d88479148ebd2409ac940c7489d8b">getFrom</a> ()</td></tr>
+<tr class="separator:af64d88479148ebd2409ac940c7489d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac896cadb401aa09e79910ef16c5a9c97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#ac896cadb401aa09e79910ef16c5a9c97">setFrom</a> (String from)</td></tr>
+<tr class="separator:ac896cadb401aa09e79910ef16c5a9c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9422f5151f1e73fe1178eedffef9e6c"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#ac9422f5151f1e73fe1178eedffef9e6c">getRecaller</a> ()</td></tr>
+<tr class="separator:ac9422f5151f1e73fe1178eedffef9e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3d34b16e92062452e89d8a63782a10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a7e3d34b16e92062452e89d8a63782a10">setTo</a> (String to)</td></tr>
+<tr class="separator:a7e3d34b16e92062452e89d8a63782a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53a87dc034de652297201e1ce77e909"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#ab53a87dc034de652297201e1ce77e909">getTo</a> ()</td></tr>
+<tr class="separator:ab53a87dc034de652297201e1ce77e909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7b7988fdd4b9a8bb747d7f4ad84bc5"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a2f7b7988fdd4b9a8bb747d7f4ad84bc5">getMsgId</a> ()</td></tr>
+<tr class="separator:a2f7b7988fdd4b9a8bb747d7f4ad84bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cbf21acc3daa056e4b44e664dff9b67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a7cbf21acc3daa056e4b44e664dff9b67">setMsgId</a> (String msgId)</td></tr>
+<tr class="separator:a7cbf21acc3daa056e4b44e664dff9b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329414d764bbb44c312b3c56d0b4964c"><td class="memItemLeft" align="right" valign="top">synchronized void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a329414d764bbb44c312b3c56d0b4964c">setMessageStatusCallback</a> (<a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callback)</td></tr>
+<tr class="separator:a329414d764bbb44c312b3c56d0b4964c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b90ba34c3d2229f1db159e56d0fdcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a48b90ba34c3d2229f1db159e56d0fdcc">setAttribute</a> (String attribute, boolean value)</td></tr>
+<tr class="separator:a48b90ba34c3d2229f1db159e56d0fdcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a9f62433ffd47dc7367bed9abcc5b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a86a9f62433ffd47dc7367bed9abcc5b3">setAttribute</a> (String attribute, int value)</td></tr>
+<tr class="separator:a86a9f62433ffd47dc7367bed9abcc5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff85a7d583f467f16504b0243fed32b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a9ff85a7d583f467f16504b0243fed32b">setAttribute</a> (String attribute, long value)</td></tr>
+<tr class="separator:a9ff85a7d583f467f16504b0243fed32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc7e3e0a509a517e6bea3c55d2588b51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#adc7e3e0a509a517e6bea3c55d2588b51">setAttribute</a> (String attribute, float value)</td></tr>
+<tr class="separator:adc7e3e0a509a517e6bea3c55d2588b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b40625e0e0557b3ae840dea9502fd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#af5b40625e0e0557b3ae840dea9502fd5">setAttribute</a> (String attribute, double value)</td></tr>
+<tr class="separator:af5b40625e0e0557b3ae840dea9502fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d95b538cc066386bd8f40d16755588"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a81d95b538cc066386bd8f40d16755588">setAttribute</a> (String attribute, JSONObject value)</td></tr>
+<tr class="separator:a81d95b538cc066386bd8f40d16755588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd4f3bbe5520faadd4db498ce46b1ab5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#afd4f3bbe5520faadd4db498ce46b1ab5">setAttribute</a> (String attribute, JSONArray value)</td></tr>
+<tr class="separator:afd4f3bbe5520faadd4db498ce46b1ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a228b19a951c9bb8fb074d9d8108d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a17a228b19a951c9bb8fb074d9d8108d4">setAttribute</a> (String attribute, String value)</td></tr>
+<tr class="separator:a17a228b19a951c9bb8fb074d9d8108d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7274f83b802515ecdc666bdbb56022f"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#aa7274f83b802515ecdc666bdbb56022f">getBooleanAttribute</a> (String attribute)  throws ChatException </td></tr>
+<tr class="separator:aa7274f83b802515ecdc666bdbb56022f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80045bc71b488fad679d6cbd85e44efd"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a80045bc71b488fad679d6cbd85e44efd">getBooleanAttribute</a> (String attribute, boolean defaultValue)</td></tr>
+<tr class="separator:a80045bc71b488fad679d6cbd85e44efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329097855dd4ece0007643b340aadb73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a329097855dd4ece0007643b340aadb73">getIntAttribute</a> (String attribute, int defaultValue)</td></tr>
+<tr class="separator:a329097855dd4ece0007643b340aadb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a9323cabcec3ef9751e234ccd040804"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a4a9323cabcec3ef9751e234ccd040804">getLongAttribute</a> (String attribute, long defaultValue)</td></tr>
+<tr class="separator:a4a9323cabcec3ef9751e234ccd040804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492bc9a045a04cc494b453bfdb53d4be"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a492bc9a045a04cc494b453bfdb53d4be">getFloatAttribute</a> (String attribute, float defaultValue)</td></tr>
+<tr class="separator:a492bc9a045a04cc494b453bfdb53d4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29edf437d3768f0797a2049ecce12d96"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a29edf437d3768f0797a2049ecce12d96">getDoubleAttribute</a> (String attribute, double defaultValue)</td></tr>
+<tr class="separator:a29edf437d3768f0797a2049ecce12d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156a089982dca520160f1ccfc70ee223"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a156a089982dca520160f1ccfc70ee223">getIntAttribute</a> (String attribute)  throws ChatException </td></tr>
+<tr class="separator:a156a089982dca520160f1ccfc70ee223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa83e3b4a39c64a6b44c2bdd45bb58061"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#aa83e3b4a39c64a6b44c2bdd45bb58061">getLongAttribute</a> (String attribute)  throws ChatException </td></tr>
+<tr class="separator:aa83e3b4a39c64a6b44c2bdd45bb58061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e49a386f1ef084538f2556bdc1ca98"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a56e49a386f1ef084538f2556bdc1ca98">getFloatAttribute</a> (String attribute)  throws ChatException </td></tr>
+<tr class="separator:a56e49a386f1ef084538f2556bdc1ca98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af50038886f3b86a15325ca9bc7ca8575"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#af50038886f3b86a15325ca9bc7ca8575">getDoubleAttribute</a> (String attribute)  throws ChatException </td></tr>
+<tr class="separator:af50038886f3b86a15325ca9bc7ca8575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa58478b99f9baebf2f36b74b23d12f"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a7fa58478b99f9baebf2f36b74b23d12f">getStringAttribute</a> (String attribute)  throws ChatException </td></tr>
+<tr class="separator:a7fa58478b99f9baebf2f36b74b23d12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e20fad562c2529681b484eb74ed50b0"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a0e20fad562c2529681b484eb74ed50b0">getStringAttribute</a> (String attribute, String defaultValue)</td></tr>
+<tr class="separator:a0e20fad562c2529681b484eb74ed50b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4224c9496d27391112913eb48bcc09"><td class="memItemLeft" align="right" valign="top">JSONObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#afa4224c9496d27391112913eb48bcc09">getJSONObjectAttribute</a> (String attribute)  throws ChatException </td></tr>
+<tr class="separator:afa4224c9496d27391112913eb48bcc09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a063df3cca58dbf4e6cf998c94a41a"><td class="memItemLeft" align="right" valign="top">JSONArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a99a063df3cca58dbf4e6cf998c94a41a">getJSONArrayAttribute</a> (String attribute)  throws ChatException </td></tr>
+<tr class="separator:a99a063df3cca58dbf4e6cf998c94a41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac237f296fa91a238418651dff3b46691"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_chat_type.html">ChatType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#ac237f296fa91a238418651dff3b46691">getChatType</a> ()</td></tr>
+<tr class="separator:ac237f296fa91a238418651dff3b46691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a789a8325d568ab52dfb53ba23a6f13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a7a789a8325d568ab52dfb53ba23a6f13">setChatType</a> (<a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_chat_type.html">ChatType</a> chatType)</td></tr>
+<tr class="separator:a7a789a8325d568ab52dfb53ba23a6f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81158c6da80721fcd1d3c0ab6ea89f6"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#af81158c6da80721fcd1d3c0ab6ea89f6">isAcked</a> ()</td></tr>
+<tr class="separator:af81158c6da80721fcd1d3c0ab6ea89f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b490808da877198a85c27f3bf27775"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a50b490808da877198a85c27f3bf27775">setAcked</a> (boolean <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#af81158c6da80721fcd1d3c0ab6ea89f6">isAcked</a>)</td></tr>
+<tr class="separator:a50b490808da877198a85c27f3bf27775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d5783cd0665d755c860dc0deb295b8"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a95d5783cd0665d755c860dc0deb295b8">isDelivered</a> ()</td></tr>
+<tr class="separator:a95d5783cd0665d755c860dc0deb295b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8790d65c1a576de9e191f4c1b4984729"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a8790d65c1a576de9e191f4c1b4984729">setDelivered</a> (boolean <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a95d5783cd0665d755c860dc0deb295b8">isDelivered</a>)</td></tr>
+<tr class="separator:a8790d65c1a576de9e191f4c1b4984729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82fdb6de7f982fcae3938938acba7751"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a82fdb6de7f982fcae3938938acba7751">isUnread</a> ()</td></tr>
+<tr class="separator:a82fdb6de7f982fcae3938938acba7751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08374b41f87a8f9185db0f2baad4e93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#ad08374b41f87a8f9185db0f2baad4e93">setUnread</a> (boolean unread)</td></tr>
+<tr class="separator:ad08374b41f87a8f9185db0f2baad4e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0efbf90fa7b21c8439666a855225ff1a"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a0efbf90fa7b21c8439666a855225ff1a">isListened</a> ()</td></tr>
+<tr class="separator:a0efbf90fa7b21c8439666a855225ff1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a33f901c8abedf5b87993bce08c7ab4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a0a33f901c8abedf5b87993bce08c7ab4">setListened</a> (boolean <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a0efbf90fa7b21c8439666a855225ff1a">isListened</a>)</td></tr>
+<tr class="separator:a0a33f901c8abedf5b87993bce08c7ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a2ca6c8016e19fe21e564a17ac82c8d"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a2a2ca6c8016e19fe21e564a17ac82c8d">getUserName</a> ()</td></tr>
+<tr class="separator:a2a2ca6c8016e19fe21e564a17ac82c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cce11ba625e8a16efc19d761506fcc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a0cce11ba625e8a16efc19d761506fcc1">setDeliverAcked</a> (boolean isDeliverAcked)</td></tr>
+<tr class="separator:a0cce11ba625e8a16efc19d761506fcc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84861ae86203b2ef695969e47cb4360e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a84861ae86203b2ef695969e47cb4360e">progress</a> ()</td></tr>
+<tr class="separator:a84861ae86203b2ef695969e47cb4360e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f9dcaec418b1dd988e23002c53ae11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#ac6f9dcaec418b1dd988e23002c53ae11">setProgress</a> (int <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a84861ae86203b2ef695969e47cb4360e">progress</a>)</td></tr>
+<tr class="separator:ac6f9dcaec418b1dd988e23002c53ae11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6159ec1e08d6152e552fb2a37f6278be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_direct.html">Direct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a6159ec1e08d6152e552fb2a37f6278be">direct</a> ()</td></tr>
+<tr class="separator:a6159ec1e08d6152e552fb2a37f6278be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af031b8a3758dc598608371c9256eec03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#af031b8a3758dc598608371c9256eec03">setDirection</a> (<a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_direct.html">Direct</a> dir)</td></tr>
+<tr class="separator:af031b8a3758dc598608371c9256eec03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4cd277d7fb79fb4963b45a091c3b25d"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#ab4cd277d7fb79fb4963b45a091c3b25d">conversationId</a> ()</td></tr>
+<tr class="separator:ab4cd277d7fb79fb4963b45a091c3b25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69e1921ce5110379e40038c093dede0"><td class="memItemLeft" align="right" valign="top">Map&lt; String, Object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#ad69e1921ce5110379e40038c093dede0">ext</a> ()</td></tr>
+<tr class="separator:ad69e1921ce5110379e40038c093dede0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd9799791d211aa6de56be0c632fb0f"><td class="memItemLeft" align="right" valign="top">Map&lt; String, Object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#adbd9799791d211aa6de56be0c632fb0f">getAttributes</a> ()</td></tr>
+<tr class="separator:adbd9799791d211aa6de56be0c632fb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6d93f0bf13c893cdb80002c753d97d"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_message_reaction.html">MessageReaction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a4b6d93f0bf13c893cdb80002c753d97d">getMessageReaction</a> ()</td></tr>
+<tr class="separator:a4b6d93f0bf13c893cdb80002c753d97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9fc08eba6f775af0d67b5d3e2dca22d"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#aa9fc08eba6f775af0d67b5d3e2dca22d">isOnlineState</a> ()</td></tr>
+<tr class="separator:aa9fc08eba6f775af0d67b5d3e2dca22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391c74e29f4059180fa7967cf29a6d55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a391c74e29f4059180fa7967cf29a6d55">setPriority</a> (ChatRoomMessagePriority priority)</td></tr>
+<tr class="separator:a391c74e29f4059180fa7967cf29a6d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae428aa67109f7bcfe11aa70709413065"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#ae428aa67109f7bcfe11aa70709413065">isDeliverOnlineOnly</a> ()</td></tr>
+<tr class="separator:ae428aa67109f7bcfe11aa70709413065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34bc5e96383f733c37eb9cc25c1a501"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#ad34bc5e96383f733c37eb9cc25c1a501">deliverOnlineOnly</a> (boolean onlineOnly)</td></tr>
+<tr class="separator:ad34bc5e96383f733c37eb9cc25c1a501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23dafe6373335349fb49d0b916753002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a23dafe6373335349fb49d0b916753002">setReceiverList</a> (List&lt; String &gt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a1c29fa495431a34641a82971ffc3a710">receiverList</a>)</td></tr>
+<tr class="separator:a23dafe6373335349fb49d0b916753002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c29fa495431a34641a82971ffc3a710"><td class="memItemLeft" align="right" valign="top">List&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a1c29fa495431a34641a82971ffc3a710">receiverList</a> ()</td></tr>
+<tr class="separator:a1c29fa495431a34641a82971ffc3a710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2096a8ec7ce679f6ea82917740a1e22"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#aa2096a8ec7ce679f6ea82917740a1e22">isBroadcast</a> ()</td></tr>
+<tr class="separator:aa2096a8ec7ce679f6ea82917740a1e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2626b299fa1626b7061e9952bd35e4"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a2f2626b299fa1626b7061e9952bd35e4">isContentReplaced</a> ()</td></tr>
+<tr class="separator:a2f2626b299fa1626b7061e9952bd35e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe49d1581c1b153645d3272742eadba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classio_1_1agora_1_1chat_1_1_message_pin_info.html">MessagePinInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a7fe49d1581c1b153645d3272742eadba">pinnedInfo</a> ()</td></tr>
+<tr class="separator:a7fe49d1581c1b153645d3272742eadba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a1c26e1f6420a89921bae7eb9ea362506"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a1c26e1f6420a89921bae7eb9ea362506">createSendMessage</a> (<a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html">Type</a> type)</td></tr>
+<tr class="separator:a1c26e1f6420a89921bae7eb9ea362506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f5747a7cb89ec5e4fa069d3ae5f9b8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a38f5747a7cb89ec5e4fa069d3ae5f9b8">createReceiveMessage</a> (<a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html">Type</a> type)</td></tr>
+<tr class="separator:a38f5747a7cb89ec5e4fa069d3ae5f9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6312e5ea0ca70b36d22c5e0bdfc288f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#af6312e5ea0ca70b36d22c5e0bdfc288f">createTxtSendMessage</a> (String content, String username)</td></tr>
+<tr class="separator:af6312e5ea0ca70b36d22c5e0bdfc288f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee07299e520d430b53466edc5980daf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#afee07299e520d430b53466edc5980daf">createTextSendMessage</a> (String content, String username)</td></tr>
+<tr class="separator:afee07299e520d430b53466edc5980daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff9282db0b4fe2086a7afc70dc092f8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#afff9282db0b4fe2086a7afc70dc092f8">createVoiceSendMessage</a> (String filePath, int timeLength, String username)</td></tr>
+<tr class="separator:afff9282db0b4fe2086a7afc70dc092f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5935e8c3e8ed4069b01ca38b1f1a6ab9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a5935e8c3e8ed4069b01ca38b1f1a6ab9">createVoiceSendMessage</a> (Uri filePath, int timeLength, String username)</td></tr>
+<tr class="separator:a5935e8c3e8ed4069b01ca38b1f1a6ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d0cd1cfc67aa8deb50386ff4dac2cd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#af8d0cd1cfc67aa8deb50386ff4dac2cd">createImageSendMessage</a> (String filePath, boolean sendOriginalImage, String username)</td></tr>
+<tr class="separator:af8d0cd1cfc67aa8deb50386ff4dac2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1207ebdd9c5ee4abd78ca1e49de6c7e1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a1207ebdd9c5ee4abd78ca1e49de6c7e1">createImageSendMessage</a> (Uri imgUri, boolean sendOriginalImage, String username)</td></tr>
+<tr class="separator:a1207ebdd9c5ee4abd78ca1e49de6c7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac78142ff1dfe3fa07d63027978a9ef84"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#ac78142ff1dfe3fa07d63027978a9ef84">createVideoSendMessage</a> (String videofilePath, String imageThumbPath, int timeLength, String username)</td></tr>
+<tr class="separator:ac78142ff1dfe3fa07d63027978a9ef84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a487c212c323a110d1d5ca6406903e11f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a487c212c323a110d1d5ca6406903e11f">createVideoSendMessage</a> (Uri videofilePath, String imageThumbPath, int timeLength, String username)</td></tr>
+<tr class="separator:a487c212c323a110d1d5ca6406903e11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1215a31dad2f68bcad9a321defe3fd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#aae1215a31dad2f68bcad9a321defe3fd">createVideoSendMessage</a> (Uri videofilePath, Uri imageThumbPath, int timeLength, String username)</td></tr>
+<tr class="separator:aae1215a31dad2f68bcad9a321defe3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5998f0cd6fd851153839aadef4d1ed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a8e5998f0cd6fd851153839aadef4d1ed">createLocationSendMessage</a> (double latitude, double longitude, String locationAddress, String buildingName, String username)</td></tr>
+<tr class="separator:a8e5998f0cd6fd851153839aadef4d1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2d86c5a7f53e96eaecaa884d2c2d8c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a9d2d86c5a7f53e96eaecaa884d2c2d8c">createLocationSendMessage</a> (double latitude, double longitude, String locationAddress, String username)</td></tr>
+<tr class="separator:a9d2d86c5a7f53e96eaecaa884d2c2d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b0d8a9c7edb6a7ed02a02a9d67d65f7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a7b0d8a9c7edb6a7ed02a02a9d67d65f7">createFileSendMessage</a> (String filePath, String username)</td></tr>
+<tr class="separator:a7b0d8a9c7edb6a7ed02a02a9d67d65f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbab1df477a2b8a5aaf7053e27fc9232"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#acbab1df477a2b8a5aaf7053e27fc9232">createFileSendMessage</a> (Uri filePath, String username)</td></tr>
+<tr class="separator:acbab1df477a2b8a5aaf7053e27fc9232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2fadbf48dc115d17868c989b88c3f2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#aee2fadbf48dc115d17868c989b88c3f2">createCombinedSendMessage</a> (String title, String summary, String compatibleText, List&lt; String &gt; messageIdList, String userId)</td></tr>
+<tr class="separator:aee2fadbf48dc115d17868c989b88c3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >消息对象，表示一条发送或接收到的消息。</p>
+<p >例如： 构造一条文本发送消息： </p><div class="fragment"><div class="line">ChatMessage msg = ChatMessage.createSendMessage(ChatMessage.Type.TXT);</div>
+<div class="line">msg.setTo(<span class="stringliteral">&quot;user1&quot;</span>);</div>
+<div class="line">TextMessageBody body = <span class="keyword">new</span> TextMessageBody(<span class="stringliteral">&quot;hello from hyphenate sdk&quot;</span>);</div>
+<div class="line">msg.addBody(body);</div>
+</div><!-- fragment --><p >构造一条图片消息： </p><div class="fragment"><div class="line">ChatMessage msg = ChatMessage.createSendMessage(ChatMessage.Type.IMAGE);</div>
+<div class="line">msg.setTo(<span class="stringliteral">&quot;user1&quot;</span>);</div>
+<div class="line">ImageMessageBody body = <span class="keyword">new</span> ImageMessageBody(imageFileUrl);</div>
+<div class="line">msg.addBody(body);</div>
+</div><!-- fragment --> </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a44684a7bc756db68aedcd460ed487add" name="a44684a7bc756db68aedcd460ed487add"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44684a7bc756db68aedcd460ed487add">&#9670;&nbsp;</a></span>addBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.addBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio_1_1agora_1_1chat_1_1_message_body.html">MessageBody</a>&#160;</td>
+          <td class="paramname"><em>body</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >添加消息体。</p>
+<p >本方法与设置消息体 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a1437392f2f2c6a7f73db6816f74f248a">ChatMessage#setBody(MessageBody)</a> 的方法效果相同。推荐使用后者。</p>
+<p >只支持一条消息添加一个消息体。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td>消息体。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab4cd277d7fb79fb4963b45a091c3b25d" name="ab4cd277d7fb79fb4963b45a091c3b25d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4cd277d7fb79fb4963b45a091c3b25d">&#9670;&nbsp;</a></span>conversationId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String io.agora.chat.ChatMessage.conversationId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取会话 ID。</p>
+<dl class="section return"><dt>返回</dt><dd>会话 ID。 </dd></dl>
+
+</div>
+</div>
+<a id="aee2fadbf48dc115d17868c989b88c3f2" name="aee2fadbf48dc115d17868c989b88c3f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee2fadbf48dc115d17868c989b88c3f2">&#9670;&nbsp;</a></span>createCombinedSendMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createCombinedSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>summary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>compatibleText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>messageIdList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>userId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个合并转发消息的发送消息。</p>
+<p >对于不支持合并转发消息的 SDK 版本，该类消息会被解析为文本 <a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html#ac671c3217dba3622a7c6696c815cbd00">Type#TXT</a> 消息，消息内容为 <code>compatibleText</code> 携带的内容，其他字段会被忽略。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>合并消息的标题。该字段可以设置为 <code>null</code> 或者空字符串。 </td></tr>
+    <tr><td class="paramname">summary</td><td>合并消息的概要。该字段可以设置为 <code>null</code> 或者空字符串。 </td></tr>
+    <tr><td class="paramname">compatibleText</td><td>合并消息的兼容信息。该字段可以设置为 <code>null</code> 或者空字符串。该字段用于需要兼容不支持合并转发消息的版本。 </td></tr>
+    <tr><td class="paramname">messageIdList</td><td>合并消息的消息 ID 列表。列表不可为<code>null</code>或者空，最多可包含 300 个消息 ID。调用 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#aed75ce0a590423ac18a94e1d339e97f4">ChatManager#sendMessage(ChatMessage)</a> 方法发送消息会检查该字段的设置。 </td></tr>
+    <tr><td class="paramname">userId</td><td>消息接收方。该字段的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>合并转发消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="a7b0d8a9c7edb6a7ed02a02a9d67d65f7" name="a7b0d8a9c7edb6a7ed02a02a9d67d65f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b0d8a9c7edb6a7ed02a02a9d67d65f7">&#9670;&nbsp;</a></span>createFileSendMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createFileSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个普通文件发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>文件路径。 </td></tr>
+    <tr><td class="paramname">username</td><td>消息接收方的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="acbab1df477a2b8a5aaf7053e27fc9232" name="acbab1df477a2b8a5aaf7053e27fc9232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbab1df477a2b8a5aaf7053e27fc9232">&#9670;&nbsp;</a></span>createFileSendMessage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createFileSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">Uri&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个普通文件发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>文件路径。 </td></tr>
+    <tr><td class="paramname">username</td><td>消息接收方的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="af8d0cd1cfc67aa8deb50386ff4dac2cd" name="af8d0cd1cfc67aa8deb50386ff4dac2cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8d0cd1cfc67aa8deb50386ff4dac2cd">&#9670;&nbsp;</a></span>createImageSendMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createImageSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>sendOriginalImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个图片发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>图片路径。 </td></tr>
+    <tr><td class="paramname">sendOriginalImage</td><td>是否发送原图：<ul>
+<li><code>true</code>：发送原图。</li>
+<li><code>false</code>：若图片小于 100 KB，发送原图；若图片大于等于 100 KB, 发送压缩后的图片。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">username</td><td>消息接收方的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="a1207ebdd9c5ee4abd78ca1e49de6c7e1" name="a1207ebdd9c5ee4abd78ca1e49de6c7e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1207ebdd9c5ee4abd78ca1e49de6c7e1">&#9670;&nbsp;</a></span>createImageSendMessage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createImageSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">Uri&#160;</td>
+          <td class="paramname"><em>imgUri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>sendOriginalImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个图片发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imgUri</td><td>图片 URI。 </td></tr>
+    <tr><td class="paramname">sendOriginalImage</td><td>是否发送原图：<ul>
+<li><code>true</code>：发送原图。</li>
+<li><code>false</code>：若图片小于 100 KB，发送原图；若图片大于等于 100 KB, 发送压缩后的图片。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">username</td><td>消息接收方的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="a8e5998f0cd6fd851153839aadef4d1ed" name="a8e5998f0cd6fd851153839aadef4d1ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e5998f0cd6fd851153839aadef4d1ed">&#9670;&nbsp;</a></span>createLocationSendMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createLocationSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>latitude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>longitude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>locationAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>buildingName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个位置发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">latitude</td><td>纬度。 </td></tr>
+    <tr><td class="paramname">longitude</td><td>经度。 </td></tr>
+    <tr><td class="paramname">locationAddress</td><td>位置详情。 </td></tr>
+    <tr><td class="paramname">buildingName</td><td>建筑物名称。 </td></tr>
+    <tr><td class="paramname">username</td><td>消息接收方的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="a9d2d86c5a7f53e96eaecaa884d2c2d8c" name="a9d2d86c5a7f53e96eaecaa884d2c2d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d2d86c5a7f53e96eaecaa884d2c2d8c">&#9670;&nbsp;</a></span>createLocationSendMessage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createLocationSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>latitude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>longitude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>locationAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个位置发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">latitude</td><td>纬度。 </td></tr>
+    <tr><td class="paramname">longitude</td><td>经度。 </td></tr>
+    <tr><td class="paramname">locationAddress</td><td>位置详情。 </td></tr>
+    <tr><td class="paramname">username</td><td>消息接收方的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="a38f5747a7cb89ec5e4fa069d3ae5f9b8" name="a38f5747a7cb89ec5e4fa069d3ae5f9b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38f5747a7cb89ec5e4fa069d3ae5f9b8">&#9670;&nbsp;</a></span>createReceiveMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createReceiveMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个接收消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>消息类型。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="a1c26e1f6420a89921bae7eb9ea362506" name="a1c26e1f6420a89921bae7eb9ea362506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c26e1f6420a89921bae7eb9ea362506">&#9670;&nbsp;</a></span>createSendMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createSendMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>消息类型。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="afee07299e520d430b53466edc5980daf" name="afee07299e520d430b53466edc5980daf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afee07299e520d430b53466edc5980daf">&#9670;&nbsp;</a></span>createTextSendMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createTextSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个文本发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">content</td><td>文本内容。 </td></tr>
+    <tr><td class="paramname">username</td><td>消息接收方的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="af6312e5ea0ca70b36d22c5e0bdfc288f" name="af6312e5ea0ca70b36d22c5e0bdfc288f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6312e5ea0ca70b36d22c5e0bdfc288f">&#9670;&nbsp;</a></span>createTxtSendMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createTxtSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>content</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个文本发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">content</td><td>文本内容。 </td></tr>
+    <tr><td class="paramname">username</td><td>消息接收方的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">弃用:</a></b></dt><dd>已废弃。请用 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#afee07299e520d430b53466edc5980daf">createTextSendMessage(String, String)</a> 代替。</dd></dl>
+
+</div>
+</div>
+<a id="ac78142ff1dfe3fa07d63027978a9ef84" name="ac78142ff1dfe3fa07d63027978a9ef84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac78142ff1dfe3fa07d63027978a9ef84">&#9670;&nbsp;</a></span>createVideoSendMessage() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createVideoSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>videofilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>imageThumbPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个视频发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">videofilePath</td><td>视频文件路径。 </td></tr>
+    <tr><td class="paramname">imageThumbPath</td><td>视频第一帧图缩略图。 </td></tr>
+    <tr><td class="paramname">timeLength</td><td>视频时间长度，单位为秒。 </td></tr>
+    <tr><td class="paramname">username</td><td>消息接收方的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="a487c212c323a110d1d5ca6406903e11f" name="a487c212c323a110d1d5ca6406903e11f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a487c212c323a110d1d5ca6406903e11f">&#9670;&nbsp;</a></span>createVideoSendMessage() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createVideoSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">Uri&#160;</td>
+          <td class="paramname"><em>videofilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>imageThumbPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个视频发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">videofilePath</td><td>视频文件路径。 </td></tr>
+    <tr><td class="paramname">imageThumbPath</td><td>视频第一帧图缩略图。 </td></tr>
+    <tr><td class="paramname">timeLength</td><td>视频时间长度，单位为秒。 </td></tr>
+    <tr><td class="paramname">username</td><td>消息接收方的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="aae1215a31dad2f68bcad9a321defe3fd" name="aae1215a31dad2f68bcad9a321defe3fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1215a31dad2f68bcad9a321defe3fd">&#9670;&nbsp;</a></span>createVideoSendMessage() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createVideoSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">Uri&#160;</td>
+          <td class="paramname"><em>videofilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Uri&#160;</td>
+          <td class="paramname"><em>imageThumbPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个视频发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">videofilePath</td><td>视频文件路径。 </td></tr>
+    <tr><td class="paramname">imageThumbPath</td><td>视频第一帧图缩略图。 </td></tr>
+    <tr><td class="paramname">timeLength</td><td>视频时间长度，单位为秒。 </td></tr>
+    <tr><td class="paramname">username</td><td>消息接收方的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="afff9282db0b4fe2086a7afc70dc092f8" name="afff9282db0b4fe2086a7afc70dc092f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff9282db0b4fe2086a7afc70dc092f8">&#9670;&nbsp;</a></span>createVoiceSendMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createVoiceSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个语音发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>语音文件路径。 </td></tr>
+    <tr><td class="paramname">timeLength</td><td>语音时间长度，单位为秒。 </td></tr>
+    <tr><td class="paramname">username</td><td>消息接收方的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="a5935e8c3e8ed4069b01ca38b1f1a6ab9" name="a5935e8c3e8ed4069b01ca38b1f1a6ab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5935e8c3e8ed4069b01ca38b1f1a6ab9">&#9670;&nbsp;</a></span>createVoiceSendMessage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatMessage.createVoiceSendMessage </td>
+          <td>(</td>
+          <td class="paramtype">Uri&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >创建一个语音发送消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>语音文件 URI。 </td></tr>
+    <tr><td class="paramname">timeLength</td><td>语音时间长度，单位为秒。 </td></tr>
+    <tr><td class="paramname">username</td><td>消息接收方的设置取决于会话类型：<ul>
+<li>单聊：对方用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>子区会话：子区 ID。</li>
+<li>聊天室聊天：聊天室 ID。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息对象。 </dd></dl>
+
+</div>
+</div>
+<a id="ad34bc5e96383f733c37eb9cc25c1a501" name="ad34bc5e96383f733c37eb9cc25c1a501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34bc5e96383f733c37eb9cc25c1a501">&#9670;&nbsp;</a></span>deliverOnlineOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.deliverOnlineOnly </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>onlineOnly</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息是否只投递给在线用户。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">onlineOnly</td><td>消息是否只投递给在线用户：<ul>
+<li><code>true</code>：只有消息接收方在线时才能投递成功。若接收方离线，则消息会被丢弃。</li>
+<li><code>false</code>（默认）：如果用户在线，则直接投递；如果用户离线，消息会在用户上线时投递。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6159ec1e08d6152e552fb2a37f6278be" name="a6159ec1e08d6152e552fb2a37f6278be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6159ec1e08d6152e552fb2a37f6278be">&#9670;&nbsp;</a></span>direct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_direct.html">Direct</a> io.agora.chat.ChatMessage.direct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >消息方向。</p><ul>
+<li>SEND：该消息是当前用户发送出去的。</li>
+<li>RECEIVE：该消息是当前用户接收到的。</li>
+</ul>
+<dl class="section return"><dt>返回</dt><dd>发送或接收，详见 <a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_direct.html">Direct</a>。 </dd></dl>
+
+</div>
+</div>
+<a id="ad69e1921ce5110379e40038c093dede0" name="ad69e1921ce5110379e40038c093dede0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad69e1921ce5110379e40038c093dede0">&#9670;&nbsp;</a></span>ext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt; String, Object &gt; io.agora.chat.ChatMessage.ext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息包含的全部扩展字段。</p>
+<dl class="section return"><dt>返回</dt><dd>消息的全部扩展字段，以 Map&lt;String, Object&gt; 形式返回。返回 Entry.value 的具体类型有 Boolean, Integer, Long, Float, Double, String。 输入 JsonObject 的属性，map 结构返回时属性是 String。 </dd></dl>
+
+</div>
+</div>
+<a id="adbd9799791d211aa6de56be0c632fb0f" name="adbd9799791d211aa6de56be0c632fb0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd9799791d211aa6de56be0c632fb0f">&#9670;&nbsp;</a></span>getAttributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt; String, Object &gt; io.agora.chat.ChatMessage.getAttributes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息包含的全部扩展字段。</p>
+<dl class="section return"><dt>返回</dt><dd>消息的全部扩展字段，以 Map&lt;String, Object&gt; 形式返回，其中 Entry.value 可为 Boolean、Integer、Long、Float、Double、String、JsonObject、或 JsonArray 类型。 </dd></dl>
+
+</div>
+</div>
+<a id="abc7b32f391f899c47fca5732d0c3f748" name="abc7b32f391f899c47fca5732d0c3f748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc7b32f391f899c47fca5732d0c3f748">&#9670;&nbsp;</a></span>getBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">synchronized <a class="el" href="classio_1_1agora_1_1chat_1_1_message_body.html">MessageBody</a> io.agora.chat.ChatMessage.getBody </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息体。</p>
+<dl class="section return"><dt>返回</dt><dd>消息体。 </dd></dl>
+
+</div>
+</div>
+<a id="aa7274f83b802515ecdc666bdbb56022f" name="aa7274f83b802515ecdc666bdbb56022f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7274f83b802515ecdc666bdbb56022f">&#9670;&nbsp;</a></span>getBooleanAttribute() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatMessage.getBooleanAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em></td><td>)</td>
+          <td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取 Boolean 类型的消息扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和异常原因。详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a80045bc71b488fad679d6cbd85e44efd" name="a80045bc71b488fad679d6cbd85e44efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80045bc71b488fad679d6cbd85e44efd">&#9670;&nbsp;</a></span>getBooleanAttribute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatMessage.getBooleanAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取 Boolean 类型的消息扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">defaultValue</td><td>属性的默认值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+
+</div>
+</div>
+<a id="a6cb58ce0d8f4657e5cc633a6fb6b50b1" name="a6cb58ce0d8f4657e5cc633a6fb6b50b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb58ce0d8f4657e5cc633a6fb6b50b1">&#9670;&nbsp;</a></span>getChatThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_thread.html">ChatThread</a> io.agora.chat.ChatMessage.getChatThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取子区概览信息。</p>
+<p >子区概览信息仅在创建子区后携带。</p>
+<dl class="section return"><dt>返回</dt><dd>子区概览信息。 </dd></dl>
+
+</div>
+</div>
+<a id="ac237f296fa91a238418651dff3b46691" name="ac237f296fa91a238418651dff3b46691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac237f296fa91a238418651dff3b46691">&#9670;&nbsp;</a></span>getChatType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_chat_type.html">ChatType</a> io.agora.chat.ChatMessage.getChatType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取聊天类型。</p>
+<dl class="section return"><dt>返回</dt><dd>聊天类型。 </dd></dl>
+
+</div>
+</div>
+<a id="af50038886f3b86a15325ca9bc7ca8575" name="af50038886f3b86a15325ca9bc7ca8575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af50038886f3b86a15325ca9bc7ca8575">&#9670;&nbsp;</a></span>getDoubleAttribute() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double io.agora.chat.ChatMessage.getDoubleAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em></td><td>)</td>
+          <td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的 Double 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和异常原因。详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a29edf437d3768f0797a2049ecce12d96" name="a29edf437d3768f0797a2049ecce12d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29edf437d3768f0797a2049ecce12d96">&#9670;&nbsp;</a></span>getDoubleAttribute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double io.agora.chat.ChatMessage.getDoubleAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的 Double 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">defaultValue</td><td>属性的默认值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+
+</div>
+</div>
+<a id="a56e49a386f1ef084538f2556bdc1ca98" name="a56e49a386f1ef084538f2556bdc1ca98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e49a386f1ef084538f2556bdc1ca98">&#9670;&nbsp;</a></span>getFloatAttribute() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float io.agora.chat.ChatMessage.getFloatAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em></td><td>)</td>
+          <td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的 Float 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和异常原因。详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a492bc9a045a04cc494b453bfdb53d4be" name="a492bc9a045a04cc494b453bfdb53d4be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a492bc9a045a04cc494b453bfdb53d4be">&#9670;&nbsp;</a></span>getFloatAttribute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float io.agora.chat.ChatMessage.getFloatAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的 Float 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">defaultValue</td><td>属性的默认值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+
+</div>
+</div>
+<a id="af64d88479148ebd2409ac940c7489d8b" name="af64d88479148ebd2409ac940c7489d8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64d88479148ebd2409ac940c7489d8b">&#9670;&nbsp;</a></span>getFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String io.agora.chat.ChatMessage.getFrom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息发送方的用户 ID。</p>
+<dl class="section return"><dt>返回</dt><dd>用户 ID。 </dd></dl>
+
+</div>
+</div>
+<a id="a156a089982dca520160f1ccfc70ee223" name="a156a089982dca520160f1ccfc70ee223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156a089982dca520160f1ccfc70ee223">&#9670;&nbsp;</a></span>getIntAttribute() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.chat.ChatMessage.getIntAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em></td><td>)</td>
+          <td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的 Int 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和异常原因。详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a329097855dd4ece0007643b340aadb73" name="a329097855dd4ece0007643b340aadb73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a329097855dd4ece0007643b340aadb73">&#9670;&nbsp;</a></span>getIntAttribute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.chat.ChatMessage.getIntAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的 Int 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">defaultValue</td><td>默认值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+
+</div>
+</div>
+<a id="a99a063df3cca58dbf4e6cf998c94a41a" name="a99a063df3cca58dbf4e6cf998c94a41a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99a063df3cca58dbf4e6cf998c94a41a">&#9670;&nbsp;</a></span>getJSONArrayAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">JSONArray io.agora.chat.ChatMessage.getJSONArrayAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em></td><td>)</td>
+          <td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的 JSONArray 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和异常原因。详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa4224c9496d27391112913eb48bcc09" name="afa4224c9496d27391112913eb48bcc09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4224c9496d27391112913eb48bcc09">&#9670;&nbsp;</a></span>getJSONObjectAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">JSONObject io.agora.chat.ChatMessage.getJSONObjectAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em></td><td>)</td>
+          <td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的 JSONObject 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和异常原因。详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa83e3b4a39c64a6b44c2bdd45bb58061" name="aa83e3b4a39c64a6b44c2bdd45bb58061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa83e3b4a39c64a6b44c2bdd45bb58061">&#9670;&nbsp;</a></span>getLongAttribute() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long io.agora.chat.ChatMessage.getLongAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em></td><td>)</td>
+          <td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的 Long 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和异常原因。详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4a9323cabcec3ef9751e234ccd040804" name="a4a9323cabcec3ef9751e234ccd040804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a9323cabcec3ef9751e234ccd040804">&#9670;&nbsp;</a></span>getLongAttribute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long io.agora.chat.ChatMessage.getLongAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的 Long 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">defaultValue</td><td>属性的默认值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+
+</div>
+</div>
+<a id="a4b6d93f0bf13c893cdb80002c753d97d" name="a4b6d93f0bf13c893cdb80002c753d97d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b6d93f0bf13c893cdb80002c753d97d">&#9670;&nbsp;</a></span>getMessageReaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_message_reaction.html">MessageReaction</a> &gt; io.agora.chat.ChatMessage.getMessageReaction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取 Reaction 列表。</p>
+<dl class="section return"><dt>返回</dt><dd>Reaction 列表。 </dd></dl>
+
+</div>
+</div>
+<a id="a2f7b7988fdd4b9a8bb747d7f4ad84bc5" name="a2f7b7988fdd4b9a8bb747d7f4ad84bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f7b7988fdd4b9a8bb747d7f4ad84bc5">&#9670;&nbsp;</a></span>getMsgId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String io.agora.chat.ChatMessage.getMsgId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的 ID。</p>
+<dl class="section return"><dt>返回</dt><dd>消息 ID。 </dd></dl>
+
+</div>
+</div>
+<a id="ae0ee30cee0662df3bf73d7117c9fd3d8" name="ae0ee30cee0662df3bf73d7117c9fd3d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0ee30cee0662df3bf73d7117c9fd3d8">&#9670;&nbsp;</a></span>getMsgTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long io.agora.chat.ChatMessage.getMsgTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的服务器时间戳。</p>
+<p >该时间戳为服务器接收消息的时间。</p>
+<dl class="section return"><dt>返回</dt><dd>服务器接收消息的时间戳。 </dd></dl>
+
+</div>
+</div>
+<a id="ac9422f5151f1e73fe1178eedffef9e6c" name="ac9422f5151f1e73fe1178eedffef9e6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9422f5151f1e73fe1178eedffef9e6c">&#9670;&nbsp;</a></span>getRecaller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String io.agora.chat.ChatMessage.getRecaller </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息撤回者的用户 ID。</p>
+<dl class="section return"><dt>返回</dt><dd>撤回者用户 ID。 </dd></dl>
+
+</div>
+</div>
+<a id="a7fa58478b99f9baebf2f36b74b23d12f" name="a7fa58478b99f9baebf2f36b74b23d12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa58478b99f9baebf2f36b74b23d12f">&#9670;&nbsp;</a></span>getStringAttribute() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String io.agora.chat.ChatMessage.getStringAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em></td><td>)</td>
+          <td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的 String 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和异常原因。详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0e20fad562c2529681b484eb74ed50b0" name="a0e20fad562c2529681b484eb74ed50b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e20fad562c2529681b484eb74ed50b0">&#9670;&nbsp;</a></span>getStringAttribute() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String io.agora.chat.ChatMessage.getStringAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的 String 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">defaultValue</td><td>默认值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>属性值。 </dd></dl>
+
+</div>
+</div>
+<a id="ab53a87dc034de652297201e1ce77e909" name="ab53a87dc034de652297201e1ce77e909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab53a87dc034de652297201e1ce77e909">&#9670;&nbsp;</a></span>getTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String io.agora.chat.ChatMessage.getTo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息接收方。</p><ul>
+<li>单聊：消息接收方的用户 ID。</li>
+<li>群聊：群组 ID。</li>
+<li>聊天室：聊天室 ID。</li>
+</ul>
+<dl class="section return"><dt>返回</dt><dd>消息接收方。 </dd></dl>
+
+</div>
+</div>
+<a id="a9105167f4960a1fc8cb893e45b00c6a8" name="a9105167f4960a1fc8cb893e45b00c6a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9105167f4960a1fc8cb893e45b00c6a8">&#9670;&nbsp;</a></span>getType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html">Type</a> io.agora.chat.ChatMessage.getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息类型。</p>
+<dl class="section return"><dt>返回</dt><dd>消息类型。 </dd></dl>
+
+</div>
+</div>
+<a id="a2a2ca6c8016e19fe21e564a17ac82c8d" name="a2a2ca6c8016e19fe21e564a17ac82c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a2ca6c8016e19fe21e564a17ac82c8d">&#9670;&nbsp;</a></span>getUserName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String io.agora.chat.ChatMessage.getUserName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的对端用户：</p><ul>
+<li>对于发送的消息，单聊为接收方的用户 ID，群聊为群组 ID，聊天室为聊天室 ID。</li>
+<li>对于接收的消息，对于接收的消息来说，单聊、群聊和聊天室聊天均为发送方的用户 ID。</li>
+</ul>
+<dl class="section return"><dt>返回</dt><dd>消息接收方。 </dd></dl>
+
+</div>
+</div>
+<a id="ace4f0b54e59b5468df44acad3dabf4bf" name="ace4f0b54e59b5468df44acad3dabf4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace4f0b54e59b5468df44acad3dabf4bf">&#9670;&nbsp;</a></span>groupAckCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.chat.ChatMessage.groupAckCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >群消息已读人数。</p>
+<dl class="section return"><dt>返回</dt><dd>消息已读人数。 </dd></dl>
+
+</div>
+</div>
+<a id="af81158c6da80721fcd1d3c0ab6ea89f6" name="af81158c6da80721fcd1d3c0ab6ea89f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81158c6da80721fcd1d3c0ab6ea89f6">&#9670;&nbsp;</a></span>isAcked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatMessage.isAcked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取对方是否已读。</p>
+<dl class="section return"><dt>返回</dt><dd>消息是否已读： -<code>true</code>：已读。 -<code>false</code>：未读。 </dd></dl>
+
+</div>
+</div>
+<a id="aa2096a8ec7ce679f6ea82917740a1e22" name="aa2096a8ec7ce679f6ea82917740a1e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2096a8ec7ce679f6ea82917740a1e22">&#9670;&nbsp;</a></span>isBroadcast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatMessage.isBroadcast </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >是否是聊天室全局广播消息。</p><ul>
+<li><code>true</code>：是；</li>
+<li><code>false</code>：否。</li>
+</ul>
+<dl class="section return"><dt>返回</dt><dd>是否是聊天室全局广播消息。 </dd></dl>
+
+</div>
+</div>
+<a id="a13c1eb8298f017773bee214f4b11caa3" name="a13c1eb8298f017773bee214f4b11caa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13c1eb8298f017773bee214f4b11caa3">&#9670;&nbsp;</a></span>isChatThreadMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatMessage.isChatThreadMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息是否是子区消息。</p>
+<dl class="section return"><dt>返回</dt><dd>返回是否是子区消息的结果。<ul>
+<li><code>true</code>表示是子区消息；</li>
+<li><code>false</code>表示不是子区消息。 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a2f2626b299fa1626b7061e9952bd35e4" name="a2f2626b299fa1626b7061e9952bd35e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f2626b299fa1626b7061e9952bd35e4">&#9670;&nbsp;</a></span>isContentReplaced()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatMessage.isContentReplaced </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >消息内容是否被替换过。</p><ul>
+<li><code>true</code>：是；</li>
+<li><code>false</code>：否。</li>
+</ul>
+<dl class="section return"><dt>返回</dt><dd>消息内容是否被替换过。 </dd></dl>
+
+</div>
+</div>
+<a id="a95d5783cd0665d755c860dc0deb295b8" name="a95d5783cd0665d755c860dc0deb295b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d5783cd0665d755c860dc0deb295b8">&#9670;&nbsp;</a></span>isDelivered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatMessage.isDelivered </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息是否成功送达。</p>
+<dl class="section return"><dt>返回</dt><dd>消息是否成功送达。<ul>
+<li><code>true</code>：已送达。</li>
+<li><code>false</code>：未送达。 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ae428aa67109f7bcfe11aa70709413065" name="ae428aa67109f7bcfe11aa70709413065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae428aa67109f7bcfe11aa70709413065">&#9670;&nbsp;</a></span>isDeliverOnlineOnly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatMessage.isDeliverOnlineOnly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >判断消息是否只投递在线用户。</p>
+<dl class="section return"><dt>返回</dt><dd>- <code>true</code>：只投递在线用户。<ul>
+<li><code>false</code>：投递所有用户。 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a0efbf90fa7b21c8439666a855225ff1a" name="a0efbf90fa7b21c8439666a855225ff1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0efbf90fa7b21c8439666a855225ff1a">&#9670;&nbsp;</a></span>isListened()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatMessage.isListened </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取语音消息是否已听。</p>
+<dl class="section return"><dt>返回</dt><dd>语音是否已听：<ul>
+<li><code>true</code>：已听；</li>
+<li><code>false</code>：未听。 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a503868ac4a1926803c9b1d8e5d732be2" name="a503868ac4a1926803c9b1d8e5d732be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a503868ac4a1926803c9b1d8e5d732be2">&#9670;&nbsp;</a></span>isNeedGroupAck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatMessage.isNeedGroupAck </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >消息是否需要群组已读回执。</p>
+<dl class="section return"><dt>返回</dt><dd>消息是否需要群组已读回执<ul>
+<li><code>true</code>：需要已读回执；</li>
+<li><code>false</code>：不需要已读回执。 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="aa9fc08eba6f775af0d67b5d3e2dca22d" name="aa9fc08eba6f775af0d67b5d3e2dca22d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9fc08eba6f775af0d67b5d3e2dca22d">&#9670;&nbsp;</a></span>isOnlineState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatMessage.isOnlineState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >是否为在线消息。</p>
+<dl class="section note"><dt>注解</dt><dd>该字段标记服务器下发消息时判断用户是在线还是离线的状态。</dd></dl>
+<p>该字段为服务器下发字段，不在本地数据库中存储。对于从数据库读取的消息或拉取的漫游消息，该字段的值默认为 <code>true</code>。</p>
+<dl class="section return"><dt>返回</dt><dd>是否为在线消息。<ul>
+<li>（默认）<code>true</code>：是。</li>
+<li><code>false</code>：否。 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a82fdb6de7f982fcae3938938acba7751" name="a82fdb6de7f982fcae3938938acba7751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82fdb6de7f982fcae3938938acba7751">&#9670;&nbsp;</a></span>isUnread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatMessage.isUnread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >检查消息是否未读。</p>
+<dl class="section return"><dt>返回</dt><dd>消息是否未读。<ul>
+<li><code>true</code>: 未读；</li>
+<li><code>false</code>: 已读。 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a3209a5983a9d62e926384fc76ce35996" name="a3209a5983a9d62e926384fc76ce35996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3209a5983a9d62e926384fc76ce35996">&#9670;&nbsp;</a></span>localTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long io.agora.chat.ChatMessage.localTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的本地时间戳。</p>
+<p >该时间戳为消息的本地创建时间戳。</p>
+<dl class="section return"><dt>返回</dt><dd>消息的本地时间戳。 </dd></dl>
+
+</div>
+</div>
+<a id="a7fe49d1581c1b153645d3272742eadba" name="a7fe49d1581c1b153645d3272742eadba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe49d1581c1b153645d3272742eadba">&#9670;&nbsp;</a></span>pinnedInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classio_1_1agora_1_1chat_1_1_message_pin_info.html">MessagePinInfo</a> io.agora.chat.ChatMessage.pinnedInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的置顶详情。</p>
+<dl class="section return"><dt>返回</dt><dd>消息的置顶详情。 </dd></dl>
+
+</div>
+</div>
+<a id="a84861ae86203b2ef695969e47cb4360e" name="a84861ae86203b2ef695969e47cb4360e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84861ae86203b2ef695969e47cb4360e">&#9670;&nbsp;</a></span>progress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.chat.ChatMessage.progress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >消息中的附件的上传或者下载进度。</p>
+<p >消息附件的缩略图不涉及进度信息。</p>
+<dl class="section return"><dt>返回</dt><dd>消息中的附件的上传或者下载进度，取值范围为 [0,100]。 </dd></dl>
+
+</div>
+</div>
+<a id="a1c29fa495431a34641a82971ffc3a710" name="a1c29fa495431a34641a82971ffc3a710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c29fa495431a34641a82971ffc3a710">&#9670;&nbsp;</a></span>receiverList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; String &gt; io.agora.chat.ChatMessage.receiverList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >定向消息的接收方。</p>
+<dl class="section return"><dt>返回</dt><dd>定向消息的接收方。 </dd></dl>
+
+</div>
+</div>
+<a id="a50b490808da877198a85c27f3bf27775" name="a50b490808da877198a85c27f3bf27775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50b490808da877198a85c27f3bf27775">&#9670;&nbsp;</a></span>setAcked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setAcked </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>isAcked</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置对方是否已读。</p>
+<p >该方法由 SDK 调用，而非开发者。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isAcked</td><td>消息是否已读： -<code>true</code>：已读。 -<code>false</code>：未读。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a48b90ba34c3d2229f1db159e56d0fdcc" name="a48b90ba34c3d2229f1db159e56d0fdcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48b90ba34c3d2229f1db159e56d0fdcc">&#9670;&nbsp;</a></span>setAttribute() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息的 Boolean 类型的扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">value</td><td>属性值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af5b40625e0e0557b3ae840dea9502fd5" name="af5b40625e0e0557b3ae840dea9502fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b40625e0e0557b3ae840dea9502fd5">&#9670;&nbsp;</a></span>setAttribute() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息的 Double 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">value</td><td>属性值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adc7e3e0a509a517e6bea3c55d2588b51" name="adc7e3e0a509a517e6bea3c55d2588b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc7e3e0a509a517e6bea3c55d2588b51">&#9670;&nbsp;</a></span>setAttribute() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息的 Float 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">value</td><td>属性值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a86a9f62433ffd47dc7367bed9abcc5b3" name="a86a9f62433ffd47dc7367bed9abcc5b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a9f62433ffd47dc7367bed9abcc5b3">&#9670;&nbsp;</a></span>setAttribute() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息的 Int 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">value</td><td>属性值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afd4f3bbe5520faadd4db498ce46b1ab5" name="afd4f3bbe5520faadd4db498ce46b1ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd4f3bbe5520faadd4db498ce46b1ab5">&#9670;&nbsp;</a></span>setAttribute() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">JSONArray&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息的 JSONArray 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">value</td><td>属性值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81d95b538cc066386bd8f40d16755588" name="a81d95b538cc066386bd8f40d16755588"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81d95b538cc066386bd8f40d16755588">&#9670;&nbsp;</a></span>setAttribute() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">JSONObject&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息的 JSONObject 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">value</td><td>属性值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9ff85a7d583f467f16504b0243fed32b" name="a9ff85a7d583f467f16504b0243fed32b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ff85a7d583f467f16504b0243fed32b">&#9670;&nbsp;</a></span>setAttribute() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息的 Long 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">value</td><td>属性值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a17a228b19a951c9bb8fb074d9d8108d4" name="a17a228b19a951c9bb8fb074d9d8108d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a228b19a951c9bb8fb074d9d8108d4">&#9670;&nbsp;</a></span>setAttribute() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setAttribute </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息的 String 类型扩展属性。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attribute</td><td>属性名。 </td></tr>
+    <tr><td class="paramname">value</td><td>属性值。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1437392f2f2c6a7f73db6816f74f248a" name="a1437392f2f2c6a7f73db6816f74f248a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1437392f2f2c6a7f73db6816f74f248a">&#9670;&nbsp;</a></span>setBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio_1_1agora_1_1chat_1_1_message_body.html">MessageBody</a>&#160;</td>
+          <td class="paramname"><em>body</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >（建议方法）设置消息体。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td>消息体。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7a789a8325d568ab52dfb53ba23a6f13" name="a7a789a8325d568ab52dfb53ba23a6f13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a789a8325d568ab52dfb53ba23a6f13">&#9670;&nbsp;</a></span>setChatType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setChatType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_chat_type.html">ChatType</a>&#160;</td>
+          <td class="paramname"><em>chatType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置聊天类型。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chatType</td><td>聊天类型，默认为单聊。详见 <a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_chat_type.html">ChatType</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0cce11ba625e8a16efc19d761506fcc1" name="a0cce11ba625e8a16efc19d761506fcc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cce11ba625e8a16efc19d761506fcc1">&#9670;&nbsp;</a></span>setDeliverAcked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setDeliverAcked </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>isDeliverAcked</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息已送达标记。</p>
+<p >开发者不要调用，由 SDK 内部调用。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isDeliverAcked</td><td>消息是否已送达对端用户：<ul>
+<li><code>true</code>：消息已送达。</li>
+<li><code>false</code>：消息未送达。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8790d65c1a576de9e191f4c1b4984729" name="a8790d65c1a576de9e191f4c1b4984729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8790d65c1a576de9e191f4c1b4984729">&#9670;&nbsp;</a></span>setDelivered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setDelivered </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>isDelivered</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息是否成功送达。</p>
+<p >该方法由 SDK 调用，而非开发者。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isDelivered</td><td>消息是否成功送达。<ul>
+<li><code>true</code>：已送达。</li>
+<li><code>false</code>：未送达。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af031b8a3758dc598608371c9256eec03" name="af031b8a3758dc598608371c9256eec03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af031b8a3758dc598608371c9256eec03">&#9670;&nbsp;</a></span>setDirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setDirection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_direct.html">Direct</a>&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息方向。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dir</td><td>消息的方向，详见 <a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_direct.html">Direct</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac896cadb401aa09e79910ef16c5a9c97" name="ac896cadb401aa09e79910ef16c5a9c97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac896cadb401aa09e79910ef16c5a9c97">&#9670;&nbsp;</a></span>setFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setFrom </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>from</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息发送方的用户 ID。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>发送方的用户 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a58b481d8189c1d33432055e7342299eb" name="a58b481d8189c1d33432055e7342299eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58b481d8189c1d33432055e7342299eb">&#9670;&nbsp;</a></span>setGroupAckCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setGroupAckCount </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置群消息已读人数。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>群消息已读人数。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a39e8890a19a7359f16acdbb6915391ad" name="a39e8890a19a7359f16acdbb6915391ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e8890a19a7359f16acdbb6915391ad">&#9670;&nbsp;</a></span>setIsChatThreadMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setIsChatThreadMessage </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>isChatThreadMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息是否是子区消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isChatThreadMessage</td><td>消息是否是子区消息：<ul>
+<li><code>true</code>：是；</li>
+<li><code>false</code>：否。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8cd51d03641d50f2e7d86cb1d2883ed1" name="a8cd51d03641d50f2e7d86cb1d2883ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd51d03641d50f2e7d86cb1d2883ed1">&#9670;&nbsp;</a></span>setIsNeedGroupAck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setIsNeedGroupAck </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>need</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置群组消息是否需要已读回执。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">need</td><td>群组消息是否需要已读回执:<ul>
+<li><code>true</code>：需要；</li>
+<li><code>false</code>：不需要。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0a33f901c8abedf5b87993bce08c7ab4" name="a0a33f901c8abedf5b87993bce08c7ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a33f901c8abedf5b87993bce08c7ab4">&#9670;&nbsp;</a></span>setListened()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setListened </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>isListened</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置语音消息是否已听。</p>
+<p >该方法由 SDK 调用，而非开发者。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isListened</td><td>语音消息是否已听：<ul>
+<li><code>true</code>：已听。</li>
+<li><code>false</code>：未听。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aee5d91fe579c22527140f0a2902d3e2b" name="aee5d91fe579c22527140f0a2902d3e2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee5d91fe579c22527140f0a2902d3e2b">&#9670;&nbsp;</a></span>setLocalTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setLocalTime </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>serverTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息的本地时间戳。</p>
+<p >该时间戳为消息的本地创建时间戳。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serverTime</td><td>消息的本地时间戳。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a329414d764bbb44c312b3c56d0b4964c" name="a329414d764bbb44c312b3c56d0b4964c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a329414d764bbb44c312b3c56d0b4964c">&#9670;&nbsp;</a></span>setMessageStatusCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">synchronized void io.agora.chat.ChatMessage.setMessageStatusCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息状态变化的回调。</p>
+<p >设置消息状态回调，以便刷新界面。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>消息状态改变的回调。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7cbf21acc3daa056e4b44e664dff9b67" name="a7cbf21acc3daa056e4b44e664dff9b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cbf21acc3daa056e4b44e664dff9b67">&#9670;&nbsp;</a></span>setMsgId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setMsgId </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>msgId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置本地消息 ID。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgId</td><td>消息 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa6374e827c3876214d7eeaccd7b4df43" name="aa6374e827c3876214d7eeaccd7b4df43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6374e827c3876214d7eeaccd7b4df43">&#9670;&nbsp;</a></span>setMsgTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setMsgTime </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>msgTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息的服务器时间戳。</p>
+<p >该时间戳为服务器接收消息的时间。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgTime</td><td>服务器接收消息的时间戳。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a391c74e29f4059180fa7967cf29a6d55" name="a391c74e29f4059180fa7967cf29a6d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a391c74e29f4059180fa7967cf29a6d55">&#9670;&nbsp;</a></span>setPriority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setPriority </td>
+          <td>(</td>
+          <td class="paramtype">ChatRoomMessagePriority&#160;</td>
+          <td class="paramname"><em>priority</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置聊天室消息优先级。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">priority</td><td>聊天室消息优先级。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac6f9dcaec418b1dd988e23002c53ae11" name="ac6f9dcaec418b1dd988e23002c53ae11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6f9dcaec418b1dd988e23002c53ae11">&#9670;&nbsp;</a></span>setProgress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setProgress </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>progress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息中的附件的上传或者下载进度。</p>
+<p >对于 app 开发者来说，通常不需要主动设置进度。详见 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a84861ae86203b2ef695969e47cb4360e">ChatMessage#progress()</a>。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">progress</td><td>消息中的附件的上传或者下载进度，取值范围为 [0,100]。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a23dafe6373335349fb49d0b916753002" name="a23dafe6373335349fb49d0b916753002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23dafe6373335349fb49d0b916753002">&#9670;&nbsp;</a></span>setReceiverList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setReceiverList </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>receiverList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置定向消息接收方。</p>
+<p >该方法适用于群组和聊天室。若创建消息后不调用该方法，则消息发送给群组或聊天室的所有成员。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">receiverList</td><td>定向消息接收方。若传入 <code>null</code>，则消息发送给群组或聊天室的所有成员。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeacc4698eb71bde2974a213f534098b6" name="aeacc4698eb71bde2974a213f534098b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeacc4698eb71bde2974a213f534098b6">&#9670;&nbsp;</a></span>setStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_status.html">Status</a>&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息发送或接收的状态。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>消息的状态。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7e3d34b16e92062452e89d8a63782a10" name="a7e3d34b16e92062452e89d8a63782a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e3d34b16e92062452e89d8a63782a10">&#9670;&nbsp;</a></span>setTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setTo </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>to</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息的接收方的用户 ID。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">to</td><td>消息接收方的用户 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad08374b41f87a8f9185db0f2baad4e93" name="ad08374b41f87a8f9185db0f2baad4e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad08374b41f87a8f9185db0f2baad4e93">&#9670;&nbsp;</a></span>setUnread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatMessage.setUnread </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>unread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置消息是否未读。</p>
+<p >建议在会话中，使用 <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html#aa64a9865b7cb91b849a89cffa12f3111">Conversation#markAllMessagesAsRead()</a>。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unread</td><td>消息是否未读：<ul>
+<li><code>true</code>:设置消息为未读；</li>
+<li><code>false</code>:设置消息为已读。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a49c32a6896f282581fc8686b3c9949fe" name="a49c32a6896f282581fc8686b3c9949fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49c32a6896f282581fc8686b3c9949fe">&#9670;&nbsp;</a></span>status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_status.html">Status</a> io.agora.chat.ChatMessage.status </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取消息的发送/接收状态。</p>
+<dl class="section return"><dt>返回</dt><dd>消息的发送/接收状态。 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>io/agora/chat/ChatMessage.java</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

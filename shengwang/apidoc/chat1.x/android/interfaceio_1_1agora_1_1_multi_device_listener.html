@@ -68,13 +68,943 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
 <a href="interfaceio_1_1agora_1_1_multi_device_listener-members.html">所有成员列表</a>  </div>
   <div class="headertitle"><div class="title">io.agora.MultiDeviceListener接口 参考</div></div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ae61af749d03279ac7648db18f7e62d1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#ae61af749d03279ac7648db18f7e62d1b">onContactEvent</a> (int event, String target, String ext)</td></tr>
+<tr class="separator:ae61af749d03279ac7648db18f7e62d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7aa376a3c6fb572919faa5140f76c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#add7aa376a3c6fb572919faa5140f76c4">onGroupEvent</a> (int event, String target, List&lt; String &gt; usernames)</td></tr>
+<tr class="separator:add7aa376a3c6fb572919faa5140f76c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7182bd714c0f37acf207ac62541def4c"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a7182bd714c0f37acf207ac62541def4c">onChatThreadEvent</a> (int event, String target, List&lt; String &gt; usernames)</td></tr>
+<tr class="separator:a7182bd714c0f37acf207ac62541def4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6e03cad458ae869b0b6efed505897c"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#adf6e03cad458ae869b0b6efed505897c">onMessageRemoved</a> (String conversationId, String deviceId)</td></tr>
+<tr class="separator:adf6e03cad458ae869b0b6efed505897c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad61dd94642051500b054156014c2897b"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#ad61dd94642051500b054156014c2897b">onConversationEvent</a> (int event, String conversationId, Conversation.ConversationType type)</td></tr>
+<tr class="separator:ad61dd94642051500b054156014c2897b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a9538b4657a459f1b96f7776af180896f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a9538b4657a459f1b96f7776af180896f">CONTACT_REMOVE</a> = 2</td></tr>
+<tr class="separator:a9538b4657a459f1b96f7776af180896f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac677eaa48f9eb2a6300680c1585136d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#ac677eaa48f9eb2a6300680c1585136d0">CONTACT_ACCEPT</a> = 3</td></tr>
+<tr class="separator:ac677eaa48f9eb2a6300680c1585136d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc50d72f5a7b8bdebbdb3b783187620f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#adc50d72f5a7b8bdebbdb3b783187620f">CONTACT_DECLINE</a> = 4</td></tr>
+<tr class="separator:adc50d72f5a7b8bdebbdb3b783187620f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e14079944a1e1d76679c85e6e9fa91a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a9e14079944a1e1d76679c85e6e9fa91a">CONTACT_BAN</a> = 5</td></tr>
+<tr class="separator:a9e14079944a1e1d76679c85e6e9fa91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0092759ddbaa063c30fcabbb10520e5b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a0092759ddbaa063c30fcabbb10520e5b">CONTACT_ALLOW</a> = 6</td></tr>
+<tr class="separator:a0092759ddbaa063c30fcabbb10520e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb90ad155ac4e181df57cf232db9279e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#aeb90ad155ac4e181df57cf232db9279e">GROUP_CREATE</a> = 10</td></tr>
+<tr class="separator:aeb90ad155ac4e181df57cf232db9279e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0aaffbced621cf4a4d55a9bb15aafd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a2e0aaffbced621cf4a4d55a9bb15aafd">GROUP_DESTROY</a> = 11</td></tr>
+<tr class="separator:a2e0aaffbced621cf4a4d55a9bb15aafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87852cf4031a4cc51553ed9a25b95900"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a87852cf4031a4cc51553ed9a25b95900">GROUP_JOIN</a> = 12</td></tr>
+<tr class="separator:a87852cf4031a4cc51553ed9a25b95900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa408b3add94d1845d78d400a287f4947"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#aa408b3add94d1845d78d400a287f4947">GROUP_LEAVE</a> = 13</td></tr>
+<tr class="separator:aa408b3add94d1845d78d400a287f4947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14661b5b87b8db58d8c7ef6bb2a8ee5d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a14661b5b87b8db58d8c7ef6bb2a8ee5d">GROUP_APPLY</a> = 14</td></tr>
+<tr class="separator:a14661b5b87b8db58d8c7ef6bb2a8ee5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e017e83596751465a46f166a1fb888"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a73e017e83596751465a46f166a1fb888">GROUP_APPLY_ACCEPT</a> = 15</td></tr>
+<tr class="separator:a73e017e83596751465a46f166a1fb888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad924f8e83174504d9ce0a2256b3e8e7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#ad924f8e83174504d9ce0a2256b3e8e7e">GROUP_APPLY_DECLINE</a> = 16</td></tr>
+<tr class="separator:ad924f8e83174504d9ce0a2256b3e8e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cb5429007ea893788432ece25042a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#ab8cb5429007ea893788432ece25042a1">GROUP_INVITE</a> = 17</td></tr>
+<tr class="separator:ab8cb5429007ea893788432ece25042a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ff328a1a45ff928b68e91a32663670b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a0ff328a1a45ff928b68e91a32663670b">GROUP_INVITE_ACCEPT</a> = 18</td></tr>
+<tr class="separator:a0ff328a1a45ff928b68e91a32663670b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15628cdd3cf5e41dfaaea95600e68fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#ab15628cdd3cf5e41dfaaea95600e68fc">GROUP_INVITE_DECLINE</a> = 19</td></tr>
+<tr class="separator:ab15628cdd3cf5e41dfaaea95600e68fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103e0699c6eebeaaacda5260bbbf80d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a103e0699c6eebeaaacda5260bbbf80d2">GROUP_KICK</a> = 20</td></tr>
+<tr class="separator:a103e0699c6eebeaaacda5260bbbf80d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4a4add7360762c983aa87490c1d070"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a8e4a4add7360762c983aa87490c1d070">GROUP_BAN</a> = 21</td></tr>
+<tr class="separator:a8e4a4add7360762c983aa87490c1d070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab75985f82e8e96542cfd8915eb853335"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#ab75985f82e8e96542cfd8915eb853335">GROUP_ALLOW</a> = 22</td></tr>
+<tr class="separator:ab75985f82e8e96542cfd8915eb853335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034a576b142054153d723f94d6f0a278"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a034a576b142054153d723f94d6f0a278">GROUP_BLOCK</a> = 23</td></tr>
+<tr class="separator:a034a576b142054153d723f94d6f0a278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90796e9b0dc24a54249ac2a8b9b21de1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a90796e9b0dc24a54249ac2a8b9b21de1">GROUP_UNBLOCK</a> = 24</td></tr>
+<tr class="separator:a90796e9b0dc24a54249ac2a8b9b21de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9983c57cf744b386a804ef73bd027428"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a9983c57cf744b386a804ef73bd027428">GROUP_ASSIGN_OWNER</a> = 25</td></tr>
+<tr class="separator:a9983c57cf744b386a804ef73bd027428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43322affcaf2b20c31dc262dc300fa6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#ae43322affcaf2b20c31dc262dc300fa6">GROUP_ADD_ADMIN</a> = 26</td></tr>
+<tr class="separator:ae43322affcaf2b20c31dc262dc300fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb95bcaa454bd01b86e2df3c7bf3ebe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#aecb95bcaa454bd01b86e2df3c7bf3ebe">GROUP_REMOVE_ADMIN</a> = 27</td></tr>
+<tr class="separator:aecb95bcaa454bd01b86e2df3c7bf3ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b11b0037c63ec357c1110e79a6dbe7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#aa9b11b0037c63ec357c1110e79a6dbe7">GROUP_ADD_MUTE</a> = 28</td></tr>
+<tr class="separator:aa9b11b0037c63ec357c1110e79a6dbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a92543d6ce760dfe3ff863c4ac0f72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#ac7a92543d6ce760dfe3ff863c4ac0f72">GROUP_REMOVE_MUTE</a> = 29</td></tr>
+<tr class="separator:ac7a92543d6ce760dfe3ff863c4ac0f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41f9e106cb581639fad610367d876b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#ac41f9e106cb581639fad610367d876b5">GROUP_ADD_USER_WHITE_LIST</a> = 30</td></tr>
+<tr class="separator:ac41f9e106cb581639fad610367d876b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42be68223331d0e3e6b7071c87ba1ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#aa42be68223331d0e3e6b7071c87ba1ba">GROUP_REMOVE_USER_WHITE_LIST</a> = 31</td></tr>
+<tr class="separator:aa42be68223331d0e3e6b7071c87ba1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e98290a672aa201c84d59b82abf0f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a22e98290a672aa201c84d59b82abf0f2">GROUP_ALL_BAN</a> = 32</td></tr>
+<tr class="separator:a22e98290a672aa201c84d59b82abf0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a4122c6176893713c900fb3f99afdf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a3a4122c6176893713c900fb3f99afdf0">GROUP_REMOVE_ALL_BAN</a> = 33</td></tr>
+<tr class="separator:a3a4122c6176893713c900fb3f99afdf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e51310bb5e792dfd5955d275b17ddcd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a4e51310bb5e792dfd5955d275b17ddcd">THREAD_CREATE</a> = 40</td></tr>
+<tr class="separator:a4e51310bb5e792dfd5955d275b17ddcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97505bef95316a18646fb509d54ffba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#af97505bef95316a18646fb509d54ffba">THREAD_DESTROY</a> = 41</td></tr>
+<tr class="separator:af97505bef95316a18646fb509d54ffba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3a7c30821234ba2d8fa28e7ae6b52f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#adb3a7c30821234ba2d8fa28e7ae6b52f">THREAD_JOIN</a> = 42</td></tr>
+<tr class="separator:adb3a7c30821234ba2d8fa28e7ae6b52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9176a37d1f008066c99d6d980f583fe4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a9176a37d1f008066c99d6d980f583fe4">THREAD_LEAVE</a> = 43</td></tr>
+<tr class="separator:a9176a37d1f008066c99d6d980f583fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6b8962ebe3f9e6aa90f73746bee40b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a4c6b8962ebe3f9e6aa90f73746bee40b">THREAD_UPDATE</a> = 44</td></tr>
+<tr class="separator:a4c6b8962ebe3f9e6aa90f73746bee40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e46b585f3d6c459bc16ae16225ce20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#ad1e46b585f3d6c459bc16ae16225ce20">THREAD_KICK</a> = 45</td></tr>
+<tr class="separator:ad1e46b585f3d6c459bc16ae16225ce20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca8ffcbc9194a171f45c3949b4b4ede"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a4ca8ffcbc9194a171f45c3949b4b4ede">GROUP_METADATA_CHANGED</a> = 52</td></tr>
+<tr class="separator:a4ca8ffcbc9194a171f45c3949b4b4ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1691682e629b5fd8751bf053dfd3f5e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a1691682e629b5fd8751bf053dfd3f5e7">CONVERSATION_PINNED</a> = 60</td></tr>
+<tr class="separator:a1691682e629b5fd8751bf053dfd3f5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd08fac76b2cc7da42b5e067c022d3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#addd08fac76b2cc7da42b5e067c022d3d">CONVERSATION_UNPINNED</a> = 61</td></tr>
+<tr class="separator:addd08fac76b2cc7da42b5e067c022d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ca9cb5f39bd78ee1b8491c9397ba73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a85ca9cb5f39bd78ee1b8491c9397ba73">CONVERSATION_DELETED</a> = 62</td></tr>
+<tr class="separator:a85ca9cb5f39bd78ee1b8491c9397ba73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58b969e0b843d16b5a2878a88bc4239"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#ae58b969e0b843d16b5a2878a88bc4239">CONVERSATION_MARK_UPDATE</a> = 63</td></tr>
+<tr class="separator:ae58b969e0b843d16b5a2878a88bc4239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98a3902655ed59a33c0b98e3aa8fcd41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a98a3902655ed59a33c0b98e3aa8fcd41">CONVERSATION_MUTE_INFO_CHANGED</a> = 64</td></tr>
+<tr class="separator:a98a3902655ed59a33c0b98e3aa8fcd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
-<div class="textblock"><p >Created by linan on 17/4/17. </p>
-</div><hr/>该接口的文档由以下文件生成:<ul>
+<div class="textblock"><p >多端多设备事件监听器。</p>
+<p >该监听器用于监听其他设备上当前用户的事件回调，包括联系人变化和群组变化。 </p><pre class="fragment">注册监听器：
+</pre> <div class="fragment"><div class="line">ChatClient.getInstance().addMultiDeviceListener(mMultiDeviceListener);</div>
+</div><!-- fragment --><p> 移除监听器：</p>
+<div class="fragment"><div class="line">ChatClient.getInstance().removeMultiDeviceListener(mMultiDeviceListener);</div>
+</div><!-- fragment --> </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a7182bd714c0f37acf207ac62541def4c" name="a7182bd714c0f37acf207ac62541def4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7182bd714c0f37acf207ac62541def4c">&#9670;&nbsp;</a></span>onChatThreadEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">default void io.agora.MultiDeviceListener.onChatThreadEvent </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>usernames</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >多端多设备子区事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>子区事件，详见 <a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html">MultiDeviceListener</a>。 </td></tr>
+    <tr><td class="paramname">target</td><td>子区 ID。 </td></tr>
+    <tr><td class="paramname">usernames</td><td>操作目标 ID 列表。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae61af749d03279ac7648db18f7e62d1b" name="ae61af749d03279ac7648db18f7e62d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae61af749d03279ac7648db18f7e62d1b">&#9670;&nbsp;</a></span>onContactEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.MultiDeviceListener.onContactEvent </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>ext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >多端多设备联系人事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>联系人事件，详见 <a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html">MultiDeviceListener</a>。 </td></tr>
+    <tr><td class="paramname">target</td><td>联系人的用户 ID。 </td></tr>
+    <tr><td class="paramname">ext</td><td>扩展信息。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad61dd94642051500b054156014c2897b" name="ad61dd94642051500b054156014c2897b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad61dd94642051500b054156014c2897b">&#9670;&nbsp;</a></span>onConversationEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">default void io.agora.MultiDeviceListener.onConversationEvent </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conversationId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Conversation.ConversationType&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >多端多设备会话事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>会话事件。详见 <a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a1691682e629b5fd8751bf053dfd3f5e7">CONVERSATION_PINNED</a>、<a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#addd08fac76b2cc7da42b5e067c022d3d">CONVERSATION_UNPINNED</a> 、<a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#ae58b969e0b843d16b5a2878a88bc4239">CONVERSATION_MARK_UPDATE</a>和 <a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html#a85ca9cb5f39bd78ee1b8491c9397ba73">CONVERSATION_DELETED</a>。 </td></tr>
+    <tr><td class="paramname">conversationId</td><td>会话 ID。 </td></tr>
+    <tr><td class="paramname">type</td><td>会话类型。详见 <a class="el" href="">Conversation.ConversationType</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="add7aa376a3c6fb572919faa5140f76c4" name="add7aa376a3c6fb572919faa5140f76c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add7aa376a3c6fb572919faa5140f76c4">&#9670;&nbsp;</a></span>onGroupEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.MultiDeviceListener.onGroupEvent </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>usernames</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >多端多设备群组事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>群组事件，详见 <a class="el" href="interfaceio_1_1agora_1_1_multi_device_listener.html">MultiDeviceListener</a>。 </td></tr>
+    <tr><td class="paramname">target</td><td>群组 ID。 </td></tr>
+    <tr><td class="paramname">usernames</td><td>操作目标 ID 列表。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adf6e03cad458ae869b0b6efed505897c" name="adf6e03cad458ae869b0b6efed505897c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf6e03cad458ae869b0b6efed505897c">&#9670;&nbsp;</a></span>onMessageRemoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">default void io.agora.MultiDeviceListener.onMessageRemoved </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conversationId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>deviceId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >多设备漫游消息删除事件。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationId</td><td>会话 ID。 </td></tr>
+    <tr><td class="paramname">deviceId</td><td>设备 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ac677eaa48f9eb2a6300680c1585136d0" name="ac677eaa48f9eb2a6300680c1585136d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac677eaa48f9eb2a6300680c1585136d0">&#9670;&nbsp;</a></span>CONTACT_ACCEPT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.CONTACT_ACCEPT = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上接受好友请求。 </p>
+
+</div>
+</div>
+<a id="a0092759ddbaa063c30fcabbb10520e5b" name="a0092759ddbaa063c30fcabbb10520e5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0092759ddbaa063c30fcabbb10520e5b">&#9670;&nbsp;</a></span>CONTACT_ALLOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.CONTACT_ALLOW = 6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上将好友移出黑名单。 </p>
+
+</div>
+</div>
+<a id="a9e14079944a1e1d76679c85e6e9fa91a" name="a9e14079944a1e1d76679c85e6e9fa91a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e14079944a1e1d76679c85e6e9fa91a">&#9670;&nbsp;</a></span>CONTACT_BAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.CONTACT_BAN = 5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上将好友加入黑名单。 </p>
+
+</div>
+</div>
+<a id="adc50d72f5a7b8bdebbdb3b783187620f" name="adc50d72f5a7b8bdebbdb3b783187620f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc50d72f5a7b8bdebbdb3b783187620f">&#9670;&nbsp;</a></span>CONTACT_DECLINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.CONTACT_DECLINE = 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上拒绝好友请求。 </p>
+
+</div>
+</div>
+<a id="a9538b4657a459f1b96f7776af180896f" name="a9538b4657a459f1b96f7776af180896f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9538b4657a459f1b96f7776af180896f">&#9670;&nbsp;</a></span>CONTACT_REMOVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.CONTACT_REMOVE = 2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上删除好友。 </p>
+
+</div>
+</div>
+<a id="a85ca9cb5f39bd78ee1b8491c9397ba73" name="a85ca9cb5f39bd78ee1b8491c9397ba73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85ca9cb5f39bd78ee1b8491c9397ba73">&#9670;&nbsp;</a></span>CONVERSATION_DELETED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.CONVERSATION_DELETED = 62</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上删除了服务端的会话。 </p>
+
+</div>
+</div>
+<a id="ae58b969e0b843d16b5a2878a88bc4239" name="ae58b969e0b843d16b5a2878a88bc4239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae58b969e0b843d16b5a2878a88bc4239">&#9670;&nbsp;</a></span>CONVERSATION_MARK_UPDATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.CONVERSATION_MARK_UPDATE = 63</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上会话标计发生变更 </p>
+
+</div>
+</div>
+<a id="a98a3902655ed59a33c0b98e3aa8fcd41" name="a98a3902655ed59a33c0b98e3aa8fcd41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98a3902655ed59a33c0b98e3aa8fcd41">&#9670;&nbsp;</a></span>CONVERSATION_MUTE_INFO_CHANGED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.CONVERSATION_MUTE_INFO_CHANGED = 64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备设置了会话免打扰。 用户需要调用 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a4beb1507c56ddfc7d8f663dced679f4a">ChatManager#getAllConversations()</a> 方法重新获取会话列表刷新UI. </p>
+
+</div>
+</div>
+<a id="a1691682e629b5fd8751bf053dfd3f5e7" name="a1691682e629b5fd8751bf053dfd3f5e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1691682e629b5fd8751bf053dfd3f5e7">&#9670;&nbsp;</a></span>CONVERSATION_PINNED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.CONVERSATION_PINNED = 60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上置顶会话。 </p>
+
+</div>
+</div>
+<a id="addd08fac76b2cc7da42b5e067c022d3d" name="addd08fac76b2cc7da42b5e067c022d3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addd08fac76b2cc7da42b5e067c022d3d">&#9670;&nbsp;</a></span>CONVERSATION_UNPINNED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.CONVERSATION_UNPINNED = 61</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上取消会话置顶。 </p>
+
+</div>
+</div>
+<a id="ae43322affcaf2b20c31dc262dc300fa6" name="ae43322affcaf2b20c31dc262dc300fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae43322affcaf2b20c31dc262dc300fa6">&#9670;&nbsp;</a></span>GROUP_ADD_ADMIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_ADD_ADMIN = 26</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上添加管理员。 </p>
+
+</div>
+</div>
+<a id="aa9b11b0037c63ec357c1110e79a6dbe7" name="aa9b11b0037c63ec357c1110e79a6dbe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b11b0037c63ec357c1110e79a6dbe7">&#9670;&nbsp;</a></span>GROUP_ADD_MUTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_ADD_MUTE = 28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上禁言成员。 </p>
+
+</div>
+</div>
+<a id="ac41f9e106cb581639fad610367d876b5" name="ac41f9e106cb581639fad610367d876b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac41f9e106cb581639fad610367d876b5">&#9670;&nbsp;</a></span>GROUP_ADD_USER_WHITE_LIST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_ADD_USER_WHITE_LIST = 30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备将其他用户加入到群组白名单。 </p>
+
+</div>
+</div>
+<a id="a22e98290a672aa201c84d59b82abf0f2" name="a22e98290a672aa201c84d59b82abf0f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e98290a672aa201c84d59b82abf0f2">&#9670;&nbsp;</a></span>GROUP_ALL_BAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_ALL_BAN = 32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备将全部群组成员禁言。 </p>
+
+</div>
+</div>
+<a id="ab75985f82e8e96542cfd8915eb853335" name="ab75985f82e8e96542cfd8915eb853335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab75985f82e8e96542cfd8915eb853335">&#9670;&nbsp;</a></span>GROUP_ALLOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_ALLOW = 22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上将成员移除群组黑名单。 </p>
+
+</div>
+</div>
+<a id="a14661b5b87b8db58d8c7ef6bb2a8ee5d" name="a14661b5b87b8db58d8c7ef6bb2a8ee5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14661b5b87b8db58d8c7ef6bb2a8ee5d">&#9670;&nbsp;</a></span>GROUP_APPLY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_APPLY = 14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上申请加入群组。 </p>
+
+</div>
+</div>
+<a id="a73e017e83596751465a46f166a1fb888" name="a73e017e83596751465a46f166a1fb888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e017e83596751465a46f166a1fb888">&#9670;&nbsp;</a></span>GROUP_APPLY_ACCEPT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_APPLY_ACCEPT = 15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备接受入群申请。 </p>
+
+</div>
+</div>
+<a id="ad924f8e83174504d9ce0a2256b3e8e7e" name="ad924f8e83174504d9ce0a2256b3e8e7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad924f8e83174504d9ce0a2256b3e8e7e">&#9670;&nbsp;</a></span>GROUP_APPLY_DECLINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_APPLY_DECLINE = 16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上拒绝入群申请。 </p>
+
+</div>
+</div>
+<a id="a9983c57cf744b386a804ef73bd027428" name="a9983c57cf744b386a804ef73bd027428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9983c57cf744b386a804ef73bd027428">&#9670;&nbsp;</a></span>GROUP_ASSIGN_OWNER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_ASSIGN_OWNER = 25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上转移群组所有权。 </p>
+
+</div>
+</div>
+<a id="a8e4a4add7360762c983aa87490c1d070" name="a8e4a4add7360762c983aa87490c1d070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e4a4add7360762c983aa87490c1d070">&#9670;&nbsp;</a></span>GROUP_BAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_BAN = 21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上将成员加入群组黑名单。 </p>
+
+</div>
+</div>
+<a id="a034a576b142054153d723f94d6f0a278" name="a034a576b142054153d723f94d6f0a278"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034a576b142054153d723f94d6f0a278">&#9670;&nbsp;</a></span>GROUP_BLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_BLOCK = 23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上屏蔽群组。 </p>
+
+</div>
+</div>
+<a id="aeb90ad155ac4e181df57cf232db9279e" name="aeb90ad155ac4e181df57cf232db9279e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb90ad155ac4e181df57cf232db9279e">&#9670;&nbsp;</a></span>GROUP_CREATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_CREATE = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上创建群组。 </p>
+
+</div>
+</div>
+<a id="a2e0aaffbced621cf4a4d55a9bb15aafd" name="a2e0aaffbced621cf4a4d55a9bb15aafd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e0aaffbced621cf4a4d55a9bb15aafd">&#9670;&nbsp;</a></span>GROUP_DESTROY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_DESTROY = 11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上解散群组。 </p>
+
+</div>
+</div>
+<a id="ab8cb5429007ea893788432ece25042a1" name="ab8cb5429007ea893788432ece25042a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8cb5429007ea893788432ece25042a1">&#9670;&nbsp;</a></span>GROUP_INVITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_INVITE = 17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上邀请用户入群。 </p>
+
+</div>
+</div>
+<a id="a0ff328a1a45ff928b68e91a32663670b" name="a0ff328a1a45ff928b68e91a32663670b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ff328a1a45ff928b68e91a32663670b">&#9670;&nbsp;</a></span>GROUP_INVITE_ACCEPT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_INVITE_ACCEPT = 18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上接受了入群邀请。 </p>
+
+</div>
+</div>
+<a id="ab15628cdd3cf5e41dfaaea95600e68fc" name="ab15628cdd3cf5e41dfaaea95600e68fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab15628cdd3cf5e41dfaaea95600e68fc">&#9670;&nbsp;</a></span>GROUP_INVITE_DECLINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_INVITE_DECLINE = 19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上拒绝了入群邀请。 </p>
+
+</div>
+</div>
+<a id="a87852cf4031a4cc51553ed9a25b95900" name="a87852cf4031a4cc51553ed9a25b95900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87852cf4031a4cc51553ed9a25b95900">&#9670;&nbsp;</a></span>GROUP_JOIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_JOIN = 12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上加入群组。 </p>
+
+</div>
+</div>
+<a id="a103e0699c6eebeaaacda5260bbbf80d2" name="a103e0699c6eebeaaacda5260bbbf80d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a103e0699c6eebeaaacda5260bbbf80d2">&#9670;&nbsp;</a></span>GROUP_KICK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_KICK = 20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上将成员踢出群。 </p>
+
+</div>
+</div>
+<a id="aa408b3add94d1845d78d400a287f4947" name="aa408b3add94d1845d78d400a287f4947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa408b3add94d1845d78d400a287f4947">&#9670;&nbsp;</a></span>GROUP_LEAVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_LEAVE = 13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备离开群组。 </p>
+
+</div>
+</div>
+<a id="a4ca8ffcbc9194a171f45c3949b4b4ede" name="a4ca8ffcbc9194a171f45c3949b4b4ede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ca8ffcbc9194a171f45c3949b4b4ede">&#9670;&nbsp;</a></span>GROUP_METADATA_CHANGED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_METADATA_CHANGED = 52</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上修改群组成员属性。 </p>
+
+</div>
+</div>
+<a id="aecb95bcaa454bd01b86e2df3c7bf3ebe" name="aecb95bcaa454bd01b86e2df3c7bf3ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecb95bcaa454bd01b86e2df3c7bf3ebe">&#9670;&nbsp;</a></span>GROUP_REMOVE_ADMIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_REMOVE_ADMIN = 27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上移除管理员。 </p>
+
+</div>
+</div>
+<a id="a3a4122c6176893713c900fb3f99afdf0" name="a3a4122c6176893713c900fb3f99afdf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a4122c6176893713c900fb3f99afdf0">&#9670;&nbsp;</a></span>GROUP_REMOVE_ALL_BAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_REMOVE_ALL_BAN = 33</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备将群组成员解除禁言。 </p>
+
+</div>
+</div>
+<a id="ac7a92543d6ce760dfe3ff863c4ac0f72" name="ac7a92543d6ce760dfe3ff863c4ac0f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a92543d6ce760dfe3ff863c4ac0f72">&#9670;&nbsp;</a></span>GROUP_REMOVE_MUTE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_REMOVE_MUTE = 29</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上解除禁言。 </p>
+
+</div>
+</div>
+<a id="aa42be68223331d0e3e6b7071c87ba1ba" name="aa42be68223331d0e3e6b7071c87ba1ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42be68223331d0e3e6b7071c87ba1ba">&#9670;&nbsp;</a></span>GROUP_REMOVE_USER_WHITE_LIST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_REMOVE_USER_WHITE_LIST = 31</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备将其他用户移除群组白名单。 </p>
+
+</div>
+</div>
+<a id="a90796e9b0dc24a54249ac2a8b9b21de1" name="a90796e9b0dc24a54249ac2a8b9b21de1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90796e9b0dc24a54249ac2a8b9b21de1">&#9670;&nbsp;</a></span>GROUP_UNBLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.GROUP_UNBLOCK = 24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上取消群组屏蔽。 </p>
+
+</div>
+</div>
+<a id="a4e51310bb5e792dfd5955d275b17ddcd" name="a4e51310bb5e792dfd5955d275b17ddcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e51310bb5e792dfd5955d275b17ddcd">&#9670;&nbsp;</a></span>THREAD_CREATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.THREAD_CREATE = 40</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备创建子区。 </p>
+
+</div>
+</div>
+<a id="af97505bef95316a18646fb509d54ffba" name="af97505bef95316a18646fb509d54ffba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97505bef95316a18646fb509d54ffba">&#9670;&nbsp;</a></span>THREAD_DESTROY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.THREAD_DESTROY = 41</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备销毁子区。 </p>
+
+</div>
+</div>
+<a id="adb3a7c30821234ba2d8fa28e7ae6b52f" name="adb3a7c30821234ba2d8fa28e7ae6b52f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb3a7c30821234ba2d8fa28e7ae6b52f">&#9670;&nbsp;</a></span>THREAD_JOIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.THREAD_JOIN = 42</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备加入子区。 </p>
+
+</div>
+</div>
+<a id="ad1e46b585f3d6c459bc16ae16225ce20" name="ad1e46b585f3d6c459bc16ae16225ce20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e46b585f3d6c459bc16ae16225ce20">&#9670;&nbsp;</a></span>THREAD_KICK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.THREAD_KICK = 45</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备上将成员踢出子区。 </p>
+
+</div>
+</div>
+<a id="a9176a37d1f008066c99d6d980f583fe4" name="a9176a37d1f008066c99d6d980f583fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9176a37d1f008066c99d6d980f583fe4">&#9670;&nbsp;</a></span>THREAD_LEAVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.THREAD_LEAVE = 43</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备离开子区。 </p>
+
+</div>
+</div>
+<a id="a4c6b8962ebe3f9e6aa90f73746bee40b" name="a4c6b8962ebe3f9e6aa90f73746bee40b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c6b8962ebe3f9e6aa90f73746bee40b">&#9670;&nbsp;</a></span>THREAD_UPDATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.MultiDeviceListener.THREAD_UPDATE = 44</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >当前用户在其他设备更新子区信息。 </p>
+
+</div>
+</div>
+<hr/>该接口的文档由以下文件生成:<ul>
 <li>io/agora/MultiDeviceListener.java</li>
 </ul>
 </div><!-- contents -->

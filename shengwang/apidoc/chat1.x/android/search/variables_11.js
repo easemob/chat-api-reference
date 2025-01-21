@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['third_5fserver_5ffailed_0',['THIRD_SERVER_FAILED',['../classio_1_1agora_1_1_error.html#a3c0fda2a45c91f06fe6cb8523f3c4fe4',1,'io::agora::Error']]],
+  ['thread_5falready_5fexist_1',['THREAD_ALREADY_EXIST',['../classio_1_1agora_1_1_error.html#a305141f7314ae0e88bb4c3b3c5ad4d62',1,'io::agora::Error']]],
+  ['thread_5fcreate_2',['THREAD_CREATE',['../interfaceio_1_1agora_1_1_multi_device_listener.html#a4e51310bb5e792dfd5955d275b17ddcd',1,'io::agora::MultiDeviceListener']]],
+  ['thread_5fcreate_5fmessage_5fillegal_3',['THREAD_CREATE_MESSAGE_ILLEGAL',['../classio_1_1agora_1_1_error.html#a059f9e609e37bc553e29705f689a8363',1,'io::agora::Error']]],
+  ['thread_5fdestroy_4',['THREAD_DESTROY',['../interfaceio_1_1agora_1_1_multi_device_listener.html#af97505bef95316a18646fb509d54ffba',1,'io::agora::MultiDeviceListener']]],
+  ['thread_5fjoin_5',['THREAD_JOIN',['../interfaceio_1_1agora_1_1_multi_device_listener.html#adb3a7c30821234ba2d8fa28e7ae6b52f',1,'io::agora::MultiDeviceListener']]],
+  ['thread_5fkick_6',['THREAD_KICK',['../interfaceio_1_1agora_1_1_multi_device_listener.html#ad1e46b585f3d6c459bc16ae16225ce20',1,'io::agora::MultiDeviceListener']]],
+  ['thread_5fleave_7',['THREAD_LEAVE',['../interfaceio_1_1agora_1_1_multi_device_listener.html#a9176a37d1f008066c99d6d980f583fe4',1,'io::agora::MultiDeviceListener']]],
+  ['thread_5fnot_5fexist_8',['THREAD_NOT_EXIST',['../classio_1_1agora_1_1_error.html#aebad807ebb83d0433402ff2168e9c13e',1,'io::agora::Error']]],
+  ['thread_5fupdate_9',['THREAD_UPDATE',['../interfaceio_1_1agora_1_1_multi_device_listener.html#a4c6b8962ebe3f9e6aa90f73746bee40b',1,'io::agora::MultiDeviceListener']]],
+  ['token_5fexpired_10',['TOKEN_EXPIRED',['../classio_1_1agora_1_1_error.html#ad1beb56700571f9efb9e223b35265798',1,'io::agora::Error']]],
+  ['token_5fwill_5fexpire_11',['TOKEN_WILL_EXPIRE',['../classio_1_1agora_1_1_error.html#a2020774cc49960ad1f58937c3b64686e',1,'io::agora::Error']]],
+  ['translate_5fmessage_5ffail_12',['TRANSLATE_MESSAGE_FAIL',['../classio_1_1agora_1_1_error.html#a1f9fc925becd11af12e21e8c7e3e49e5',1,'io::agora::Error']]],
+  ['translate_5fparam_5finvalid_13',['TRANSLATE_PARAM_INVALID',['../classio_1_1agora_1_1_error.html#a483fb50d7befa9237fb2638fd16928e5',1,'io::agora::Error']]],
+  ['translate_5fservice_5fnot_5fenable_14',['TRANSLATE_SERVICE_NOT_ENABLE',['../classio_1_1agora_1_1_error.html#a0dcd3d6966ce24c8cbc2a5f129121b7a',1,'io::agora::Error']]],
+  ['translate_5fusage_5flimit_15',['TRANSLATE_USAGE_LIMIT',['../classio_1_1agora_1_1_error.html#a4f9c142139f93f0f635aefb8b6d8bce0',1,'io::agora::Error']]],
+  ['txt_16',['TXT',['../enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html#ac671c3217dba3622a7c6696c815cbd00',1,'io.agora.chat.ChatMessage.Type.TXT()'],['../enumio_1_1agora_1_1chat_1_1_chat_statistics_manager_1_1_search_message_type.html#a5f40e7e1dcb32286b49f806595e91ec6',1,'io.agora.chat.ChatStatisticsManager.SearchMessageType.TXT()']]]
+];

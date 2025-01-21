@@ -1,0 +1,3446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>即时通讯 IM API 参考: io.agora.chat.ChatManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">即时通讯 IM API 参考<span id="projectnumber">&#160;v1.3.2</span>
+   </div>
+   <div id="projectbrief">Agora Java IM SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>io</b></li><li class="navelem"><b>agora</b></li><li class="navelem"><b>chat</b></li><li class="navelem"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html">ChatManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classio_1_1agora_1_1chat_1_1_chat_manager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">io.agora.chat.ChatManager类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aed75ce0a590423ac18a94e1d339e97f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#aed75ce0a590423ac18a94e1d339e97f4">sendMessage</a> (final <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> msg)</td></tr>
+<tr class="separator:aed75ce0a590423ac18a94e1d339e97f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c11104aabf75ff5dfc6e65d29689d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a48c11104aabf75ff5dfc6e65d29689d3">ackConversationRead</a> (String conversationId)  throws ChatException </td></tr>
+<tr class="separator:a48c11104aabf75ff5dfc6e65d29689d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3acc4e2e553d7fcf77bbe921c6b8c93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#ae3acc4e2e553d7fcf77bbe921c6b8c93">ackMessageRead</a> (String to, String messageId)  throws ChatException </td></tr>
+<tr class="separator:ae3acc4e2e553d7fcf77bbe921c6b8c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f332b14444a8f0789562a5cae984b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#ae3f332b14444a8f0789562a5cae984b2">ackGroupMessageRead</a> (String to, String messageId, String ext)  throws ChatException </td></tr>
+<tr class="separator:ae3f332b14444a8f0789562a5cae984b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766fec8e12f97cd1db6e472db1959e4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a766fec8e12f97cd1db6e472db1959e4f">recallMessage</a> (<a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> message)  throws ChatException </td></tr>
+<tr class="separator:a766fec8e12f97cd1db6e472db1959e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b22e114120a91306d87f56b4668a4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#af1b22e114120a91306d87f56b4668a4b">asyncRecallMessage</a> (final <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> message, final <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callback)</td></tr>
+<tr class="separator:af1b22e114120a91306d87f56b4668a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad7780fefdd7c29998e60efc3e990ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a7ad7780fefdd7c29998e60efc3e990ab">recallMessage</a> (<a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> message, String ext)  throws ChatException </td></tr>
+<tr class="separator:a7ad7780fefdd7c29998e60efc3e990ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c95b3f770b46d39e0f7bfb5f267c09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a14c95b3f770b46d39e0f7bfb5f267c09">asyncRecallMessage</a> (final <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> message, String ext, final <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callback)</td></tr>
+<tr class="separator:a14c95b3f770b46d39e0f7bfb5f267c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96eaef53e8df62a900baf712cc5f4fbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a96eaef53e8df62a900baf712cc5f4fbc">getMessage</a> (String messageId)</td></tr>
+<tr class="separator:a96eaef53e8df62a900baf712cc5f4fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dea229f1bc9e9d605a64228cc47a4e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a1dea229f1bc9e9d605a64228cc47a4e7">getConversation</a> (String id)</td></tr>
+<tr class="separator:a1dea229f1bc9e9d605a64228cc47a4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f6e25066c2645597d576920d24aa8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a37f6e25066c2645597d576920d24aa8a">getConversation</a> (String id, <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a> type)</td></tr>
+<tr class="separator:a37f6e25066c2645597d576920d24aa8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a1ce1ed2c1fdf3eec13cc462c282191"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a4a1ce1ed2c1fdf3eec13cc462c282191">getConversation</a> (String username, <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a> type, boolean createIfNotExists)</td></tr>
+<tr class="separator:a4a1ce1ed2c1fdf3eec13cc462c282191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4786fd85693c0e984332f7f263a7880d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a4786fd85693c0e984332f7f263a7880d">getConversation</a> (String username, <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a> type, boolean createIfNotExists, boolean isChatThread)</td></tr>
+<tr class="separator:a4786fd85693c0e984332f7f263a7880d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7d7583797e48258cab1a1d8dc38413"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#afc7d7583797e48258cab1a1d8dc38413">markAllConversationsAsRead</a> ()</td></tr>
+<tr class="separator:afc7d7583797e48258cab1a1d8dc38413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ba2602185cc6b1255eb7bc40882ee7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#af1ba2602185cc6b1255eb7bc40882ee7">getUnreadMessageCount</a> ()</td></tr>
+<tr class="separator:af1ba2602185cc6b1255eb7bc40882ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ef8b0230f970a596feb849221b8905"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a64ef8b0230f970a596feb849221b8905">saveMessage</a> (<a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> message)</td></tr>
+<tr class="separator:a64ef8b0230f970a596feb849221b8905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8057434f0c818eec2afc5177beff9db"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#af8057434f0c818eec2afc5177beff9db">updateMessage</a> (<a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> message)</td></tr>
+<tr class="separator:af8057434f0c818eec2afc5177beff9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3acdb02aafd446248ee8e9c7b44ab97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#af3acdb02aafd446248ee8e9c7b44ab97">asyncModifyMessage</a> (String messageId, <a class="el" href="classio_1_1agora_1_1chat_1_1_message_body.html">MessageBody</a> messageBodyModified, final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; callBack)</td></tr>
+<tr class="separator:af3acdb02aafd446248ee8e9c7b44ab97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5298f55319dd769b69623c111cc8dcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#af5298f55319dd769b69623c111cc8dcb">downloadAttachment</a> (final <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> msg)</td></tr>
+<tr class="separator:af5298f55319dd769b69623c111cc8dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc79b8af968ba4f4a00d326746b0013"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#abdc79b8af968ba4f4a00d326746b0013">downloadThumbnail</a> (final <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> msg)</td></tr>
+<tr class="separator:abdc79b8af968ba4f4a00d326746b0013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d759e8cc6d5b642d30f8787f522b43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a16d759e8cc6d5b642d30f8787f522b43">downloadAndParseCombineMessage</a> (<a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> message, <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; &gt; callback)</td></tr>
+<tr class="separator:a16d759e8cc6d5b642d30f8787f522b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8f64a7885eb3ff1c840f2aba9056c3"><td class="memItemLeft" align="right" valign="top">synchronized void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#adf8f64a7885eb3ff1c840f2aba9056c3">importMessages</a> (List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; msgs)</td></tr>
+<tr class="separator:adf8f64a7885eb3ff1c840f2aba9056c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a153dd0c5bd19871798b2939886d49e"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a9a153dd0c5bd19871798b2939886d49e">getConversationsByType</a> (<a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a> type)</td></tr>
+<tr class="separator:a9a153dd0c5bd19871798b2939886d49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4beb1507c56ddfc7d8f663dced679f4a"><td class="memItemLeft" align="right" valign="top">Map&lt; String, <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a4beb1507c56ddfc7d8f663dced679f4a">getAllConversations</a> ()</td></tr>
+<tr class="separator:a4beb1507c56ddfc7d8f663dced679f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8160f9ea9d550299f62f85dc84a07759"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a8160f9ea9d550299f62f85dc84a07759">getAllConversationsBySort</a> ()</td></tr>
+<tr class="separator:a8160f9ea9d550299f62f85dc84a07759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d06945a56d3b5e0e7e5163acde09966"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a8d06945a56d3b5e0e7e5163acde09966">asyncFilterConversationsFromDB</a> (<a class="el" href="interfaceio_1_1agora_1_1chat_1_1_custom_conversation_filter.html">CustomConversationFilter</a> filter, boolean cleanConversationsCache, <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; &gt; callBack)</td></tr>
+<tr class="separator:a8d06945a56d3b5e0e7e5163acde09966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0b02313995505685d70bbca60eb04d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a6a0b02313995505685d70bbca60eb04d">cleanConversationsMemoryCache</a> ()</td></tr>
+<tr class="separator:a6a0b02313995505685d70bbca60eb04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2d44f6d9afb5e612c8511b6376a608"><td class="memItemLeft" align="right" valign="top">Map&lt; String, <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a5a2d44f6d9afb5e612c8511b6376a608">fetchConversationsFromServer</a> ()  throws ChatException </td></tr>
+<tr class="separator:a5a2d44f6d9afb5e612c8511b6376a608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63a21ee374c11872a93857a138bba3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#aa63a21ee374c11872a93857a138bba3a">asyncFetchConversationsFromServer</a> (final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; Map&lt; String, <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; &gt; callBack)</td></tr>
+<tr class="separator:aa63a21ee374c11872a93857a138bba3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab043e06c10b6d6ef37da6c1df4f509f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#aab043e06c10b6d6ef37da6c1df4f509f">asyncFetchConversationsFromServer</a> (int pageNum, int pageSize, final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; Map&lt; String, <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; &gt; callBack)</td></tr>
+<tr class="separator:aab043e06c10b6d6ef37da6c1df4f509f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc37a87f2676f17e0ed46f39a33ab41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a0dc37a87f2676f17e0ed46f39a33ab41">asyncFetchPinnedConversationsFromServer</a> (final int limit, final String cursor, final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; &gt; callback)</td></tr>
+<tr class="separator:a0dc37a87f2676f17e0ed46f39a33ab41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38454af9dee4a5878c33cbe9268dd382"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a38454af9dee4a5878c33cbe9268dd382">asyncFetchConversationsFromServer</a> (final int limit, final String cursor, final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; &gt; callback)</td></tr>
+<tr class="separator:a38454af9dee4a5878c33cbe9268dd382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae69f5426e24b2ebbc4f160f30dd08c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#aae69f5426e24b2ebbc4f160f30dd08c3">asyncPinConversation</a> (final String conversationId, boolean isPinned, final <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callback)</td></tr>
+<tr class="separator:aae69f5426e24b2ebbc4f160f30dd08c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b8d25ac5a03a0b0cc518da38005872"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#aa8b8d25ac5a03a0b0cc518da38005872">loadAllConversations</a> ()</td></tr>
+<tr class="separator:aa8b8d25ac5a03a0b0cc518da38005872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72bbe503d04df70546282792767c1735"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a72bbe503d04df70546282792767c1735">deleteConversation</a> (String conversationId, boolean deleteMessages)</td></tr>
+<tr class="separator:a72bbe503d04df70546282792767c1735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b72cbb30e1636d290cc51062a27b53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a87b72cbb30e1636d290cc51062a27b53">deleteConversationFromServer</a> (String username, <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a> type, boolean isDeleteServerMessages, <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> deleteCallBack)</td></tr>
+<tr class="separator:a87b72cbb30e1636d290cc51062a27b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f18970bfcf66e1282a4586ada76847"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a29f18970bfcf66e1282a4586ada76847">addMessageListener</a> (<a class="el" href="interfaceio_1_1agora_1_1_message_listener.html">MessageListener</a> listener)</td></tr>
+<tr class="separator:a29f18970bfcf66e1282a4586ada76847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa03279de8c351abde0d04b7090a201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a5aa03279de8c351abde0d04b7090a201">removeMessageListener</a> (<a class="el" href="interfaceio_1_1agora_1_1_message_listener.html">MessageListener</a> listener)</td></tr>
+<tr class="separator:a5aa03279de8c351abde0d04b7090a201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e71631a15d4cfcc209557e017f2c11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a43e71631a15d4cfcc209557e017f2c11">addConversationListener</a> (<a class="el" href="interfaceio_1_1agora_1_1_conversation_listener.html">ConversationListener</a> listener)</td></tr>
+<tr class="separator:a43e71631a15d4cfcc209557e017f2c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79476748c67f77c060f64e275fb70296"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a79476748c67f77c060f64e275fb70296">removeConversationListener</a> (<a class="el" href="interfaceio_1_1agora_1_1_conversation_listener.html">ConversationListener</a> listener)</td></tr>
+<tr class="separator:a79476748c67f77c060f64e275fb70296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b645872bbcb852cf52bb66817d985e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#af2b645872bbcb852cf52bb66817d985e">setVoiceMessageListened</a> (<a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> message)</td></tr>
+<tr class="separator:af2b645872bbcb852cf52bb66817d985e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c15cf2a34fd4bd0923afd49270087a"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a87c15cf2a34fd4bd0923afd49270087a">updateParticipant</a> (String from, String changeTo)</td></tr>
+<tr class="separator:a87c15cf2a34fd4bd0923afd49270087a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d625da24907c4c037a9f886bb76c09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_group_read_ack.html">GroupReadAck</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#ab5d625da24907c4c037a9f886bb76c09">fetchGroupReadAcks</a> (String msgId, int pageSize, String startAckId)  throws ChatException </td></tr>
+<tr class="separator:ab5d625da24907c4c037a9f886bb76c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4c51aa5fa957ddd590e314a7d4a271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a0d4c51aa5fa957ddd590e314a7d4a271">asyncFetchGroupReadAcks</a> (final String msgId, final int pageSize, final String startAckId, final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_group_read_ack.html">GroupReadAck</a> &gt; &gt; callBack)</td></tr>
+<tr class="separator:a0d4c51aa5fa957ddd590e314a7d4a271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4e5927e8f9e91da6827b51b2ff3b54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a1e4e5927e8f9e91da6827b51b2ff3b54">fetchHistoryMessages</a> (String conversationId, <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a> type, int pageSize, String startMsgId)  throws ChatException </td></tr>
+<tr class="separator:a1e4e5927e8f9e91da6827b51b2ff3b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f3f43274893f60de38405a67b05bb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a71f3f43274893f60de38405a67b05bb0">fetchHistoryMessages</a> (String conversationId, <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a> type, int pageSize, String startMsgId, Conversation.SearchDirection direction)  throws ChatException </td></tr>
+<tr class="separator:a71f3f43274893f60de38405a67b05bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d0b492b84de09beedd68b81157c80d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#af9d0b492b84de09beedd68b81157c80d">asyncFetchHistoryMessage</a> (final String conversationId, final <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a> type, final int pageSize, final String startMsgId, final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; &gt; callBack)</td></tr>
+<tr class="separator:af9d0b492b84de09beedd68b81157c80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082f2cf5db33c5bb6300ec1aa63680a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a082f2cf5db33c5bb6300ec1aa63680a1">asyncFetchHistoryMessage</a> (final String conversationId, final <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a> type, final int pageSize, final String startMsgId, final Conversation.SearchDirection direction, final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; &gt; callBack)</td></tr>
+<tr class="separator:a082f2cf5db33c5bb6300ec1aa63680a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1dfac0fdc4910879444bb4563d20c43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#af1dfac0fdc4910879444bb4563d20c43">asyncFetchHistoryMessages</a> (String conversationId, <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a> type, int pageSize, String cursor, <a class="el" href="classio_1_1agora_1_1chat_1_1_fetch_message_option.html">FetchMessageOption</a> option, final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; &gt; callBack)</td></tr>
+<tr class="separator:af1dfac0fdc4910879444bb4563d20c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d378d2be16a064dd3ed1f8e1d0499b2"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a4d378d2be16a064dd3ed1f8e1d0499b2">searchMsgFromDB</a> (@NonNull <a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html">Type</a> type, long timeStamp, int maxCount, String from, Conversation.SearchDirection direction)</td></tr>
+<tr class="separator:a4d378d2be16a064dd3ed1f8e1d0499b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e95c42104f60be102c2e76f8bdfa9be"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a3e95c42104f60be102c2e76f8bdfa9be">searchMsgFromDB</a> (Set&lt; <a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html">Type</a> &gt; types, long timeStamp, int maxCount, String from, Conversation.SearchDirection direction)</td></tr>
+<tr class="separator:a3e95c42104f60be102c2e76f8bdfa9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e3c7bc69b2ff5dbba6d86ceda1111f"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#aa9e3c7bc69b2ff5dbba6d86ceda1111f">searchMsgFromDB</a> (String keywords, long timeStamp, int maxCount, String from, Conversation.SearchDirection direction)</td></tr>
+<tr class="separator:aa9e3c7bc69b2ff5dbba6d86ceda1111f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae7e2b4ab407f8d871b528a8525f4ec"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a5ae7e2b4ab407f8d871b528a8525f4ec">searchMsgFromDB</a> (String keywords, long timeStamp, int maxCount, String from, Conversation.SearchDirection direction, Conversation.ChatMessageSearchScope searchScope)</td></tr>
+<tr class="separator:a5ae7e2b4ab407f8d871b528a8525f4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b0355ffd351da0b203f6e0c130fdf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a23b0355ffd351da0b203f6e0c130fdf6">deleteMessagesBeforeTimestamp</a> (long timeStamp, <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callback)</td></tr>
+<tr class="separator:a23b0355ffd351da0b203f6e0c130fdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2410f691669cff625d1b0275462a50a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#ac2410f691669cff625d1b0275462a50a">asyncReportMessage</a> (String msgId, String tag, String reportReason, <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callback)</td></tr>
+<tr class="separator:ac2410f691669cff625d1b0275462a50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd6845e4f9519dfbe06a221abf7cf21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a3cd6845e4f9519dfbe06a221abf7cf21">reportMessage</a> (String msgId, String tag, String reportReason)  throws ChatException </td></tr>
+<tr class="separator:a3cd6845e4f9519dfbe06a221abf7cf21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92601d1af1a5f60f2cdeeb8eadb178cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a92601d1af1a5f60f2cdeeb8eadb178cd">fetchSupportLanguages</a> (<a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; List&lt; Language &gt; &gt; callback)</td></tr>
+<tr class="separator:a92601d1af1a5f60f2cdeeb8eadb178cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a978494fa3f1d98e828b286e72c2e1ceb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a978494fa3f1d98e828b286e72c2e1ceb">translateMessage</a> (<a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> message, List&lt; String &gt; languages, <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; callback)</td></tr>
+<tr class="separator:a978494fa3f1d98e828b286e72c2e1ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28eda8b34135df5f5cc6941fdacee4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#af28eda8b34135df5f5cc6941fdacee4e">addReaction</a> (final String messageId, final String reaction)  throws ChatException </td></tr>
+<tr class="separator:af28eda8b34135df5f5cc6941fdacee4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e22757348ea46e0aad4cdfb4a6266a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a8e22757348ea46e0aad4cdfb4a6266a0">asyncAddReaction</a> (final String messageId, final String reaction, final <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callback)</td></tr>
+<tr class="separator:a8e22757348ea46e0aad4cdfb4a6266a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa783ed4f0423e160447319e428949e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a9aa783ed4f0423e160447319e428949e">removeReaction</a> (final String messageId, final String reaction)  throws ChatException </td></tr>
+<tr class="separator:a9aa783ed4f0423e160447319e428949e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b51ef6ed446d1a5f4e742bb4f0721c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a7b51ef6ed446d1a5f4e742bb4f0721c8">asyncRemoveReaction</a> (final String messageId, final String reaction, final <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callback)</td></tr>
+<tr class="separator:a7b51ef6ed446d1a5f4e742bb4f0721c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b8507f4327efa91fe0a6524d4d7193"><td class="memItemLeft" align="right" valign="top">Map&lt; String, List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_message_reaction.html">MessageReaction</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a74b8507f4327efa91fe0a6524d4d7193">getReactionList</a> (final List&lt; String &gt; messageIdList, final ChatMessage.ChatType chatType, final String groupId)  throws ChatException </td></tr>
+<tr class="separator:a74b8507f4327efa91fe0a6524d4d7193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52a345c2aee863f29c4d0ebf453108d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#ae52a345c2aee863f29c4d0ebf453108d">asyncGetReactionList</a> (final List&lt; String &gt; messageIdList, final ChatMessage.ChatType chatType, final String groupId, final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; Map&lt; String, List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_message_reaction.html">MessageReaction</a> &gt; &gt; &gt; callback)</td></tr>
+<tr class="separator:ae52a345c2aee863f29c4d0ebf453108d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a750a55ccc4c4b6f9a2ed8e0021b20517"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_message_reaction.html">MessageReaction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a750a55ccc4c4b6f9a2ed8e0021b20517">getReactionDetail</a> (final String messageId, final String reaction, final String cursor, final int pageSize)  throws ChatException </td></tr>
+<tr class="separator:a750a55ccc4c4b6f9a2ed8e0021b20517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb93d5330c452c96ba3684ed0eaf5d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a3fb93d5330c452c96ba3684ed0eaf5d6">asyncGetReactionDetail</a> (final String messageId, final String reaction, final String cursor, final int pageSize, final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_message_reaction.html">MessageReaction</a> &gt; &gt; callback)</td></tr>
+<tr class="separator:a3fb93d5330c452c96ba3684ed0eaf5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8db6f20976fc4e6133f718af94f57b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#ab8db6f20976fc4e6133f718af94f57b8">asyncAddConversationMark</a> (@NonNull List&lt; String &gt; conversationIds, @NonNull <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_e_m_mark_type.html">EMMarkType</a> mark, <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callback)</td></tr>
+<tr class="separator:ab8db6f20976fc4e6133f718af94f57b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308bf53c346199a7af1752b1bda60c28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a308bf53c346199a7af1752b1bda60c28">asyncRemoveConversationMark</a> (@NonNull List&lt; String &gt; conversationIds, @NonNull <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_e_m_mark_type.html">EMMarkType</a> mark, <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callback)</td></tr>
+<tr class="separator:a308bf53c346199a7af1752b1bda60c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021808c72b133456959bca41235fbebe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a021808c72b133456959bca41235fbebe">asyncGetConversationsFromServerWithCursor</a> (@NonNull String cursor, @NonNull <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation_filter.html">ConversationFilter</a> filter, <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; &gt; callback)</td></tr>
+<tr class="separator:a021808c72b133456959bca41235fbebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd19dcea7931c2722ba88b2cc7374e01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#acd19dcea7931c2722ba88b2cc7374e01">asyncDeleteAllMsgsAndConversations</a> (boolean clearSeverData, <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> deleteCallBack)</td></tr>
+<tr class="separator:acd19dcea7931c2722ba88b2cc7374e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be039c06df9b8311dbca685f0f834c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a4be039c06df9b8311dbca685f0f834c2">asyncPinMessage</a> (@NonNull String messageId, <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callBack)</td></tr>
+<tr class="separator:a4be039c06df9b8311dbca685f0f834c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf491a425c094d633f4f2655f2a34d28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#aaf491a425c094d633f4f2655f2a34d28">asyncUnPinMessage</a> (@NonNull String messageId, <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callBack)</td></tr>
+<tr class="separator:aaf491a425c094d633f4f2655f2a34d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62363c8cfbda635823b0ff1200a1c1f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a62363c8cfbda635823b0ff1200a1c1f8">asyncGetPinnedMessagesFromServer</a> (@NonNull String conversationId, <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; &gt; callBack)</td></tr>
+<tr class="separator:a62363c8cfbda635823b0ff1200a1c1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2754bbf2bb607914a587c633294050a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a2754bbf2bb607914a587c633294050a8">asyncGetMessageCount</a> (<a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; Integer &gt; callBack)</td></tr>
+<tr class="separator:a2754bbf2bb607914a587c633294050a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:aa23913ca4cece9c1a89656e697e129ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#aa23913ca4cece9c1a89656e697e129ce">removeMessagesFromServer</a> (String conversationId, <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a> type, List&lt; String &gt; msgIdList, <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callBack)</td></tr>
+<tr class="separator:aa23913ca4cece9c1a89656e697e129ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09bcc20692aa948b26b0a1986aaf8ddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a09bcc20692aa948b26b0a1986aaf8ddd">removeMessagesFromServer</a> (String conversationId, <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a> type, long beforeTimeStamp, <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> callBack)</td></tr>
+<tr class="separator:a09bcc20692aa948b26b0a1986aaf8ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p >聊天管理类，该类负责管理会话（加载，删除等）、发送消息、下载消息附件等。</p>
+<p >发送文文本消息示例如下：</p>
+<div class="fragment"><div class="line">ChatMessage message = ChatMessage.createTextSendMessage(content, toChatUsername);</div>
+<div class="line">   ChatClient.getInstance().chatManager().sendMessage(message);</div>
+</div><!-- fragment --> </div><h2 class="groupheader">成员函数说明</h2>
+<a id="a48c11104aabf75ff5dfc6e65d29689d3" name="a48c11104aabf75ff5dfc6e65d29689d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48c11104aabf75ff5dfc6e65d29689d3">&#9670;&nbsp;</a></span>ackConversationRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.ackConversationRead </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conversationId</em></td><td>)</td>
+          <td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >发送会话的已读回执，该方法只针对单聊会话。</p>
+<p >该方法会通知服务器将此会话未读数设置为 0，消息发送方将会收到 <a class="el" href="interfaceio_1_1agora_1_1_conversation_listener.html#af987cb817fb1d58b28c71e9e3f16b68f">ConversationListener#onConversationRead(String, String)</a> 回调。 在多端多设备登录下，接收方的其他设备也会收到该回调。</p>
+<p >群消息已读回执，详见 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#ae3f332b14444a8f0789562a5cae984b2">ackGroupMessageRead(String, String, String)</a>。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationId</td><td>会话 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>可能抛出以下异常：<a class="el" href="classio_1_1agora_1_1_error.html#ac4ffa19cc96c524f73bdbb615aa4eecd">Error#USER_NOT_LOGIN</a>、<a class="el" href="classio_1_1agora_1_1_error.html#a8788aea68b3104a550884dc0830c2dbc">Error#SERVER_NOT_REACHABLE</a>、 <a class="el" href="classio_1_1agora_1_1_error.html#a6285eb07a70a86021bba3d3d8ce39e8b">Error#MESSAGE_INVALID</a> 等，详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae3f332b14444a8f0789562a5cae984b2" name="ae3f332b14444a8f0789562a5cae984b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3f332b14444a8f0789562a5cae984b2">&#9670;&nbsp;</a></span>ackGroupMessageRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.ackGroupMessageRead </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>messageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>ext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >发送群消息已读回执。</p>
+<dl class="section note"><dt>注解</dt><dd></dd></dl>
+<p>设置了 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_options.html#ab5ad14989f91ddfc17fc6364619daa7e">ChatOptions#setRequireAck(boolean)</a> 和 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a8cd51d03641d50f2e7d86cb1d2883ed1">ChatMessage#setIsNeedGroupAck(boolean)</a> 后才能调用该方法。</p>
+<p >发送单聊消息已读回执，详见 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#ae3acc4e2e553d7fcf77bbe921c6b8c93">ackMessageRead(String, String)</a></p>
+<p >会话已读回执，详见 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a48c11104aabf75ff5dfc6e65d29689d3">ackConversationRead(String)</a>。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">to</td><td>会话 ID。 </td></tr>
+    <tr><td class="paramname">messageId</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">ext</td><td>扩展信息。用户通过定义关键字指定动作或命令。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和错误描述，详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae3acc4e2e553d7fcf77bbe921c6b8c93" name="ae3acc4e2e553d7fcf77bbe921c6b8c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3acc4e2e553d7fcf77bbe921c6b8c93">&#9670;&nbsp;</a></span>ackMessageRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.ackMessageRead </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>messageId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >发送消息的已读回执。</p>
+<p >该方法仅适用于单聊会话，仅在 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_options.html#ab5ad14989f91ddfc17fc6364619daa7e">ChatOptions#setRequireAck(boolean)</a> 为 <code>true</code> 时生效。</p>
+<p >发送群消息已读回执，详见 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#ae3f332b14444a8f0789562a5cae984b2">ackGroupMessageRead(String, String, String)</a>。</p>
+<p >推荐进入聊天页面的时调用 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a48c11104aabf75ff5dfc6e65d29689d3">ackConversationRead(String)</a> ，其他情况下调用该方法以减少调用频率。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">to</td><td>已读回执接收方的用户 ID。 </td></tr>
+    <tr><td class="paramname">messageId</td><td>消息的 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和错误描述，详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a43e71631a15d4cfcc209557e017f2c11" name="a43e71631a15d4cfcc209557e017f2c11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e71631a15d4cfcc209557e017f2c11">&#9670;&nbsp;</a></span>addConversationListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.addConversationListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_conversation_listener.html">ConversationListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >注册会话监听器。</p>
+<p >会话监听器可监听会话变化及会话已读回执。</p>
+<p >在不需要会话监听器时，可调用 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a79476748c67f77c060f64e275fb70296">removeConversationListener(ConversationListener)</a> 方法移除。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>要添加的会话监听，详见 <a class="el" href="interfaceio_1_1agora_1_1_conversation_listener.html">ConversationListener</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a29f18970bfcf66e1282a4586ada76847" name="a29f18970bfcf66e1282a4586ada76847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f18970bfcf66e1282a4586ada76847">&#9670;&nbsp;</a></span>addMessageListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.addMessageListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_message_listener.html">MessageListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >注册消息监听器。</p>
+<p >接收到新消息等回调可以通过设置此方法进行监听。</p>
+<p >在不需要消息监听器时，可调用 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a5aa03279de8c351abde0d04b7090a201">removeMessageListener(MessageListener)</a> 方法将其移除。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>要注册的消息监听，详见 <a class="el" href="interfaceio_1_1agora_1_1_message_listener.html">MessageListener</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af28eda8b34135df5f5cc6941fdacee4e" name="af28eda8b34135df5f5cc6941fdacee4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af28eda8b34135df5f5cc6941fdacee4e">&#9670;&nbsp;</a></span>addReaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.addReaction </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>messageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>reaction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >添加 Reaction。</p>
+<p >同步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messageId</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">reaction</td><td>要添加的消息 Reaction。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和错误描述，详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab8db6f20976fc4e6133f718af94f57b8" name="ab8db6f20976fc4e6133f718af94f57b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8db6f20976fc4e6133f718af94f57b8">&#9670;&nbsp;</a></span>asyncAddConversationMark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncAddConversationMark </td>
+          <td>(</td>
+          <td class="paramtype">@NonNull List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>conversationIds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@NonNull <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_e_m_mark_type.html">EMMarkType</a>&#160;</td>
+          <td class="paramname"><em>mark</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >标记会话。</p>
+<p >调用该方法会同时为本地和服务器端的会话添加标记。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationIds</td><td>会话 ID 列表。 </td></tr>
+    <tr><td class="paramname">mark</td><td>要添加的会话标记。 </td></tr>
+    <tr><td class="paramname">callback</td><td>该方法完成调用的回调。如果该方法调用失败，会包含调用失败的原因。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8e22757348ea46e0aad4cdfb4a6266a0" name="a8e22757348ea46e0aad4cdfb4a6266a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e22757348ea46e0aad4cdfb4a6266a0">&#9670;&nbsp;</a></span>asyncAddReaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncAddReaction </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>messageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>reaction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >添加 Reaction。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messageId</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">reaction</td><td>要添加的消息 Reaction。 </td></tr>
+    <tr><td class="paramname">callback</td><td>处理结果回调，失败会返回失败原因。详见 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acd19dcea7931c2722ba88b2cc7374e01" name="acd19dcea7931c2722ba88b2cc7374e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd19dcea7931c2722ba88b2cc7374e01">&#9670;&nbsp;</a></span>asyncDeleteAllMsgsAndConversations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncDeleteAllMsgsAndConversations </td>
+          <td>(</td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>clearSeverData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>deleteCallBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >清空所有会话及其消息。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clearSeverData</td><td>是否删除服务端所有会话及其消息：<ul>
+<li><code>true</code>：是。服务端的所有会话及其消息会被清除，当前用户无法再从服务端拉取消息和会话，其他用户不受影响。</li>
+<li>（默认）<code>false</code>：否。只清除本地所有会话及其消息，服务端的会话及其消息仍保留。</li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">deleteCallBack</td><td>该方法完成调用的回调。如果该方法调用失败，会包含调用失败的原因。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a38454af9dee4a5878c33cbe9268dd382" name="a38454af9dee4a5878c33cbe9268dd382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38454af9dee4a5878c33cbe9268dd382">&#9670;&nbsp;</a></span>asyncFetchConversationsFromServer() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncFetchConversationsFromServer </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>cursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >分页从服务器获取获取会话列表。</p>
+<p >SDK 按照会话活跃时间（会话的最后一条消息的时间戳）倒序返回会话列表。</p>
+<p >若会话中没有消息，则 SDK 按照会话创建时间的倒序返回会话列表。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">limit</td><td>每页期望返回的会话数量。取值范围为 [1,50]。 </td></tr>
+    <tr><td class="paramname">cursor</td><td>开始获取数据的游标位置。若获取数据时传 null 或者空字符串（""），SDK 从最新活跃的会话开始获取。 </td></tr>
+    <tr><td class="paramname">callback</td><td>分页获取结果 <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>，包含用于下次获取数据的 cursor 以及会话列表。 如果是最后一页，cursor 返回结果为空字符串。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa63a21ee374c11872a93857a138bba3a" name="aa63a21ee374c11872a93857a138bba3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa63a21ee374c11872a93857a138bba3a">&#9670;&nbsp;</a></span>asyncFetchConversationsFromServer() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncFetchConversationsFromServer </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; Map&lt; String, <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callBack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从服务器获取会话列表。</p>
+<p >异步方法。</p>
+<dl class="section return"><dt>返回</dt><dd>当前用户的会话列表。 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">弃用:</a></b></dt><dd>已废弃。请用 <a class="el" href="">asyncFetchConversationsFromServer(int, String, ValueCallBack)</a> 代替。</dd></dl>
+
+</div>
+</div>
+<a id="aab043e06c10b6d6ef37da6c1df4f509f" name="aab043e06c10b6d6ef37da6c1df4f509f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab043e06c10b6d6ef37da6c1df4f509f">&#9670;&nbsp;</a></span>asyncFetchConversationsFromServer() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncFetchConversationsFromServer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pageNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pageSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; Map&lt; String, <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从服务器分页获取会话列表。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pageNum</td><td>当前页码，从 1 开始。 </td></tr>
+    <tr><td class="paramname">pageSize</td><td>每页获取的会话数量，取值范围为 [1,20]。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>当前用户的会话列表。 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">弃用:</a></b></dt><dd>已废弃。请用 <a class="el" href="">asyncFetchConversationsFromServer(int, String, ValueCallBack)</a> 代替。</dd></dl>
+
+</div>
+</div>
+<a id="a0d4c51aa5fa957ddd590e314a7d4a271" name="a0d4c51aa5fa957ddd590e314a7d4a271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4c51aa5fa957ddd590e314a7d4a271">&#9670;&nbsp;</a></span>asyncFetchGroupReadAcks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncFetchGroupReadAcks </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>msgId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>pageSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>startAckId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_group_read_ack.html">GroupReadAck</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从服务器分页获取群组消息已读回执详情。</p>
+<p >发送群组消息回执，可调用 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#ae3f332b14444a8f0789562a5cae984b2">ackGroupMessageRead(String, String, String)</a>。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgId</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">pageSize</td><td>每页获取的群消息已读回执数。取值范围为 [1,50]。 </td></tr>
+    <tr><td class="paramname">startAckId</td><td>查询起始的已读回执 ID。该参数设置后，SDK 从指定的已读回执 ID 开始，按服务器接收已读回执的时间的逆序获取。 若该参数为空，SDK 从最新的已读回执开始按服务器接收回执时间的逆序获取。 </td></tr>
+    <tr><td class="paramname">callBack</td><td>结果回调。<ul>
+<li>调用成功，触发 <a class="el" href="">ValueCallBack#onSuccess(Object)</a> 回调，返回查询的已读回执列表（不包含查询起始 ID 的已读回执）和下次查询的 cursor。</li>
+<li>调用失败，触发 <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html#a3fcd197986702282f53080d6aa7afd25">ValueCallBack#onError(int, String)</a> 回调报错。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a082f2cf5db33c5bb6300ec1aa63680a1" name="a082f2cf5db33c5bb6300ec1aa63680a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082f2cf5db33c5bb6300ec1aa63680a1">&#9670;&nbsp;</a></span>asyncFetchHistoryMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncFetchHistoryMessage </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>conversationId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>pageSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>startMsgId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final Conversation.SearchDirection&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从服务器按消息搜索方向分页获取指定会话的所有类型的历史消息。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationId</td><td>会话 ID。<ul>
+<li>单聊：对端用户的用户 ID；</li>
+<li>群聊：群组 ID。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">type</td><td>会话类型，详见 <a class="el" href="">ConversationType</a>。 </td></tr>
+    <tr><td class="paramname">pageSize</td><td>每页期望获取的消息数。取值范围为 [1,50]。 </td></tr>
+    <tr><td class="paramname">startMsgId</td><td>查询的起始消息 ID。该参数设置后，SDK 从指定的消息 ID 开始，按消息搜索方向获取。 如果传入消息的 ID 为空，SDK 忽略该参数，按搜索方向查询消息。<ul>
+<li>若 <code>direction</code> 为 <code>UP</code>，SDK 从最新消息开始，按照服务器接收消息时间的逆序获取；</li>
+<li>若 <code>direction</code> 为 <code>DOWN</code>，SDK 从最早消息开始，按照服务器接收消息时间的正序获取。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">direction</td><td>消息搜索方向。详见 <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_search_direction.html">Conversation.SearchDirection</a>。<ul>
+<li>（默认）<code>UP</code>：按照消息中的时间戳的逆序查询；</li>
+<li><code>DOWN</code>：按照消息中的时间戳的正序查询； </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">callBack</td><td>结果回调：<ul>
+<li>调用成功，触发 <a class="el" href="">ValueCallBack#onSuccess(Object)</a>，返回消息列表（不包含查询起始 ID 的消息）和下次查询的 cursor；</li>
+<li>调用失败，触发 <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html#a3fcd197986702282f53080d6aa7afd25">ValueCallBack#onError(int, String)</a> 报错。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">弃用:</a></b></dt><dd>已废弃。请用 <a class="el" href="">asyncFetchHistoryMessages(String, ConversationType, int, String, FetchMessageOption, ValueCallBack)</a> 代替。</dd></dl>
+
+</div>
+</div>
+<a id="af9d0b492b84de09beedd68b81157c80d" name="af9d0b492b84de09beedd68b81157c80d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d0b492b84de09beedd68b81157c80d">&#9670;&nbsp;</a></span>asyncFetchHistoryMessage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncFetchHistoryMessage </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>conversationId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>pageSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>startMsgId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从服务器分页获取指定会话的所有类型的历史消息。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationId</td><td>会话 ID。<ul>
+<li>单聊：对端用户的用户 ID；</li>
+<li>群聊：群组 ID。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">type</td><td>会话类型，详见 <a class="el" href="">ConversationType</a>。 </td></tr>
+    <tr><td class="paramname">pageSize</td><td>每页期望获取的消息条数。取值范围为 [1,50]。 </td></tr>
+    <tr><td class="paramname">startMsgId</td><td>查询的起始消息 ID。该参数设置后，SDK 从指定的消息 ID 开始，按服务器接收消息的时间的逆序获取。 若该参数为空，SDK 从最新的消息开始，按服务器接收消息的时间的逆序获取。 </td></tr>
+    <tr><td class="paramname">callBack</td><td>结果回调，成功则执行 <a class="el" href="">ValueCallBack#onSuccess(Object)</a>，返回消息列表（不包含查询起始 ID 的消息）和下次查询的 cursor； 失败则执行 <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html#a3fcd197986702282f53080d6aa7afd25">ValueCallBack#onError(int, String)</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">弃用:</a></b></dt><dd>已废弃。请用 <a class="el" href="">asyncFetchHistoryMessages(String, ConversationType, int, String, FetchMessageOption, ValueCallBack)</a> 代替。</dd></dl>
+
+</div>
+</div>
+<a id="af1dfac0fdc4910879444bb4563d20c43" name="af1dfac0fdc4910879444bb4563d20c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1dfac0fdc4910879444bb4563d20c43">&#9670;&nbsp;</a></span>asyncFetchHistoryMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncFetchHistoryMessages </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conversationId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pageSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>cursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classio_1_1agora_1_1chat_1_1_fetch_message_option.html">FetchMessageOption</a>&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >根据消息拉取参数配置类（<code><a class="el" href="classio_1_1agora_1_1chat_1_1_fetch_message_option.html">FetchMessageOption</a></code>）从服务器分页获取指定会话的历史消息。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationId</td><td>会话 ID。<ul>
+<li>单聊：对端用户的用户 ID；</li>
+<li>群聊：群组 ID。</li>
+<li>聊天室：聊天室 ID。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">type</td><td>会话类型, 详见 <a class="el" href="">ConversationType</a>。 </td></tr>
+    <tr><td class="paramname">pageSize</td><td>每页期望获取的消息条数。取值范围为 [1,50]。 </td></tr>
+    <tr><td class="paramname">cursor</td><td>查询的起始游标位置。 </td></tr>
+    <tr><td class="paramname">option</td><td>查询历史消息的参数配置类，详见 <a class="el" href="classio_1_1agora_1_1chat_1_1_fetch_message_option.html">FetchMessageOption</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>查询到的消息列表和下次查询的 cursor。 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callBack</td><td>结果回调：<ul>
+<li>调用成功，触发 <a class="el" href="">ValueCallBack#onSuccess(Object)</a>，返回消息列表（不包含查询起始 ID 的消息）和下次查询的 cursor；</li>
+<li>调用失败，触发 <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html#a3fcd197986702282f53080d6aa7afd25">ValueCallBack#onError(int, String)</a> 报错。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0dc37a87f2676f17e0ed46f39a33ab41" name="a0dc37a87f2676f17e0ed46f39a33ab41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc37a87f2676f17e0ed46f39a33ab41">&#9670;&nbsp;</a></span>asyncFetchPinnedConversationsFromServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncFetchPinnedConversationsFromServer </td>
+          <td>(</td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>cursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >分页从服务器获取置顶会话。</p>
+<p >SDK 按照会话置顶时间倒序返回。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">limit</td><td>每页返回的会话数。取值范围为 [1,50]。 </td></tr>
+    <tr><td class="paramname">cursor</td><td>开始获取数据的游标位置。若获取数据时传 <code>null</code> 或者空字符串（""），SDK 从最新置顶的会话开始查询。 </td></tr>
+    <tr><td class="paramname">callback</td><td>分页获取结果 <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>，包含用于下次获取数据的 cursor 以及置顶的会话列表。 如果是最后一页，cursor 返回结果为空字符串。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d06945a56d3b5e0e7e5163acde09966" name="a8d06945a56d3b5e0e7e5163acde09966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d06945a56d3b5e0e7e5163acde09966">&#9670;&nbsp;</a></span>asyncFilterConversationsFromDB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncFilterConversationsFromDB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1chat_1_1_custom_conversation_filter.html">CustomConversationFilter</a>&#160;</td>
+          <td class="paramname"><em>filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>cleanConversationsCache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >根据自定义会话过滤器获取本地所有会话。</p>
+<p >调用该接口时，SDK 会根据过滤条件从本地数据库获取会话。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>过滤器，详见 <a class="el" href="interfaceio_1_1agora_1_1chat_1_1_custom_conversation_filter.html">CustomConversationFilter</a>。若要获取全部会话，传入 null 即可。 </td></tr>
+    <tr><td class="paramname">cleanConversationsCache</td><td>是否清空内存缓存的会话。 </td></tr>
+    <tr><td class="paramname">callBack</td><td>结果回调，成功时回调 <a class="el" href="">ValueCallBack#onSuccess(Object)</a>，返回过滤后的会话列表。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a021808c72b133456959bca41235fbebe" name="a021808c72b133456959bca41235fbebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a021808c72b133456959bca41235fbebe">&#9670;&nbsp;</a></span>asyncGetConversationsFromServerWithCursor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncGetConversationsFromServerWithCursor </td>
+          <td>(</td>
+          <td class="paramtype">@NonNull String&#160;</td>
+          <td class="paramname"><em>cursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@NonNull <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation_filter.html">ConversationFilter</a>&#160;</td>
+          <td class="paramname"><em>filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >根据会话过滤类从服务器分页查询会话列表。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cursor</td><td>查询的开始位置。若传入空字符串，SDK 从最新标记操作的会话开始获取。 </td></tr>
+    <tr><td class="paramname">filter</td><td>会话查询选项，包括会话标记和每页获取的会话条数。 </td></tr>
+    <tr><td class="paramname">callback</td><td>该方法完成的回调，返回会话列表和用于下一次获取数据的 cursor。当 cursor 为 空字符串时，表示已获取全部数据。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2754bbf2bb607914a587c633294050a8" name="a2754bbf2bb607914a587c633294050a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2754bbf2bb607914a587c633294050a8">&#9670;&nbsp;</a></span>asyncGetMessageCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncGetMessageCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; Integer &gt;&#160;</td>
+          <td class="paramname"><em>callBack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取本地数据库中消息总数</p>
+<p >该方法为异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callBack</td><td>该方法完成调用的回调。如果该方法成功，会包含本地数据库中消息总数。如果该方法调用失败，会包含调用失败的原因。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a62363c8cfbda635823b0ff1200a1c1f8" name="a62363c8cfbda635823b0ff1200a1c1f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62363c8cfbda635823b0ff1200a1c1f8">&#9670;&nbsp;</a></span>asyncGetPinnedMessagesFromServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncGetPinnedMessagesFromServer </td>
+          <td>(</td>
+          <td class="paramtype">@NonNull String&#160;</td>
+          <td class="paramname"><em>conversationId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从服务端获取置顶消息。</p>
+<p >该方法为异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationId</td><td>会话 ID。 </td></tr>
+    <tr><td class="paramname">callBack</td><td>该方法完成调用的回调。如果该方法成功，会包含所有置顶的消息。如果该方法调用失败，会包含调用失败的原因。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3fb93d5330c452c96ba3684ed0eaf5d6" name="a3fb93d5330c452c96ba3684ed0eaf5d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fb93d5330c452c96ba3684ed0eaf5d6">&#9670;&nbsp;</a></span>asyncGetReactionDetail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncGetReactionDetail </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>messageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>reaction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>cursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>pageSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_message_reaction.html">MessageReaction</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取 Reaction 详细信息。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messageId</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">reaction</td><td>消息 Reaction。 </td></tr>
+    <tr><td class="paramname">cursor</td><td>查询的起始游标位置。 </td></tr>
+    <tr><td class="paramname">pageSize</td><td>每页期望获取的 Reaction 数。 </td></tr>
+    <tr><td class="paramname">callback</td><td>处理结果回调，包含 cursor 和 <a class="el" href="classio_1_1agora_1_1chat_1_1_message_reaction.html">MessageReaction</a> 列表（仅使用该列表第一个数据即可）。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae52a345c2aee863f29c4d0ebf453108d" name="ae52a345c2aee863f29c4d0ebf453108d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae52a345c2aee863f29c4d0ebf453108d">&#9670;&nbsp;</a></span>asyncGetReactionList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncGetReactionList </td>
+          <td>(</td>
+          <td class="paramtype">final List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>messageIdList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final ChatMessage.ChatType&#160;</td>
+          <td class="paramname"><em>chatType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>groupId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; Map&lt; String, List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_message_reaction.html">MessageReaction</a> &gt; &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取 Reaction 列表。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messageIdList</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">chatType</td><td>会话类型，仅支持单聊（<a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_chat_type.html#aa6350775ac99ad0b738f2b48ed3ec049">ChatMessage.ChatType#Chat</a> ）和群聊（<a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_chat_type.html#ace13c3ce72180aef4971d4e4df7a73b9">ChatMessage.ChatType#GroupChat</a>）。 </td></tr>
+    <tr><td class="paramname">groupId</td><td>群组 ID，该参数只对群聊生效。 </td></tr>
+    <tr><td class="paramname">callback</td><td>处理结果回调，包含消息 ID 对应的 Reaction 列表（MessageReaction 的用户列表 <code>UserList</code> 为概要数据，只包含前三个用户信息）。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af3acdb02aafd446248ee8e9c7b44ab97" name="af3acdb02aafd446248ee8e9c7b44ab97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3acdb02aafd446248ee8e9c7b44ab97">&#9670;&nbsp;</a></span>asyncModifyMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncModifyMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>messageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classio_1_1agora_1_1chat_1_1_message_body.html">MessageBody</a>&#160;</td>
+          <td class="paramname"><em>messageBodyModified</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt;&#160;</td>
+          <td class="paramname"><em>callBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >修改消息内容。</p>
+<p >调用该方法修改消息内容后，本地和服务端的消息均会修改。</p>
+<p >调用该方法只能修改单聊和群聊中的文本消息，不能修改聊天室消息。</p>
+<p >多设备和该消息的接收方可通过 <a class="el" href="interfaceio_1_1agora_1_1_message_listener.html#a4ff6dccc4c2d80cea845ed1e471e2a27">MessageListener#onMessageContentChanged(ChatMessage, String, long)</a> 回调监听消息是否有变更。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messageId</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">messageBodyModified</td><td>内容修改后的消息体。 </td></tr>
+    <tr><td class="paramname">callBack</td><td>消息修改是否成功的回调。ValueCallBack 类的对象，详见 <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>,包含已修改的消息对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aae69f5426e24b2ebbc4f160f30dd08c3" name="aae69f5426e24b2ebbc4f160f30dd08c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae69f5426e24b2ebbc4f160f30dd08c3">&#9670;&nbsp;</a></span>asyncPinConversation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncPinConversation </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>conversationId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>isPinned</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >设置是否置顶会话。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationId</td><td>会话 ID。 </td></tr>
+    <tr><td class="paramname">isPinned</td><td>是否置顶会话：<ul>
+<li><code>true</code>：置顶；</li>
+<li><code>false</code>: 取消置顶。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">callback</td><td>设置会话置顶状态的结果回调。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4be039c06df9b8311dbca685f0f834c2" name="a4be039c06df9b8311dbca685f0f834c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be039c06df9b8311dbca685f0f834c2">&#9670;&nbsp;</a></span>asyncPinMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncPinMessage </td>
+          <td>(</td>
+          <td class="paramtype">@NonNull String&#160;</td>
+          <td class="paramname"><em>messageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >置顶消息。</p>
+<p >该方法为异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messageId</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">callBack</td><td>该方法完成调用的回调。如果该方法调用失败，会包含调用失败的原因。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af1b22e114120a91306d87f56b4668a4b" name="af1b22e114120a91306d87f56b4668a4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1b22e114120a91306d87f56b4668a4b">&#9670;&nbsp;</a></span>asyncRecallMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncRecallMessage </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >撤回发送成功的消息。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>消息对象。 </td></tr>
+    <tr><td class="paramname">callback</td><td><a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> 类的对象，详见 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a14c95b3f770b46d39e0f7bfb5f267c09" name="a14c95b3f770b46d39e0f7bfb5f267c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14c95b3f770b46d39e0f7bfb5f267c09">&#9670;&nbsp;</a></span>asyncRecallMessage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncRecallMessage </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>ext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >撤回发送成功的消息。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>消息对象。 </td></tr>
+    <tr><td class="paramname">ext</td><td>扩展信息。 </td></tr>
+    <tr><td class="paramname">callback</td><td><a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a> 类的对象，详见 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a308bf53c346199a7af1752b1bda60c28" name="a308bf53c346199a7af1752b1bda60c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308bf53c346199a7af1752b1bda60c28">&#9670;&nbsp;</a></span>asyncRemoveConversationMark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncRemoveConversationMark </td>
+          <td>(</td>
+          <td class="paramtype">@NonNull List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>conversationIds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">@NonNull <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_e_m_mark_type.html">EMMarkType</a>&#160;</td>
+          <td class="paramname"><em>mark</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >取消标记会话。</p>
+<p >调用该方法会同时为本地和服务器端的会话添加标记。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationIds</td><td>会话 ID 列表。 </td></tr>
+    <tr><td class="paramname">mark</td><td>要移除的会话标记。 </td></tr>
+    <tr><td class="paramname">callback</td><td>该方法完成调用的回调。如果该方法调用失败，会包含调用失败的原因。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7b51ef6ed446d1a5f4e742bb4f0721c8" name="a7b51ef6ed446d1a5f4e742bb4f0721c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b51ef6ed446d1a5f4e742bb4f0721c8">&#9670;&nbsp;</a></span>asyncRemoveReaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncRemoveReaction </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>messageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>reaction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >删除 Reaction。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messageId</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">reaction</td><td>要删除的 Reaction。 </td></tr>
+    <tr><td class="paramname">callback</td><td>处理结果回调，详见 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac2410f691669cff625d1b0275462a50a" name="ac2410f691669cff625d1b0275462a50a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2410f691669cff625d1b0275462a50a">&#9670;&nbsp;</a></span>asyncReportMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncReportMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>msgId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>reportReason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >举报非法消息。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgId</td><td>要举报的消息 ID。 </td></tr>
+    <tr><td class="paramname">tag</td><td>非法消息的标签。你需要填写自定义标签，例如<code>涉政</code>或<code>广告</code>。 </td></tr>
+    <tr><td class="paramname">reportReason</td><td>举报原因。你需要自行填写举报原因。 </td></tr>
+    <tr><td class="paramname">callback</td><td>结果回调，详见 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>：<ul>
+<li>调用成功，触发 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html#a1ea69ea862d9f70a9c9b41860c343903">CallBack#onSuccess()</a> 回调；</li>
+<li>调用失败，触发 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html#ac1f29243e1a536027546299d1fbbbe09">CallBack#onError(int, String)</a> 回调。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaf491a425c094d633f4f2655f2a34d28" name="aaf491a425c094d633f4f2655f2a34d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf491a425c094d633f4f2655f2a34d28">&#9670;&nbsp;</a></span>asyncUnPinMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.asyncUnPinMessage </td>
+          <td>(</td>
+          <td class="paramtype">@NonNull String&#160;</td>
+          <td class="paramname"><em>messageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >取消置顶消息。</p>
+<p >该方法为异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messageId</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">callBack</td><td>该方法完成调用的回调。如果该方法调用失败，会包含调用失败的原因。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6a0b02313995505685d70bbca60eb04d" name="a6a0b02313995505685d70bbca60eb04d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a0b02313995505685d70bbca60eb04d">&#9670;&nbsp;</a></span>cleanConversationsMemoryCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.cleanConversationsMemoryCache </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >清除本地内存中的所有会话释放内存。</p>
+<p >注意：释放内存后，通过 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a4beb1507c56ddfc7d8f663dced679f4a">getAllConversations()</a>、<a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a8160f9ea9d550299f62f85dc84a07759">getAllConversationsBySort()</a> 从内存里获取到的会话数可能为 0。通过<a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#af1ba2602185cc6b1255eb7bc40882ee7">getUnreadMessageCount()</a>获取到的未读消息数可能为 0。</p>
+<p >若需要获取所有会话和未读数，需要先调用 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#aa8b8d25ac5a03a0b0cc518da38005872">loadAllConversations()</a>或者 <a class="el" href="">asyncFilterConversationsFromDB(CustomConversationFilter, boolean, ValueCallBack)</a> 从数据库重新加载会话到内存里。 </p>
+
+</div>
+</div>
+<a id="a72bbe503d04df70546282792767c1735" name="a72bbe503d04df70546282792767c1735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72bbe503d04df70546282792767c1735">&#9670;&nbsp;</a></span>deleteConversation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatManager.deleteConversation </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conversationId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>deleteMessages</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >删除指定会话及其本地历史消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationId</td><td>会话 ID。 </td></tr>
+    <tr><td class="paramname">deleteMessages</td><td>删除会话时是否同时删除本地的历史消息。<ul>
+<li><code>true</code>：删除；</li>
+<li><code>false</code>：不删除。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>会话是否删除成功。<ul>
+<li><code>true</code>：是；</li>
+<li><code>false</code>： 否。 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a87b72cbb30e1636d290cc51062a27b53" name="a87b72cbb30e1636d290cc51062a27b53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87b72cbb30e1636d290cc51062a27b53">&#9670;&nbsp;</a></span>deleteConversationFromServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.deleteConversationFromServer </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>isDeleteServerMessages</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>deleteCallBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >删除服务端的指定会话及其历史消息。</p>
+<p >异步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>会话 ID。 </td></tr>
+    <tr><td class="paramname">type</td><td>会话类型，详见 <a class="el" href="">ConversationType</a>。 </td></tr>
+    <tr><td class="paramname">isDeleteServerMessages</td><td>删除会话时是否同时删除历史消息。<ul>
+<li><code>true</code>：是；</li>
+<li><code>false</code>: 否。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">deleteCallBack</td><td>删除服务端会话及其历史消息成功与否的回调。<ul>
+<li><code>true</code>：删除成功；</li>
+<li><code>false</code>：删除失败。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a23b0355ffd351da0b203f6e0c130fdf6" name="a23b0355ffd351da0b203f6e0c130fdf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23b0355ffd351da0b203f6e0c130fdf6">&#9670;&nbsp;</a></span>deleteMessagesBeforeTimestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.deleteMessagesBeforeTimestamp </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>timeStamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >删除指定时间戳之前的本地历史消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeStamp</td><td>查询的消息的起始 Unix 时间戳，单位为毫秒。 </td></tr>
+    <tr><td class="paramname">callback</td><td>删除结果回调，详见 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a16d759e8cc6d5b642d30f8787f522b43" name="a16d759e8cc6d5b642d30f8787f522b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d759e8cc6d5b642d30f8787f522b43">&#9670;&nbsp;</a></span>downloadAndParseCombineMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.downloadAndParseCombineMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >下载并解析合并消息的附件。</p>
+<p >对于一条合并消息，首次调用该方法会下载和解析合并消息附件，然后返回消息列表，而后续调用会存在以下情况：</p><ol type="1">
+<li>若附件已存在，该方法会直接解析附件并返回消息列表。</li>
+<li>若附件不存在，该方法首先会下载附件，然后解析合并消息附件并返回消息列表。</li>
+</ol>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>要下载和解析的合并消息。 </td></tr>
+    <tr><td class="paramname">callback</td><td>结果回调，成功时回调 <a class="el" href="">ValueCallBack#onSuccess(Object)</a>，返回解析成功的消息列表; 失败时回调 <a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html#a3fcd197986702282f53080d6aa7afd25">ValueCallBack#onError(int, String)</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af5298f55319dd769b69623c111cc8dcb" name="af5298f55319dd769b69623c111cc8dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5298f55319dd769b69623c111cc8dcb">&#9670;&nbsp;</a></span>downloadAttachment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.downloadAttachment </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >下载消息的附件。</p>
+<p >若附件自动下载失败，也可以调用此方法下载。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>要下载附件的消息。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abdc79b8af968ba4f4a00d326746b0013" name="abdc79b8af968ba4f4a00d326746b0013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdc79b8af968ba4f4a00d326746b0013">&#9670;&nbsp;</a></span>downloadThumbnail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.downloadThumbnail </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >下载消息的缩略图。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>要下载缩略图的消息。只有图片消息和视频消息有缩略图。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5a2d44f6d9afb5e612c8511b6376a608" name="a5a2d44f6d9afb5e612c8511b6376a608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2d44f6d9afb5e612c8511b6376a608">&#9670;&nbsp;</a></span>fetchConversationsFromServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt; String, <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; io.agora.chat.ChatManager.fetchConversationsFromServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从服务器获取会话列表。</p>
+<p >用户默认可拉取 7 天内的 10 个会话（每个会话包含最新一条历史消息）。</p>
+<p >同步方法，会阻塞当前线程。</p>
+<dl class="section return"><dt>返回</dt><dd>当前用户的会话列表。 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">弃用:</a></b></dt><dd>已废弃。请用 <a class="el" href="">asyncFetchConversationsFromServer(int, String, ValueCallBack)</a> 代替。</dd></dl>
+
+</div>
+</div>
+<a id="ab5d625da24907c4c037a9f886bb76c09" name="ab5d625da24907c4c037a9f886bb76c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5d625da24907c4c037a9f886bb76c09">&#9670;&nbsp;</a></span>fetchGroupReadAcks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_group_read_ack.html">GroupReadAck</a> &gt; io.agora.chat.ChatManager.fetchGroupReadAcks </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>msgId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pageSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>startAckId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从服务器分页获取群组消息已读回执详情。</p>
+<p >发送群组消息回执，可调用 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#ae3f332b14444a8f0789562a5cae984b2">ackGroupMessageRead(String, String, String)</a>。</p>
+<p >同步方法，会阻塞当前线程。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgId</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">pageSize</td><td>每页期望返回的群消息已读数。取值范围[1,50]。 </td></tr>
+    <tr><td class="paramname">startAckId</td><td>查询起始的已读回执 ID。该参数设置后，SDK 从指定的已读回执 ID 开始，按服务器接收已读回执的时间的逆序获取。 若该参数为空，SDK 从最新的已读回执开始按服务器接收回执时间的逆序获取。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回消息列表（不包含查询起始 ID 的已读回执）和用于继续获取群消息回执的 cursor。 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和错误描述，详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1e4e5927e8f9e91da6827b51b2ff3b54" name="a1e4e5927e8f9e91da6827b51b2ff3b54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4e5927e8f9e91da6827b51b2ff3b54">&#9670;&nbsp;</a></span>fetchHistoryMessages() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; io.agora.chat.ChatManager.fetchHistoryMessages </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conversationId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pageSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>startMsgId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从服务器分页获取指定会话的所有类型的历史消息。</p>
+<p >同步方法，会阻塞当前线程。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationId</td><td>会话 ID。<ul>
+<li>单聊：对端用户的用户 ID；</li>
+<li>群聊：群组 ID。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">type</td><td>会话类型, 详见 <a class="el" href="">ConversationType</a>。 </td></tr>
+    <tr><td class="paramname">pageSize</td><td>每页期望获取的消息条数。取值范围为 [1,50]。 </td></tr>
+    <tr><td class="paramname">startMsgId</td><td>开始获取的消息 ID。该参数设置后，SDK 从指定的消息 ID 开始，按服务器接收消息的时间的逆序获取。 若该参数为空，SDK 从最新的消息开始，按服务器接收消息的时间的逆序获取。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息列表（不包含查询起始 ID 的消息）和下次查询的 cursor。 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和错误描述，详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">弃用:</a></b></dt><dd>已废弃。请用 <a class="el" href="">asyncFetchHistoryMessages(String, ConversationType, int, String, FetchMessageOption, ValueCallBack)</a> 代替。</dd></dl>
+
+</div>
+</div>
+<a id="a71f3f43274893f60de38405a67b05bb0" name="a71f3f43274893f60de38405a67b05bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f3f43274893f60de38405a67b05bb0">&#9670;&nbsp;</a></span>fetchHistoryMessages() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; io.agora.chat.ChatManager.fetchHistoryMessages </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conversationId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pageSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>startMsgId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Conversation.SearchDirection&#160;</td>
+          <td class="paramname"><em>direction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从服务器分页按消息搜索方向获取指定会话的所有类型的历史消息。</p>
+<p >同步方法，会阻塞当前线程。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationId</td><td>会话 ID。<ul>
+<li>单聊：对端用户的用户 ID；</li>
+<li>群聊：群组 ID。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">type</td><td>会话类型。详见 <a class="el" href="">ConversationType</a>。 </td></tr>
+    <tr><td class="paramname">pageSize</td><td>每页期望获取的消息条数。取值范围为 [1,50]。 </td></tr>
+    <tr><td class="paramname">startMsgId</td><td>查询的起始消息 ID。该参数设置后，SDK 从指定的消息 ID 开始，按消息检索方向获取。如果传入消息的 ID 为空，SDK 忽略该参数，按搜索方向查询消息。<ul>
+<li>若 <code>direction</code> 为 <code>UP</code>，SDK 从最新消息开始，按照服务器接收消息时间的逆序获取；</li>
+<li>若 <code>direction</code> 为 <code>DOWN</code>，SDK 从最早消息开始，按照服务器接收消息时间的正序获取。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">direction</td><td>消息搜索方向。详见 <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_search_direction.html">Conversation.SearchDirection</a>。<ul>
+<li>（默认）<code>UP</code>：按照服务器接收消息时间的逆序获取；</li>
+<li><code>DOWN</code>：按照服务器接收消息时间的正序获取。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息列表（不包含查询起始 ID 的消息）和下次查询的 cursor。 </dd></dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和错误描述，详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">弃用:</a></b></dt><dd>已废弃。请用 <a class="el" href="">asyncFetchHistoryMessages(String, ConversationType, int, String, FetchMessageOption, ValueCallBack)</a> 代替。</dd></dl>
+
+</div>
+</div>
+<a id="a92601d1af1a5f60f2cdeeb8eadb178cd" name="a92601d1af1a5f60f2cdeeb8eadb178cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92601d1af1a5f60f2cdeeb8eadb178cd">&#9670;&nbsp;</a></span>fetchSupportLanguages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.fetchSupportLanguages </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; List&lt; Language &gt; &gt;&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取翻译服务支持的语言。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>结果回调，详见 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>。<ul>
+<li>调用成功，触发 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html#a1ea69ea862d9f70a9c9b41860c343903">CallBack#onSuccess()</a> 返回获取的语言；</li>
+<li>调用失败，触发 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html#ac1f29243e1a536027546299d1fbbbe09">CallBack#onError(int, String)</a> 报错。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4beb1507c56ddfc7d8f663dced679f4a" name="a4beb1507c56ddfc7d8f663dced679f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4beb1507c56ddfc7d8f663dced679f4a">&#9670;&nbsp;</a></span>getAllConversations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt; String, <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; io.agora.chat.ChatManager.getAllConversations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取本地当前所有会话。</p>
+<p >该方法会先从内存中获取，如果未找到任何会话，从本地数据库获取。</p>
+<dl class="section return"><dt>返回</dt><dd>本地内存或者数据库中所有的会话。 </dd></dl>
+
+</div>
+</div>
+<a id="a8160f9ea9d550299f62f85dc84a07759" name="a8160f9ea9d550299f62f85dc84a07759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8160f9ea9d550299f62f85dc84a07759">&#9670;&nbsp;</a></span>getAllConversationsBySort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; io.agora.chat.ChatManager.getAllConversationsBySort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取本地当前所有会话。</p>
+<p >SDK 按照最近一条消息的时间戳的倒序返回会话，置顶会话在前，非置顶会话在后。</p>
+<p >该方法会先从内存中获取，如果未找到任何会话，SDK 从本地数据库获取。</p>
+<dl class="section return"><dt>返回</dt><dd>排序后的会话列表。 </dd></dl>
+
+</div>
+</div>
+<a id="a1dea229f1bc9e9d605a64228cc47a4e7" name="a1dea229f1bc9e9d605a64228cc47a4e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dea229f1bc9e9d605a64228cc47a4e7">&#9670;&nbsp;</a></span>getConversation() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> io.agora.chat.ChatManager.getConversation </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取指定 ID 的会话对象。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>会话 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>根据指定会话 ID 找到的会话对象，如果没有找到会返回空值。 </dd></dl>
+
+</div>
+</div>
+<a id="a37f6e25066c2645597d576920d24aa8a" name="a37f6e25066c2645597d576920d24aa8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37f6e25066c2645597d576920d24aa8a">&#9670;&nbsp;</a></span>getConversation() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> io.agora.chat.ChatManager.getConversation </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >根据会话 ID 以及会话类型获取会话。</p>
+<p >没有找到返回空值。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>会话 ID。<ul>
+<li>单聊：对端用户的用户 ID；</li>
+<li>群聊：群组 ID；</li>
+<li>聊天室：聊天室 ID；</li>
+<li>子区：子区 ID。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">type</td><td>会话类型，详见 <a class="el" href="">ConversationType</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>根据指定 ID 以及会话类型找到的会话对象，未找到会返回空值。 </dd></dl>
+
+</div>
+</div>
+<a id="a4a1ce1ed2c1fdf3eec13cc462c282191" name="a4a1ce1ed2c1fdf3eec13cc462c282191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a1ce1ed2c1fdf3eec13cc462c282191">&#9670;&nbsp;</a></span>getConversation() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> io.agora.chat.ChatManager.getConversation </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>createIfNotExists</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >根据会话 ID 和会话类型获取会话。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>会话 ID。<ul>
+<li>单聊：对端用户的用户 ID；</li>
+<li>群聊：群组 ID；</li>
+<li>聊天室：聊天室 ID；</li>
+<li>子区：子区 ID。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">type</td><td>会话类型，详见 <a class="el" href="">ConversationType</a>。 </td></tr>
+    <tr><td class="paramname">createIfNotExists</td><td>未找到指定会话时是否创建一个新会话。<ul>
+<li><code>true</code>：是；</li>
+<li><code>false</code>：否。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>找到的会话对象，如果未找到，返回空值。 </dd></dl>
+
+</div>
+</div>
+<a id="a4786fd85693c0e984332f7f263a7880d" name="a4786fd85693c0e984332f7f263a7880d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4786fd85693c0e984332f7f263a7880d">&#9670;&nbsp;</a></span>getConversation() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> io.agora.chat.ChatManager.getConversation </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>createIfNotExists</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>isChatThread</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >根据会话 ID 以及会话类型获取会话。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">username</td><td>会话 ID。<ul>
+<li>单聊：对端用户的用户 ID；</li>
+<li>群聊：群组 ID；</li>
+<li>聊天室：聊天室 ID；</li>
+<li>子区：子区 ID。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">type</td><td>会话类型，详见 <a class="el" href="">ConversationType</a>。 </td></tr>
+    <tr><td class="paramname">createIfNotExists</td><td>未找到指定会话时是否创建一个新会话。<ul>
+<li><code>true</code>：是；<ul>
+<li><code>false</code>：否。 </li>
+</ul>
+</li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">isChatThread</td><td>是否查找子区会话。<ul>
+<li><code>true</code>：是；<ul>
+<li><code>false</code>：否。 </li>
+</ul>
+</li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>找到的会话对象。如果未找到，返回空值。 </dd></dl>
+
+</div>
+</div>
+<a id="a9a153dd0c5bd19871798b2939886d49e" name="a9a153dd0c5bd19871798b2939886d49e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a153dd0c5bd19871798b2939886d49e">&#9670;&nbsp;</a></span>getConversationsByType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_conversation.html">Conversation</a> &gt; io.agora.chat.ChatManager.getConversationsByType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取指定类型的所有会话。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>会话类型，详见 <a class="el" href="">ConversationType</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>指定类型的会话列表。 </dd></dl>
+
+</div>
+</div>
+<a id="a96eaef53e8df62a900baf712cc5f4fbc" name="a96eaef53e8df62a900baf712cc5f4fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96eaef53e8df62a900baf712cc5f4fbc">&#9670;&nbsp;</a></span>getMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> io.agora.chat.ChatManager.getMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>messageId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取指定 ID 的消息对象。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messageId</td><td>消息 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>根据指定 ID 获取的消息对象，如果消息不存在会返回空值。 </dd></dl>
+
+</div>
+</div>
+<a id="a750a55ccc4c4b6f9a2ed8e0021b20517" name="a750a55ccc4c4b6f9a2ed8e0021b20517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a750a55ccc4c4b6f9a2ed8e0021b20517">&#9670;&nbsp;</a></span>getReactionDetail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_message_reaction.html">MessageReaction</a> &gt; io.agora.chat.ChatManager.getReactionDetail </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>messageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>reaction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>cursor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int&#160;</td>
+          <td class="paramname"><em>pageSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取 Reaction 详细信息。</p>
+<p >同步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messageId</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">reaction</td><td>消息 Reaction 内容。 </td></tr>
+    <tr><td class="paramname">cursor</td><td>查询的起始游标位置。 </td></tr>
+    <tr><td class="paramname">pageSize</td><td>每页期望获取的 Reaction 数。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>获取结果 <a class="el" href="classio_1_1agora_1_1chat_1_1_cursor_result.html">CursorResult</a>，包含 cursor 和 Reaction 列表。若 <code>cursor</code> 为空表示数据已全部获取。 </dd></dl>
+
+</div>
+</div>
+<a id="a74b8507f4327efa91fe0a6524d4d7193" name="a74b8507f4327efa91fe0a6524d4d7193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74b8507f4327efa91fe0a6524d4d7193">&#9670;&nbsp;</a></span>getReactionList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Map&lt; String, List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_message_reaction.html">MessageReaction</a> &gt; &gt; io.agora.chat.ChatManager.getReactionList </td>
+          <td>(</td>
+          <td class="paramtype">final List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>messageIdList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final ChatMessage.ChatType&#160;</td>
+          <td class="paramname"><em>chatType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>groupId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取 Reaction 列表。</p>
+<p >同步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messageIdList</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">chatType</td><td>会话类型，仅支持单聊（<a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_chat_type.html#aa6350775ac99ad0b738f2b48ed3ec049">ChatMessage.ChatType#Chat</a>）和群聊（<a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_chat_type.html#ace13c3ce72180aef4971d4e4df7a73b9">ChatMessage.ChatType#GroupChat</a>）。 </td></tr>
+    <tr><td class="paramname">groupId</td><td>群组 ID，该参数仅对群聊生效。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>map 指定消息 ID 对应的 Reaction 列表（<code><a class="el" href="classio_1_1agora_1_1chat_1_1_message_reaction.html">MessageReaction</a></code> 的用户列表 <code>UserList</code> 为概要数据，只包含前三个用户信息）。 </dd></dl>
+
+</div>
+</div>
+<a id="af1ba2602185cc6b1255eb7bc40882ee7" name="af1ba2602185cc6b1255eb7bc40882ee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1ba2602185cc6b1255eb7bc40882ee7">&#9670;&nbsp;</a></span>getUnreadMessageCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int io.agora.chat.ChatManager.getUnreadMessageCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >获取未读消息数。</p>
+<dl class="section return"><dt>返回</dt><dd>未读消息数。 </dd></dl>
+
+</div>
+</div>
+<a id="adf8f64a7885eb3ff1c840f2aba9056c3" name="adf8f64a7885eb3ff1c840f2aba9056c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf8f64a7885eb3ff1c840f2aba9056c3">&#9670;&nbsp;</a></span>importMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">synchronized void io.agora.chat.ChatManager.importMessages </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt;&#160;</td>
+          <td class="paramname"><em>msgs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >将消息导入本地数据库。</p>
+<p >你只能将你发送或接收的消息导入本地数据库。</p>
+<p >推荐一次导入 1,000 条以内的数据。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgs</td><td>需要导入数据库的消息。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa8b8d25ac5a03a0b0cc518da38005872" name="aa8b8d25ac5a03a0b0cc518da38005872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8b8d25ac5a03a0b0cc518da38005872">&#9670;&nbsp;</a></span>loadAllConversations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatManager.loadAllConversations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从数据库加载本地所有的会话到内存中。</p>
+<p >一般在登录成功后使用此方法，可以加快会话列表的加载速度。 </p>
+
+</div>
+</div>
+<a id="afc7d7583797e48258cab1a1d8dc38413" name="afc7d7583797e48258cab1a1d8dc38413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7d7583797e48258cab1a1d8dc38413">&#9670;&nbsp;</a></span>markAllConversationsAsRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatManager.markAllConversationsAsRead </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >将所有会话都设成已读。</p>
+<p >该方法仅适用于本地会话。</p>
+<dl class="section return"><dt>返回</dt><dd>是否成功标记所有会话为已读。 </dd></dl>
+
+</div>
+</div>
+<a id="a766fec8e12f97cd1db6e472db1959e4f" name="a766fec8e12f97cd1db6e472db1959e4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a766fec8e12f97cd1db6e472db1959e4f">&#9670;&nbsp;</a></span>recallMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.recallMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >撤回发送成功的消息。</p>
+<p >若消息发送和撤回时接收方为离线状态，接收方会收到消息撤回回调 <a class="el" href="interfaceio_1_1agora_1_1_message_listener.html#a06e3bd560c3f53b42c9ea74e04460d51">MessageListener#onMessageRecalled</a>，不会收到该消息。</p>
+<p >同步方法，会阻塞当前线程。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>消息对象。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和错误描述，详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7ad7780fefdd7c29998e60efc3e990ab" name="a7ad7780fefdd7c29998e60efc3e990ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad7780fefdd7c29998e60efc3e990ab">&#9670;&nbsp;</a></span>recallMessage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.recallMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>ext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >撤回发送成功的消息。</p>
+<p >若消息发送和撤回时接收方为离线状态，接收方会收到消息撤回回调 <a class="el" href="interfaceio_1_1agora_1_1_message_listener.html#a06e3bd560c3f53b42c9ea74e04460d51">MessageListener#onMessageRecalled</a>，不会收到该消息。</p>
+<p >同步方法，会阻塞当前线程。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>消息对象。 </td></tr>
+    <tr><td class="paramname">ext</td><td>扩展信息</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和错误描述，详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a79476748c67f77c060f64e275fb70296" name="a79476748c67f77c060f64e275fb70296"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79476748c67f77c060f64e275fb70296">&#9670;&nbsp;</a></span>removeConversationListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.removeConversationListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_conversation_listener.html">ConversationListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >移除会话监听器。</p>
+<p >调用 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a43e71631a15d4cfcc209557e017f2c11">addConversationListener(ConversationListener)</a> 添加会话监听器后再调用本方法移除。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>要移除的会话监听器，详见 <a class="el" href="interfaceio_1_1agora_1_1_conversation_listener.html">ConversationListener</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5aa03279de8c351abde0d04b7090a201" name="a5aa03279de8c351abde0d04b7090a201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aa03279de8c351abde0d04b7090a201">&#9670;&nbsp;</a></span>removeMessageListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.removeMessageListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_message_listener.html">MessageListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >移除消息监听器。</p>
+<p >调用 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_manager.html#a29f18970bfcf66e1282a4586ada76847">addMessageListener(MessageListener)</a> 添加消息监听后再调用本方法移除。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>要移除的监听器，详见 <a class="el" href="interfaceio_1_1agora_1_1_message_listener.html">MessageListener</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa23913ca4cece9c1a89656e697e129ce" name="aa23913ca4cece9c1a89656e697e129ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23913ca4cece9c1a89656e697e129ce">&#9670;&nbsp;</a></span>removeMessagesFromServer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.removeMessagesFromServer </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conversationId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>msgIdList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >根据消息 ID 单向删除漫游消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationId</td><td>会话 ID。 </td></tr>
+    <tr><td class="paramname">type</td><td>会话类型。 </td></tr>
+    <tr><td class="paramname">msgIdList</td><td>要删除的消息 ID 列表。 </td></tr>
+    <tr><td class="paramname">callBack</td><td>处理结果回调，详见 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09bcc20692aa948b26b0a1986aaf8ddd" name="a09bcc20692aa948b26b0a1986aaf8ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09bcc20692aa948b26b0a1986aaf8ddd">&#9670;&nbsp;</a></span>removeMessagesFromServer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.removeMessagesFromServer </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>conversationId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_conversation_type.html">ConversationType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>beforeTimeStamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>&#160;</td>
+          <td class="paramname"><em>callBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >根据时间戳单向删除漫游消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conversationId</td><td>会话 ID。 </td></tr>
+    <tr><td class="paramname">type</td><td>会话类型。 </td></tr>
+    <tr><td class="paramname">beforeTimeStamp</td><td>UNIX 时间戳，单位为毫秒。若消息的 UNIX 时间戳小于设置的值，则会被删除。 </td></tr>
+    <tr><td class="paramname">callBack</td><td>处理结果回调,详见 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9aa783ed4f0423e160447319e428949e" name="a9aa783ed4f0423e160447319e428949e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa783ed4f0423e160447319e428949e">&#9670;&nbsp;</a></span>removeReaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.removeReaction </td>
+          <td>(</td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>messageId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final String&#160;</td>
+          <td class="paramname"><em>reaction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >删除 Reaction。</p>
+<p >同步方法。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">messageId</td><td>消息 ID。 </td></tr>
+    <tr><td class="paramname">reaction</td><td>要删除的 Reaction。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和错误描述，详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3cd6845e4f9519dfbe06a221abf7cf21" name="a3cd6845e4f9519dfbe06a221abf7cf21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cd6845e4f9519dfbe06a221abf7cf21">&#9670;&nbsp;</a></span>reportMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.reportMessage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>msgId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>reportReason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classio_1_1agora_1_1exceptions_1_1_chat_exception.html">ChatException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >举报非法消息。</p>
+<p >同步方法，会阻塞当前线程。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgId</td><td>要举报的消息 ID。 </td></tr>
+    <tr><td class="paramname">tag</td><td>非法消息的标签。你需要填写自定义标签，例如<code>涉政</code>或<code>广告</code>。 </td></tr>
+    <tr><td class="paramname">reportReason</td><td>举报原因。你需要自行填写举报原因。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>异常</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ChatException</td><td>如果有异常会在这里抛出，包含错误码和错误描述，详见 <a class="el" href="classio_1_1agora_1_1_error.html">Error</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64ef8b0230f970a596feb849221b8905" name="a64ef8b0230f970a596feb849221b8905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ef8b0230f970a596feb849221b8905">&#9670;&nbsp;</a></span>saveMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.saveMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >保存消息到内存和本地数据库。</p>
+<p >命令消息（类型见：<a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html#a414c7bd6801238a01841806a81eaead5">Type#CMD</a>，消息体见：<a class="el" href="classio_1_1agora_1_1chat_1_1_cmd_message_body.html">CmdMessageBody</a>）不会在本地保存。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>待存储的消息。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4d378d2be16a064dd3ed1f8e1d0499b2" name="a4d378d2be16a064dd3ed1f8e1d0499b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d378d2be16a064dd3ed1f8e1d0499b2">&#9670;&nbsp;</a></span>searchMsgFromDB() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; io.agora.chat.ChatManager.searchMsgFromDB </td>
+          <td>(</td>
+          <td class="paramtype">@NonNull <a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>timeStamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Conversation.SearchDirection&#160;</td>
+          <td class="paramname"><em>direction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从本地数据库获取一定数量的特定类型的消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>消息类型。详见 <a class="el" href="">Type</a>。 </td></tr>
+    <tr><td class="paramname">timeStamp</td><td>查询的起始消息 Unix 时间戳，单位为毫秒。该参数设置后，SDK 从指定时间戳的消息开始，按消息搜索方向获取。 如果该参数设置为负数，SDK 从当前时间开始搜索。 </td></tr>
+    <tr><td class="paramname">maxCount</td><td>每次获取的最大消息数。取值范围为 [1,400]。 </td></tr>
+    <tr><td class="paramname">from</td><td>消息发送方的用户 ID。若设置为 <code>null</code> 或空字符串，搜索消息时对发送方不限制。 </td></tr>
+    <tr><td class="paramname">direction</td><td>消息搜索方向。详见 <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_search_direction.html">Conversation.SearchDirection</a>。<ul>
+<li>（默认）<code>UP</code>：按照消息中的时间戳的逆序查询；</li>
+<li><code>DOWN</code>：按照消息中的时间戳的正序查询。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息列表（不包含查询起始时间戳对应的消息）。若未查找到任何消息，返回空列表。 </dd></dl>
+
+</div>
+</div>
+<a id="a3e95c42104f60be102c2e76f8bdfa9be" name="a3e95c42104f60be102c2e76f8bdfa9be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e95c42104f60be102c2e76f8bdfa9be">&#9670;&nbsp;</a></span>searchMsgFromDB() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; io.agora.chat.ChatManager.searchMsgFromDB </td>
+          <td>(</td>
+          <td class="paramtype">Set&lt; <a class="el" href="enumio_1_1agora_1_1chat_1_1_chat_message_1_1_type.html">Type</a> &gt;&#160;</td>
+          <td class="paramname"><em>types</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>timeStamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Conversation.SearchDirection&#160;</td>
+          <td class="paramname"><em>direction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从本地数据库获取一定数量的多种类型的消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">types</td><td>消息类型。详见 <a class="el" href="">Type</a>。 </td></tr>
+    <tr><td class="paramname">timeStamp</td><td>查询的起始消息 Unix 时间戳，单位为毫秒。该参数设置后，SDK 从指定时间戳的消息开始，按消息搜索方向获取。 如果该参数设置为负数，SDK 从当前时间开始搜索。 </td></tr>
+    <tr><td class="paramname">maxCount</td><td>每次获取的最大消息数。取值范围为 [1,400]。 </td></tr>
+    <tr><td class="paramname">from</td><td>消息发送方的用户 ID。若设置为 <code>null</code> 或空字符串，搜索消息时对发送方不限制。 </td></tr>
+    <tr><td class="paramname">direction</td><td>消息搜索方向。详见 <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_search_direction.html">Conversation.SearchDirection</a>。<ul>
+<li>（默认）<code>UP</code>：按照消息中的时间戳的逆序查询；</li>
+<li><code>DOWN</code>：按照消息中的时间戳的正序查询。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息列表（不包含查询起始时间戳对应的消息）。若未查找到任何消息，返回空列表。 </dd></dl>
+
+</div>
+</div>
+<a id="aa9e3c7bc69b2ff5dbba6d86ceda1111f" name="aa9e3c7bc69b2ff5dbba6d86ceda1111f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e3c7bc69b2ff5dbba6d86ceda1111f">&#9670;&nbsp;</a></span>searchMsgFromDB() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; io.agora.chat.ChatManager.searchMsgFromDB </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>keywords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>timeStamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Conversation.SearchDirection&#160;</td>
+          <td class="paramname"><em>direction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从本地数据库获取包含特定关键字的消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keywords</td><td>查询关键字。 </td></tr>
+    <tr><td class="paramname">timeStamp</td><td>查询的起始消息 Unix 时间戳，单位为毫秒。该参数设置后，SDK 从指定时间戳的消息开始，按消息搜索方向获取。 如果该参数设置为负数，SDK 从当前时间开始搜索。 </td></tr>
+    <tr><td class="paramname">maxCount</td><td>每次获取的最大消息数。取值范围为 [1,400]。 </td></tr>
+    <tr><td class="paramname">from</td><td>消息发送方的用户 ID。若设置为 <code>null</code> 或空字符串，搜索消息时对发送方不限制。 </td></tr>
+    <tr><td class="paramname">direction</td><td>消息搜索方向。详见 <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_search_direction.html">Conversation.SearchDirection</a>。<ul>
+<li>（默认）<code>UP</code>：按照消息中的时间戳的逆序查询；</li>
+<li><code>DOWN</code>：按照消息中的时间戳的正序查询。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息列表（不包含查询起始时间戳对应的消息）。若未查找到任何消息，返回空列表。 </dd></dl>
+
+</div>
+</div>
+<a id="a5ae7e2b4ab407f8d871b528a8525f4ec" name="a5ae7e2b4ab407f8d871b528a8525f4ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae7e2b4ab407f8d871b528a8525f4ec">&#9670;&nbsp;</a></span>searchMsgFromDB() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt; io.agora.chat.ChatManager.searchMsgFromDB </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>keywords</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>timeStamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Conversation.SearchDirection&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Conversation.ChatMessageSearchScope&#160;</td>
+          <td class="paramname"><em>searchScope</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >从本地数据库获取包含特定关键字的消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keywords</td><td>查询关键字。 </td></tr>
+    <tr><td class="paramname">timeStamp</td><td>查询的起始消息 Unix 时间戳，单位为毫秒。该参数设置后，SDK 从指定时间戳的消息开始，按消息搜索方向获取。 如果该参数设置为负数，SDK 从当前时间开始搜索。 </td></tr>
+    <tr><td class="paramname">maxCount</td><td>每次获取的最大消息数。取值范围为 [1,400]。如果设为小于等于 0，SDK 会获取一条消息。 </td></tr>
+    <tr><td class="paramname">from</td><td>消息发送方的用户 ID。若设置为 <code>null</code> 或空字符串，搜索消息时对发送方不限制。 </td></tr>
+    <tr><td class="paramname">direction</td><td>消息搜索方向。详见 <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_search_direction.html">Conversation.SearchDirection</a>。<ul>
+<li>（默认）<code>UP</code>：按照消息中的时间戳的逆序查询；</li>
+<li><code>DOWN</code>：按照消息中的时间戳的正序查询。 </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">searchScope</td><td>消息搜索范围。详见 <a class="el" href="enumio_1_1agora_1_1chat_1_1_conversation_1_1_chat_message_search_scope.html">Conversation.ChatMessageSearchScope</a>。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>消息列表（不包含查询起始时间戳对应的消息）。若未查找到任何消息，返回空列表。 </dd></dl>
+
+</div>
+</div>
+<a id="aed75ce0a590423ac18a94e1d339e97f4" name="aed75ce0a590423ac18a94e1d339e97f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed75ce0a590423ac18a94e1d339e97f4">&#9670;&nbsp;</a></span>sendMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.sendMessage </td>
+          <td>(</td>
+          <td class="paramtype">final <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >发送消息。</p>
+<p >如果是语音，图片类等有附件的消息，SDK 会自动上传附件。</p>
+<p >可以通过 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_options.html#ad31c7dc2ef2d6d84f00b365dab15394c">ChatOptions#setAutoTransferMessageAttachments(boolean)</a> 设置是否上传到聊天服务器。</p>
+<p >发送消息的状态，可以通过设置 <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html#a329414d764bbb44c312b3c56d0b4964c">ChatMessage#setMessageStatusCallback(CallBack)</a> 进行监听。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>要发送的消息，必填。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af2b645872bbcb852cf52bb66817d985e" name="af2b645872bbcb852cf52bb66817d985e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b645872bbcb852cf52bb66817d985e">&#9670;&nbsp;</a></span>setVoiceMessageListened()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.setVoiceMessageListened </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >将语音消息设置为已听。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>要设置的消息对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a978494fa3f1d98e828b286e72c2e1ceb" name="a978494fa3f1d98e828b286e72c2e1ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a978494fa3f1d98e828b286e72c2e1ceb">&#9670;&nbsp;</a></span>translateMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io.agora.chat.ChatManager.translateMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; String &gt;&#160;</td>
+          <td class="paramname"><em>languages</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceio_1_1agora_1_1_value_call_back.html">ValueCallBack</a>&lt; <a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a> &gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >翻译一条文本消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>要翻译的消息对象。 </td></tr>
+    <tr><td class="paramname">languages</td><td>目标语言代码列表。 </td></tr>
+    <tr><td class="paramname">callback</td><td>结果回调，详见 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html">CallBack</a>。<ul>
+<li>调用成功，触发 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html#a1ea69ea862d9f70a9c9b41860c343903">CallBack#onSuccess()</a> 返回译文；</li>
+<li>调用失败，触发 <a class="el" href="interfaceio_1_1agora_1_1_call_back.html#ac1f29243e1a536027546299d1fbbbe09">CallBack#onError(int, String)</a> 报错。 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af8057434f0c818eec2afc5177beff9db" name="af8057434f0c818eec2afc5177beff9db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8057434f0c818eec2afc5177beff9db">&#9670;&nbsp;</a></span>updateMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatManager.updateMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio_1_1agora_1_1chat_1_1_chat_message.html">ChatMessage</a>&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >更新本地消息。</p>
+<p >该方法会同时更新本地内存和数据库中的消息。</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>要更新的消息对象。 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a87c15cf2a34fd4bd0923afd49270087a" name="a87c15cf2a34fd4bd0923afd49270087a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87c15cf2a34fd4bd0923afd49270087a">&#9670;&nbsp;</a></span>updateParticipant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean io.agora.chat.ChatManager.updateParticipant </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>changeTo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >将数据库中指定联系人的相关信息变更成另外一个联系人。</p>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>消息列表，会话列表，联系人列表和黑名单列表等相关信息会发生变化。</li>
+<li>该方法不会更新内存中数据。</li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>原联系人的用户 ID。 </td></tr>
+    <tr><td class="paramname">changeTo</td><td>新联系人的用户 ID。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>返回更新结果，任何列表更新失败，均会返回 <code>false</code>。 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>io/agora/chat/ChatManager.java</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

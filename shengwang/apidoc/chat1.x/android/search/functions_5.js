@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['fetchchatroomannouncement_0',['fetchChatRoomAnnouncement',['../classio_1_1agora_1_1chat_1_1_chat_room_manager.html#a47cc338ae44b87dffb064124955b61c9',1,'io::agora::chat::ChatRoomManager']]],
+  ['fetchchatroomblacklist_1',['fetchChatRoomBlackList',['../classio_1_1agora_1_1chat_1_1_chat_room_manager.html#a86083a2490373ed1b1742e2ba35a2f06',1,'io::agora::chat::ChatRoomManager']]],
+  ['fetchchatroomfromserver_2',['fetchChatRoomFromServer',['../classio_1_1agora_1_1chat_1_1_chat_room_manager.html#a27f6800149d681ad220cdab67db20525',1,'io.agora.chat.ChatRoomManager.fetchChatRoomFromServer(String roomId)'],['../classio_1_1agora_1_1chat_1_1_chat_room_manager.html#a3608759d8bc2ad0f0f2f22afdba0da95',1,'io.agora.chat.ChatRoomManager.fetchChatRoomFromServer(String roomId, boolean fetchMembers)']]],
+  ['fetchchatroommembers_3',['fetchChatRoomMembers',['../classio_1_1agora_1_1chat_1_1_chat_room_manager.html#a9beb0c432579aeb92e6acca21f119b58',1,'io::agora::chat::ChatRoomManager']]],
+  ['fetchchatroommutelist_4',['fetchChatRoomMuteList',['../classio_1_1agora_1_1chat_1_1_chat_room_manager.html#a7471f61a74ac789afe357c6002ac41c2',1,'io::agora::chat::ChatRoomManager']]],
+  ['fetchchatroomwhitelist_5',['fetchChatRoomWhiteList',['../classio_1_1agora_1_1chat_1_1_chat_room_manager.html#a671399c19b72aa939b35af4f22830264',1,'io::agora::chat::ChatRoomManager']]],
+  ['fetchcontactfromlocal_6',['fetchContactFromLocal',['../classio_1_1agora_1_1chat_1_1_contact_manager.html#a733a31e1ff417597600b08a3f86b7ed3',1,'io::agora::chat::ContactManager']]],
+  ['fetchconversationsfromserver_7',['fetchConversationsFromServer',['../classio_1_1agora_1_1chat_1_1_chat_manager.html#a5a2d44f6d9afb5e612c8511b6376a608',1,'io::agora::chat::ChatManager']]],
+  ['fetchgroupannouncement_8',['fetchGroupAnnouncement',['../classio_1_1agora_1_1chat_1_1_group_manager.html#aa06bd5110214ee4d6ca08ac8c387a2e5',1,'io::agora::chat::GroupManager']]],
+  ['fetchgroupblacklist_9',['fetchGroupBlackList',['../classio_1_1agora_1_1chat_1_1_group_manager.html#a213795add0d691247edf08fb36151074',1,'io::agora::chat::GroupManager']]],
+  ['fetchgroupmembers_10',['fetchGroupMembers',['../classio_1_1agora_1_1chat_1_1_group_manager.html#a858f23857489b3ccee536329872dbf1e',1,'io::agora::chat::GroupManager']]],
+  ['fetchgroupmutelist_11',['fetchGroupMuteList',['../classio_1_1agora_1_1chat_1_1_group_manager.html#ac2174a63f1ee727e6cfac93d404d4e5f',1,'io::agora::chat::GroupManager']]],
+  ['fetchgroupreadacks_12',['fetchGroupReadAcks',['../classio_1_1agora_1_1chat_1_1_chat_manager.html#ab5d625da24907c4c037a9f886bb76c09',1,'io::agora::chat::ChatManager']]],
+  ['fetchgroupsharedfilelist_13',['fetchGroupSharedFileList',['../classio_1_1agora_1_1chat_1_1_group_manager.html#a7830c362d498e8a1ef5b64ccc8191990',1,'io::agora::chat::GroupManager']]],
+  ['fetchgroupwhitelist_14',['fetchGroupWhiteList',['../classio_1_1agora_1_1chat_1_1_group_manager.html#a3ff66087fa2c3f581b2449af65a389fa',1,'io::agora::chat::GroupManager']]],
+  ['fetchhistorymessages_15',['fetchHistoryMessages',['../classio_1_1agora_1_1chat_1_1_chat_manager.html#a1e4e5927e8f9e91da6827b51b2ff3b54',1,'io.agora.chat.ChatManager.fetchHistoryMessages(String conversationId, ConversationType type, int pageSize, String startMsgId)'],['../classio_1_1agora_1_1chat_1_1_chat_manager.html#a71f3f43274893f60de38405a67b05bb0',1,'io.agora.chat.ChatManager.fetchHistoryMessages(String conversationId, ConversationType type, int pageSize, String startMsgId, Conversation.SearchDirection direction)']]],
+  ['fetchmessageoption_16',['FetchMessageOption',['../classio_1_1agora_1_1chat_1_1_fetch_message_option.html#ab8ad597903ecee06dfe1e8b7ede19c8a',1,'io::agora::chat::FetchMessageOption']]],
+  ['fetchpresencestatus_17',['fetchPresenceStatus',['../classio_1_1agora_1_1chat_1_1_presence_manager.html#acf579411179d08dcc1e7941441cee5a0',1,'io::agora::chat::PresenceManager']]],
+  ['fetchpublicchatroomsfromserver_18',['fetchPublicChatRoomsFromServer',['../classio_1_1agora_1_1chat_1_1_chat_room_manager.html#a81f45ed79d9847d4e40df7f1cbd23de0',1,'io::agora::chat::ChatRoomManager']]],
+  ['fetchsubscribedmembers_19',['fetchSubscribedMembers',['../classio_1_1agora_1_1chat_1_1_presence_manager.html#a61a18914247ea68e32b32912ed9d43e5',1,'io::agora::chat::PresenceManager']]],
+  ['fetchsupportlanguages_20',['fetchSupportLanguages',['../classio_1_1agora_1_1chat_1_1_chat_manager.html#a92601d1af1a5f60f2cdeeb8eadb178cd',1,'io::agora::chat::ChatManager']]],
+  ['fetchuserinfobyattribute_21',['fetchUserInfoByAttribute',['../classio_1_1agora_1_1chat_1_1_user_info_manager.html#a4e1fd1a8cf83a7fe7b9de8881109383e',1,'io::agora::chat::UserInfoManager']]],
+  ['fetchuserinfobyuserid_22',['fetchUserInfoByUserId',['../classio_1_1agora_1_1chat_1_1_user_info_manager.html#a29a3f2952d593daea3eed001d2abfebb',1,'io::agora::chat::UserInfoManager']]],
+  ['filemessagebody_23',['FileMessageBody',['../classio_1_1agora_1_1chat_1_1_file_message_body.html#a7cd02887ccf1f40b2384cd95cb696796',1,'io.agora.chat.FileMessageBody.FileMessageBody(String localPath)'],['../classio_1_1agora_1_1chat_1_1_file_message_body.html#abd000f74a2cbfeca7fb37787b5805656',1,'io.agora.chat.FileMessageBody.FileMessageBody(Uri localPath)']]],
+  ['filter_24',['filter',['../interfaceio_1_1agora_1_1chat_1_1_custom_conversation_filter.html#a0d50eee908654d6604bcb8748e1bdb70',1,'io::agora::chat::CustomConversationFilter']]]
+];

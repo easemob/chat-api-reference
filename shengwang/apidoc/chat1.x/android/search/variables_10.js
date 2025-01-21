@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['send_0',['SEND',['../enumio_1_1agora_1_1chat_1_1_chat_statistics_manager_1_1_search_message_direct.html#adbd9f10865d42c1a7b61405dcf49f827',1,'io::agora::chat::ChatStatisticsManager::SearchMessageDirect']]],
+  ['server_5fbusy_1',['SERVER_BUSY',['../classio_1_1agora_1_1_error.html#a0a593d23c18949bcc37c2235fdd2420e',1,'io::agora::Error']]],
+  ['server_5fdecryption_5ffailed_2',['SERVER_DECRYPTION_FAILED',['../classio_1_1agora_1_1_error.html#a43db370dfc8b867cf62e46a66ec1e1df',1,'io::agora::Error']]],
+  ['server_5fget_5fdnslist_5ffailed_3',['SERVER_GET_DNSLIST_FAILED',['../classio_1_1agora_1_1_error.html#a12dca9cda1de7048b1e9355b117770bf',1,'io::agora::Error']]],
+  ['server_5fnot_5freachable_4',['SERVER_NOT_REACHABLE',['../classio_1_1agora_1_1_error.html#a8788aea68b3104a550884dc0830c2dbc',1,'io::agora::Error']]],
+  ['server_5fresponse_5fillegal_5',['SERVER_RESPONSE_ILLEGAL',['../classio_1_1agora_1_1_error.html#a96c6d288bf63825f6b80f73e4bb84633',1,'io::agora::Error']]],
+  ['server_5fservice_5frestricted_6',['SERVER_SERVICE_RESTRICTED',['../classio_1_1agora_1_1_error.html#a389fa9aeadf70779bd3d2b0d133e3f9a',1,'io::agora::Error']]],
+  ['server_5ftimeout_7',['SERVER_TIMEOUT',['../classio_1_1agora_1_1_error.html#ac904a8ae4d97da6bf4b526b2ea9219d6',1,'io::agora::Error']]],
+  ['server_5funknown_5ferror_8',['SERVER_UNKNOWN_ERROR',['../classio_1_1agora_1_1_error.html#ada3681e8b14830408c2e21b74b49882a',1,'io::agora::Error']]],
+  ['service_5farrearages_9',['SERVICE_ARREARAGES',['../classio_1_1agora_1_1_error.html#a38aceabd3e5e4995ce140957ed3964e1',1,'io::agora::Error']]],
+  ['service_5fnot_5fenabled_10',['SERVICE_NOT_ENABLED',['../classio_1_1agora_1_1_error.html#ad3af29a78ead98ad7cf4d8915e44ef04',1,'io::agora::Error']]],
+  ['silent_5fmode_5fduration_11',['SILENT_MODE_DURATION',['../enumio_1_1agora_1_1chat_1_1_silent_mode_param_1_1_silent_mode_param_type.html#a9306e2dcc98695ddc960887a961730ad',1,'io::agora::chat::SilentModeParam::SilentModeParamType']]],
+  ['silent_5fmode_5finterval_12',['SILENT_MODE_INTERVAL',['../enumio_1_1agora_1_1chat_1_1_silent_mode_param_1_1_silent_mode_param_type.html#a127b01e1754eda90ab7240ede09a2cfd',1,'io::agora::chat::SilentModeParam::SilentModeParamType']]],
+  ['style_13',['style',['../classio_1_1agora_1_1chat_1_1_group_options.html#a374a0838b42a1adce24716a13617cb91',1,'io::agora::chat::GroupOptions']]],
+  ['success_14',['SUCCESS',['../enumio_1_1agora_1_1chat_1_1_chat_message_1_1_status.html#a509a723d2b2df1e2cf4d2345ffe04dd8',1,'io::agora::chat::ChatMessage::Status']]],
+  ['successed_15',['SUCCESSED',['../enumio_1_1agora_1_1chat_1_1_file_message_body_1_1_e_m_download_status.html#a448a659435562ade8c418f99d8c76aa9',1,'io::agora::chat::FileMessageBody::EMDownloadStatus']]]
+];

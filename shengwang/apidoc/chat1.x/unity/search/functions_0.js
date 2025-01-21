@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['acceptgroupinvitation_0',['AcceptGroupInvitation',['../class_agora_chat_1_1_group_manager.html#af6664eccf648085b7df8468ce5d444c2',1,'AgoraChat::GroupManager']]],
+  ['acceptgroupjoinapplication_1',['AcceptGroupJoinApplication',['../class_agora_chat_1_1_group_manager.html#ac73590ff31f3bb3bca18c092a3001df9',1,'AgoraChat::GroupManager']]],
+  ['acceptinvitation_2',['AcceptInvitation',['../class_agora_chat_1_1_contact_manager.html#af37656122bbd7bc0d240edd510c24dae',1,'AgoraChat::ContactManager']]],
+  ['addallowlistmembers_3',['AddAllowListMembers',['../class_agora_chat_1_1_room_manager.html#afd2a9e37b6cb77cb8e938d8127e2f0d0',1,'AgoraChat::RoomManager']]],
+  ['addattributes_4',['AddAttributes',['../class_agora_chat_1_1_room_manager.html#aa0d06699bc11799d34fb487e28531115',1,'AgoraChat::RoomManager']]],
+  ['addchatmanagerdelegate_5',['AddChatManagerDelegate',['../class_agora_chat_1_1_chat_manager.html#ad82fe37433d576cbf96af1fe9ad381db',1,'AgoraChat::ChatManager']]],
+  ['addconnectiondelegate_6',['AddConnectionDelegate',['../class_agora_chat_1_1_s_d_k_client.html#a7156cf061b2ac478ebaabb7776c18079',1,'AgoraChat::SDKClient']]],
+  ['addcontact_7',['AddContact',['../class_agora_chat_1_1_contact_manager.html#a7a9504d55d5ff0d73fedcaf34384ca93',1,'AgoraChat::ContactManager']]],
+  ['addcontactmanagerdelegate_8',['AddContactManagerDelegate',['../class_agora_chat_1_1_contact_manager.html#aa8df038af30ceec49f6808ad82664f93',1,'AgoraChat::ContactManager']]],
+  ['addgroupadmin_9',['AddGroupAdmin',['../class_agora_chat_1_1_group_manager.html#a30e95cff651098bcb7ff2a95b544ee05',1,'AgoraChat::GroupManager']]],
+  ['addgroupallowlist_10',['AddGroupAllowList',['../class_agora_chat_1_1_group_manager.html#a9ce63e31a5bde97736eaa08a93eceabf',1,'AgoraChat::GroupManager']]],
+  ['addgroupmanagerdelegate_11',['AddGroupManagerDelegate',['../class_agora_chat_1_1_group_manager.html#a8e8e405f27f64cd4d2759c55640f22fd',1,'AgoraChat::GroupManager']]],
+  ['addgroupmembers_12',['AddGroupMembers',['../class_agora_chat_1_1_group_manager.html#afb262454408146b96a05420b15120719',1,'AgoraChat::GroupManager']]],
+  ['addmultidevicedelegate_13',['AddMultiDeviceDelegate',['../class_agora_chat_1_1_s_d_k_client.html#a8452bc17b96debfcab6c44ad20fc7842',1,'AgoraChat::SDKClient']]],
+  ['addpresencemanagerdelegate_14',['AddPresenceManagerDelegate',['../class_agora_chat_1_1_presence_manager.html#af18e0816247057c30a85e309b2b0d52b',1,'AgoraChat::PresenceManager']]],
+  ['addreaction_15',['AddReaction',['../class_agora_chat_1_1_chat_manager.html#ad2ae1bb3ad9a4198b451546822fd907a',1,'AgoraChat::ChatManager']]],
+  ['addroomadmin_16',['AddRoomAdmin',['../class_agora_chat_1_1_room_manager.html#a97e8f00df3d0bf0b150f6f76673495b6',1,'AgoraChat::RoomManager']]],
+  ['addroommanagerdelegate_17',['AddRoomManagerDelegate',['../class_agora_chat_1_1_room_manager.html#a0db4d167b4c7615031755820ab57e364',1,'AgoraChat::RoomManager']]],
+  ['addthreadmanagerdelegate_18',['AddThreadManagerDelegate',['../class_agora_chat_1_1_chat_thread_manager.html#a9077165f078d051ec1974e25ec8918ae',1,'AgoraChat::ChatThreadManager']]],
+  ['addusertoblocklist_19',['AddUserToBlockList',['../class_agora_chat_1_1_contact_manager.html#a16be6aee073bb7f50471600f32dc4a7b',1,'AgoraChat::ContactManager']]],
+  ['appendmessage_20',['AppendMessage',['../class_agora_chat_1_1_conversation.html#a0daec1dad018c8705ff9afb2d32c5f15',1,'AgoraChat::Conversation']]],
+  ['applyjointogroup_21',['applyJoinToGroup',['../class_agora_chat_1_1_group_manager.html#a71a3814a818d451b1789cc7369dba981',1,'AgoraChat::GroupManager']]]
+];

@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['occupantscount_0',['occupantsCount',['../interface_agora_chat_group.html#a5af7dda2ee8855cbef307b7a9bbf730f',1,'AgoraChatGroup::occupantsCount()'],['../interface_agora_chatroom.html#a821dcc4bece56cb2af3aea9144ad3025',1,'AgoraChatroom::occupantsCount()']]],
+  ['onattributeschangedofgroupmember_3auserid_3aattributes_3aoperatorid_3a_1',['onAttributesChangedOfGroupMember:userId:attributes:operatorId:',['../protocol_agora_chat_group_manager_delegate-p.html#a82e5e43c0e8ddb399fc6fd6a0ec2b96b',1,'AgoraChatGroupManagerDelegate-p']]],
+  ['onchatthreadcreate_3a_2',['onChatThreadCreate:',['../protocol_agora_chat_thread_manager_delegate-p.html#aaf7005f53dc3245da352c0aa83c4f342',1,'AgoraChatThreadManagerDelegate-p']]],
+  ['onchatthreaddestroy_3a_3',['onChatThreadDestroy:',['../protocol_agora_chat_thread_manager_delegate-p.html#a69f85257fb21e57df1ddf16f2671386e',1,'AgoraChatThreadManagerDelegate-p']]],
+  ['onchatthreadupdate_3a_4',['onChatThreadUpdate:',['../protocol_agora_chat_thread_manager_delegate-p.html#a2bd745657949c7a2b3f42cca8acda81a',1,'AgoraChatThreadManagerDelegate-p']]],
+  ['onconversationread_3ato_3a_5',['onConversationRead:to:',['../protocol_agora_chat_manager_delegate-p.html#ace62082b9c63770b86100cea4d4b8beb',1,'AgoraChatManagerDelegate-p']]],
+  ['onlinestate_6',['onlineState',['../interface_agora_chat_message.html#ae1b4d12f9f0e3b8d817dc2920e5fe91a',1,'AgoraChatMessage']]],
+  ['onmessagecontentchanged_3aoperatorid_3aoperationtime_3a_7',['onMessageContentChanged:operatorId:operationTime:',['../protocol_agora_chat_manager_delegate-p.html#ab4bcca23824db72ca809d2d31ba27a66',1,'AgoraChatManagerDelegate-p']]],
+  ['onmessagepinchanged_3aconversationid_3aoperation_3apininfo_3a_8',['onMessagePinChanged:conversationId:operation:pinInfo:',['../protocol_agora_chat_manager_delegate-p.html#ab24da7d2cb5022d87c150c7aea73613f',1,'AgoraChatManagerDelegate-p']]],
+  ['onofflinemessagesyncfinish_9',['onOfflineMessageSyncFinish',['../protocol_agora_chat_client_delegate-p.html#a3c9027ac057e4beb830776316fbc2043',1,'AgoraChatClientDelegate-p']]],
+  ['onofflinemessagesyncstart_10',['onOfflineMessageSyncStart',['../protocol_agora_chat_client_delegate-p.html#aa7de60889ca48aa3f7e24d9eba251b4f',1,'AgoraChatClientDelegate-p']]],
+  ['onuserkickoutofchatthread_3a_11',['onUserKickOutOfChatThread:',['../protocol_agora_chat_thread_manager_delegate-p.html#ab15f010f6951b1b9f5892cc21dc7a4dd',1,'AgoraChatThreadManagerDelegate-p']]],
+  ['operate_12',['operate',['../interface_agora_chat_message_reaction_operation.html#a37704b9093cf50d7a3049fc064440a8b',1,'AgoraChatMessageReactionOperation']]],
+  ['operations_13',['operations',['../interface_agora_chat_message_reaction_change.html#ab1f053087986895e096e836eabc133f2',1,'AgoraChatMessageReactionChange']]],
+  ['operationtime_14',['operationTime',['../interface_agora_chat_message_body.html#a46f11611441cb16695666106ac88152d',1,'AgoraChatMessageBody']]],
+  ['operatorcount_15',['operatorCount',['../interface_agora_chat_message_body.html#adbc6132b0dc29631572c993ab5039365',1,'AgoraChatMessageBody']]],
+  ['operatorid_16',['operatorId',['../interface_agora_chat_message_pin_info.html#ac488e2ab3363c9142506ec18fee83dd8',1,'AgoraChatMessagePinInfo::operatorId()'],['../interface_agora_chat_message_body.html#a96bfdc44178d83a7bbbf1c779bedc460',1,'AgoraChatMessageBody::operatorId()']]],
+  ['options_17',['options',['../interface_agora_chat_client.html#ac66d5f0e8e1d47debda1d7b7f021ce71',1,'AgoraChatClient']]],
+  ['optionswithappid_3a_18',['optionsWithAppId:',['../interface_agora_chat_options.html#a35e6d1ed3928b9fb735e1904f8ad7b13',1,'AgoraChatOptions']]],
+  ['optionswithappkey_3a_19',['optionsWithAppkey:',['../interface_agora_chat_options.html#a9d15b2b55a361a5ecfd1884833adfb8a',1,'AgoraChatOptions']]],
+  ['owner_20',['owner',['../interface_agora_chat_group.html#afebb3be5a8d23086882ac64319214401',1,'AgoraChatGroup::owner()'],['../interface_agora_chatroom.html#ac5cf6df4b21c60ba4c724c656cd23fa4',1,'AgoraChatroom::owner()'],['../interface_agora_chat_thread.html#af724f04b0a63b50dbc56d91a1e42e7c1',1,'AgoraChatThread::owner()']]]
+];

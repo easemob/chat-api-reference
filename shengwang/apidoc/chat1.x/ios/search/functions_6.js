@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['fetchchatroomallattributes_3acompletion_3a_0',['fetchChatroomAllAttributes:completion:',['../protocol_i_agora_chatroom_manager-p.html#aea5f86098842656a18d5775215035ec5',1,'IAgoraChatroomManager-p']]],
+  ['fetchchatroomattributes_3akeys_3acompletion_3a_1',['fetchChatroomAttributes:keys:completion:',['../protocol_i_agora_chatroom_manager-p.html#a2589d490b1b97ebef0b984d66ae3b71d',1,'IAgoraChatroomManager-p']]],
+  ['fetchgroupmutelistfromserverwithid_3apagenumber_3apagesize_3acompletion_3a_2',['fetchGroupMuteListFromServerWithId:pageNumber:pageSize:completion:',['../protocol_i_agora_chat_group_manager-p.html#a014b1a6f881dc04a8f2b02b83663c527',1,'IAgoraChatGroupManager-p']]],
+  ['fetchhistorymessagesfromserver_3aconversationtype_3astartmessageid_3afetchdirection_3apagesize_3aerror_3a_3',['fetchHistoryMessagesFromServer:conversationType:startMessageId:fetchDirection:pageSize:error:',['../protocol_i_agora_chat_manager-p.html#a1a798c0bb5eb59b9e628236e2775a0a9',1,'IAgoraChatManager-p']]],
+  ['fetchhistorymessagesfromserver_3aconversationtype_3astartmessageid_3apagesize_3aerror_3a_4',['fetchHistoryMessagesFromServer:conversationType:startMessageId:pageSize:error:',['../protocol_i_agora_chat_manager-p.html#a6ecb83ae5ffcf34c58f67124295498fa',1,'IAgoraChatManager-p']]],
+  ['fetchmemberattribute_3auserid_3acompletion_3a_5',['fetchMemberAttribute:userId:completion:',['../protocol_i_agora_chat_group_manager-p.html#aea659dab142b56f3b0be6e1c9f7858df',1,'IAgoraChatGroupManager-p']]],
+  ['fetchmembersattributes_3auserids_3akeys_3acompletion_3a_6',['fetchMembersAttributes:userIds:keys:completion:',['../protocol_i_agora_chat_group_manager-p.html#ac3a15497b12195823e4e44009cf23528',1,'IAgoraChatGroupManager-p']]],
+  ['fetchmessagesfromserverby_3aconversationtype_3acursor_3apagesize_3aoption_3acompletion_3a_7',['fetchMessagesFromServerBy:conversationType:cursor:pageSize:option:completion:',['../protocol_i_agora_chat_manager-p.html#a0624595c6da4fd718fbd4215cf140863',1,'IAgoraChatManager-p']]],
+  ['fetchpresencestatus_3acompletion_3a_8',['fetchPresenceStatus:completion:',['../protocol_i_agora_chat_presence_manager-p.html#a607ddcd4d26bd652372f4ea219d404cc',1,'IAgoraChatPresenceManager-p']]],
+  ['fetchsubscribedmemberswithpagenum_3apagesize_3acompletion_3a_9',['fetchSubscribedMembersWithPageNum:pageSize:Completion:',['../protocol_i_agora_chat_presence_manager-p.html#a6b0d862ca5c3ec6cce91b4807da30a58',1,'IAgoraChatPresenceManager-p']]],
+  ['fetchsupportedlanguages_3a_10',['fetchSupportedLanguages:',['../protocol_i_agora_chat_manager-p.html#a5a9fd5c3247ad2835a098745a049db9e',1,'IAgoraChatManager-p']]],
+  ['fetchtokenwithusername_3apassword_3acompletion_3a_11',['fetchTokenWithUsername:password:completion:',['../interface_agora_chat_client.html#a342a5dcdfd3aa2b05a84a20db0b3633e',1,'AgoraChatClient']]],
+  ['fetchuserinfobyid_3acompletion_3a_12',['fetchUserInfoById:completion:',['../protocol_i_agora_chat_user_info_manager-p.html#a6e0d413b35b25d53c3470a71213f3f55',1,'IAgoraChatUserInfoManager-p']]],
+  ['fetchuserinfobyid_3atype_3acompletion_3a_13',['fetchUserInfoById:type:completion:',['../protocol_i_agora_chat_user_info_manager-p.html#a0e05a99904984bd4e759fe2719e9f58c',1,'IAgoraChatUserInfoManager-p']]],
+  ['filterconversationsfromdb_3afilter_3a_14',['filterConversationsFromDB:filter:',['../protocol_i_agora_chat_manager-p.html#adbf7a4a2d9c926a43843c7e556eab17b',1,'IAgoraChatManager-p']]],
+  ['friendrequestdidapprovebyuser_3a_15',['friendRequestDidApproveByUser:',['../protocol_agora_chat_contact_manager_delegate-p.html#a236f3a3ccae7c94b180561ac93d8ba09',1,'AgoraChatContactManagerDelegate-p']]],
+  ['friendrequestdiddeclinebyuser_3a_16',['friendRequestDidDeclineByUser:',['../protocol_agora_chat_contact_manager_delegate-p.html#a7e6f5279b1d909f38b8c0b20b7c3e8f1',1,'AgoraChatContactManagerDelegate-p']]],
+  ['friendrequestdidreceivefromuser_3amessage_3a_17',['friendRequestDidReceiveFromUser:message:',['../protocol_agora_chat_contact_manager_delegate-p.html#a781141be35ed9e8663590a8a9940f4e5',1,'AgoraChatContactManagerDelegate-p']]],
+  ['friendshipdidaddbyuser_3a_18',['friendshipDidAddByUser:',['../protocol_agora_chat_contact_manager_delegate-p.html#ac6c9f5312f11e0f4168a11209bb24f41',1,'AgoraChatContactManagerDelegate-p']]],
+  ['friendshipdidremovebyuser_3a_19',['friendshipDidRemoveByUser:',['../protocol_agora_chat_contact_manager_delegate-p.html#a74dccbc1830dc024a08481289abb8003',1,'AgoraChatContactManagerDelegate-p']]]
+];

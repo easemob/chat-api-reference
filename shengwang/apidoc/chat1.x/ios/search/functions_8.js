@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['importconversations_3acompletion_3a_0',['importConversations:completion:',['../protocol_i_agora_chat_manager-p.html#a05eba0810f5a95e85042a1483d31398d',1,'IAgoraChatManager-p']]],
+  ['importmessages_3acompletion_3a_1',['importMessages:completion:',['../protocol_i_agora_chat_manager-p.html#a9397ad9aa61aaa608ba9817dc3b72679',1,'IAgoraChatManager-p']]],
+  ['initializesdkwithoptions_3a_2',['initializeSDKWithOptions:',['../interface_agora_chat_client.html#aa628257db8692884cc69e39cc6d7a58b',1,'AgoraChatClient']]],
+  ['initwithaction_3a_3',['initWithAction:',['../interface_agora_chat_cmd_message_body.html#af3c6ce0f776a91e89f5d8044d34b651b',1,'AgoraChatCmdMessageBody']]],
+  ['initwithconversationid_3abody_3aext_3a_4',['initWithConversationID:body:ext:',['../interface_agora_chat_message.html#ad410443828b7d0a436e5d1c3f9b2f372',1,'AgoraChatMessage']]],
+  ['initwithconversationid_3afrom_3ato_3abody_3aext_3a_5',['initWithConversationID:from:to:body:ext:',['../interface_agora_chat_message.html#afd2ea38610cd9a20e73d34f67dbf8dc1',1,'AgoraChatMessage']]],
+  ['initwithdata_3adisplayname_3a_6',['initWithData:displayName:',['../interface_agora_chat_file_message_body.html#a894e1d51bcab954a8faf84aa44b5b7d7',1,'AgoraChatFileMessageBody']]],
+  ['initwithdata_3athumbnaildata_3a_7',['initWithData:thumbnailData:',['../interface_agora_chat_image_message_body.html#a9e7ebd0e8d7f8dc2200be0fd295069ff',1,'AgoraChatImageMessageBody']]],
+  ['initwithdescription_3acode_3a_8',['initWithDescription:code:',['../interface_agora_chat_error.html#ac98243415976c57cfd055b34a9b3e768',1,'AgoraChatError']]],
+  ['initwithevent_3acustomext_3a_9',['initWithEvent:customExt:',['../interface_agora_chat_custom_message_body.html#ab2111c1b353f29260ed0a10d88e69cef',1,'AgoraChatCustomMessageBody']]],
+  ['initwithhours_3aminutes_3a_10',['initWithHours:minutes:',['../interface_agora_chat_silent_mode_time.html#a7b21fd0c7f354dee664a04c91fa90cb5',1,'AgoraChatSilentModeTime']]],
+  ['initwithlatitude_3alongitude_3aaddress_3a_11',['initWithLatitude:longitude:address:',['../interface_agora_chat_location_message_body.html#a0e1e9daef08c748eca4d5ed5edb793b7',1,'AgoraChatLocationMessageBody']]],
+  ['initwithlatitude_3alongitude_3aaddress_3abuildingname_3a_12',['initWithLatitude:longitude:address:buildingName:',['../interface_agora_chat_location_message_body.html#a86e58411f644123d6a24acafec737346',1,'AgoraChatLocationMessageBody']]],
+  ['initwithlocalpath_3adisplayname_3a_13',['initWithLocalPath:displayName:',['../interface_agora_chat_file_message_body.html#a1729e8ae8ebd7a6e555d3342b6bd9749',1,'AgoraChatFileMessageBody']]],
+  ['initwithmark_3apagesize_3a_14',['initWithMark:pageSize:',['../interface_agora_chat_conversation_filter.html#a6108bdf902a43a15ae6b5272765a19b9',1,'AgoraChatConversationFilter']]],
+  ['initwithtext_3a_15',['initWithText:',['../interface_agora_chat_text_message_body.html#adb6ab206acd769575fd74720ce156d8c',1,'AgoraChatTextMessageBody']]],
+  ['initwithtitle_3asummary_3acompatibletext_3amessageidlist_3a_16',['initWithTitle:summary:compatibleText:messageIdList:',['../interface_agora_chat_combine_message_body.html#a203aa7e02c165cfd1ce8fd4e924fc60a',1,'AgoraChatCombineMessageBody']]],
+  ['initwithuserid_3aremark_3a_17',['initWithUserId:remark:',['../interface_agora_chat_contact.html#a02d1a609cec86b74960347f2c25ab696',1,'AgoraChatContact']]],
+  ['insertmessage_3aerror_3a_18',['insertMessage:error:',['../interface_agora_chat_conversation.html#acac5c656c8ae2d0ba9a936d4f5ce4d88',1,'AgoraChatConversation']]],
+  ['ismemberinmutelistfromserverwithchatroomid_3acompletion_3a_19',['isMemberInMuteListFromServerWithChatroomId:completion:',['../protocol_i_agora_chatroom_manager-p.html#a7b540f7d27374e3362a1195498e527df',1,'IAgoraChatroomManager-p']]],
+  ['ismemberinmutelistfromserverwithgroupid_3acompletion_3a_20',['isMemberInMuteListFromServerWithGroupId:completion:',['../protocol_i_agora_chat_group_manager-p.html#a04d24c2513a0576dfc60a36260669a35',1,'IAgoraChatGroupManager-p']]],
+  ['ismemberinwhitelistfromserverwithchatroomid_3acompletion_3a_21',['isMemberInWhiteListFromServerWithChatroomId:completion:',['../protocol_i_agora_chatroom_manager-p.html#a0a08842d83f171d93d365abeed93374b',1,'IAgoraChatroomManager-p']]],
+  ['ismemberinwhitelistfromserverwithchatroomid_3aerror_3a_22',['isMemberInWhiteListFromServerWithChatroomId:error:',['../protocol_i_agora_chatroom_manager-p.html#ad74f0d3000ca851083611c9e0dd374d3',1,'IAgoraChatroomManager-p']]],
+  ['ismemberinwhitelistfromserverwithgroupid_3acompletion_3a_23',['isMemberInWhiteListFromServerWithGroupId:completion:',['../protocol_i_agora_chat_group_manager-p.html#a928655084e756407655bbdbd8c3614a4',1,'IAgoraChatGroupManager-p']]],
+  ['ismemberinwhitelistfromserverwithgroupid_3aerror_3a_24',['isMemberInWhiteListFromServerWithGroupId:error:',['../protocol_i_agora_chat_group_manager-p.html#a61043fe24307dc23a2769bbdee54a8c5',1,'IAgoraChatGroupManager-p']]]
+];

@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['canchatroomownerleave_0',['canChatroomOwnerLeave',['../interface_agora_chat_options.html#a65d384c6efb521ab0d4874befe3b8e08',1,'AgoraChatOptions']]],
+  ['chatmanager_1',['chatManager',['../interface_agora_chat_client.html#a74f83822c5fd268b003a34833ce3e41e',1,'AgoraChatClient']]],
+  ['chatport_2',['chatPort',['../category_agora_chat_options_07_private_deploy_08.html#afee08183b90713058203ca64e7d89abd',1,'AgoraChatOptions(PrivateDeploy)::chatPort()'],['../interface_agora_chat_options.html#afee08183b90713058203ca64e7d89abd',1,'AgoraChatOptions::chatPort()']]],
+  ['chatroomid_3',['chatroomId',['../interface_agora_chatroom.html#a27fd1d0e400bb0cbfba74fa32b60ef06',1,'AgoraChatroom']]],
+  ['chatserver_4',['chatServer',['../category_agora_chat_options_07_private_deploy_08.html#acd0c0aec5a59d1996f727ecd171b61c6',1,'AgoraChatOptions(PrivateDeploy)::chatServer()'],['../interface_agora_chat_options.html#acd0c0aec5a59d1996f727ecd171b61c6',1,'AgoraChatOptions::chatServer()']]],
+  ['chatthread_5',['chatThread',['../interface_agora_chat_message.html#a733ddbda4c5a3f474b38e2ac1d2da0a0',1,'AgoraChatMessage::chatThread()'],['../interface_agora_chat_thread_event.html#af918a1c399694e993a66b3f2ca4fe7a5',1,'AgoraChatThreadEvent::chatThread()']]],
+  ['chattype_6',['chatType',['../interface_agora_chat_message.html#ab4ed046946fec759549bfa93e4ba076d',1,'AgoraChatMessage::chatType()'],['../interface_agora_chat_message_statistics.html#a48fec75234e69157cd7caf74fd3685aa',1,'AgoraChatMessageStatistics::chatType()']]],
+  ['code_7',['code',['../interface_agora_chat_error.html#ab2bdec01d7986a52448376e855b3ddba',1,'AgoraChatError']]],
+  ['compatibletext_8',['compatibleText',['../interface_agora_chat_combine_message_body.html#af4760e80d4589fb4b9ce9fe063e12d7d',1,'AgoraChatCombineMessageBody']]],
+  ['compressionratio_9',['compressionRatio',['../interface_agora_chat_image_message_body.html#ae01fb7f93497be4a612cd01c767e2873',1,'AgoraChatImageMessageBody']]],
+  ['contactmanager_10',['contactManager',['../interface_agora_chat_client.html#a980479a667b8604c5681b4842988741a',1,'AgoraChatClient']]],
+  ['content_11',['content',['../interface_agora_chat_group_message_ack.html#a001f641014768d35f5e212c6af47b112',1,'AgoraChatGroupMessageAck']]],
+  ['conversationid_12',['conversationId',['../interface_agora_chat_conversation.html#a363f68b84ac9c563899a927a85d0e98a',1,'AgoraChatConversation::conversationId()'],['../interface_agora_chat_message.html#ae1978190c7ba2406b65fa76a93fbf1d2',1,'AgoraChatMessage::conversationId()'],['../interface_agora_chat_message_reaction_change.html#a2cd72262688cbf75f2646ddcf4034ca7',1,'AgoraChatMessageReactionChange::conversationId()'],['../interface_agora_chat_recall_message_info.html#a9ec0fea6d18d8d4702d17894713489be',1,'AgoraChatRecallMessageInfo::conversationId()']]],
+  ['conversationid_13',['conversationID',['../interface_agora_chat_silent_mode_result.html#acd408e5bb9d7028e2867e3ce7df6f13a',1,'AgoraChatSilentModeResult']]],
+  ['conversationtype_14',['conversationType',['../interface_agora_chat_silent_mode_result.html#a3a469ef5248ce52bf952d9e98be7ac98',1,'AgoraChatSilentModeResult']]],
+  ['count_15',['count',['../interface_agora_chat_message_reaction.html#a7e956da7b96440955f1922764cf1ff93',1,'AgoraChatMessageReaction::count()'],['../interface_agora_chat_page_result.html#a64131ea7855955fb1ab6797baa4a0543',1,'AgoraChatPageResult::count()']]],
+  ['createat_16',['createAt',['../interface_agora_chat_thread.html#a506168b2ba0298ee01f1a09020bfbf4c',1,'AgoraChatThread']]],
+  ['createdat_17',['createdAt',['../interface_agora_chat_group_shared_file.html#a001fb1ef743646e6280b4eb022dad115',1,'AgoraChatGroupSharedFile']]],
+  ['createtimestamp_18',['createTimestamp',['../interface_agora_chatroom.html#a43696e9963fe95df3c1790016f7015cb',1,'AgoraChatroom']]],
+  ['currentusername_19',['currentUsername',['../interface_agora_chat_client.html#a2f56fe5b01c150fa03640a5f19eeb3bb',1,'AgoraChatClient']]],
+  ['cursor_20',['cursor',['../interface_agora_chat_cursor_result.html#a21cb40568392346bb8e79b0e7313eaf2',1,'AgoraChatCursorResult']]],
+  ['customdevicename_21',['customDeviceName',['../interface_agora_chat_options.html#ac91752c13ce7abe8ae26c7b7a6a1f666',1,'AgoraChatOptions']]],
+  ['customext_22',['customExt',['../interface_agora_chat_custom_message_body.html#a551be1921917f0bf660dcca5eae0f333',1,'AgoraChatCustomMessageBody']]],
+  ['customostype_23',['customOSType',['../interface_agora_chat_options.html#ace56c3f99f4dc04e270c5ea55f159ec6',1,'AgoraChatOptions']]]
+];

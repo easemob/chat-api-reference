@@ -1,0 +1,711 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShengwangChatSDK: ShengwangChatSDK</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ShengwangChatSDK<span id="projectnumber">&#160;1.3.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">ShengwangChatSDK </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p ><a class="anchor" id="md_AgoraChat_framework_Headers_mainpage_zh"></a> 声网即时通讯 IM 是一个高度可靠的全球通信平台，用户可以进行一对一单聊、群组聊天或聊天室聊天。用户可以通过发送文本消息、分享图片、音频、视频、文件、表情符号和位置进行沟通。</p>
+<ul>
+<li><b>ChatClient 类</b> 是聊天 SDK 的入口，提供登录和登出即时通讯 IM 的方法，并管理 SDK 与聊天服务器之间的连接。</li>
+<li><b>ChatManager 类</b> 提供发送和接收消息、管理会话（包括加载和删除会话）以及下载附件的方法。</li>
+<li><b>ChatMessage 类</b> 定义消息的属性。</li>
+<li><b>Conversation 类</b> 提供管理会话的方法。</li>
+<li><b>ContactManager 类</b> 提供管理聊天联系人（如添加、获取、修改和删除联系人）的方法。</li>
+<li><b>GroupManager 类</b> 提供群组管理的方法，如群组创建和解散以及成员管理。</li>
+<li><b>ChatRoomManager 类</b> 提供聊天室管理的方法，如加入和离开聊天室、获取聊天室列表，以及管理成员权限。</li>
+<li><b>PresenceManager 类</b> 提供管理用户在线状态订阅的方法。</li>
+<li><b>ChatThreadManager 类</b> 提供了管理子区的方法，包括创建、解散子区以及成员管理。</li>
+<li><b>PushManager 类</b> 提供了配置离线推送服务的方法。</li>
+<li><b>UserInfoManager 类</b> 提供了管理用户属性的方法，包括获取和更新用户属性。</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md0"></a>
+Chat Client</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#aa628257db8692884cc69e39cc6d7a58b">initializeSDKWithOptions:</a></code>   </td><td class="markdownTableBodyLeft">初始化SDK。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#ad1f4dbc685867ed236fcb57c2d29c2b0">loginWithUsername:token:completion:</a></code>   </td><td class="markdownTableBodyLeft">使用用户ID和token登录聊天服务器。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a1dfe5797cbd5b8678864ffc5148c3231">renewToken:</a></code>   </td><td class="markdownTableBodyLeft">更新token。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a6cd052f610f0978c1a8775de8e22baaa">logout:completion:</a></code>   </td><td class="markdownTableBodyLeft">退出登录账号。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a2f56fe5b01c150fa03640a5f19eeb3bb">currentUsername</a></code>   </td><td class="markdownTableBodyLeft">获取当前登录用户的用户ID。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a253e6b8211e8547bcd0f5188434ec9dd">isConnected</a></code>   </td><td class="markdownTableBodyLeft">检查SDK是否已连接到聊天服务器。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#aa69dbf36e3d84e4732be5b1e78aa248e">isLoggedIn</a></code>   </td><td class="markdownTableBodyLeft">检查用户是否已登录聊天应用。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a757016ddeb552313b9a946909dde3d9b">addDelegate:</a></code>   </td><td class="markdownTableBodyLeft">添加代理。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a333a276db8cf46c8bb568b66b896b4dc">addLogDelegate:delegateQueue:</a></code>   </td><td class="markdownTableBodyLeft">添加SDK的日志回调代理。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#af31af4616cad2dd542e49fa855acb8cb">groupManager</a></code>   </td><td class="markdownTableBodyLeft">获取<code>GroupManager</code>类。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a133ed4dad1deafe9ac3627cccf598e63">pushManager</a></code>   </td><td class="markdownTableBodyLeft">获取<code>PushManager</code>类。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#ad1c09ad77941ec9005938d4d9b22ae33">roomManager</a></code>   </td><td class="markdownTableBodyLeft">获取<code>RoomManager</code>类。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a74f83822c5fd268b003a34833ce3e41e">chatManager</a></code>   </td><td class="markdownTableBodyLeft">获取<code>ChatManager</code>类。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a03d0ab5216533547ed54616038901fe4">userInfoManager</a></code>   </td><td class="markdownTableBodyLeft">获取<code>UserInfoManager</code>类。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a980479a667b8604c5681b4842988741a">contactManager</a></code>   </td><td class="markdownTableBodyLeft">获取<code>ContactManager</code>类。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a1c1372c73a2eb177e665f83a2db6a26e">presenceManager</a></code>   </td><td class="markdownTableBodyLeft">获取<code>presenceManager</code>类。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a4ee57ce8c485a74df75da0f76d41ada0">threadManager</a></code>   </td><td class="markdownTableBodyLeft">获取<code>ChatThreadManager</code>类。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_client_delegate-p.html#ad5187b95eb67ff44b2a20e43565995b6">connectionStateDidChange:</a></code>   </td><td class="markdownTableBodyLeft">当SDK连接状态发生变化时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_client_delegate-p.html#a8d3cf915bc0306e92b45b3665756b2de">tokenDidExpire:</a></code>   </td><td class="markdownTableBodyLeft">当token过期时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_client_delegate-p.html#af68c557e5577cec205ca9599189c2699">tokenWillExpire:</a></code>   </td><td class="markdownTableBodyLeft">当token即将过期时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_client_delegate-p.html#a81a2a65772bed7b72f11dc4f43f0cdf1">autoLoginDidCompleteWithError:</a></code>   </td><td class="markdownTableBodyLeft">当SDK自动登录成功或失败时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_log_delegate-p.html#a2cd5de25a15f3a1964a39fe4b59c61a2">logDidOutput:</a></code>   </td><td class="markdownTableBodyLeft">当有日志输出时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="">onOfflineMessageSyncStart</a></code>   </td><td class="markdownTableBodyLeft">开始从服务器拉取离线消息时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="">onOfflineMessageSyncFinish</a></code>   </td><td class="markdownTableBodyLeft">从服务器拉取离线消息结束时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Chat manager</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a78bad292be9cd44c08df18e557b9939a">sendMessage:progress:completion:</a></code>   </td><td class="markdownTableBodyLeft">发送消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a4b76882e6466666971d8cc4c939b9779">ackConversationRead:completion:</a></code>   </td><td class="markdownTableBodyLeft">向服务器发送会话已读回执。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a8318d389535b0ab209750dc46715795e">sendMessageReadAck:toUser:completion:</a></code>   </td><td class="markdownTableBodyLeft">向服务器发送消息已读回执。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#af28dfa7f5e07af6001c66454f1804c5c">sendGroupMessageReadAck:toGroup:content:completion:</a></code>   </td><td class="markdownTableBodyLeft">向服务器发送群消息的已读回执。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#af2aa684a6f6522bc53df499210c40313">getConversation:type:createIfNotExist:</a></code>   </td><td class="markdownTableBodyLeft">根据会话ID获取会话对象。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a9397ad9aa61aaa608ba9817dc3b72679">importMessages:completion:</a></code>   </td><td class="markdownTableBodyLeft">将消息导入内存和本地数据库。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a92a88559a13024ff47fc07383b9ee29d">updateMessage:completion:</a></code>   </td><td class="markdownTableBodyLeft">更新本地消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a51d186b55a83f0b05768640185d832da">downloadMessageAttachment:progress:completion:</a></code>   </td><td class="markdownTableBodyLeft">下载消息附件。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#ab69c02667570d5119650c041d62a31e3">downloadMessageThumbnail:progress:completion:</a></code>   </td><td class="markdownTableBodyLeft">下载消息缩略图。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#ae985ade2236577e1305656b0b88b9126">getAllConversations</a></code>   </td><td class="markdownTableBodyLeft">获取所有本地会话。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#ac5af7e631d7ad35561631a1344f7cd6f">getConversationsFromServer:</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取会话列表。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a94af7ec9d2a3086f23c6f9261cb069a3">getConversationsFromServerByPage</a></code>   </td><td class="markdownTableBodyLeft">从服务器分页获取会话列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#aabfcd33e7722402d1608e24396844b3d">deleteConversations:isDeleteMessages:completion:</a></code>   </td><td class="markdownTableBodyLeft">从本地数据库中删除会话及其本地消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a469f07039cba81794c34602857333daf">deleteServerConversation</a></code>   </td><td class="markdownTableBodyLeft">从服务器删除指定会话及其历史消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a3f66fd2c3a4765859496c12a89951ab2">fetchGroupReadAcks</a></code>   </td><td class="markdownTableBodyLeft">从服务器分页获取群消息的已读回执。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#ab93043fd6011bbeb31c7bcd18593e18b">loadMessages</a></code>   </td><td class="markdownTableBodyLeft">从本地数据库中检索特定类型的消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#ae2eebaf71d31347363a9f6831cfc744a">deleteMessagesBeforeTimestamp</a></code>   </td><td class="markdownTableBodyLeft">删除时间戳在指定时间之前的本地历史消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#aeb869fd2bc10082cb8ad47bb1ea37738">reportMessageWithId:tag:reason:completion:</a></code>   </td><td class="markdownTableBodyLeft">举报不当消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a5a9fd5c3247ad2835a098745a049db9e">fetchSupportedLanguages:</a></code>   </td><td class="markdownTableBodyLeft">获取翻译服务支持的所有语言。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a043fd81f58ae229877bea95ff9bb1227">translateMessage:targetLanguages:completion:</a></code>   </td><td class="markdownTableBodyLeft">翻译文本消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a2fd413aa330a489bd6e61c4bb04a2882">addReaction:toMessage:completion:</a></code>   </td><td class="markdownTableBodyLeft">添加Reaction。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a43bf1149c1453b9ba476b872917f7ff8">removeReaction:fromMessage:completion:</a></code>   </td><td class="markdownTableBodyLeft">删除Reaction。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#aebc50a1134ec9a85cee62c26d0af4666">getReactionList</a></code>   </td><td class="markdownTableBodyLeft">获取Reaction列表。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a622312a04cec33eca6288a81b7b170ed">getReactionDetail</a></code>   </td><td class="markdownTableBodyLeft">获取Reaction详情。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a1bc39b1783bb6f38b6bb5b0cac73cc34">addDelegate</a></code>   </td><td class="markdownTableBodyLeft">添加消息监听器。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a8488644cf021ce10e59d619269e337db">pinMessage</a></code>   </td><td class="markdownTableBodyLeft">置顶消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#ad6fba16c8b3ab2264dc4d502b449bbc4">unpinMessage</a></code>   </td><td class="markdownTableBodyLeft">取消置顶消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a55b18cf2b4e11c7a9c06b46c30d9d858">modifyMessage</a></code>   </td><td class="markdownTableBodyLeft">修改消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_manager-p.html#a0624595c6da4fd718fbd4215cf140863">fetchMessagesFromServer</a></code>   </td><td class="markdownTableBodyLeft">从服务器拉取历史消息。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_manager_delegate-p.html#a0001a2c65e3552d5204a8627788ff2fb">messagesDidReceive:</a></code>   </td><td class="markdownTableBodyLeft">当收到消息时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_manager_delegate-p.html#ac132cd770baed15c4b46d5b7dbc471a8">cmdMessagesDidReceive:</a></code>   </td><td class="markdownTableBodyLeft">当收到cmd消息时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_manager_delegate-p.html#af4a380eb4428ace5548dc05a4e575ccb">messagesDidRead:</a></code>   </td><td class="markdownTableBodyLeft">当收到消息的已读回执时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_manager_delegate-p.html#a9c4cc802df14a7e76faf16ee97627aef">groupMessageDidRead:groupAcks:</a></code>   </td><td class="markdownTableBodyLeft">当收到群消息的已读回执时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_manager_delegate-p.html#abebb6a8b1ab63cb6786ea8d5ccf2a690">groupMessageAckHasChanged</a></code>   </td><td class="markdownTableBodyLeft">当收到群消息已读状态更新时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_manager_delegate-p.html#a3d621becb0afe84faa0b227fa4c4d6ef">messagesDidDeliver:</a></code>   </td><td class="markdownTableBodyLeft">当收到送达回执时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_manager_delegate-p.html#a9cc1989deb17f878298a016d9e8d7a33">messagesInfoDidRecall:</a></code>   </td><td class="markdownTableBodyLeft">当收到的消息被撤回时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_manager_delegate-p.html#ab4a9598362762406113b07094f4ced72">messageStatusDidChange</a></code>   </td><td class="markdownTableBodyLeft">当收到消息状态变更通知时触发，包括消息ID的变更。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_manager_delegate-p.html#a0fa8a897223583e46650e543445d7531">messageReactionDidChange:</a></code>   </td><td class="markdownTableBodyLeft">当消息Reaction发生变化时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_manager_delegate-p.html#a139b701851530e3cc09e932261199317">conversationListDidUpdate:</a></code>   </td><td class="markdownTableBodyLeft">当会话列表更新时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_manager_delegate-p.html#ace62082b9c63770b86100cea4d4b8beb">onConversationRead:to:</a></code>   </td><td class="markdownTableBodyLeft">当收到会话已读回执时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="">onMessagePinChanged</a></code>   </td><td class="markdownTableBodyLeft">当消息置顶状态发生变更时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="">onMessageContentChanged</a></code>   </td><td class="markdownTableBodyLeft">当消息内容变更时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Messages</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#a363f68b84ac9c563899a927a85d0e98a">conversationId</a></code>   </td><td class="markdownTableBodyLeft">获取会话ID，具体取决于会话类型。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#a642826dc588cd0b14a075dcf320985cb">unreadMessagesCount</a></code>   </td><td class="markdownTableBodyLeft">获取会话中的未读消息数量。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#a44ec1a24932acd7de1b24f2a4db7d202">markAllMessagesAsRead:</a></code>   </td><td class="markdownTableBodyLeft">将所有未读消息标记为已读。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#a693a8854215fcec575640116c0c04e9c">messagesCount</a></code>   </td><td class="markdownTableBodyLeft">获取本地数据库中会话的所有消息数量。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#a1f566f692362c9fe43c4028892e743fc">isChatThread</a></code>   </td><td class="markdownTableBodyLeft">检查当前会话是否为Thread会话。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#aa53f823f321a28e155cb197a39ee0042">loadMoreMsgFromDB</a></code>   </td><td class="markdownTableBodyLeft">从本地数据库加载消息，从特定消息ID开始。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#a6a2060891b2ec69134504d30bd47f5ce">markMessageAsRead</a></code>   </td><td class="markdownTableBodyLeft">将特定消息标记为已读。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#aebff6aaed08fc3c8dfad07bac1e32063">deleteMessageWithId:error:</a></code>   </td><td class="markdownTableBodyLeft">在本地数据库中删除特定消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#a3699cdee72536d67467d8d8407b991e5">latestMessage</a></code>   </td><td class="markdownTableBodyLeft">获取会话中的最新消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#a28b8e7f4e8a0dde495fbabd368d5b3c9">lastReceivedMessage</a></code>   </td><td class="markdownTableBodyLeft">获取会话中的最新接收消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#a0396ca7ba713241fcbf13eb2d6764fe4">deleteAllMessages:</a></code>   </td><td class="markdownTableBodyLeft">删除会话中的所有消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#abd4e4119e69ea567b3ea0d47ef57b23f">ext</a></code>   </td><td class="markdownTableBodyLeft">会话的扩展字段。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#acac5c656c8ae2d0ba9a936d4f5ce4d88">insertMessage</a></code>   </td><td class="markdownTableBodyLeft">在本地数据库中向会话插入消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#aef5cbf927659b1f05ffe24a4417767f2">appendMessage</a></code>   </td><td class="markdownTableBodyLeft">在本地数据库中将消息插入到会话的末尾。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_conversation.html#aaeec899b35a738821c26dc803a74890a">updateMessage</a></code>   </td><td class="markdownTableBodyLeft">更新本地数据库中的消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#a421d941f8fb014fd17cd22af89e189f3">status</a></code>   </td><td class="markdownTableBodyLeft">消息发送或接收状态。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#ab4ed046946fec759549bfa93e4ba076d">chatType</a></code>   </td><td class="markdownTableBodyLeft">获取聊天消息类型。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#a6a096accd1821704571833eaaf124016">body</a></code>   </td><td class="markdownTableBodyLeft">消息正文。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#a7bb7e6e5398efa72a7fa9a4cfff68d3c">timestamp</a></code>   </td><td class="markdownTableBodyLeft">服务器接收消息时的Unix时间戳。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#abb99a444b59a1c15a5a2446b7cb75775">localTime</a></code>   </td><td class="markdownTableBodyLeft">消息的本地时间戳。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#acb2c845e82ae40244f202d1339484fd5">isChatThreadMessage</a></code>   </td><td class="markdownTableBodyLeft">消息是否为Thread消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#a733ddbda4c5a3f474b38e2ac1d2da0a0">chatThread</a></code>   </td><td class="markdownTableBodyLeft">获取Thread的概述。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#a585b37114a41dc3b33e1694760edb09b">from</a></code>   </td><td class="markdownTableBodyLeft">获取消息发送者的用户ID。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#a7d2cb8ee4af52341b3dfe14f5457215f">to</a></code>   </td><td class="markdownTableBodyLeft">消息接收者的用户ID。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#a99038d6411da5b4d7c9d744382bffc8f">messageId</a></code>   </td><td class="markdownTableBodyLeft">消息ID。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#a9d7faea30006cb0022fea29480015044">ext</a></code>   </td><td class="markdownTableBodyLeft">消息的扩展属性，类型为字典。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#ad53e379168df8ae34dddcab8c80e939e">isRead</a></code>   </td><td class="markdownTableBodyLeft">消息是否已读。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#af94fc96729f5478c18dfa0368ef87619">isDeliverAcked</a></code>   </td><td class="markdownTableBodyLeft">消息是否已成功送达。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#ae13b8448a2398b3df8f8e3a81524dc06">isListened</a></code>   </td><td class="markdownTableBodyLeft">语音消息是否已被收听。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#a75f5c01e761a33c3158e7d6eb7c2f7e9">direction</a></code>   </td><td class="markdownTableBodyLeft">消息的收发方向。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#ae1978190c7ba2406b65fa76a93fbf1d2">conversationId</a></code>   </td><td class="markdownTableBodyLeft">获取会话ID。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#a4f65e99bb0c932b26837dfee14b5bfdf">reactionList</a></code>   </td><td class="markdownTableBodyLeft">获取Reaction列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#ae1b4d12f9f0e3b8d817dc2920e5fe91a">onlineState</a></code>   </td><td class="markdownTableBodyLeft">是否在线消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_message.html#a299505c5f42e453011f792060a5ccd68">pinnedInfo</a></code>   </td><td class="markdownTableBodyLeft">消息的置顶操作信息。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Contacts</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_contact_manager-p.html#a9c339033b4f2d4bfecdec259b3216218">getContactsFromServerWithCompletion:</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取所有联系人。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_contact_manager-p.html#abff529402d0dadb28003fc2ad6c2c84e">addUserToBlackList</a></code>   </td><td class="markdownTableBodyLeft">将用户添加到黑名单。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_contact_manager-p.html#a16bf812f7a0285e1cb1befc21ac2c2bb">removeUserFromBlackList</a></code>   </td><td class="markdownTableBodyLeft">从黑名单中移除联系人。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_contact_manager-p.html#adfab50543372f23d0969973780422034">getBlackList</a></code>   </td><td class="markdownTableBodyLeft">获取本地黑名单。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_contact_manager-p.html#a36f3d9fa9821768844c1e30dcb8cb6d1">getBlackListFromServerWithCompletion:</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取黑名单。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_contact_manager-p.html#afff944f6491d2f3868e455f3474d08e8">approveFriendRequestFromUser</a></code>   </td><td class="markdownTableBodyLeft">接受好友邀请。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_contact_manager-p.html#a1a54a695350da13be0da6907076c67d8">declineFriendRequestFromUser</a></code>   </td><td class="markdownTableBodyLeft">拒绝好友邀请。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_contact_manager-p.html#a94d1378dda55f01f068e6d7218091ede">getContacts</a></code>   </td><td class="markdownTableBodyLeft">从本地数据库获取联系人列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_contact_manager-p.html#a6eb5fda758d0cb785612cbe354e42409">getSelfIdsOnOtherPlatformWithCompletion:</a></code>   </td><td class="markdownTableBodyLeft">获取当前用户在其他设备上的唯一自我ID列表。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_contact_manager-p.html#aeae28a4adc48a7d5a2f1d66fb4405287">addDelegate</a></code>   </td><td class="markdownTableBodyLeft">添加联系人变更监听。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_contact_manager_delegate-p.html#ac6c9f5312f11e0f4168a11209bb24f41">friendshipDidAddByUser:</a></code>   </td><td class="markdownTableBodyLeft">当用户被其他用户添加为联系人时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_contact_manager_delegate-p.html#a74dccbc1830dc024a08481289abb8003">friendshipDidRemoveByUser:</a></code>   </td><td class="markdownTableBodyLeft">当用户被其他用户从联系人列表中移除时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_contact_manager_delegate-p.html#a781141be35ed9e8663590a8a9940f4e5">friendRequestDidReceiveFromUser:message:</a></code>   </td><td class="markdownTableBodyLeft">当用户收到好友请求时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_contact_manager_delegate-p.html#a236f3a3ccae7c94b180561ac93d8ba09">friendRequestDidApproveByUser:</a></code>   </td><td class="markdownTableBodyLeft">当好友请求被批准时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_contact_manager_delegate-p.html#a7e6f5279b1d909f38b8c0b20b7c3e8f1">onFriendRequestDeclined</a></code>   </td><td class="markdownTableBodyLeft">当好友请求被拒绝时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Chat Group</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a8ff658da3fa9dc7a70d39c6152dbe6f7">createGroup</a></code>   </td><td class="markdownTableBodyLeft">创建群组。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a9e00aed566b5877a75cbe82c41dcd984">destroyGroup</a></code>   </td><td class="markdownTableBodyLeft">销毁群组。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#ac6af9fef0ca16666adafe4bf9b7df23c">leaveGroup</a></code>   </td><td class="markdownTableBodyLeft">离开群组。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#adfcff331d8c624b842dd88adfe7e91bb">joinPublicGroup</a></code>   </td><td class="markdownTableBodyLeft">加入一个公共群组。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a2ed5920b0d84c7b2813b0a4ffa43fd35">addMembers</a></code>   </td><td class="markdownTableBodyLeft">将用户添加到群组中。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a4e2422f253e7e45458c4270d1d9b4e18">removeMembersFromGroup</a></code>   </td><td class="markdownTableBodyLeft">从群组中移除成员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a008168a7974f0b3719615149aadcc7bc">getGroupSpecificationFromServerWithId</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取群组信息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a9536aa30da7c97a4cdc1f293b90c1c93">getJoinedGroupsFromServerWithPage</a></code>   </td><td class="markdownTableBodyLeft">从服务器分页获取当前用户的所有群组。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a471d4a22a81ee7f3cd2be16b51e1d6e2">getPublicGroupsFromServer</a></code>   </td><td class="markdownTableBodyLeft">从服务器分页获取公开群组。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#aba0ae804b0ba1fca079b2eb37450682d">updateGroupSubject</a></code>   </td><td class="markdownTableBodyLeft">更改群组名称。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#ac98b69c5f5f988f6c5affcf65d6a8577">updateDescription</a></code>   </td><td class="markdownTableBodyLeft">更改群组描述。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#ac206a52dc7b92adafde638e3e4e9c228">acceptInvitationFromGroup</a></code>   </td><td class="markdownTableBodyLeft">接受群组邀请。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a917fe99b36d85e2e3dbe1431c1d228f3">declineGroupInvitation</a></code>   </td><td class="markdownTableBodyLeft">拒绝群组邀请。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a7ba4fe762a79fa6bee3700a2e5c085b9">acceptJoinApplication</a></code>   </td><td class="markdownTableBodyLeft">批准群组请求。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#ad6aa82a7018cc7b29cbf1ca053bb0db9">declineJoinGroupRequest</a></code>   </td><td class="markdownTableBodyLeft">拒绝群组请求。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a76a768e5a88fc1a43e7e888aa2cd17b4">requestToJoinPublicGroup</a></code>   </td><td class="markdownTableBodyLeft">请求加入公共群组。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a4ae8888a6861700b863edec023c909df">blockGroup</a></code>   </td><td class="markdownTableBodyLeft">阻止群组消息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#abed9354562a5d4548320cb82daa4dcb7">unblockGroup</a></code>   </td><td class="markdownTableBodyLeft">取消阻止群组消息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a16596a4747e45869fde77d7af93ff811">blockMembers</a></code>   </td><td class="markdownTableBodyLeft">将用户添加到群组黑名单。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a3224f9545667ea0dc61f83a1317e3211">unblockMembers</a></code>   </td><td class="markdownTableBodyLeft">从群组黑名单中移除用户。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#ac944d5a86be35eb5c2fc766268873913">getGroupBlacklistFromServer</a></code>   </td><td class="markdownTableBodyLeft">获取群组黑名单（带分页）。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#af1d5d6f8bd407275152490aa63f84416">getGroupMemberListFromServer</a></code>   </td><td class="markdownTableBodyLeft">获取群组成员列表（带分页）。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a254fcbc9ee6461425e4946d50874cc62">updateGroupOwner</a></code>   </td><td class="markdownTableBodyLeft">转移群组所有权。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#af85ce7a7e18f2ef53512b55e1d202ab8">addAdmin</a></code>   </td><td class="markdownTableBodyLeft">添加群组管理员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#aa5b3347d6961e50a9eda0e2285b2491e">removeAdmin</a></code>   </td><td class="markdownTableBodyLeft">移除群组管理员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a146ddf78d49cd4b1c19ad92e2c27232e">muteMembers</a></code>   </td><td class="markdownTableBodyLeft">禁言群组成员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a80d377c0e51ad3d10a9171172a20e6a2">unmuteMembers</a></code>   </td><td class="markdownTableBodyLeft">取消禁言群组成员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#aa9037b0b0400ce8b9c593e5fdbe0c41f">getGroupMuteListFromServer</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取群组禁言列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#ac944d5a86be35eb5c2fc766268873913">getGroupBlacklistFromServer</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取群组黑名单（带分页）。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a8b38e567ec2fe65c49c87649013dcbd2">addWhiteListMembers</a></code>   </td><td class="markdownTableBodyLeft">将成员添加到白名单列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a9148548acdd7a2484cc902ae0903dffc">removeWhiteListMembers</a></code>   </td><td class="markdownTableBodyLeft">从白名单列表中移除成员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a27eb385dabf31595476f84e4883c3975">getGroupWhiteListFromServer</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取群组白名单列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#ad4b7ed7c5696b9c938c49bde86f7131f">updateGroupAnnouncement</a></code>   </td><td class="markdownTableBodyLeft">更新群组公告。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a38a3f1fa9f53081195e5c35f68f67e06">asyncFetchGroupAnnouncement</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取群组公告。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a138c1aed82d0af6b26b7f467006d1f25">uploadGroupSharedFileWithId</a></code>   </td><td class="markdownTableBodyLeft">上传群组共享文件。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#ac398c00b4cce2b6dd4fbff082d5802b0">getGroupFileList</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取共享文件列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a330d9da3a554b8d34591929efb1306ee">removeGroupSharedFile</a></code>   </td><td class="markdownTableBodyLeft">移除群组共享文件。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a2b53af766e139b1541d06c5e5b172960">downloadGroupSharedFile</a></code>   </td><td class="markdownTableBodyLeft">下载群组共享文件。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a88341ad695402cf78cf94834513e5df3">getJoinedGroups</a></code>   </td><td class="markdownTableBodyLeft">获取当前用户的所有群组（从缓存中）。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_group_manager-p.html#a13965572330280d4ab6d11d697862c38">addDelegate</a></code>   </td><td class="markdownTableBodyLeft">添加群组变更监听器。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a58646cb0d6f38e2d37ea21c6c617903f">groupInvitationDidReceive</a></code>   </td><td class="markdownTableBodyLeft">当用户收到群组邀请时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a439a794c621509ace77f2e4612cce9e7">joinGroupRequestDidReceive</a></code>   </td><td class="markdownTableBodyLeft">当群组所有者或管理员收到用户的加入请求时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a4df1cc1abe6ef12f1bcf74b2520d6dbe">joinGroupRequestDidApprove</a></code>   </td><td class="markdownTableBodyLeft">当群组请求被接受时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#aed1681123793e2d79a7d6200664f53e5">joinGroupRequestDidDecline</a></code>   </td><td class="markdownTableBodyLeft">当群组请求被拒绝时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#aa4b041a8b4cc6e50b9d32d6cef133c9c">groupInvitationDidAccept</a></code>   </td><td class="markdownTableBodyLeft">当群组邀请被接受时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a149b636abd84cab201f85edaba3b325c">groupInvitationDidDecline</a></code>   </td><td class="markdownTableBodyLeft">当群组邀请被拒绝时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a168bfa052e7ca445f3a491cd9f416bb8">didJoinGroup:inviter:message:</a></code>   </td><td class="markdownTableBodyLeft">当群组邀请自动接受时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a78f9f4091ba8401d35d9ea384fe28e72">didLeaveGroup</a></code>   </td><td class="markdownTableBodyLeft">当当前用户被群组管理员移除时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a890728bd1f6529ca5eeb870c32d63320">groupMuteListDidUpdate:addedMutedMembers:muteExpire:</a></code>   </td><td class="markdownTableBodyLeft">当一个或多个群组成员被禁言时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a3569eac13a1509eecc9c2a5fc80c2ccc">groupMuteListDidUpdate</a></code>   </td><td class="markdownTableBodyLeft">当一个或多个群组成员被取消禁言时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a0486e4e5898129b295a682272cb86e48">groupWhiteListDidUpdate:addedWhiteListMembers:</a></code>   </td><td class="markdownTableBodyLeft">当一个或多个群组成员被添加到白名单列表时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a437d2dddc9f950d6dc2fee7f006b8f90">groupWhiteListDidUpdate:removedWhiteListMembers:</a></code>   </td><td class="markdownTableBodyLeft">当一个或多个成员从白名单列表中移除时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a89f5ee0c33f1bb5afc7330fe46069b7e">groupAllMemberMuteChanged</a></code>   </td><td class="markdownTableBodyLeft">当所有群组成员被禁言或取消禁言时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a2f90f82794beb7be171d690efed7542b">groupAdminListDidUpdate:addedAdmin:</a></code>   </td><td class="markdownTableBodyLeft">当某个成员被设置为管理员时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#ae510d649050d5eb06246379f150ec31e">groupAdminListDidUpdate:removedAdmin:</a></code>   </td><td class="markdownTableBodyLeft">当某个成员的管理员权限被移除时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#aa8498a072dfc923cdadde6dc00ba1ca0">groupOwnerDidUpdate</a></code>   </td><td class="markdownTableBodyLeft">当群组所有权被转移时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a4c64573a774b3e0b9c973f81ad3ceca5">userDidJoinGroup</a></code>   </td><td class="markdownTableBodyLeft">当某个成员加入群组时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#ad254d51b79da3f7a7f94d125da47f1a9">userDidLeaveGroup</a></code>   </td><td class="markdownTableBodyLeft">当某个成员主动离开群组时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#ac5d96834bf6810fb97aadd7fb86ee57f">groupAnnouncementDidUpdate</a></code>   </td><td class="markdownTableBodyLeft">当公告被更新时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#ab1773f4cf240f5b614fab53c97392aac">onSharedFileAdded</a></code>   </td><td class="markdownTableBodyLeft">当共享文件被添加到群组时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#add7b25166841ed3ff94d9bcd814e0049">onSharedFileDeleted</a></code>   </td><td class="markdownTableBodyLeft">当共享文件从群组中移除时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#a2fcc61ca88eacb7137e3ab2ac83815a4">groupSpecificationDidUpdate</a></code>   </td><td class="markdownTableBodyLeft">当群组详细信息被更新时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_group_manager_delegate-p.html#ab528c8abb3d14dbece01c92a061f2178">groupStateChanged</a></code>   </td><td class="markdownTableBodyLeft">当群组被启用或禁用时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Chat Room</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#abb49d544cc12bc9a653758b8312d9bd1">createChatRoom</a></code>   </td><td class="markdownTableBodyLeft">创建聊天室。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a433fa33fdb9a76271e5e2709656977da">destroyChatroom</a></code>   </td><td class="markdownTableBodyLeft">销毁聊天室。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#ad8d19bd36e60c8af8d04c1f8b4daa2f0">joinChatRoom</a></code>   </td><td class="markdownTableBodyLeft">加入聊天室。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#ae9b671ece1a36ad8ac26375d91755467">leaveChatroom</a></code>   </td><td class="markdownTableBodyLeft">退出聊天室。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#ab4153faf0cbd85b7f75e4c5ce52698a4">getChatroomsFromServer</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取聊天室数据，支持分页。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#aebb0770ea3d0fdd7c6fc9bb82b20b278">getChatroomSpecificationFromServer</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取聊天室的详细信息。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="">asyncChangeChatRoomSubject</a></code>   </td><td class="markdownTableBodyLeft">修改聊天室名称。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a634167e5dbfa25c0613e95b1c3953c2b">updateSubject</a></code>   </td><td class="markdownTableBodyLeft">修改聊天室描述。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a41fb3aace13c7caf8caac92bda9b4c61">getChatroomMemberListFromServer</a></code>   </td><td class="markdownTableBodyLeft">获取聊天室成员列表。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#ae1e74ed31994ed0ee74552c6e0f5f7e7">muteMembers</a></code>   </td><td class="markdownTableBodyLeft">在聊天室中禁言成员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#aa1411c0c65c2adedd64a09ccf3c756e0">unmuteMembers</a></code>   </td><td class="markdownTableBodyLeft">在聊天室中取消禁言成员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a302de3416e585bee1cad2baf5feca4b0">addAdmin</a></code>   </td><td class="markdownTableBodyLeft">添加聊天室管理员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a0847e1afbc1668ee998b5f97538f1711">removeAdmin</a></code>   </td><td class="markdownTableBodyLeft">移除聊天室管理员的管理权限。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a350b1a1174ed060e146a3dd497e555fa">getChatroomMuteListFromServer</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取禁言聊天室成员列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a1c6ceec79b3ba0f43af01c301c3b5ef4">removeMembers</a></code>   </td><td class="markdownTableBodyLeft">从聊天室中移除成员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#ab0416b78d681b916d641a73bf2bbd5f9">blockMembers</a></code>   </td><td class="markdownTableBodyLeft">将成员添加到聊天室的黑名单中。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#ab66fcd2089cf4d1effa9063997dd7347">unblockMembers</a></code>   </td><td class="markdownTableBodyLeft">从聊天室的黑名单中移除成员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#af53081bc33c42ae09724614bbf0e9cc0">getChatroomBlacklistFromServer</a></code>   </td><td class="markdownTableBodyLeft">获取聊天室黑名单，支持分页。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#ac9027ed85dd1b45c3e1b6c25f240d05d">addWhiteListMembers</a></code>   </td><td class="markdownTableBodyLeft">将成员添加到聊天室的白名单中。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#ae080ebf7fbe02f8342529fc99254aad9">removeWhiteListMembers</a></code>   </td><td class="markdownTableBodyLeft">从聊天室的白名单中移除成员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#ac84c10757306e8baf8f62ef54886790b">getChatroomWhiteListFromServer</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取聊天室的白名单。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a79dd46d65126e5a75948b53397791892">muteAllMembers</a></code>   </td><td class="markdownTableBodyLeft">禁言所有成员。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a877a8abaa134216cc2d308cd6455002e">unmuteAllMembers</a></code>   </td><td class="markdownTableBodyLeft">取消禁言所有成员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#abe976227ce2ffbd52f7162585325d79d">updateChatroomAnnouncement</a></code>   </td><td class="markdownTableBodyLeft">更新聊天室公告。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#ac4f4cf096b164a58f5fe5278f025ae47">getChatroomAnnouncement</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取聊天室公告。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a911d96fba223ca874fed9d76379e8611">setChatroomAttributes</a></code>   </td><td class="markdownTableBodyLeft">添加自定义聊天室属性。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#ad2f9b9613bc2493d8db030f7fad80d4b">setChatroomAttribute</a></code>   </td><td class="markdownTableBodyLeft">设置自定义聊天室属性。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a6e745638816ab697c189190e11371620">setChatroomAttributesForced</a></code>   </td><td class="markdownTableBodyLeft">强制设置自定义聊天室属性。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a165e6c066a8f05ae5d1db0974b96735a">setChatroomAttributeForced</a></code>   </td><td class="markdownTableBodyLeft">强制设置自定义聊天室属性。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a2589d490b1b97ebef0b984d66ae3b71d">fetchChatroomAttributes</a></code>   </td><td class="markdownTableBodyLeft">根据属性键列表获取聊天室的自定义属性列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#aea5f86098842656a18d5775215035ec5">fetchChatroomAllAttributes</a></code>   </td><td class="markdownTableBodyLeft">获取聊天室的所有自定义属性。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a867d1f96998c49e947d6eab3930912d1">removeChatroomAttributes</a></code>   </td><td class="markdownTableBodyLeft">根据属性键列表移除自定义聊天室属性。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a3c7b79869b46935a887b70f304d24c95">removeChatroomAttribute</a></code>   </td><td class="markdownTableBodyLeft">移除自定义聊天室属性。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#a8cf969172d3a8ad8937ddd6beaf9f888">removeChatroomAttributesForced</a></code>   </td><td class="markdownTableBodyLeft">强制移除自定义聊天室属性。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#af941122c266dad6d2aca71310a165da6">removeChatroomAttributeForced</a></code>   </td><td class="markdownTableBodyLeft">强制移除自定义聊天室属性。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chatroom_manager-p.html#ad591d75f3caee084d0e040df817c3cf8">addDelegate</a></code>   </td><td class="markdownTableBodyLeft">添加聊天室事件监听器。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#ad08ad37f38468cfa67442d739442c63a">didDismissFromChatroom</a></code>   </td><td class="markdownTableBodyLeft">当当前用户被移出聊天室时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#ad5fd1c3a5d5212466d8fdac057b656df">userDidJoinChatroom</a></code>   </td><td class="markdownTableBodyLeft">当其他成员加入聊天室时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#a43a6245c818c23f03e966a4dff4b2547">userDidLeaveChatroom</a></code>   </td><td class="markdownTableBodyLeft">当其他成员退出聊天室时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#acd09db89ae5a1fca0751dfdc4fbb3498">onMuteListAdded</a></code>   </td><td class="markdownTableBodyLeft">当聊天室成员被添加到禁言列表时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#aae470893a9f2335241505e09cc83afdd">onMuteListRemoved</a></code>   </td><td class="markdownTableBodyLeft">当聊天室成员从禁言列表中移除时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#a439c840f96bc24115108426dadb16eb3">onWhiteListAdded</a></code>   </td><td class="markdownTableBodyLeft">当聊天室成员被添加到白名单时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#a146afa46d965b584669437b6ae004ce0">onWhiteListRemoved</a></code>   </td><td class="markdownTableBodyLeft">当聊天室成员从白名单中移除时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#ac61ecc478fb348cc2908b62cd91f6178">chatroomAllMemberMuteChanged</a></code>   </td><td class="markdownTableBodyLeft">当聊天室中的全员禁言状态变更时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#a2409193a6b25258a41112293114c1c8f">onAdminAdded</a></code>   </td><td class="markdownTableBodyLeft">当聊天室成员被设置为管理员时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#abcf5f9e9f648f81e7f4ad46e3b6a55ac">onAdminRemoved</a></code>   </td><td class="markdownTableBodyLeft">当聊天室成员从管理员列表中移除时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#a099bc28bde35aee5c23613fdc7254502">chatroomOwnerDidUpdate</a></code>   </td><td class="markdownTableBodyLeft">当聊天室的拥有者更改时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#a15cc25341174b9180323defc9cf5cab3">chatroomAnnouncementDidUpdate</a></code>   </td><td class="markdownTableBodyLeft">当聊天室公告更改时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#aea36dd6abe63088c80655605d0ca44a2">chatroomSpecificationDidUpdate:</a></code>   </td><td class="markdownTableBodyLeft">当聊天室详情更改时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#ac1a993347f52510ae5c4dcb40428c6fe">chatroomAttributesDidUpdated</a></code>   </td><td class="markdownTableBodyLeft">当自定义聊天室属性更新时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chatroom_manager_delegate-p.html#af55a7ba66eed388a866a446f9008632c">chatroomAttributesDidRemoved</a></code>   </td><td class="markdownTableBodyLeft">当自定义聊天室属性被移除时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Presence</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_presence_manager-p.html#acbea9c6c7f383d59625989d555e10c1b">publishPresence</a></code>   </td><td class="markdownTableBodyLeft">发布自定义的在线状态。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_presence_manager-p.html#ad3e4b5141c92bb5b6e5e2aa4a934c300">subscribePresences</a></code>   </td><td class="markdownTableBodyLeft">订阅用户的在线状态。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_presence_manager-p.html#ad2aac898314eb08af1e11429bac397fb">unsubscribePresences</a></code>   </td><td class="markdownTableBodyLeft">取消订阅用户的在线状态。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_presence_manager-p.html#a6b0d862ca5c3ec6cce91b4807da30a58">fetchSubscribedMembers</a></code>   </td><td class="markdownTableBodyLeft">使用分页获取已订阅的用户的列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_presence_manager-p.html#a607ddcd4d26bd652372f4ea219d404cc">fetchPresenceStatus</a></code>   </td><td class="markdownTableBodyLeft">获取用户的当前在线状态。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_presence_manager-p.html#ab25c73bc7cbea3f692bcd7726e0b216f">addDelegate</a></code>   </td><td class="markdownTableBodyLeft">添加监听器。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_presence_manager_delegate-p.html#ad017483b3661aa66cac5cbcf2987c94c">presenceStatusDidChanged:</a></code>   </td><td class="markdownTableBodyLeft">当订阅的用户的在线状态更新时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Threading</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_thread_manager-p.html#abb57ee62a5f1200b2a4dfcd09d95e4b3">createChatThread</a></code>   </td><td class="markdownTableBodyLeft">创建Thread。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_thread_manager-p.html#a65e121025668162c93dbf66b2b9d3b82">joinChatThread</a></code>   </td><td class="markdownTableBodyLeft">加入Thread。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_thread_manager-p.html#abf638c2c421827df1732867d6b3e160a">destroyChatThread</a></code>   </td><td class="markdownTableBodyLeft">销毁Thread。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_thread_manager-p.html#ae57a71321de7cc1182ecffd205d60f28">leaveChatThread</a></code>   </td><td class="markdownTableBodyLeft">离开Thread。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_thread_manager-p.html#a52156946e23581001fc8910da86c9343">getChatThreadFromServer</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取Thread的详细信息。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_thread_manager-p.html#ac5da9b391c411ed6d7c4c7c03c8def97">updateChatThreadName</a></code>   </td><td class="markdownTableBodyLeft">更改Thread的名称。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_thread_manager-p.html#acbfe1670a2a200a8e294a333e77610bf">removeMemberFromChatThread</a></code>   </td><td class="markdownTableBodyLeft">从Thread中移除成员。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_thread_manager-p.html#ac82afb369869be41f1be80f7442d90b0">getChatThreadMembers</a></code>   </td><td class="markdownTableBodyLeft">分页获取Thread中的成员列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_thread_manager-p.html#ad928d7e487f50e9ecc4aeb413c3a8696">getJoinedChatThreadsFromServer</a></code>   </td><td class="markdownTableBodyLeft">分页获取当前用户已加入的Thread列表。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_thread_manager-p.html#adfa1723ce45b30b275a0951bd730974a">getJoinedChatThreadsFromServer</a></code>   </td><td class="markdownTableBodyLeft">分页获取当前用户在指定组中已加入的Thread列表。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_thread_manager-p.html#ad928d7e487f50e9ecc4aeb413c3a8696">getChatThreadsFromServer</a></code>   </td><td class="markdownTableBodyLeft">分页获取指定组中的Thread列表。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_thread_manager-p.html#a56f33ee1bfc8c98b7cb5e87df143d31c">getChatThreadLatestMessage</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取指定Thread的最后一条回复。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_thread_manager-p.html#af6c0965d7618c8990334976a4deebbd2">addChatThreadChangeListener</a></code>   </td><td class="markdownTableBodyLeft">添加Thread事件监听器，监听Thread的变化，例如Thread的创建和销毁。   </td></tr>
+</table>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">事件   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_thread_manager_delegate-p.html#aaf7005f53dc3245da352c0aa83c4f342">onChatThreadCreated</a></code>   </td><td class="markdownTableBodyLeft">当Thread被创建时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_thread_manager_delegate-p.html#a2bd745657949c7a2b3f42cca8acda81a">onChatThreadUpdated</a></code>   </td><td class="markdownTableBodyLeft">当Thread被更新时触发。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_thread_manager_delegate-p.html#a69f85257fb21e57df1ddf16f2671386e">onChatThreadDestroyed</a></code>   </td><td class="markdownTableBodyLeft">当Thread被销毁时触发。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_agora_chat_thread_manager_delegate-p.html#ab15f010f6951b1b9f5892cc21dc7a4dd">onChatThreadUserRemoved</a></code>   </td><td class="markdownTableBodyLeft">当当前用户被群主或群管理员从Thread中移除时触发。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Offline push</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_push_manager-p.html#a3ddd78be9edfcc45ef36c21a9370b98d">getPushConfigsFromServer</a></code>   </td><td class="markdownTableBodyLeft">从服务器获取推送配置。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_push_manager-p.html#a5396812a04fa1b529ba8dd831ba9d740">updatePushDisplayName</a></code>   </td><td class="markdownTableBodyLeft">更新当前用户的推送显示昵称。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_push_manager-p.html#a3f50a2b9eabb45b93a287c8a678ceb29">setSilentModeForConversation</a></code>   </td><td class="markdownTableBodyLeft">修改会话的免打扰设置。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_push_manager-p.html#a440cab5fb4802d6055d4f86eede83d9f">clearRemindTypeForConversation</a></code>   </td><td class="markdownTableBodyLeft">清除会话的离线推送通知类型设置。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_push_manager-p.html#ae41ab9ea3b8de4770d056bf29dc41a62">getSilentModeForConversation</a></code>   </td><td class="markdownTableBodyLeft">获取会话的免打扰设置。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_push_manager-p.html#a448d2eea60ffde71e50ccae22d6dec72">setSilentModeForAll</a></code>   </td><td class="markdownTableBodyLeft">设置当前登录用户的免打扰设置。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_push_manager-p.html#adc452c003585fc38021017efdd2b31b4">getSilentModeForAll</a></code>   </td><td class="markdownTableBodyLeft">获取当前登录用户的免打扰设置。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_push_manager-p.html#a653a1cfb7e19c929bb1310dfcdcd3ba9">getSilentModeForConversations</a></code>   </td><td class="markdownTableBodyLeft">批量获取指定会话的免打扰设置。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a4b5284828bf6d67bc60fdfb9b45e8837">bindDeviceToken</a></code>   </td><td class="markdownTableBodyLeft">绑定 APNs Token。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="interface_agora_chat_client.html#a22a1b4a719b9191dfe09422941ccca79">registerPushKitToken</a></code>   </td><td class="markdownTableBodyLeft">绑定 VoIP Token。   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md9"></a>
+User Attributes</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">方法   </th><th class="markdownTableHeadLeft">描述    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_user_info_manager-p.html#a903f09d043fb3c340041c0a74ff5bbba">updateOwnInfo</a></code>   </td><td class="markdownTableBodyLeft">修改当前用户的用户属性。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_user_info_manager-p.html#a9d69fbddf1feedaa913c2cfc86790ecf">updateOwnInfoByAttribute</a></code>   </td><td class="markdownTableBodyLeft">修改当前用户的用户属性。    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_user_info_manager-p.html#a6e0d413b35b25d53c3470a71213f3f55">fetchUserInfoByUserId</a></code>   </td><td class="markdownTableBodyLeft">根据用户ID获取用户属性。    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code><a class="el" href="protocol_i_agora_chat_user_info_manager-p.html#a0e05a99904984bd4e759fe2719e9f58c">fetchUserInfoByAttribute</a></code>   </td><td class="markdownTableBodyLeft">根据用户ID和属性类型获取用户属性。   </td></tr>
+</table>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

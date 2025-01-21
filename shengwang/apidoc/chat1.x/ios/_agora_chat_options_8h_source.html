@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShengwangChatSDK: AgoraChat.framework/Headers/AgoraChatOptions.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ShengwangChatSDK<span id="projectnumber">&#160;1.3.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4df93b2374f7ad7fdd08b057a718ef8e.html">AgoraChat.framework</a></li><li class="navelem"><a class="el" href="dir_d59efb3d46564b237fdd447feffd569d.html">Headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">AgoraChatOptions.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#import &quot;AgoraChatCommonDefs.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">typedef</span> NS_ENUM(NSInteger, AgoraChatLogLevel)</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    AgoraChatLogLevelDebug = 0, </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    AgoraChatLogLevelWarning,   </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    AgoraChatLogLevelError      </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} ;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">typedef</span> NS_ENUM(NSInteger, AreaCode)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    AreaCodeCN = 1 &lt;&lt; 0,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    AreaCodeNA = 1 &lt;&lt; 1,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    AreaCodeEU = 1 &lt;&lt; 2,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    AreaCodeAS = 1 &lt;&lt; 3,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    AreaCodeJP = 1 &lt;&lt; 4,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    AreaCodeIN = 1 &lt;&lt; 5,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    AreaCodeGLOB = -1</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html">   39</a></span><span class="keyword">@interface </span><a class="code hl_interface" href="interface_agora_chat_options.html">AgoraChatOptions</a> : NSObject</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#ade85dd049254a4bfbb5b4eacbb89e9a2">   45</a></span><span class="keyword">@property</span>(nonatomic, copy, readonly) NSString *<a class="code hl_property" href="interface_agora_chat_options.html#ade85dd049254a4bfbb5b4eacbb89e9a2">appkey</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#aac2bcc280cf97964eec6caf7e1937ef0">   51</a></span><span class="keyword">@property</span>(nonatomic, copy, readonly) NSString *<a class="code hl_property" href="interface_agora_chat_options.html#aac2bcc280cf97964eec6caf7e1937ef0">appId</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a24e7b070ca3f557abdedf5bad463249b">   59</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a24e7b070ca3f557abdedf5bad463249b">enableConsoleLog</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#ab61736e125e3ad8fd117acc2db88d970">   68</a></span><span class="keyword">@property</span>(nonatomic, assign) AgoraChatLogLevel <a class="code hl_property" href="interface_agora_chat_options.html#ab61736e125e3ad8fd117acc2db88d970">logLevel</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a119482efe8d181cdce53abf62f2c8140">   76</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a119482efe8d181cdce53abf62f2c8140">usingHttpsOnly</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a260fcaa8b6d0ef5ed95a81624d3b91e4">   86</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a260fcaa8b6d0ef5ed95a81624d3b91e4">isAutoLogin</a>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a55da002396dbae75792f047bd6166f8d">   94</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a55da002396dbae75792f047bd6166f8d">deleteMessagesOnLeaveGroup</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#ae7e7dc605cdce4bb81b59b7d3e3851c9">  102</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#ae7e7dc605cdce4bb81b59b7d3e3851c9">deleteMessagesOnLeaveChatroom</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a65d384c6efb521ab0d4874befe3b8e08">  110</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a65d384c6efb521ab0d4874befe3b8e08">canChatroomOwnerLeave</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a0f1b564fd06c468869824adbecc67df5">  118</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a0f1b564fd06c468869824adbecc67df5">autoAcceptGroupInvitation</a>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a9e4efac68438666197b03ea4e1731b9b">  126</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a9e4efac68438666197b03ea4e1731b9b">autoAcceptFriendInvitation</a>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a780371c32f8f9490873c129c9fc01092">  134</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a780371c32f8f9490873c129c9fc01092">autoDownloadThumbnail</a>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a7737395dfc8225f2647d007732dd305e">  142</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a7737395dfc8225f2647d007732dd305e">enableRequireReadAck</a>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a64be2461506511777c090f0c33bc2928">  150</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a64be2461506511777c090f0c33bc2928">enableDeliveryAck</a>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#ae37268c14f0816e8f8368995994903ea">  159</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#ae37268c14f0816e8f8368995994903ea">sortMessageByServerTime</a>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#ab550d2e148bdc9ac8f6114bf0c4931b3">  167</a></span><span class="keyword">@property</span>(nonatomic, assign) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#ab550d2e148bdc9ac8f6114bf0c4931b3">isAutoTransferMessageAttachments</a>;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a88c693c2479bb42227fb23dd6b95ae81">  177</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *<a class="code hl_property" href="interface_agora_chat_options.html#a88c693c2479bb42227fb23dd6b95ae81">apnsCertName</a>;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a8e988a5c0f0a31373ff5c69b5e407319">  187</a></span><span class="keyword">@property</span>(nonatomic, copy) NSString *<a class="code hl_property" href="interface_agora_chat_options.html#a8e988a5c0f0a31373ff5c69b5e407319">pushKitCertName</a>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a51ac35257b1b7bde43790e3889b5a40f">  197</a></span><span class="keyword">@property</span>(nonatomic) AreaCode <a class="code hl_property" href="interface_agora_chat_options.html#a51ac35257b1b7bde43790e3889b5a40f">area</a>;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a26ff8acc043c0bdd84a4ae52807bf9a0">  207</a></span><span class="keyword">@property</span>(nonatomic) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a26ff8acc043c0bdd84a4ae52807bf9a0">enableStatistics</a>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#ada70febedd5350be01e30c342ec6f9b2">  217</a></span><span class="keyword">@property</span>(nonatomic) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#ada70febedd5350be01e30c342ec6f9b2">loadEmptyConversations</a>;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#ace56c3f99f4dc04e270c5ea55f159ec6">  225</a></span><span class="keyword">@property</span>(nonatomic) NSInteger <a class="code hl_property" href="interface_agora_chat_options.html#ace56c3f99f4dc04e270c5ea55f159ec6">customOSType</a>;</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#ac91752c13ce7abe8ae26c7b7a6a1f666">  233</a></span><span class="keyword">@property</span>(strong) NSString* <a class="code hl_property" href="interface_agora_chat_options.html#ac91752c13ce7abe8ae26c7b7a6a1f666">customDeviceName</a>;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#ab220e109427acccf7cd650f7e62dd32a">  245</a></span><span class="keyword">@property</span>(nonatomic) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#ab220e109427acccf7cd650f7e62dd32a">useReplacedMessageContents</a>;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a93d5350c5db376c67975a3c2365fa90f">  255</a></span><span class="keyword">@property</span>(nonatomic) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a93d5350c5db376c67975a3c2365fa90f">includeSendMessageInMessageListener</a>;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#afe27c92060cfb680b4ac6ec8ec062711">  264</a></span><span class="keyword">@property</span>(nonatomic) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#afe27c92060cfb680b4ac6ec8ec062711">regardImportMessagesAsRead</a>;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a8c9a50d9c03382572640bcc1fee4e363">  273</a></span><span class="keyword">@property</span>(nonatomic) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a8c9a50d9c03382572640bcc1fee4e363">autoLoadConversations</a>;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a61dbe65cdba95084add42b933c599461">  279</a></span><span class="keyword">@property</span> (nonatomic) NSString * <a class="code hl_property" href="interface_agora_chat_options.html#a61dbe65cdba95084add42b933c599461">loginExtensionInfo</a>;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno"><a class="line" href="interface_agora_chat_options.html#a35e6d1ed3928b9fb735e1904f8ad7b13">  287</a></span><span class="keyword">@property</span> (nonatomic) BOOL <a class="code hl_property" href="interface_agora_chat_options.html#a683256b9fa8672666131127bc821565a">workPathCopiable</a>;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>+ (instancetype _Nonnull)optionsWithAppkey:(NSString * _Nonnull)aAppkey;</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>+ (instancetype _Nonnull)optionsWithAppId:(NSString* _Nonnull)appId;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="keyword">@end</span></div>
+<div class="ttc" id="ainterface_agora_chat_options_html"><div class="ttname"><a href="interface_agora_chat_options.html">AgoraChatOptions</a></div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:40</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a0f1b564fd06c468869824adbecc67df5"><div class="ttname"><a href="interface_agora_chat_options.html#a0f1b564fd06c468869824adbecc67df5">AgoraChatOptions::autoAcceptGroupInvitation</a></div><div class="ttdeci">BOOL autoAcceptGroupInvitation</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:118</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a119482efe8d181cdce53abf62f2c8140"><div class="ttname"><a href="interface_agora_chat_options.html#a119482efe8d181cdce53abf62f2c8140">AgoraChatOptions::usingHttpsOnly</a></div><div class="ttdeci">BOOL usingHttpsOnly</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:76</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a24e7b070ca3f557abdedf5bad463249b"><div class="ttname"><a href="interface_agora_chat_options.html#a24e7b070ca3f557abdedf5bad463249b">AgoraChatOptions::enableConsoleLog</a></div><div class="ttdeci">BOOL enableConsoleLog</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:59</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a260fcaa8b6d0ef5ed95a81624d3b91e4"><div class="ttname"><a href="interface_agora_chat_options.html#a260fcaa8b6d0ef5ed95a81624d3b91e4">AgoraChatOptions::isAutoLogin</a></div><div class="ttdeci">BOOL isAutoLogin</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:86</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a26ff8acc043c0bdd84a4ae52807bf9a0"><div class="ttname"><a href="interface_agora_chat_options.html#a26ff8acc043c0bdd84a4ae52807bf9a0">AgoraChatOptions::enableStatistics</a></div><div class="ttdeci">BOOL enableStatistics</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:207</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a51ac35257b1b7bde43790e3889b5a40f"><div class="ttname"><a href="interface_agora_chat_options.html#a51ac35257b1b7bde43790e3889b5a40f">AgoraChatOptions::area</a></div><div class="ttdeci">AreaCode area</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:197</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a55da002396dbae75792f047bd6166f8d"><div class="ttname"><a href="interface_agora_chat_options.html#a55da002396dbae75792f047bd6166f8d">AgoraChatOptions::deleteMessagesOnLeaveGroup</a></div><div class="ttdeci">BOOL deleteMessagesOnLeaveGroup</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:94</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a61dbe65cdba95084add42b933c599461"><div class="ttname"><a href="interface_agora_chat_options.html#a61dbe65cdba95084add42b933c599461">AgoraChatOptions::loginExtensionInfo</a></div><div class="ttdeci">NSString * loginExtensionInfo</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:279</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a64be2461506511777c090f0c33bc2928"><div class="ttname"><a href="interface_agora_chat_options.html#a64be2461506511777c090f0c33bc2928">AgoraChatOptions::enableDeliveryAck</a></div><div class="ttdeci">BOOL enableDeliveryAck</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:150</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a65d384c6efb521ab0d4874befe3b8e08"><div class="ttname"><a href="interface_agora_chat_options.html#a65d384c6efb521ab0d4874befe3b8e08">AgoraChatOptions::canChatroomOwnerLeave</a></div><div class="ttdeci">BOOL canChatroomOwnerLeave</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:110</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a683256b9fa8672666131127bc821565a"><div class="ttname"><a href="interface_agora_chat_options.html#a683256b9fa8672666131127bc821565a">AgoraChatOptions::workPathCopiable</a></div><div class="ttdeci">BOOL workPathCopiable</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:287</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a7737395dfc8225f2647d007732dd305e"><div class="ttname"><a href="interface_agora_chat_options.html#a7737395dfc8225f2647d007732dd305e">AgoraChatOptions::enableRequireReadAck</a></div><div class="ttdeci">BOOL enableRequireReadAck</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:142</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a780371c32f8f9490873c129c9fc01092"><div class="ttname"><a href="interface_agora_chat_options.html#a780371c32f8f9490873c129c9fc01092">AgoraChatOptions::autoDownloadThumbnail</a></div><div class="ttdeci">BOOL autoDownloadThumbnail</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:134</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a88c693c2479bb42227fb23dd6b95ae81"><div class="ttname"><a href="interface_agora_chat_options.html#a88c693c2479bb42227fb23dd6b95ae81">AgoraChatOptions::apnsCertName</a></div><div class="ttdeci">NSString * apnsCertName</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:177</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a8c9a50d9c03382572640bcc1fee4e363"><div class="ttname"><a href="interface_agora_chat_options.html#a8c9a50d9c03382572640bcc1fee4e363">AgoraChatOptions::autoLoadConversations</a></div><div class="ttdeci">BOOL autoLoadConversations</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:273</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a8e988a5c0f0a31373ff5c69b5e407319"><div class="ttname"><a href="interface_agora_chat_options.html#a8e988a5c0f0a31373ff5c69b5e407319">AgoraChatOptions::pushKitCertName</a></div><div class="ttdeci">NSString * pushKitCertName</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:187</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a93d5350c5db376c67975a3c2365fa90f"><div class="ttname"><a href="interface_agora_chat_options.html#a93d5350c5db376c67975a3c2365fa90f">AgoraChatOptions::includeSendMessageInMessageListener</a></div><div class="ttdeci">BOOL includeSendMessageInMessageListener</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:255</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_a9e4efac68438666197b03ea4e1731b9b"><div class="ttname"><a href="interface_agora_chat_options.html#a9e4efac68438666197b03ea4e1731b9b">AgoraChatOptions::autoAcceptFriendInvitation</a></div><div class="ttdeci">BOOL autoAcceptFriendInvitation</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:126</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_aac2bcc280cf97964eec6caf7e1937ef0"><div class="ttname"><a href="interface_agora_chat_options.html#aac2bcc280cf97964eec6caf7e1937ef0">AgoraChatOptions::appId</a></div><div class="ttdeci">NSString * appId</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:51</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_ab220e109427acccf7cd650f7e62dd32a"><div class="ttname"><a href="interface_agora_chat_options.html#ab220e109427acccf7cd650f7e62dd32a">AgoraChatOptions::useReplacedMessageContents</a></div><div class="ttdeci">BOOL useReplacedMessageContents</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:245</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_ab550d2e148bdc9ac8f6114bf0c4931b3"><div class="ttname"><a href="interface_agora_chat_options.html#ab550d2e148bdc9ac8f6114bf0c4931b3">AgoraChatOptions::isAutoTransferMessageAttachments</a></div><div class="ttdeci">BOOL isAutoTransferMessageAttachments</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:167</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_ab61736e125e3ad8fd117acc2db88d970"><div class="ttname"><a href="interface_agora_chat_options.html#ab61736e125e3ad8fd117acc2db88d970">AgoraChatOptions::logLevel</a></div><div class="ttdeci">AgoraChatLogLevel logLevel</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:68</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_ac91752c13ce7abe8ae26c7b7a6a1f666"><div class="ttname"><a href="interface_agora_chat_options.html#ac91752c13ce7abe8ae26c7b7a6a1f666">AgoraChatOptions::customDeviceName</a></div><div class="ttdeci">NSString * customDeviceName</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:233</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_ace56c3f99f4dc04e270c5ea55f159ec6"><div class="ttname"><a href="interface_agora_chat_options.html#ace56c3f99f4dc04e270c5ea55f159ec6">AgoraChatOptions::customOSType</a></div><div class="ttdeci">NSInteger customOSType</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:225</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_ada70febedd5350be01e30c342ec6f9b2"><div class="ttname"><a href="interface_agora_chat_options.html#ada70febedd5350be01e30c342ec6f9b2">AgoraChatOptions::loadEmptyConversations</a></div><div class="ttdeci">BOOL loadEmptyConversations</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:217</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_ade85dd049254a4bfbb5b4eacbb89e9a2"><div class="ttname"><a href="interface_agora_chat_options.html#ade85dd049254a4bfbb5b4eacbb89e9a2">AgoraChatOptions::appkey</a></div><div class="ttdeci">NSString * appkey</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:45</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_ae37268c14f0816e8f8368995994903ea"><div class="ttname"><a href="interface_agora_chat_options.html#ae37268c14f0816e8f8368995994903ea">AgoraChatOptions::sortMessageByServerTime</a></div><div class="ttdeci">BOOL sortMessageByServerTime</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:159</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_ae7e7dc605cdce4bb81b59b7d3e3851c9"><div class="ttname"><a href="interface_agora_chat_options.html#ae7e7dc605cdce4bb81b59b7d3e3851c9">AgoraChatOptions::deleteMessagesOnLeaveChatroom</a></div><div class="ttdeci">BOOL deleteMessagesOnLeaveChatroom</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:102</div></div>
+<div class="ttc" id="ainterface_agora_chat_options_html_afe27c92060cfb680b4ac6ec8ec062711"><div class="ttname"><a href="interface_agora_chat_options.html#afe27c92060cfb680b4ac6ec8ec062711">AgoraChatOptions::regardImportMessagesAsRead</a></div><div class="ttdeci">BOOL regardImportMessagesAsRead</div><div class="ttdef"><b>Definition:</b> AgoraChatOptions.h:264</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

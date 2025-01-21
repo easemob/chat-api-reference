@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShengwangChatSDK: AgoraChat.framework/Headers/AgoraChatClientDelegate.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ShengwangChatSDK<span id="projectnumber">&#160;1.3.2</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'搜索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4df93b2374f7ad7fdd08b057a718ef8e.html">AgoraChat.framework</a></li><li class="navelem"><a class="el" href="dir_d59efb3d46564b237fdd447feffd569d.html">Headers</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">AgoraChatClientDelegate.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#import &quot;AgoraChatErrorCode.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#import &quot;AgoraChatCommonDefs.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#import &quot;AgoraChatLoginExtensionInfo.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="protocol_agora_chat_client_delegate-p.html#a81a2a65772bed7b72f11dc4f43f0cdf1">   18</a></span><span class="keyword">typedef</span> NS_ENUM(NSInteger, AgoraChatConnectionState) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    AgoraChatConnectionConnected = 0,  </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    AgoraChatConnectionDisconnected,   </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">@class</span> <a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="protocol_agora_chat_client_delegate-p.html">   33</a></span><span class="keyword">@protocol </span><a class="code hl_protocol" href="protocol_agora_chat_client_delegate-p.html">AgoraChatClientDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">@optional</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>- (void)connectionStateDidChange:(AgoraChatConnectionState)aConnectionState;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>- (void)autoLoginDidCompleteWithError:(<a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> * _Nullable)aError;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>- (void)userAccountDidLoginFromOtherDevice:(NSString* _Nullable)aDeviceName EM_DEPRECATED_IOS(4_1_0, 4_7_0, &quot;Use userAccountDidLoginFromOtherDeviceWithInfo: instead&quot;);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>- (void)userAccountDidLoginFromOtherDeviceWithInfo:(<a class="code hl_interface" href="interface_agora_chat_login_extension_info.html">AgoraChatLoginExtensionInfo</a>* _Nullable)info;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>- (void)<a class="code hl_function" href="protocol_agora_chat_client_delegate-p.html#a342085fa38e2bfd4f772409d06e778f6">userAccountDidRemoveFromServer</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>- (void)<a class="code hl_function" href="protocol_agora_chat_client_delegate-p.html#a93359d3e710c2d3a578969675ed3faac">userDidForbidByServer</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>- (void)userAccountDidForcedToLogout:(<a class="code hl_interface" href="interface_agora_chat_error.html">AgoraChatError</a> *_Nullable)aError;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>- (void)tokenWillExpire:(AgoraChatErrorCode)aErrorCode;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>- (void)tokenDidExpire:(AgoraChatErrorCode)aErrorCode;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>- (void)<a class="code hl_function" href="protocol_agora_chat_client_delegate-p.html#aa7de60889ca48aa3f7e24d9eba251b4f">onOfflineMessageSyncStart</a>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>- (void)<a class="code hl_function" href="protocol_agora_chat_client_delegate-p.html#a3c9027ac057e4beb830776316fbc2043">onOfflineMessageSyncFinish</a>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#pragma mark - EM_DEPRECATED_IOS 4.1.0</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>- (void)userAccountDidLoginFromOtherDevice <a class="code hl_function" href="protocol_agora_chat_client_delegate-p.html#aae5c0ca5f48e2504cd5dc8d5c7620b4a">EM_DEPRECATED_IOS</a>(3_1_0, 4_1_0, &quot;Use userAccountDidLoginFromOtherDevice: instead&quot;);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword">@end</span></div>
+<div class="ttc" id="ainterface_agora_chat_error_html"><div class="ttname"><a href="interface_agora_chat_error.html">AgoraChatError</a></div><div class="ttdef"><b>Definition:</b> AgoraChatError.h:18</div></div>
+<div class="ttc" id="ainterface_agora_chat_login_extension_info_html"><div class="ttname"><a href="interface_agora_chat_login_extension_info.html">AgoraChatLoginExtensionInfo</a></div><div class="ttdef"><b>Definition:</b> AgoraChatLoginExtensionInfo.h:14</div></div>
+<div class="ttc" id="aprotocol_agora_chat_client_delegate-p_html"><div class="ttname"><a href="protocol_agora_chat_client_delegate-p.html">AgoraChatClientDelegate-p</a></div><div class="ttdef"><b>Definition:</b> AgoraChatClientDelegate.h:33</div></div>
+<div class="ttc" id="aprotocol_agora_chat_client_delegate-p_html_a342085fa38e2bfd4f772409d06e778f6"><div class="ttname"><a href="protocol_agora_chat_client_delegate-p.html#a342085fa38e2bfd4f772409d06e778f6">-[AgoraChatClientDelegate-p userAccountDidRemoveFromServer]</a></div><div class="ttdeci">void userAccountDidRemoveFromServer()</div></div>
+<div class="ttc" id="aprotocol_agora_chat_client_delegate-p_html_a3c9027ac057e4beb830776316fbc2043"><div class="ttname"><a href="protocol_agora_chat_client_delegate-p.html#a3c9027ac057e4beb830776316fbc2043">-[AgoraChatClientDelegate-p onOfflineMessageSyncFinish]</a></div><div class="ttdeci">void onOfflineMessageSyncFinish()</div></div>
+<div class="ttc" id="aprotocol_agora_chat_client_delegate-p_html_a93359d3e710c2d3a578969675ed3faac"><div class="ttname"><a href="protocol_agora_chat_client_delegate-p.html#a93359d3e710c2d3a578969675ed3faac">-[AgoraChatClientDelegate-p userDidForbidByServer]</a></div><div class="ttdeci">void userDidForbidByServer()</div></div>
+<div class="ttc" id="aprotocol_agora_chat_client_delegate-p_html_aa7de60889ca48aa3f7e24d9eba251b4f"><div class="ttname"><a href="protocol_agora_chat_client_delegate-p.html#aa7de60889ca48aa3f7e24d9eba251b4f">-[AgoraChatClientDelegate-p onOfflineMessageSyncStart]</a></div><div class="ttdeci">void onOfflineMessageSyncStart()</div></div>
+<div class="ttc" id="aprotocol_agora_chat_client_delegate-p_html_aae5c0ca5f48e2504cd5dc8d5c7620b4a"><div class="ttname"><a href="protocol_agora_chat_client_delegate-p.html#aae5c0ca5f48e2504cd5dc8d5c7620b4a">-[AgoraChatClientDelegate-p EM_DEPRECATED_IOS]</a></div><div class="ttdeci">3_1_0, 4_1_0, &quot;Use userAccountDidLoginFromOtherDevice: instead&quot; EM_DEPRECATED_IOS()</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

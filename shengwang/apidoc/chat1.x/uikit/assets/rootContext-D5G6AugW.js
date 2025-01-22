@@ -1,0 +1,1 @@
+import{R as t}from"./index-f9CH5uyH.js";const o=t.createContext({rootStore:{},initConfig:{},client:{},reactionConfig:{map:{}},theme:{},presenceMap:{}});o.Consumer;const r=o.Provider;export{o as R,r as a};

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="shengwang_chat_sdk API docs, for the Dart programming language.">
+  <title>shengwang_chat_sdk - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="https://www.easemob.com/product/im">shengwang_chat_sdk package</a></li>
+  </ol>
+  <div class="self-name">shengwang_chat_sdk</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 id="">快速开始</h1>
+<p>通过本文可以实现一个集成聊天 SDK 的简单 app。</p>
+<h2 id="-2">前提条件</h2>
+<p>开始前，请确保你的开发环境满足如下要求：</p>
+<ul>
+<li>Xcode 12.4 或以上版本，包括命令行工具;</li>
+<li>iOS 11 或以上版本;</li>
+<li>Android SDK API 等级 21 或以上版本；</li>
+<li>Android Studio 4.0 或以上版本，包括 JDK 1.8 或以上版本;</li>
+<li>CocoaPods 包管理工具;</li>
+<li>Flutter 3.3.0 或以上版本;</li>
+<li>Dart 3.3.0 或以上版本;</li>
+</ul>
+<p>配置开发或者运行环境如果遇到问题，请参考 <a href="https://docs.flutter.dev/get-started/install">这里</a>。</p>
+<h2 id="-3">项目设置</h2>
+<h3 id="-4">使用命令创建项目</h3>
+<p>打开终端，进入需要创建项目的目录，输入命令进行 <code>flutter create</code> 项目创建：</p>
+<pre class="language-bash"><code class="language-bash">flutter create quick_start
+</code></pre>
+<h3 id="-android">设置 Android</h3>
+<ol>
+<li>打开文件 <code>quick_start/android/app/build.gradle</code> 在文件最后添加：</li>
+</ol>
+<pre class="language-gradle"><code class="language-gradle">android {
+    defaultConfig {
+        minSdkVersion 21
+    }
+}
+</code></pre>
+<ol start="2">
+<li>打开文件 <code>quick_start/android/app/src/main/AndroidManifest.xml</code>，在 <code>&lt;/application&gt;</code> 下添加：</li>
+</ol>
+<pre class="language-xml"><code class="language-xml">&lt;uses-permission android:name="android.permission.INTERNET" /&gt;
+&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/&gt;
+&lt;uses-permission android:name="android.permission.WAKE_LOCK"/&gt;
+</code></pre>
+<ol start="3">
+<li>在 <code>quick_start/android/app/proguard-rules.pro</code> 中设置免混淆规则：</li>
+</ol>
+<pre class="language-dart"><code class="language-dart">-keep class io.agora.** {*;}
+-dontwarn  io.agora.**
+</code></pre>
+<h3 id="-ios">设置 iOS</h3>
+<p>iOS 需要 iOS 11.0 以上版本，</p>
+<p>打开文件 <code>quick_start/ios/Runner.xcodeproj</code>，修改：<code>TARGETS -&gt; General -&gt; Deployment info</code>, 设置 iOS 版本为 11.0。</p>
+<h3 id="-sdk">集成 SDK</h3>
+<p>在终端命令行，输入命令添加依赖：</p>
+<pre class="language-bash"><code class="language-bash">cd quick_start
+flutter pub add shengwang_chat_sdk
+flutter pub get
+</code></pre>
+<h2 id="-5">添加示例代码</h2>
+<p>打开 <code>quick_start/lib/main.dart</code> 文件，引入头文件：</p>
+<pre class="language-dart"><code class="language-dart">import 'package:flutter/material.dart';
+import 'package:shengwang_chat_sdk/shengwang_chat_sdk.dart';
+</code></pre>
+<p>修改 <code>_MyHomePageState</code> 代码：</p>
+<pre class="language-dart"><code class="language-dart">class _MyHomePageState extends State&lt;MyHomePage&gt; {
+
+  ScrollController scrollController = ScrollController();
+  String _username = "";
+  String _token = "";
+  String _messageContent = "";
+  String _chatId = "";
+  final List&lt;String&gt; _logText = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _initSDK();
+    _addChatListener();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: Container(
+        padding: const EdgeInsets.only(left: 10, right: 10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            TextField(
+              decoration: const InputDecoration(hintText: "Enter username"),
+              onChanged: (username) =&gt; _username = username,
+            ),
+            TextField(
+              decoration: const InputDecoration(hintText: "Enter token"),
+              onChanged: (token) =&gt; _token = token,
+            ),
+            const SizedBox(height: 10),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Expanded(
+                  flex: 1,
+                  child: TextButton(
+                    onPressed: _signIn,
+                    child: const Text("SIGN IN"),
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.white),
+                      backgroundColor:
+                          MaterialStateProperty.all(Colors.lightBlue),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: TextButton(
+                    onPressed: _signOut,
+                    child: const Text("SIGN OUT"),
+                    style: ButtonStyle(
+                      foregroundColor: MaterialStateProperty.all(Colors.white),
+                      backgroundColor:
+                          MaterialStateProperty.all(Colors.lightBlue),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 10),
+            TextField(
+              decoration: const InputDecoration(
+                  hintText: "Enter the username you want to send"),
+              onChanged: (chatId) =&gt; _chatId = chatId,
+            ),
+            TextField(
+              decoration: const InputDecoration(hintText: "Enter content"),
+              onChanged: (msg) =&gt; _messageContent = msg,
+            ),
+            const SizedBox(height: 10),
+            TextButton(
+              onPressed: _sendMessage,
+              child: const Text("SEND TEXT"),
+              style: ButtonStyle(
+                foregroundColor: MaterialStateProperty.all(Colors.white),
+                backgroundColor: MaterialStateProperty.all(Colors.lightBlue),
+              ),
+            ),
+            Flexible(
+              child: ListView.builder(
+                controller: scrollController,
+                itemBuilder: (_, index) {
+                  return Text(_logText[index]);
+                },
+                itemCount: _logText.length,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _initSDK() async {
+  }
+
+  void _addChatListener() {
+  }
+
+  void _signIn() async {
+  }
+
+  void _signOut() async {
+  }
+
+  void _sendMessage() async {
+  }
+
+  void _addLogToConsole(String log) {
+    _logText.add(_timeString + ": " + log);
+    setState(() {
+      scrollController.jumpTo(scrollController.position.maxScrollExtent);
+    });
+  }
+
+  String get _timeString {
+    return DateTime.now().toString().split(".").first;
+  }
+}
+</code></pre>
+<h3 id="-sdk-2">初始化 SDK</h3>
+<p>在 <code>_initSDK</code> 方法中添加 SDK 初始化：</p>
+<pre class="language-dart"><code class="language-dart">void _initSDK() async {
+    ChatOptions options = ChatOptions.withAppId(
+        "&lt;#Your AppId#&gt;",
+        autoLogin: false,
+    );
+    await ChatClient.getInstance.init(options);
+    // 通知 SDK UI 已准备好。该方法执行后才会收到 `ChatRoomEventHandler`、`ChatContactEventHandler` 和 `ChatGroupEventHandler` 回调。
+    await ChatClient.getInstance.startCallback();
+}
+</code></pre>
+<h3 id="-im-">注册即时通讯 IM 用户</h3>
+<h4 id="-6">创建用户</h4>
+<p>在<a href="https://console.shengwang.cn/overview">声网控制台</a>按照如下步骤创建用户：</p>
+<ol>
+<li>
+<p>展开控制台左上角下拉框，选择需要开通即时通讯 IM 服务的项目。</p>
+</li>
+<li>
+<p>点击左侧导航栏的<strong>全部产品</strong>。</p>
+</li>
+<li>
+<p>在下拉列表中找到<strong>即时通讯 IM</strong> 并点击。</p>
+</li>
+<li>
+<p>在<strong>即时通讯 IM</strong> 页面，进入<strong>运营管理</strong>标签页。</p>
+</li>
+<li>
+<p>在<strong>用户</strong> 页签下，点击<strong>创建IM用户</strong>。</p>
+</li>
+<li>
+<p>在弹出的对话框中，配置用户相关参数，点击<strong>确定</strong>。</p>
+</li>
+</ol>
+<h4 id="-token">获取用户 token</h4>
+<p>创建用户后，在用户列表点击对应的用户的<strong>操作</strong>一栏中的<strong>更多</strong>，选择<strong>查看Token</strong>。</p>
+<p>在弹出的对话框中，可以查看用户 Token，也可以点击<strong>重新生成</strong>，生成用户 token。</p>
+<h3 id="-7">添加登录</h3>
+<p>在 <code>_signIn</code> 方法中添加登录代码。</p>
+<pre class="language-dart"><code class="language-dart">void _signIn() async {
+    if (_username.isEmpty || _token.isEmpty) {
+        _addLogToConsole("username or token is null");
+        return;
+    }
+
+    try {
+        await ChatClient.getInstance.loginWithToken(_username, _token);
+        _addLogToConsole("sign in succeed, username: $_username");
+    } on ChatError catch (e) {
+        _addLogToConsole("sign in failed, e: ${e.code} , ${e.description}");
+    }
+}
+</code></pre>
+<h3 id="-8">添加退出</h3>
+<p>在 <code>_signOut</code> 方法中添加退出代码。</p>
+<pre class="language-dart"><code class="language-dart">void _signOut() async {
+    try {
+        await ChatClient.getInstance.logout(true);
+        _addLogToConsole("sign out succeed");
+    } on ChatError catch (e) {
+        _addLogToConsole(
+            "sign out failed, code: ${e.code}, desc: ${e.description}");
+    }
+}
+</code></pre>
+<h3 id="-9">添加发消息</h3>
+<p>在 <code>_sendMessage</code> 方法中添加发消息代码。</p>
+<pre class="language-dart"><code class="language-dart">void _sendMessage() async {
+  if (_chatId.isEmpty || _messageContent.isEmpty) {
+    _addLogToConsole("single chat id or message content is null");
+    return;
+  }
+
+  var msg = ChatMessage.createTxtSendMessage(
+    targetId: _chatId,
+    content: _messageContent,
+  );
+
+  ChatClient.getInstance.chatManager.sendMessage(msg);
+}
+</code></pre>
+<h3 id="-10">添加收消息监听</h3>
+<p>在 <code>_addChatListener</code> 方法中添加代码。</p>
+<pre class="language-dart"><code class="language-dart">void _addChatListener() {
+
+  // 添加消息状态变更监听
+  ChatClient.getInstance.chatManager.addMessageEvent(
+      // ChatMessageEvent 对应的 key。
+        "UNIQUE_HANDLER_ID",
+        ChatMessageEvent(
+          onSuccess: (msgId, msg) {
+            _addLogToConsole("send message succeed");
+          },
+          onProgress: (msgId, progress) {
+            _addLogToConsole("send message succeed");
+          },
+          onError: (msgId, msg, error) {
+            _addLogToConsole(
+              "send message failed, code: ${error.code}, desc: ${error.description}",
+            );
+          },
+        ));
+
+
+  // 添加收消息监听
+  ChatClient.getInstance.chatManager.addEventHandler(
+    // ChatEventHandler 对应的 key。
+    "UNIQUE_HANDLER_ID",
+    ChatEventHandler(
+      onMessagesReceived: (messages) {
+        for (var msg in messages) {
+          switch (msg.body.type) {
+            case MessageType.TXT:
+              {
+                ChatTextMessageBody body = msg.body as ChatTextMessageBody;
+                _addLogToConsole(
+                  "receive text message: ${body.content}, from: ${msg.from}",
+                );
+              }
+              break;
+            case MessageType.IMAGE:
+              {
+                _addLogToConsole(
+                  "receive image message, from: ${msg.from}",
+                );
+              }
+              break;
+            case MessageType.VIDEO:
+              {
+                _addLogToConsole(
+                  "receive video message, from: ${msg.from}",
+                );
+              }
+              break;
+            case MessageType.LOCATION:
+              {
+                _addLogToConsole(
+                  "receive location message, from: ${msg.from}",
+                );
+              }
+              break;
+            case MessageType.VOICE:
+              {
+                _addLogToConsole(
+                  "receive voice message, from: ${msg.from}",
+                );
+              }
+              break;
+            case MessageType.FILE:
+              {
+                _addLogToConsole(
+                  "receive image message, from: ${msg.from}",
+                );
+              }
+              break;
+            case MessageType.CUSTOM:
+              {
+                _addLogToConsole(
+                  "receive custom message, from: ${msg.from}",
+                );
+              }
+              break;
+            case MessageType.COMBINE:
+                {
+                  _addLogToConsole(
+                      "receive combine message, from: ${msg.from}");
+              }
+              break;
+            case MessageType.CMD:
+              {
+                // 当前回调中不会有 CMD 类型消息，CMD 类型消息通过 `ChatEventHandler#onCmdMessagesReceived` 回调接收
+              }
+              break;
+          }
+        }
+      },
+    ),
+  );
+}
+</code></pre>
+<h3 id="-11">移除消息监听</h3>
+<p>在 <code>dispose</code> 方法中添加代码移除监听：</p>
+<pre class="language-dart"><code class="language-dart">@override
+void dispose() {
+  // 移除消息状态监听
+  ChatClient.getInstance.chatManager.removeMessageEvent("UNIQUE_HANDLER_ID");
+  // 移除收消息监听
+  ChatClient.getInstance.chatManager.removeEventHandler("UNIQUE_HANDLER_ID");
+  super.dispose();
+}
+</code></pre>
+<h2 id="-12">运行项目</h2>
+<p>以 iOS 为例，首先打开模拟器，然后在终端运行以下命令。</p>
+<pre class="language-bash"><code class="language-bash">flutter run
+</code></pre>
+<h2 id="-13">后续步骤</h2>
+<p>为保障通信安全，在正式生产环境中，你需要在自己的 app 服务端生成 Token。详见<a href="/docs/sdk/server-side/token_authentication.html">使用 Token 鉴权</a>。</p>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="shengwang_chat_sdk">
+  <span class="name"><a href="shengwang_chat_sdk/shengwang_chat_sdk-library.html">shengwang_chat_sdk</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="https://www.easemob.com/product/im">shengwang_chat_sdk package</a></li>
+</ol>
+
+
+    <h5 class="hidden-xs"><span class="package-name">shengwang_chat_sdk</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="shengwang_chat_sdk/shengwang_chat_sdk-library.html">shengwang_chat_sdk</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    shengwang_chat_sdk
+      1.3.2+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
